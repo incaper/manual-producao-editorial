@@ -1,0 +1,626 @@
+/* ============================================================
+   STYLE PRINCIPAL (CSS3 puro) — Sistema de espaçamento 8+4 pts
+   ============================================================ */
+
+/* RESET BÁSICO */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  height: 100%;}
+
+body {
+  font-family: var(--fonte-base);
+  color: #222;
+  background: #fafafa;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ------------------------------------------------------------
+   Container centralizado
+   ------------------------------------------------------------ */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;   /* múltiplo de 4 */
+  padding-right: 16px;
+}
+
+/* ============================================================
+   HEADER SUPERIOR
+   ============================================================ */
+.top-menu {
+  background: #fff;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.logo a {
+  font-size: 1.125rem;
+  color: var(--cor-ter-ver);
+  font-weight: var(--fonte-base);
+  line-height: 1;
+  text-decoration: none;
+}
+
+/* Menu */
+.top-nav .menu-links {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.top-nav a {
+  color: var(--cor-sec-pre);
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 0.875rem;   /* 14px */
+  text-transform: uppercase;
+}
+
+.top-nav a:hover, .top-nav a:focus,
+.logo a:hover,  .logo a:focus{
+  text-decoration: underline;
+}
+
+/* ============================================================
+   BANNER HERO
+   ============================================================ */
+.hero {
+ 
+  background-image: url('../imagens/pattern.png'), 
+                    linear-gradient(90deg, var( --cor-ter-ver), var(--cor-qui-ver));
+}
+
+.hero-main {
+  display: grid;
+  grid-template-columns: 3fr 2fr; /* 60% texto — 40% imagem */
+  gap: 4rem; /* gap não altera a proporção */
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.hero-inner{
+  text-align: left;
+}
+
+.hero-inner h1 {
+  margin-top: 1rem;
+  color: var(--cor-pri-bra);
+}
+
+.hero-logo {
+  margin: 0 0 2rem 0;
+  max-width: 200px;
+}
+
+.hero-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 520px;
+  margin-left: auto;
+}
+
+/* ============================================================
+   BANNER CAPITULO 
+   ============================================================ */
+.cap {
+  background: linear-gradient(90deg,var(--cor-pri-lar),var(--cor-sec-lar))
+}
+
+.cap-main {
+  display: grid;
+  grid-template-columns: 240px 1fr 220px;
+  gap: 1rem;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.cap-inner{
+  text-align: left;
+  max-width: 240px;
+}
+
+.cap-inner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 520px;
+  margin-left: auto;
+}
+
+.cap-tit h1{
+  margin: 0;
+  color: var(--cor-pri-bra);
+}
+
+.cap-nav {
+  text-align: right;
+  color: var(--cor-pri-bra);
+}
+
+.cap-nav select{
+  padding: 10px 2px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+
+/* ============================================================
+   GRID SEÇÕES
+   ============================================================ */
+
+.main-home, .main-geral, .main-capitulo, .main-rodape {
+  display: grid;
+  align-items: start;
+  padding-top:32px;
+  padding-bottom: 32px;
+}
+
+.main-home {
+  display: grid;
+  gap: 20px;
+  /* Cria tantas colunas quanto couberem, desde que tenham pelo menos 250px */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-items: stretch;
+}
+
+.main-geral {
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.main-capitulo {
+  grid-template-columns: 250px 1fr;
+  gap: 32px;
+}
+
+.main-rodape {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 150px 300px 150px;
+}
+
+/* ============================================================
+ RODAPE
+   ============================================================ */
+  .rodape {padding: 50px 0; background-color: var(--cor-pri-lar);}
+  footer h5 {color: var(--cor-pri-bra)}
+  footer ul li{list-style: none}
+  footer ul li a {color: var(--cor-pri-bra); text-decoration: none;}
+  footer ul li a:hover {text-decoration:underline;}
+  footer p {color: #fff; font-size: 14px;}
+
+/* ============================================================
+   ÁREA DE CONTEÚDO
+   ============================================================ */
+.content {
+  background: var(--cor-pri-bra);
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.02);
+  min-height: 320px;
+}
+
+/* ------------------------------------------------------------
+   TÍTULOS (tipografia editorial limpa)
+   ------------------------------------------------------------ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var( --fonte-base);
+  line-height: 1.15;
+  margin: 2em 0 0.8em;
+  color: var(--cor-pri-lar);
+}
+
+h1 { font-size: 2.25rem; text-transform: uppercase; font-weight: var(--fonte-black);}  /* 36px */
+h2 { font-size: 1.875rem; text-transform: uppercase; font-weight: var(--fonte-regular);} /* 30px */
+h3 { font-size: 1.5rem; font-weight: var(--fonte-bold);}  /* 24px */
+h4 { font-size: 1.5rem; font-weight: var(--fonte-regular);} /* 20px */
+h5 { font-size: 1.125rem; font-weight: var(--fonte-italic);} /* 18px */
+h6 { font-size: 1rem; color: var(--cor-sec-pre);}     /* 16px */
+
+
+/* ------------------------------------------------------------
+   TEXTOS PADRÃO
+   ------------------------------------------------------------ */
+
+.content p,
+.body-text {
+  font-size: 1rem;   /* 16px */
+  font-weight: var(--fonte-regular);
+  margin-bottom: 1em;
+  color: var(--cor-pri-pre);
+}
+
+.small {
+  font-size: 0.875rem;   /* 14px */
+  color: var(--cor-ter-pre);
+}
+
+.caption {
+  font-size: 0.75rem;    /* 12px */
+  color: var(--cor-ter-pre);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Lista */
+.content ul, .content ol {
+  margin: 2rem 0 2rem 2rem;
+  padding-left: 1rem;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.content li {
+  margin-bottom: 1em;
+}
+
+/* Estilo das listas ordenadas */
+.content .decimal {list-style-type: decimal}
+.content .alfabetico {list-style-type: lower-alpha}
+.content .romano {list-style-type: lower-roman}
+
+/* Destaques */
+.bold   { font-weight: var(--fonte-bold)}
+.black  { font-weight: var(--fonte-black)}
+.italic { font-style: var(--fonte-italic)}
+
+/* Links */
+.content a {color: var(--cor-pri-lar);text-decoration: underline}
+.content a:hover {color: #B4571F}
+
+/* Caixa de observação */
+.caixa-observacao {
+  border-radius: 10px;
+  padding: 16px;
+  margin: 2em 0;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.cor-lar {background: var(--cor-qua-lar); border-color: #FEC36D}
+.cor-ver {background: #eaf7ee; border-color: #64946E}
+
+/* Figura */
+.content figure {
+  text-align: left;
+  margin: 24px 0;
+}
+
+.content figure img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.content figcaption {
+  color: var(--cor-ter-pre);
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+.content figcaption span{
+  font-weight: bold;
+  font-weight: var(--fonte-black);
+  color: var(--cor-pri-lar);
+}
+
+.small span{
+  font-weight: bold;
+  color: var(--cor-pri-lar);
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+table caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: var(--fonte-bold);
+  margin-bottom: 12px;
+}
+
+table th,
+table td {
+  border: 1px solid var(--cor-pri-bra);
+  padding: 12px;
+  background-color: var(--cor-qua-lar);
+}
+
+table thead th {
+  background: var(--cor-pri-lar);
+  font-weight: var(--fonte-regular);
+  color: var(--cor-pri-bra);
+}
+
+/* Botão */
+.bt {
+  padding: 10px 14px;
+  font-weight: var(--fonte-regular);
+  border-radius: 8px;
+  text-decoration: none;
+  opacity: 0.8;
+  display: inline-block;
+  margin: 5px 0;
+}
+.bt:hover {
+  opacity: 1;
+}
+.bt_bra{
+  color: var(--cor-pri-ver);
+  background-color: var(--cor-pri-bra);
+}
+.bt_lar{
+  color: var(--cor-pri-bra);
+  background-color: var(--cor-pri-lar);
+}
+.bt_ver{
+  color: var(--cor-pri-bra);
+  background-color: var(--cor-qui-ver);
+}
+
+blockquote {
+  margin: 60px 0 60px 60px;
+  padding-left: 8em;
+  line-height: 1.5;
+  font-size: 0.8rem;
+}
+
+
+/* ============================================================
+  CARD
+   ============================================================ */
+
+.card {
+  display: flex;
+  flex-direction: column; /* permite empurrar link pro final */
+}
+
+.card h5 {
+  margin-top:12px;
+  color:var(--cor-sec-pre);
+}
+
+.card p {
+  color:var(--cor-ter-pre);
+  font-size: 0.875rem;   /* 14px */
+}
+
+.card .material-icon {
+  justify-content: left;
+  color: var(--cor-pri-lar);
+}
+
+/* ============================================================
+   ACCORDION
+   ============================================================ */
+
+
+aside {
+  background: var(--cor-pri-bra);
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.02);
+  padding: 24px 12px;
+}
+/* Remove marcadores */
+.accordion { list-style: none ;}
+
+/* Checkbox controlador (fica invisível) */
+.acc-check {
+  display: none;
+}
+
+/* Container de item */
+.accordion-item {
+  position: relative;
+}
+
+/* Botão (+ / -) */
+.acc-toggle {
+  position: absolute;
+  left: 0px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  background: #ccc;
+  border: 1px solid #333;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.acc-toggle .icon::before {
+  content: "+";
+  font-weight: bold;
+  color: #444;
+}
+
+.acc-check:checked + .acc-toggle .icon::before {
+  content: "−";
+}
+
+/* Link */
+.acc-link, ul.sub li a {
+  color: #2b2b2b;
+  text-decoration: none;
+  font-size: 0.875rem;
+  padding: 5px 0;
+  display: inline-block;
+  margin-left: 24px;
+}
+
+.acc-link:hover, ul.sub li a:hover {
+  text-decoration: underline;
+}
+
+/* Submenus */
+.sub {
+  list-style: none;
+  display: none;
+  margin-left: 8px;
+  padding-left: 10px;
+  border-left: 1px solid #e0e0e0;
+}
+
+/* Mostrar submenu quando checkbox está ativo */
+.acc-check:checked ~ .sub {
+  display: block;
+}
+
+/* ============================================================
+   RESPONSIVIDADE
+   ============================================================ */
+
+/* === sm: até 600px === */
+@media (max-width: 600px) {
+  .container { padding-left: 12px; padding-right: 12px; max-width: 100%; }
+  .hero-main, .cap-main {grid-template-columns: 1fr; text-align: center; gap:0}
+  .hero-inner, .cap-inner, .cap-nav  {text-align: center; margin: 0 auto;}
+  .hero-inner h1, .cap-tit h1{font-size: 1.6rem; margin-bottom: 10px;}
+  .hero-logo { margin: 0 auto 1.2rem auto;}
+  .hero-img img {max-width: 380px; margin: 1.5rem auto;}
+  .main-capitulo { display: block;}
+  .sidebar { margin-bottom: 16px; }
+  .top-nav .menu-links { gap: 12px; font-size: 13px; flex-wrap: wrap; }
+}
+
+/* === md: 601px - 900px === */
+@media (min-width: 601px) and (max-width: 900px) {
+  .container { max-width: 900px; }
+  .hero-inner h1, .cap-tit h1 {font-size: 1.8rem; margin-bottom: 10px}
+  .hero {padding: 2.5rem 0;}
+  .hero-logo {max-width: 150px;}
+  .cap-main {grid-template-columns: 200px 1fr 1fr}
+  .main-capitulo { grid-template-columns: 200px 1fr; gap: 1rem}
+  .sidebar { padding-top: 8px; }
+}
+
+/* === lg: 901px - 1200px === */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .container { max-width: 1000px; }
+  .main-capitulo { grid-template-columns: 220px 1fr; gap: 32px; }
+}
+
+/* === xlg: >1300px === */
+@media (min-width: 1301px) {
+  .container { max-width: 1200px; }
+  .main-capitulo { grid-template-columns: 280px 1fr; gap: 32px; }
+}
+
+/* ============================================================
+   Acessibilidade
+   ============================================================ */
+a:focus, button:focus, input:focus, label:focus {
+  outline: 3px solid rgba(14,138,86,0.18);
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   MENU RESPONSIVO (CSS PURO) COM ANIMAÇÃO SLIDE
+   ============================================================ */
+
+.toggle-menu-input {
+  display: none;  /* esconde o checkbox */
+}
+
+/* Botão do mobile/tablet */
+.toggle-menu-btn {
+  display: none;       /* só aparece no mobile */
+  padding: 12px 16px;
+  background: #8d2b18;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: auto;
+}
+
+/* MOBILE E TABLET (até 900px) */
+@media (max-width: 900px) {
+
+  /* Botão aparece */
+  .toggle-menu-btn {
+    display: inline-block;
+  }
+
+  /* Menu inicialmente escondido com animação */
+  .top-nav .menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #fff;
+    padding: 0 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 12px;
+
+    /* ANIMAÇÃO SLIDE (CSS PURO) */
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-8px);
+    transition:
+      max-height 0.35s ease,
+      opacity 0.35s ease,
+      transform 0.35s ease;
+  }
+
+  /* Quando o menu é ativado (checkbox marcado) */
+  .toggle-menu-input:checked + .toggle-menu-btn + .menu-links {
+    max-height: 400px;      /* suficiente para o conteúdo */
+    opacity: 1;
+    transform: translateY(0);
+    padding: 16px;          /* aplica somente quando aberto */
+  }
+
+  /* Ocupa a largura correta */
+  .top-nav {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+/* DESKTOP (menu fixo tradicional) */
+@media (min-width: 901px) {
+  .toggle-menu-btn {
+    display: none;
+  }
+
+  .top-nav .menu-links {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 0;
+    max-height: unset;
+    opacity: 1;
+    transform: none;
+    border: none;
+    background: transparent;
+  }
+}

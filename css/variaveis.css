@@ -1,0 +1,94 @@
+ /* importação tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+
+
+ /* importação icones */
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+
+/* ============================================================
+   ICONES — Material Symbols (Google)
+   ============================================================ */
+
+.material-icon {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;       /* tamanho padrão */
+  line-height: 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  user-select: none;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+/* Tamanhos */
+.icon-sm { font-size: 18px; }
+.icon-md { font-size: 24px; }
+.icon-lg { font-size: 32px; }
+.icon-xl { font-size: 40px; }
+
+/* Variações */
+.icon-fill  { font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24; }
+.icon-bold  { font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 24; }
+.icon-black { font-variation-settings: "FILL" 0, "wght" 900, "GRAD" 0, "opsz" 24; }
+
+/* Ícones em botões redondos (tipo FAB) */
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--cor-primaria);
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ícone em uma "pill" */
+.icon-pill {
+  padding: 6px 10px;
+  border-radius: 50px;
+  background: var(--cor-secundaria);
+  color: #fff;
+}
+
+:root {
+
+  /* cores */
+
+  /*verde*/
+  --cor-pri-ver: #73BF43;
+  --cor-sec-ver: #2F3C18;
+  --cor-ter-ver: #2E563B;
+  --cor-qua-ver: #64946E;
+  --cor-qui-ver: #A2C279;
+
+   /*laranja*/
+  --cor-pri-lar: #D46825;
+  --cor-sec-lar: #EB8425;
+  --cor-ter-lar: #FEC36D;
+  --cor-qua-lar: #FFDFB0;
+
+  /*branco*/
+  --cor-pri-bra: #ffffff;
+
+  /*preto*/
+  --cor-pri-pre: #121212;
+  --cor-sec-pre: #2c2c2c;
+  --cor-ter-pre: #444444;
+
+
+  /* tipografia */
+  --fonte-base: "Inter", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --fonte-regular: 400;
+  --fonte-italic: 400 italic;
+  --fonte-bold: 700;
+  --fonte-black: 900;
+  
+}
