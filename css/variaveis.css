@@ -73,7 +73,8 @@
   --cor-pri-lar: #D46825;
   --cor-sec-lar: #EB8425;
   --cor-ter-lar: #FEC36D;
-  --cor-qua-lar: #FFDFB0;
+  --cor-qua-lar: #FED89A;
+  --cor-qui-lar: #FEE3B8;
 
   /*branco*/
   --cor-pri-bra: #ffffff;
@@ -87,7 +88,7 @@
   /* tipografia */
   --fonte-base: "Inter", Roboto, "Helvetica Neue", Arial, sans-serif;
   --fonte-regular: 400;
-  --fonte-italic: 400 italic;
+  --fonte-italic: italic;
   --fonte-bold: 700;
   --fonte-black: 900;
   
