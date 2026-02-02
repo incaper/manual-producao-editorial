@@ -63,17 +63,21 @@
   /* cores */
 
   /*verde*/
-  --cor-pri-ver: #73BF43;
-  --cor-sec-ver: #2F3C18;
+  --cor-pri-ver: #71AB27;
+  --cor-sec-ver: #5A8A20;
   --cor-ter-ver: #2E563B;
   --cor-qua-ver: #64946E;
-  --cor-qui-ver: #A2C279;
+  --cor-qui-ver: #92BA51;
+  --cor-sex-ver: #D4E6BE;
+  
+
 
    /*laranja*/
   --cor-pri-lar: #D46825;
   --cor-sec-lar: #EB8425;
   --cor-ter-lar: #FEC36D;
-  --cor-qua-lar: #FFDFB0;
+  --cor-qua-lar: #FED89A;
+  --cor-qui-lar: #FEE3B8;
 
   /*branco*/
   --cor-pri-bra: #ffffff;
@@ -83,11 +87,14 @@
   --cor-sec-pre: #2c2c2c;
   --cor-ter-pre: #444444;
 
+  /*vermelho*/
+  --cor-pri-verm: #D23627;
+
 
   /* tipografia */
   --fonte-base: "Inter", Roboto, "Helvetica Neue", Arial, sans-serif;
   --fonte-regular: 400;
-  --fonte-italic: 400 italic;
+  --fonte-italic: italic;
   --fonte-bold: 700;
   --fonte-black: 900;
   

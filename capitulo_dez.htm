@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Capítulo 10 - Padronização e estilo | Manual de Produção Editorial do Incaper</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta content="pt-br, pt, en" http-equiv="Content-Language" />
+<meta content="Incaper" name="author" />
+<meta content="O Incaper é responsável pela elaboração e execução de programas e projetos que proporcionam o desenvolvimento rural sustentável no Espírito Santo." name="description" />
+<meta content="Incaper, Seag, Agricultura, Pesquisa, Extensão Rural, Manual, Produção Editorial, Editorial" name="keywords" />
+<link rel="stylesheet" href="css/variaveis.css">
+<link rel="stylesheet" href="css/estilo.css">
+<link href="imagens/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+
+<!-- Topo com título e menu -->
+<header class="top-menu" role="banner">
+  <div class="container header-inner">
+    <div class="logo" aria-label="Título do site"> <a href="index.htm">Manual Incaper</a> </div>
+    <nav class="top-nav" aria-label="Menu principal"> 
+      <!-- Botão mobile em CSS puro -->
+      <input type="checkbox" id="toggle-menu" class="toggle-menu-input">
+      <label for="toggle-menu" class="toggle-menu-btn">☰ Menu</label>
+      <ul class="menu-links">
+        <li><a href="index.htm">Início</a></li>
+        <li><a href="expediente.htm">Expediente</a></li>
+        <li><a href="prefacio.htm">Prefácio</a></li>
+        <li><a href="agradecimentos.htm">Agradecimentos</a></li>
+        <li><a href="apresentacao.htm">Apresentação</a></li>
+        <li><a href="download.htm">Download</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Banner -->
+<section class="cap-ver" role="img" aria-label="banner capitulo">
+  <div class="container cap-main">
+    <div class="cap-inner">
+      <figure> <img src="imagens/cap-10.png" alt="Imagem capítulo dez" /> </figure>
+    </div>
+    <div class="cap-tit">
+      <h1>Padronização e estilo</h1>
+    </div>
+    <div class="container cap-nav">
+      <label for="capitulos">Navegar pelo conteúdo:</label>
+      <select id="capitulos" onchange="location.href = this.value;">
+        <option value="">Selecionar ...</option>
+        <option value="capitulo_um.htm">Capítulo 1</option>
+        <option value="capitulo_dois.htm">Capítulo 2</option>
+        <option value="capitulo_tres.htm">Capítulo 3</option>
+        <option value="capitulo_quatro.htm">Capítulo 4</option>
+        <option value="capitulo_cinco.htm">Capítulo 5</option>
+        <option value="capitulo_seis.htm">Capítulo 6</option>
+        <option value="capitulo_sete.htm">Capítulo 7</option>
+        <option value="capitulo_oito.htm">Capítulo 8</option>
+        <option value="capitulo_nove.htm">Capítulo 9</option>
+        <option value="capitulo_dez.htm">Capítulo 10</option>
+        <option value="capitulo_onze.htm">Capítulo 11</option>
+        <option value="referencias.htm">Referências</option>
+        <option value="glossario.htm">Glossário</option>
+        <option value="anexos.htm">Anexos</option>
+      </select>
+      <div style="margin-top: 10px"> <a class="bt bt_ver" style="float: left;" href="capitulo_nove.htm">< Cap. 9</a> <a class="bt bt_ver" style="float: right;" href="capitulo_onze.htm">Cap. 11 ></a> </div>
+    </div>
+  </div>
+</section>
+<main class="container main-capitulo" role="main"> 
+  
+  <!-- Sidebar -->
+  <aside class="sidebar" aria-label="Navegação do conteúdo editorial">
+    <nav>
+      <ul class="accordion" role="tree">
+        <li class="accordion-item" role="treeitem"> <a href="index.htm" class="acc-link">Voltar ao início do manual</a> </li>
+        <li><a href="#sec-10-1" class="acc-link">10.1 Siglas</a></li>
+        <li class="accordion-item" role="treeitem">
+          <input type="checkbox" id="acc-10-2" class="acc-check">
+          <label for="acc-10-2" class="acc-toggle" aria-hidden="true"> <span class="icon"></span> </label>
+          <a href="#sec-10-2" class="acc-link">10.2 Abreviaturas e abreviações</a> 
+          
+          <!-- Subnível -->
+          <ul class="sub">
+            <li><a href="#sec-10-2-1" class="acc-link">10.2.1 Abreviatura</a></li>
+            <li><a href="#sec-10-2-2" class="acc-link">10.2.2 Abreviação</a></li>
+          </ul>
+        </li>
+        <li class="accordion-item" role="treeitem">
+          <input type="checkbox" id="acc-10-3" class="acc-check">
+          <label for="acc-10-3" class="acc-toggle" aria-hidden="true"> <span class="icon"></span> </label>
+          <a href="#sec-10-3" class="acc-link">10.3 Numerais</a> 
+          
+          <!-- Subnível -->
+          <ul class="sub">
+            <li><a href="#sec-10-3-1" class="acc-link">10.3.1 Unidades de medida</a></li>
+            <li><a href="#sec-10-3-2" class="acc-link">10.3.2 Datas</a></li>
+            <li><a href="#sec-10-3-3" class="acc-link">10.3.3 Horas</a></li>
+            <li><a href="#sec-10-3-4" class="acc-link">10.3.4 Valores monetários</a></li>
+          </ul>
+        </li>
+        <li><a href="#sec-10-4" class="acc-link">10.4 Translineação e divisão silábica</a></li>
+        <li class="accordion-item" role="treeitem">
+          <input type="checkbox" id="acc-10-5" class="acc-check">
+          <label for="acc-10-5" class="acc-toggle" aria-hidden="true"> <span class="icon"></span> </label>
+          <a href="#sec-10-5" class="acc-link">10.5 Destaques (aspas, negrito, itálico)</a> 
+          
+          <!-- Subnível -->
+          <ul class="sub">
+            <li><a href="#sec-10-5-1" class="acc-link">10.5.1 Aspas</a></li>
+            <li><a href="#sec-10-5-2" class="acc-link">10.5.2 Itálico</a></li>
+            <li><a href="#sec-10-5-3" class="acc-link">10.5.3 Negrito</a></li>
+          </ul>
+        </li>
+        <li class="accordion-item" role="treeitem">
+          <input type="checkbox" id="acc-10-6" class="acc-check">
+          <label for="acc-10-6" class="acc-toggle" aria-hidden="true"> <span class="icon"></span> </label>
+          <a href="#sec-10-6" class="acc-link">10.6 Sinais de pontuação e sinais gráficos</a> 
+          
+          <!-- Subnível -->
+          <ul class="sub">
+            <li><a href="#sec-10-6-1" class="acc-link">10.6.1 Travessão</a></li>
+            <li><a href="#sec-10-6-2" class="acc-link">10.6.2 Barra oblíqua</a></li>
+          </ul>
+        </li>
+        <li><a href="#sec-10-7" class="acc-link">10.7 Uso de maiúsculas</a></li>
+        <li><a href="#sec-10-8" class="acc-link">10.8 Uso de minúsculas</a></li>
+      </ul>
+    </nav>
+  </aside>
+  
+  <!-- Conteúdo principal -->
+  <article class="content mod-ver">
+    <p>Este capítulo reúne diretrizes de padronização e estilo adotadas pela Editora Incaper
+      com o objetivo de assegurar a uniformidade e a qualidade textual das publicações
+      institucionais. Ao definir parâmetros editoriais para redação e normatização, esta
+      seção do manual contribui para a excelência editorial e reforça a identidade dos
+      produtos editoriais publicados pelo Incaper.</p>
+    <h2 id="sec-10-1">10.1 SIGLAS</h2>
+    <p>Sigla é a sequência formada por letras ou partes iniciais de palavras que constituem
+      o nome de uma empresa, instituição, órgão, programa, entre outros.</p>
+    <p class="d-flex"><span class="destaque-lista">1</span> <span>As siglas com até três letras devem ser escritas com maiúsculas.</span></p>
+    <p class="identada-p">Exemplo: USP, OAB, ONU.</p>
+    <p class="d-flex"><span class="destaque-lista">2</span> <span>As siglas com mais de três letras, pronunciadas como palavras, devem ser escritas
+      apenas com a inicial maiúscula.</span></p>
+    <p class="identada-p">Exemplo: Incaper, Idaf, Seag, Ceasa, Secom, Detran, Unesco, Petrobras, Embrapa,
+      Enap.</p>
+    <p class="d-flex"><span class="destaque-lista">3</span> <span>As siglas com mais de três letras, quando soletradas, devem ser escritas em letras
+      maiúsculas.</span></p>
+    <p class="identada-p">Exemplo: INSS, UFMG, IBGE.</p>
+    <p class="d-flex"><span class="destaque-lista">4</span> <span>Algumas siglas contam com formas já reconhecidas e usuais e, por isso, devem
+      ser respeitadas.</span></p>
+    <p class="identada-p">Exemplo: UnB, ProJovem, ICMBio, CNPq.</p>
+    <p class="d-flex"><span class="destaque-lista">5</span> <span>Para formar o plural, deve-se acrescentar um “s” minúsculo ao fim da sigla, sem
+      apóstrofo.,/</p>
+    <p class="identada-p">Exemplo: ONGs, EPIs.</p>
+    <div class="caixa-observacao cor-ver">No entanto, não se deve acrescentar “s” em siglas que tenham sua forma por
+      extenso já no plural.<br />
+      <br />
+      Exemplo: Tanto os produtores quanto o meio ambiente se beneficiam da
+      aplicação das boas práticas agrícolas (BPA).</div>
+    <p class="d-flex"><span class="destaque-lista">6</span> <span>Nas siglas formadas a partir de expressões e nomes comuns, a forma por extenso
+      é escrita com iniciais minúsculas.</span></p>
+    <p class="identada-p">Exemplo: O custo operacional efetivo (COE) corresponde a todos os custos
+      incorridos em um ano agrícola.</p>
+    <div class="caixa-observacao cor-ver">No entanto, nas formas por extenso de nomes próprios (nomes de instituições,
+      órgãos, entidades etc.), as iniciais devem ser em letras maiúsculas.<br />
+      <br />
+      Exemplo: O Ministério da Agricultura e Pecuária (Mapa) é responsável pela
+      implementação de políticas públicas voltadas para o desenvolvimento da
+      agropecuária em nosso país.</div>
+    <p class="d-flex"><span class="destaque-lista">7</span> <span>Quando mencionada pela primeira vez no texto, deve ser escrita primeiramente
+      por extenso, seguida da sigla entre parênteses (forma mais visual) ou separada
+      por traço (meia-risca “–”).</span></p>
+    <p class="identada-p">Exemplo: Instituto Capixaba de Pesquisa, Assistência Técnica e Extensão
+      Rural (Incaper). </p>
+    <p class="identada-p">Exemplo: Instituto Capixaba de Pesquisa, Assistência Técnica e Extensão
+      Rural – Incaper.</p>
+    <h2 id="sec-10-2">10.2 ABREVIATURAS E ABREVIAÇÕES</h2>
+    <h3 id="sec-10-2-1">10.2.1 Abreviatura</h3>
+    <p>A abreviatura é o encurtamento de uma palavra ou expressão. Geralmente, é formada
+      pelas letras iniciais e acompanhada de um ponto final abreviativo. Deve ser usada com
+      cautela para não comprometer a compreensão da mensagem. Em geral, é empregada
+      quando há necessidade de redução de espaço em títulos, legendas, tabelas, gráficos
+      e infográficos, por exemplo, devendo ser evitada no texto corrido.</p>
+    <ul>
+      <li> Não existe uma regra para a formação de abreviatura, mas, em geral, opta-se por
+        interrompê-la na primeira consoante da segunda sílaba. </li>
+    </ul>
+    <p>Exemplo: biol. (biologia), núm. (número), peq. (pequeno).</p>
+    <ul>
+      <li> Quando a primeira sílaba da palavra é curta ou é uma vogal isolada, normalmente a
+        abreviatura vai até a consoante da terceira sílaba. </li>
+    </ul>
+    <p>Exemplo: agric. (agricultura), anál. (análise), agron. (agronomia).</p>
+    <ul>
+      <li> Quando a palavra é formada por prefixo, o mais comum é ele vir acompanhado da
+        primeira sílaba ou consoante. </li>
+    </ul>
+    <p>Exemplo: indef. (indefinido), antrop. (antropologia), morfol. (morfologia).</p>
+    <div class="caixa-observacao cor-ver"> Há palavras que não seguem regra para abreviatura.<br />
+      <br />
+      Exemplo: a.C. (antes de Cristo), D. (Dona), fl. (folha), Ltda. (limitada). </div>
+    <ul>
+      <li> O acento gráfico ou o hífen são mantidos na abreviatura. </li>
+    </ul>
+    <p>Exemplo: gên. (gênero), séc. (século), adm.-financ. (administrativo-financeiro).</p>
+    <ul>
+      <li> O plural é marcado pelo acréscimo de “s” minúsculo, e não ‘s (apóstrofo e “s”). </li>
+    </ul>
+    <p>Exemplo: págs. (páginas), drs. (doutores), sras. (senhoras), profs. (professores).</p>
+    <ul>
+      <li> No fim da frase, o ponto abreviativo também tem a função de ponto final. </li>
+    </ul>
+    <p>Exemplo: O Império Romano teve seu início em 27 a.C. e durou até 476 d.C.</p>
+    <div class="caixa-observacao cor-ver"> Na abreviatura, não há alteração da pronúncia da palavra, ou seja, ela continua
+      a ser lida como na forma não abreviada.<br />
+      <br />
+      Abreviaturas específicas em relação a citações e referências bibliográficas são
+      abordadas no <a href="anexos.htm">Anexo A</a>. </div>
+    <div class="caixa-observacao cor-ver"> Há o caso das abreviaturas oficiais que são definidas pela Associação Brasileira
+      de Normas Técnicas (ABNT) por meio de norma própria (NBR 6032:1989). </div>
+    <p>ABREVIATURAS FREQUENTES</p>
+    <p><strong>Titulação</strong></p>
+    <p>Bel. (Bacharel)</p>
+    <p>Esp. (Especialização)</p>
+    <p>Me. (Mestre)/Ma. (Mestra)</p>
+    <div class="caixa-observacao cor-ver"> “Ms.” é a abreviatura para “manuscrito”! </div>
+    <p>M.Sc. (<i>Magister Scientiae</i> - título de mestre em latim, associado a áreas científicas)</p>
+    <p>Dr. (Doutor)/Dra. (Doutora)</p>
+    <p>D.Sc. (<i>Doctor Scientiae</i> - título de doutor em latim, associado a áreas científicas)</p>
+    <p>Ph.D. (<i>Philosophiae Doctor</i> - título de doutor em latim, obtido em universidades,
+      principalmente fora do Brasil, independente da área)</p>
+    <p><strong>Formas de tratamento</strong></p>
+    <p>S. (Seu - forma de tratamento menos formal para Senhor)</p>
+    <p>D. (Dona - forma de tratamento menos formal para Senhora)</p>
+    <p>Sr. (Senhor)</p>
+    <p>Sra. (Senhora)</p>
+    <p>Srta. (Senhorita)</p>
+    <p>V. Sa. (Vossa Senhoria - funcionários graduados, diretores etc.)</p>
+    <p>V. Exa. (Vossa Excelência - altas autoridades, como presidentes, ministros, deputados
+      etc.)</p>
+    <div class="caixa-observacao cor-ver"> Abreviaturas frequentes, como dias e meses podem ser consultadas na
+      seção <a href="#sec-10-3-2">10.3.2</a>. E abreviaturas específicas usadas em citações e referências
+      bibliográficas, podem ser encontradas no <a href="anexos.htm">Anexo A</a>. </div>
+    <h3 id="sec-10-2-2">10.2.2 Abreviação</h3>
+    <p>A abreviação é a forma reduzida ou omissão de parte da palavra sem comprometer
+      o entendimento. Normalmente sua ocorrência está relacionada ao conceito de
+      economia linguística aplicado a palavras consideradas longas.</p>
+    <p>Exemplo: foto (fotografia), moto (motocicleta), quilo (quilograma), cine (cinema).</p>
+    <h2 id="sec-10-3">10.3 NUMERAIS</h2>
+    <ul>
+      <li> De um a dez, os números devem ser escritos por extenso. A partir de 11, eles devem
+        ser grafados em algarismos: </li>
+    </ul>
+    <p>Exemplo: <a class="nota" title="Verdin Filho et al. (2022)."><span class="material-symbols-outlined"> help</span> “Geralmente, realiza-se a coleta das brotações quando elas apresentam
+      crescimento suficiente para extração de três a seis estacas aptas/brotos”.</a></p>
+    <p>Exemplo: Durante o projeto, foram implantadas 15 unidades com a tecnologia de
+      produção de cafés especiais de baixo custo adaptados à agricultura familiar.</p>
+    <div class="caixa-observacao cor-ver"> Proceda da mesma forma com números ordinais. </div>
+    <ul>
+      <li> Quando, em um trecho, houver sequência de números abaixo e a partir de 11, todos
+        devem ser grafados em algarismos: </li>
+    </ul>
+    <p>Exemplo: Na sala de aula, havia 1 adulto e 35 crianças.</p>
+    <ul>
+      <li> Idades sempre devem ser grafadas em algarismos arábicos. </li>
+    </ul>
+    <p>Exemplo: As crianças devem ser alfabetizadas por volta dos 6 anos de
+      idade.</p>
+    <p>Exemplo: O Incaper comemorou 67 anos em 2023.</p>
+    <ul>
+      <li> Números fracionários devem ser grafados por extenso se ambos (numerador
+        e denominador) forem menores ou iguais a dez. Caso contrário, grafe-os com
+        algarismos arábicos. </li>
+    </ul>
+    <p>Exemplo: O planeta Terra possui dois terços de sua superfície cobertos por água.</p>
+    <div class="caixa-observacao cor-ver"> No caso de tabelas, quadros e legendas, a preferência é a forma numérica. </div>
+    <ul>
+      <li>As expressões “aproximadamente” e “cerca de” só devem ser usadas com números
+        arredondados.</li>
+    </ul>
+    <p style="display:flex"><span class="material-symbols-outlined txt-ver"> check_circle </span>Aproximadamente 1.500 pessoas.</p>
+    <p style="display:flex"><span class="material-symbols-outlined txt-verm"> cancel </span> <span class="txt-verm">Aproximadamente 1.547 pessoas.</span></p>
+    <p style="display:flex"><span class="material-symbols-outlined txt-ver"> check_circle </span> Foram investidos cerca de 650 mil reais nas obras de reforma da escola.</p>
+    <p style="display:flex"><span class="material-symbols-outlined txt-verm"> cancel </span> <span class="txt-verm">Foram investidos cerca de R$ 653.850,00 nas obras de reforma da escola.</span></p>
+    <h3 id="sec-10-3-1">10.3.1 Unidades de medida</h3>
+    <ul>
+      <li> Quando acompanhado de uma unidade de medida, o numeral deve ser grafado em
+        algarismo. </li>
+    </ul>
+    <p>Exemplo: 3 cm, 50 ha, 10 kg.</p>
+    <div class="caixa-observacao out-ver"> Normalmente, utiliza-se o símbolo (cm, ha, kg etc.) em vez da unidade de medida
+      por extenso (centímetros, hectares, quilos etc.). Também deve-se manter um
+      espaço entre o numeral e a respectiva unidade de medida.
+      <ul class="none">
+        <li style="display:flex"><span class="material-symbols-outlined txt-ver"> check_circle </span> 50 kg</li>
+        <li style="display:flex"><span class="material-symbols-outlined txt-verm"> cancel </span> <span class="txt-verm"> 50kg</span></li>
+        <li style="display:flex"><span class="material-symbols-outlined txt-ver"> check_circle </span> 100 °C</li>
+        <li style="display:flex"><span class="material-symbols-outlined txt-verm"> cancel </span> <span class="txt-verm"> 100°C</span></li>
+      </ul>
+    </div>
+    <div class="caixa-observacao out-ver"> Quando houver a citação de dois numerais, a unidade de medida deverá
+      acompanhar cada um:
+      <ul class="none">
+        <li style="display:flex"><span class="material-symbols-outlined txt-ver"> check_circle </span> De 3 cm a 4 cm</li>
+        <li style="display:flex"><span class="material-symbols-outlined txt-verm"> cancel </span> <span class="txt-verm"> De 3 a 4 cm</span></li>
+        <li style="display:flex"><span class="material-symbols-outlined txt-ver"> check_circle </span> Entre 10 kg e 20 kg</li>
+        <li style="display:flex"><span class="material-symbols-outlined txt-verm"> cancel </span> <span class="txt-verm"> Entre 10 e 20 kg</span></li>
+      </ul>
+    </div>
+    <ul>
+      <li> Milhão, milhar, bilhão, trilhão são substantivos masculinos. Assim, todos os termos
+        que os acompanham, como artigos, adjetivos, pronomes e numerais, devem
+        concordar com eles, tanto em gênero (masculino) quanto em número (singular ou
+        plural). </li>
+    </ul>
+    <p>Exemplo: Os milhares de famílias atendidas foram beneficiadas com recursos do
+      programa.</p>
+    <p>Exemplo: Dois milhões de pessoas foram impactadas pelo projeto.</p>
+    <div class="caixa-observacao cor-ver">Se o verbo vier antes da expressão numérica, concordará com o número nela
+      indicado.<br />
+      <br />
+      Exemplo: Foi entregue um milhão de casas por meio do programa habitacional
+      do governo.</div>
+    <ul>
+      <li> Números inteiros a partir de mil devem ser grafados de forma mista, ou seja, o
+        algarismo arábico mais a classe do número por extenso. </li>
+    </ul>
+    <p>Exemplo: O fogo consumiu cerca de 3 mil hectares de floresta nativa.</p>
+    <p>Exemplo: Serão distribuídas 5,5 milhões de doses de vacina na campanha de
+      vacinação contra a gripe este ano.</p>
+    <div class="caixa-observacao cor-ver"> Se os números forem exatos, ou seja, não permitirem arredondamento, use
+      apenas algarismos.<br />
+      <br />
+      Exemplo: Participaram da pesquisa 5.487 pessoas. </div>
+    <div class="caixa-observacao cor-ver"> Fica no singular o que vem depois de um número decimal iniciado por 1.<br />
+      <br />
+      Exemplo: O fogo atingiu uma área de 1,3 hectare de floresta.<br />
+      <br />
+      Exemplo: Um asteroide de 1,7 quilômetro passou perto da Terra em 2021. </div>
+    <ul>
+      <li>Use ponto para números quebrados acima de mil.</li>
+    </ul>
+    <p style="display:flex"><span class="material-symbols-outlined txt-ver"> check_circle </span>1.327</p>
+    <p style="display:flex"><span class="material-symbols-outlined txt-verm"> cancel </span> <span class="txt-verm">1,327</span></p>
+    <div class="caixa-observacao cor-ver"> Para grafar o ano, ao se referir a datas, consulte o item <a href="#sec-10-3-2">10.3.2</a>. </div>
+    <h3 id="sec-10-3-2">10.3.2 Datas</h3>
+    <p>As datas devem ser grafadas na seguinte ordem: dia, mês e ano.</p>
+    <ul>
+      <li> Quando esses elementos forem representados apenas por algarismos arábicos,
+        podem ser separados por ponto ou barra e sem espaço entre eles. </li>
+    </ul>
+    <p>Exemplo: 07.09.1822.</p>
+    <p>Exemplo: 07/09/1822.</p>
+    <ul>
+      <li> Os elementos também podem ser representados por algarismos arábicos e por extenso. </li>
+    </ul>
+    <p>Exemplo: 7 de setembro de 1822.</p>
+    <div class="caixa-observacao cor-ver"> No fechamento de documentos, coloque ponto final após a data e o texto
+      alinhado à margem direita da página.<br />
+      <br />
+      Exemplo: Vitória, 17 de novembro de 2023. </div>
+    <ul>
+      <li>Dia</li>
+    </ul>
+    <p>Pode ser indicado por extenso ou em algarismos arábicos.</p>
+    <p><span class="txt-ver"><strong>a)</strong></span> Por extenso</p>
+    <p>Exemplo: cinco de outubro de mil novecentos e oitenta e oito.</p>
+    <div class="caixa-observacao cor-ver"> A grafia do dia por extenso é menos visual e, geralmente, utilizada em situações
+      mais formais, como em atas de reuniões. </div>
+    <p><span class="txt-ver"><strong>a)</strong></span> Em algarismos arábicos</p>
+    <p>Exemplo: 5 de outubro de 1988.</p>
+    <div class="caixa-observacao out-ver"> Na indicação de dias, não se utiliza zero à esquerda, a não ser que toda a data
+      esteja expressa em algarismos arábicos.
+      <ul class="none">
+        <li style="display:flex"><span class="material-symbols-outlined txt-ver"> check_circle </span> 05/10/1988</li>
+        <li style="display:flex"><span class="material-symbols-outlined txt-ver"> check_circle </span> 5 de outubro de 1988</li>
+        <li style="display:flex"><span class="material-symbols-outlined txt-verm"> cancel </span> <span class="txt-verm">05 de outubro de 1988</span></li>
+      </ul>
+    </div>
+    <div class="caixa-observacao cor-ver"> O primeiro dia do mês deve ser grafado com numeral ordinal.<br />
+      <br />
+      Exemplo: 1º de maio. </div>
+    <ul>
+      <li>Dias da semana</li>
+    </ul>
+    <p>Podem ser grafados por extenso ou por formas reduzidas (Quadro 2).</p>
+    <table class="text-center">
+      <caption>
+      <strong class="txt-ver">Quadro 2 -</strong> Diferentes formas de grafar os dias da semana de forma extensa ou abreviada
+      </caption>
+      <thead>
+        <tr>
+          <th>Exemplo 1</th>
+          <th>Exemplo 2</th>
+          <th>Exemplo 3</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>domingo</td>
+        <td>dom.</td>
+        <td>dom.</td>
+      </tr>
+      <tr>
+        <td>segunda-feira</td>
+        <td>2ª feira</td>
+        <td>seg.</td>
+      </tr>
+      <tr>
+        <td>terça-feira</td>
+        <td>3ª feira</td>
+        <td>ter.</td>
+      </tr>
+      <tr>
+        <td>quarta-feira</td>
+        <td>4ª feira</td>
+        <td>qua.</td>
+      </tr>
+      <tr>
+        <td>quinta-feira</td>
+        <td>5ª feira</td>
+        <td>qui.</td>
+      </tr>
+      <tr>
+        <td>sexta-feira</td>
+        <td>6ª feira</td>
+        <td>sex.</td>
+      </tr>
+      <tr>
+        <td>sábado</td>
+        <td>sáb.</td>
+        <td>sáb.</td>
+      </tr>
+    </table>
+    <ul>
+      <li>Mês</li>
+    </ul>
+    <p>Deve ser grafado por extenso ou em algarismos arábicos. Também pode ser abreviado
+      pelas três primeiras letras, em minúsculas, seguidas de ponto, mantendo-se, em regra,
+      inicial minúscula. A exceção é “maio”, pois é sempre grafado por extenso (Quadro 3).</p>
+    <p>Exemplo: 20 de janeiro de 2014.</p>
+    <p>Exemplo: 20 jan. 2014.</p>
+    <p>Exemplo: 20/01/2014.</p>
+    <table class="text-center">
+      <caption>
+      <strong class="txt-ver">Quadro 3 -</strong> Forma extensa e abreviada de grafar os meses
+      </caption>
+      <thead>
+        <tr>
+          <th>Exemplo 1</th>
+          <th>Exemplo 2</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>janeiro</td>
+        <td>jan.</td>
+      </tr>
+      <tr>
+        <td>fevereiro</td>
+        <td>fev.</td>
+      </tr>
+      <tr>
+        <td>março</td>
+        <td>mar.</td>
+      </tr>
+      <tr>
+        <td>abril</td>
+        <td>abr.</td>
+      </tr>
+      <tr>
+        <td>maio</td>
+        <td>maio</td>
+      </tr>
+      <tr>
+        <td>junho</td>
+        <td>jun.</td>
+      </tr>
+      <tr>
+        <td>julho</td>
+        <td>jul.</td>
+      </tr>
+      <tr>
+        <td>agosto</td>
+        <td>ago.</td>
+      </tr>
+      <tr>
+        <td>setembro</td>
+        <td>set.</td>
+      </tr>
+      <tr>
+        <td>outubro</td>
+        <td>out.</td>
+      </tr>
+      <tr>
+        <td>novembro</td>
+        <td>nov.</td>
+      </tr>
+      <tr>
+        <td>dezembro</td>
+        <td>dez.</td>
+      </tr>
+    </table>
+    <div class="caixa-observacao out-ver"> Deve-se evitar a palavra “mês” antes do nome do próprio mês.
+      <ul class="none">
+        <li style="display:flex"><span class="material-symbols-outlined txt-ver"> check_circle </span> Em julho, as madrugadas foram mais frias.</li>
+        <li style="display:flex"><span class="material-symbols-outlined txt-verm"> cancel </span> <span class="txt-verm">No mês de julho, as madrugadas foram mais frias.</span></li>
+      </ul>
+    </div>
+    <ul>
+      <li>Ano</li>
+    </ul>
+    <p>O ano deve ser sempre grafado com os quatro dígitos para não haver confusão entre
+      séculos.</p>
+    <div class="caixa-observacao out-ver"> Para se referir a datas, nunca use ponto para grafar o ano.
+      <ul class="none">
+        <li style="display:flex"><span class="material-symbols-outlined txt-ver"> check_circle </span> A República foi proclamada em 1898.</li>
+        <li style="display:flex"><span class="material-symbols-outlined txt-verm"> cancel </span> <span class="txt-verm">A República foi proclamada em 1.889.</span></li>
+      </ul>
+    </div>
+    <div class="caixa-observacao out-ver"> O ano deve ter quatro dígitos inclusive quando for grafado entre barras.
+      <ul class="none">
+        <li style="display:flex"><span class="material-symbols-outlined txt-ver"> check_circle </span> 18/11/2011</li>
+        <li style="display:flex"><span class="material-symbols-outlined txt-verm"> cancel </span> <span class="txt-verm">18/11/11</span></li>
+      </ul>
+    </div>
+    <p> Na referência de períodos, utilizamos o hífen para separar os anos.</p>
+    <p>Exemplo: Durante a pandemia (2020-2023), muitas pessoas adotaram o trabalho
+      remoto no Brasil.</p>
+    <div class="caixa-observacao out-ver"> O ano deve ser indicado apenas pelo algarismo correspondente, sem a
+      necessidade de acrescentar a palavra “ano”.
+      <ul class="none">
+        <li style="display:flex"><span class="material-symbols-outlined txt-ver"> check_circle </span> A Constituição brasileira foi promulgada em 1988.</li>
+        <li style="display:flex"><span class="material-symbols-outlined txt-verm"> cancel </span> <span class="txt-verm">A Constituição brasileira foi promulgada no ano de 1988.</span></li>
+      </ul>
+    </div>
+    <ul>
+      <li>Séculos e milênios</li>
+    </ul>
+    <ul class="none">
+      <li>
+        <p><strong class="txt-ver">a)</strong> A indicação dos séculos por extenso é feita com números cardinais (um, dois, três,
+          quatro etc.).</p>
+        <p>Exemplo: Estamos no século vinte e um.</p>
+      </li>
+      <li>
+        <p><strong class="txt-ver">b)</strong> Na indicação numérica dos séculos, usam-se algarismos romanos (I, II, III, IV etc.)
+          depois da palavra “século”.</p>
+        <p>Exemplo: Vivemos no século XXI.</p>
+        <p>ou</p>
+        <p>Exemplo: Vivemos no séc. XXI.</p>
+      </li>
+      <li>
+        <p><strong class="txt-ver">c)</strong> Por extenso, a indicação dos milênios é feita com números ordinais (primeiro,
+          segundo, terceiro, quarto etc.).</p>
+        <p>Exemplo: O segundo milênio da era cristã começou em 1º de janeiro de 1001 e
+          terminou em 31 de dezembro de 2000.</p>
+      </li>
+      <li>
+        <p><strong class="txt-ver">d)</strong> Na indicação numérica dos milênios, usam-se algarismos romanos antes da
+          palavra “milênio”.</p>
+        <p>Exemplo: O III milênio da era cristã representará um momento desafiador para a
+          manutenção da vida no planeta.</p>
+        <p>ou</p>
+        <p>Exemplo: O III milênio d. C. representará um momento desafiador para a manutenção
+          da vida no planeta.</p>
+        <p>ou</p>
+        <p>Exemplo: O III mil. d. C. representará um momento desafiador para a manutenção da
+          vida no planeta.</p>
+      </li>
+    </ul>
+    <h3 id="sec-10-3-3">10.3.3 Horas</h3>
+    <ul>
+      <li>Em geral, as horas são grafadas com algarismos, seguidos da expressão “hora(s)”
+        ou apenas o “h” (minúsculo, sem ponto e sem “s”). No primeiro caso, há espaço após
+        o número; no segundo, não.</li>
+    </ul>
+    <p>Exemplo: O pronunciamento acontecerá às 10 horas da manhã.</p>
+    <p>Exemplo: O pronunciamento acontecerá às 10h da manhã.</p>
+    <ul>
+      <li> No caso das horas quebradas, é opcional o uso da abreviação da palavra “minutos”
+        (“min”), sem o ponto. </li>
+    </ul>
+    <p>Exemplo: 7h30min ou 7h30.</p>
+    <ul>
+      <li>Não use o zero antes dos números menores que dez.</li>
+    </ul>
+    <p style="display:flex"><span class="material-symbols-outlined txt-ver"> check_circle </span>A palestra começará às 8 horas.</p>
+    <p style="display:flex"><span class="material-symbols-outlined txt-verm"> cancel </span> <span class="txt-verm">A palestra começará às 08 horas.</span></p>
+    <ul>
+      <li>No caso de programações com horário em sequência ou um abaixo do outro,
+        podemos usar a grafia com dois pontos (formato digital - 00:00), uma vez que é mais
+        visual.</li>
+    </ul>
+    <p>Exemplo:</p>
+    <ul class="identada none">
+      <li>07:00 - Abertura</li>
+      <li>07:30 - Palestra 1</li>
+      <li>12:00 - Encerramento</li>
+    </ul>
+    <div class="caixa-observacao cor-ver"> A grafia por extenso é menos visual e utilizada em situações mais formais, como
+      em atas de reuniões.<br />
+      <br />
+      Exemplo: Aos vinte e oito dias do mês de abril de dois mil e vinte e três, às
+      oito horas e trinta minutos, reuniram-se em caráter ordinário, de forma online e
+      presencial, os membros do Conselho Editorial do Incaper (CEI)… </div>
+    <h3 id="sec-10-3-4">10.3.4 Valores monetários</h3>
+    <ul>
+      <li> A abreviatura de real é a letra “R” maiúscula seguida de cifrão ($), com espaço antes
+        do número. </li>
+    </ul>
+    <p>Exemplo: R$ 100,00.</p>
+    <ul>
+      <li>
+        <p>Abaixo de mil reais, use algarismos e evite o cifrão, exceto em quantias não redondas
+          ou quando for expressamente necessário, como no caso de dados apresentados em
+          tabelas e quadros.</p>
+      </li>
+    </ul>
+    <p>Exemplo: O dólar está sendo negociado abaixo de 5 reais.</p>
+    <ul>
+      <li>
+        <p>Acima de mil reais, para valores redondos, há duas possibilidades:</p>
+      </li>
+    </ul>
+    <ul class="none">
+      <li>
+        <p><strong class="txt-ver">a)</strong> O uso do R$ mais o valor monetário.</p>
+        <p>Exemplo: O apartamento custa R$ 650 mil.</p>
+      </li>
+      <li>
+        <p><strong class="txt-ver">b)</strong> O valor monetário mais a palavra “reais”.</p>
+        <p>Exemplo: O apartamento custa 650 mil reais.</p>
+      </li>
+    </ul>
+    <ul>
+      <li> Para quantias quebradas acima de 1 milhão, podemos usar a forma R$ + algarismo
+        + milhão/bilhão ou a grafia por extenso. </li>
+    </ul>
+    <p>Exemplo: O investimento do governo estadual foi da ordem de R$ 1,53 milhão.</p>
+    <p>Exemplo: O investimento do governo estadual foi da ordem de 1 milhão e 530 mil
+      reais.</p>
+    <div class="caixa-observacao cor-ver"> Fica no singular o que vem depois de um número decimal iniciado por 1 +
+      milhão/bilhão.<br />
+      <br />
+      Exemplo: De acordo com o governo federal, serão investidos R$ 1,8 bilhão na
+      educação no ano que vem. </div>
+    <h2 id="sec-10-4">10.4 TRANSLINEAÇÃO E DIVISÃO SILÁBICA</h2>
+    <p>Quando não é possível escrever uma palavra completamente no fim de uma linha,
+      temos que dividi-la, mantendo uma parte na mesma linha e outra na seguinte. Assim,
+      essa mudança de linha chama-se translineação.</p>
+    <p>Embora a translineação tenha regras específicas, a divisão silábica convencionada
+      no <a href="https://www.academia.org.br/sites/default/files/conteudo/o_acordo_ortogr_fico_da_lngua_portuguesa_anexoi_e_ii.pdf" target="_blank">Acordo Ortográfico da Língua Portuguesa</a> (Academia Brasileira de Letras - ABL,
+      2021) é sempre tomada como base para dividir uma palavra e continuá-la na linha
+      seguinte.</p>
+    <p>Regras de translineação:</p>
+    <p class="d-flex"><span class="destaque-lista">1</span> <span>O sinal gráfico para indicar a translineação é o hífen, e entre ele e a parte da
+      palavra dividida não deve haver espaço.</span></p>
+    <figure> <img src="imagens/cap10-img-01.png" alt="O sinal gráfico para indicar a translineação é o hífen, e entre ele e a parte da
+palavra dividida não deve haver espaço." /> </figure>
+    <p class="d-flex"><span class="destaque-lista">2</span> <span>Não se deve translinear apenas uma vogal, seja no fim de uma linha ou no início
+      da seguinte.</span></p>
+    <figure> <img src="imagens/cap10-img-02.png" alt="Não se deve translinear apenas uma vogal, seja no fim de uma linha ou no início
+da seguinte." /> </figure>
+    <p class="d-flex"><span class="destaque-lista">3</span> <span>Deve-se evitar a translineação de uma ou mais sílabas que coincidam com o fim
+      de um parágrafo ou início de outra coluna. Assim, impede-se a ocorrência das
+      denominadas “forcas”, que são essas sílabas isoladas.</span></p>
+    <figure> <img src="imagens/cap10-img-03.png" alt="Deve-se evitar a translineação de uma ou mais sílabas que coincidam com o fim
+de um parágrafo ou início de outra coluna. Assim, impede-se a ocorrência das
+denominadas “forcas”, que são essas sílabas isoladas." /> </figure>
+    <p class="d-flex"><span class="destaque-lista">4</span><span>Deve-se evitar translineação que gere palavras impróprias ou ridículas.</span></p>
+    <figure> <img src="imagens/cap10-img-04.png" alt="Deve-se evitar translineação que gere palavras impróprias ou ridículas." /> </figure>
+    <p class="d-flex"><span class="destaque-lista">5</span><span>Na translineação de palavras que têm hífen, esse sinal gráfico deverá ser repetido
+      no início da linha seguinte.</span></p>
+    <figure> <img src="imagens/cap10-img-05.png" alt="Na translineação de palavras que têm hífen, esse sinal gráfico deverá ser repetido
+no início da linha seguinte." /> </figure>
+    <p class="d-flex"><span class="destaque-lista">6</span><span>Quando houver informações entre parênteses ou aspas, não se deve separá-las
+      na translineação.</span></p>
+    <figure> <img src="imagens/cap10-img-06.png" alt="Quando houver informações entre parênteses ou aspas, não se deve separá-las
+na translineação." /> </figure>
+    <p class="d-flex"><span class="destaque-lista">7</span>Deve ser evitada a translineação entre numeral e unidades de medida (cm, ha,
+      km etc.), valores (R$, US$, € etc.), entre outros símbolos, como porcentagem (%),
+      graus (°) etc.</p>
+    <figure> <img src="imagens/cap10-img-07.png" alt="Deve ser evitada a translineação entre numeral e unidades de medida (cm, ha,
+km etc.), valores (R$, US$, € etc.), entre outros símbolos, como porcentagem (%),
+graus (°) etc." /> </figure>
+    <p class="d-flex"><span class="destaque-lista">8</span>Não se deve fazer a translineação de palavras estrangeiras. O critério de divisão
+      silábica na língua portuguesa é fonético, que determina a divisão das palavras em
+      sílabas. No entanto, nem todas as línguas estrangeiras usam esse mesmo critério.
+      No inglês, por exemplo, a divisão é morfológica, ou seja, baseia-se na formação
+      das palavras.</p>
+    <figure> <img src="imagens/cap10-img-08.png" alt="Não se deve fazer a translineação de palavras estrangeiras. O critério de divisão
+silábica na língua portuguesa é fonético, que determina a divisão das palavras em
+sílabas. No entanto, nem todas as línguas estrangeiras usam esse mesmo critério.
+No inglês, por exemplo, a divisão é morfológica, ou seja, baseia-se na formação
+das palavras." /> </figure>
+    <p class="d-flex"><span class="destaque-lista">9</span><span>As siglas não devem ser translineadas.</span></p>
+    <figure> <img src="imagens/cap10-img-09.png" alt="As siglas não devem ser translineadas." /> </figure>
+    <h2 id="sec-10-5">10.5 DESTAQUES (ASPAS, NEGRITO E ITÁLICO)</h2>
+    <p>É importante ter em mente que, como o próprio nome diz, os “destaques” devem ser
+      destinados a trechos, palavras ou expressões que precisem desse realce. Portanto,
+      recomenda-se o uso de forma moderada e estratégica, não devendo ser aplicado
+      indiscriminadamente ou a trechos muito extensos.</p>
+    <h3 id="sec-10-5-1">10.5.1 Aspas</h3>
+    <p>As aspas são aplicadas nas seguintes situações:</p>
+    <ul>
+      <li>Citações diretas com, no máximo, três linhas.</li>
+    </ul>
+    <div class="caixa-observacao cor-ver"> Para outras informações a respeito de citação direta, consultar a seção <a href="capitulo_cinco.htm#sec-5-3-1">5.3.1</a>. </div>
+    <ul>
+      <li> Títulos de partes internas de uma publicação, como prefácio, capítulo, seção, conto,
+        poema, verbete etc. </li>
+    </ul>
+    <p>Exemplo: A seção 5.3.1 "Orientações para citações (ABNT)", deste manual.</p>
+    <ul>
+      <li> Destaque de palavras ou expressões. </li>
+    </ul>
+    <p>Exemplo: [...] as famílias camponesas geralmente utilizam os termos “raças caipiras”,
+      “raças comuns” ou simplesmente “galinha caipira” e “porco caipira”.</p>
+    <ul>
+      <li> Termos técnicos ou jargões. </li>
+    </ul>
+    <p>Exemplo: É comum a construção de “banquetas” no local das covas e plantio das
+      mudas como forma de conservação do solo e retenção de umidade.</p>
+    <ul>
+      <li> Ironia ou uso não habitual de palavras. </li>
+    </ul>
+    <p>Exemplo: O tema será discutido pelos políticos de forma “democrática”, desde que o
+      interesse deles se sobreponha ao do povo.</p>
+    <p><strong>Fique atento:</strong></p>
+    <ul>
+      <li>Citações diretas com mais de três linhas não levam aspas. Para mais informações,
+        consultar seção <a href="capitulo_cinco.htm#sec-5-3-1">5.3.1</a>.</li>
+      <li>Não se utilizam diferentes destaques ao mesmo tempo.</li>
+      <li>As aspas simples serão usadas para dar destaque a palavras, expressões ou frases
+        que já estiverem em um texto destacado por aspas duplas.</li>
+    </ul>
+    <p>Exemplo: O Juiz afirmou: “O acusado se declara ‘inocente’ mesmo diante de todas as
+      evidências encontradas desfavoráveis a ele”.</p>
+    <div class="caixa-observacao cor-ver"> As <strong>aspas simples</strong> também deverão ser usadas quando o nome da cultivar vier
+      depois do <strong>nome científico</strong> ou do <strong>nome comum</strong> da espécie. No entanto, caso o
+      nome seja precedido pelo termo <strong>“cultivar”</strong>, as aspas não deverão ser usadas.<br />
+      <br />
+      Exemplo: <i>Ananas comosus var. comosus</i> 'Vitória'.<br />
+      Exemplo: O abacaxi ‘Vitória’ é resistente à fusariose.<br />
+      Exemplo: O abacaxi cultivar Vitória é resistente à fusariose. </div>
+    <ul>
+      <li> Quando a frase inteira é uma citação, o ponto final deve ficar dentro das aspas. </li>
+    </ul>
+    <p>Exemplo: “Tudo vale a pena quando a alma não é pequena.” (<a class="nota" title="Pessoa (1934)."><span class="material-symbols-outlined"> help</span> Fernando Pessoa</a>)</p>
+    <ul>
+      <li> Se a citação não inicia, mas encerra a frase, as aspas fecham antes do ponto final. </li>
+    </ul>
+    <p>Exemplo: Segundo <a class="nota" title="Freire (1989)."><span class="material-symbols-outlined"> help</span> Paulo Freire</a>, “Ninguém ignora tudo. Ninguém sabe tudo. Todos nós
+      sabemos alguma coisa. Todos nós ignoramos alguma coisa. Por isso aprendemos sempre”.</p>
+    <ul>
+      <li> Quando houver referência bibliográfica, o ponto vem depois dela, em quaisquer dos
+        casos anteriores. </li>
+    </ul>
+    <p>Exemplo: É na linguagem que o discurso “ganha seu sentido com relação à palavra,
+      mas a palavra só fixa seu sentido com relação ao discurso no qual se encontra
+      encadeada” (Morin, 2000).</p>
+    <h3 id="sec-10-5-2">10.5.2 Itálico</h3>
+    <p>O itálico é usado nas seguintes situações:</p>
+    <ul>
+      <li>Termos em latim</li>
+    </ul>
+    <p>Exemplo: <i>latu sensu, stricto sensu, in natura, in vitro, in loco, [sic], post mortem, ante
+      mortem, in memoriam</i> etc.</p>
+    <div class="caixa-observacao cor-ver"> Para algumas palavras, o Vocabulário Ortográfico da Língua Portuguesa (Volp)
+      considera duas grafias: a forma aportuguesada e a latina. São os casos de <strong>déficit</strong>, <strong>superávit</strong> e <strong>currículo</strong>. Na forma aportuguesada, elas são escritas com acento
+      na sílaba tônica. Já na forma latina, são grafadas em itálico (<i>deficit, superavit,
+      curriculum</i>) e sem acento. Apesar de as duas formas de escrita serem aceitas,
+      recomendamos o uso da forma aportuguesada. </div>
+    <ul>
+      <li>Estrangeirismos</li>
+    </ul>
+    <p> Exemplos: <i>webinar, empowerment, mulching</i>.</p>
+    <ul>
+      <li>Título de produções literárias, técnicas e científicas: livro, filme, tese, estudo,
+        relatório, pesquisa.</li>
+    </ul>
+    <div class="caixa-observacao cor-ver"> O título da obra é grafado em itálico, já as partes que a compõem (capítulos,
+      seções, verbetes etc.) são <strong>sem itálico e com aspas</strong> (como consta no item <a href="#sec-10-5-1">10.5.1</a>). </div>
+    <ul>
+      <li>Nomes científicos (de famílias vegetais e animais).</li>
+    </ul>
+    <p>Exemplo: <i>Homo sapiens.</i></p>
+    <div class="caixa-observacao cor-ver"> O itálico não é usado para grafar ordens ou famílias.<br />
+      <br />
+      Exemplo: família das leguminosas, ordem das rosales.
+      Classe: Magnoliopsida; Ordem: Zingiberales; Família: Musaceae; Subfamília:
+      Musoideae. </div>
+    <h3 id="sec-10-5-3">10.5.3 Negrito</h3>
+    <p>Dentro dos textos, o negrito é empregado quando se pretende dar destaque a alguma
+      palavra ou parte do texto. Esse recurso também é aplicado em títulos e subtítulos;
+      nas palavras designativas (Figura, Tabela e Quadro), assim como nas palavras “fonte”
+      e “nota” (como consta nos itens <a href="capitulo_cinco.htm#sec-5-3-3">5.3.3</a>, <a href="capitulo_cinco.htm#sec-5-3-4">5.3.4</a> e <a href="capitulo_cinco.htm#sec-5-3-5">5.3.5</a>).</p>
+    <div class="caixa-observacao cor-ver"> O excesso de destaques pode dificultar a leitura e torná-la cansativa. Empregue
+      os recursos gráficos de forma moderada e estratégica. </div>
+    <h2 id="sec-10-6">10.6 SINAIS DE PONTUAÇÃO E SINAIS GRÁFICOS</h2>
+    <h3 id="sec-10-6-1">10.6.1 Travessão</h3>
+    <p>O travessão (—) é um sinal de pontuação usado para:</p>
+    <ul>
+      <li>Substituir vírgulas ou parênteses em orações intercaladas.</li>
+    </ul>
+    <p>Exemplo: O Espírito Santo — segundo maior produtor de café no Brasil — é responsável
+      por aproximadamente 30% da produção brasileira.</p>
+    <ul>
+      <li>Substituir dois-pontos.</li>
+    </ul>
+    <p>Exemplo: Assim, é fundamental adotar boas práticas agrícolas — adubação adequada,
+      métodos de cultivos adequados a cada cultura, controle de plantas invasoras,
+      utilização de fertilizantes, inoculantes e afins registrados no Ministério da Agricultura
+      e Pecuária (Mapa), entre outros.</p>
+    <ul>
+      <li>Indicar diálogo.</li>
+    </ul>
+    <p>Exemplo: — A espécie que mais afeta os pomares de tangerina é <i>Ceratitis capitata</i>,
+      que atinge o fruto no início da maturação. — disse o pesquisador do Incaper.</p>
+    <div class="caixa-observacao cor-ver"> No caso de orações intercaladas em que o segundo travessão coincide com
+      uma vírgula, ambos são usados.<br />
+      <br />
+      Exemplo: Depois de lavar e higienizar os produtos — dois procedimentos
+      importantes durante o processamento —, eles devem ser acondicionados
+      adequadamente nas embalagens. </div>
+    <div class="caixa-observacao cor-ver"> Um dos atalhos no teclado do computador para fazer o travessão é “Alt + 0151”. </div>
+    <h3 id="sec-10-6-2">10.6.2 Barra oblíqua</h3>
+    <p>A barra oblíqua ( / ) é um sinal gráfico usado para:</p>
+    <ul>
+      <li>Registrar unidades de medida, frações, datas e legislação.</li>
+    </ul>
+    <p>Exemplo: No que diz respeito à cultura do abacate no Espírito Santo em 2022, a
+      produtividade passou a ser de 26,1 t/ha.</p>
+    <p>Exemplos:</p>
+    <ul class="identada none">
+      <li>1/4 = um quarto.</li>
+      <li>30/11/2023 (separação entre dia, mês e ano).</li>
+      <li>Lei nº 9.610/1998.</li>
+    </ul>
+    <ul>
+      <li>Indicar simultaneidade ou alternância entre os elementos ligados pela combinação
+        das conjunções “e” e “ou” (e/ou).</li>
+    </ul>
+    <p>Exemplo: A esse valor, o prato principal pode vir acompanhado de arroz e/ou salada,
+      a critério do cliente.</p>
+    <p>Possibilidade 1: prato principal + arroz.</p>
+    <p>Possibilidade 2: prato principal + salada.</p>
+    <p>Possibilidade 3: prato principal + arroz + salada.</p>
+    <ul>
+      <li>Indicar que dois ou mais elementos possuem algum tipo de relação entre si.</li>
+    </ul>
+    <p>Exemplo: Na língua portuguesa, os verbos variam em número (singular/plural), em
+      pessoa (1ª/2ª/3ª), em voz (ativa/passiva/reflexiva), em modos e tempos.</p>
+    <div class="caixa-observacao cor-ver"> Quando usado para indicar hierarquia e vinculação entre instituições ou órgãos,
+      o primeiro deve ser subordinado ou integrante do segundo.<br />
+      <br />
+      Exemplo: Incaper/Seag. </div>
+    <div class="caixa-observacao cor-ver"> Neste manual, adotamos o uso sem espaço tanto antes quanto depois da barra
+      oblíqua. </div>
+    <h2 id="sec-10-7">10.7 USO DE MAIÚSCULAS</h2>
+    <p class="d-flex"><span class="destaque-lista">A</span> <span><strong>Estado -</strong> como entidade governamental ou o conjunto de poderes políticos de um
+      país.</span></p>
+    <p class="identada-p">Exemplo: O Estado tem poder sobre os cidadãos.</p>
+    <div class="caixa-observacao cor-ver"> Para orientações sobre o uso de “estado” com inicial minúscula, consulte o item <a href="#sec-10-8">10.8</a> (A). </div>
+    <p class="d-flex"><span class="destaque-lista">B</span> <span><strong>União -</strong> quando se refere a um B país e seus poderes políticos.</span></p>
+    <p class="identada-p">A União dispõe de competência para combater a pobreza e outras
+      mazelas que atingem a maior parte da população.</p>
+    <p class="d-flex"><span class="destaque-lista">C</span> <span><strong>Poder/Poderes -</strong> quando se refere aos três Poderes da União (Executivo,
+      Legislativo e Judiciário).</span></p>
+    <p class="identada-p">Exemplo: Cabe ao Poder Legislativo cumprir seu papel de fiscalizar e monitorar o
+      Executivo.</p>
+    <p class="identada-p">Exemplo: É necessário haver interação constante entre os Poderes para serem
+      criadas políticas públicas que atendam a todos os cidadãos.</p>
+    <p class="d-flex"><span class="destaque-lista">D</span> <span><strong>Palavras compostas -</strong> quando fizerem parte de um título de obra, nome de
+      repartição, escola, instituição, evento, datas ou fatos históricos.</span></p>
+    <p class="identada-p">Exemplo: Diretoria Administrativo-Financeira.</p>
+    <p class="identada-p">Exemplo: Pró-Reitoria de Pesquisa e Pós-Graduação.</p>
+    <p class="d-flex"><span class="destaque-lista">E</span> <span><strong>Congressos, seminários, simpósios, exposições e eventos</strong> em geral.</span></p>
+    <p class="identada-p">Exemplo: Encontro Técnico sobre a Cultura do Gengibre.</p>
+    <p class="identada-p">Exemplo: XV Início da Colheita do Café Conilon.</p>
+    <div class="caixa-observacao cor-ver"> Para orientações sobre o uso dessas palavras em outras situações, com iniciais
+      minúsculas, consulte o item <a href="#sec-10-8">10.8</a> (E). </div>
+    <p class="d-flex"><span class="destaque-lista">F</span> <span><strong>Os nomes próprios de projetos, planos, programas, ações</strong> e afins.</span></p>
+    <p class="identada-p">Exemplo: Projeto Seleção de Cultivares de Café Arábica.</p>
+    <div class="caixa-observacao cor-ver"> Quando essas palavras não fizerem parte do nome próprio, a inicial deve ser
+      minúscula.<br />
+      <br />
+      Exemplo: O projeto AlimentarES foi lançado em 2020 pelo governo do estado
+      do Espírito Santo. </div>
+    <div class="caixa-observacao cor-ver"> Para mais orientações sobre o uso dessas palavras com iniciais minúsculas,
+      consulte o item <a href="#sec-10-8">10.8</a> (F). </div>
+    <p class="d-flex"><span class="destaque-lista">G</span> <span>Os <strong>nomes de sites e portais da internet</strong>, inclusive as palavras “site” e “portal”
+      quando fizerem parte do nome oficial.</span></p>
+    <p class="identada-p">Exemplo: Portal do Servidor.</p>
+    <p class="identada-p">Exemplo: Portal da Transparência do Poder Executivo do Espírito Santo.</p>
+    <p class="d-flex"><span class="destaque-lista">H</span> <span>Os <strong>nomes de zonas geoeconômicas</strong> do Brasil e do mundo.</span></p>
+    <p class="identada-p">Exemplo: O ABC Paulista — região composta pelos municípios de Santo André,
+      São Bernardo do Campo e São Caetano do Sul — representa uma área altamente
+      desenvolvida que integra a região metropolitana da cidade de São Paulo.</p>
+    <p class="identada-p">Exemplo: A Grande Vitória é composta por sete municípios: Cariacica,
+      Fundão, Guarapari, Serra, Viana, Vila Velha e Vitória, os quais concentram
+      aproximadamente 50% da população do estado do Espírito Santo.</p>
+    <p class="d-flex"><span class="destaque-lista">I</span> <span>As palavras designativas <strong>Tabela</strong>, <strong>Quadro</strong> e <strong>Figura</strong> quando acompanhadas de
+      seus respectivos números de ordem (em algarismos arábicos).</span></p>
+    <p class="identada-p">Exemplo: Tabela 1; Quadro 3; Figura 4.</p>
+    <div class="caixa-observacao cor-ver"> Para orientações sobre o uso dessas palavras com iniciais minúsculas, consulte
+      o item <a href="#sec-10-8">10.8</a> (G). </div>
+    <p class="d-flex"><span class="destaque-lista">J</span> <span><strong>Títulos de livros e de seus capítulos, artigos e publicações</strong> em geral, com inicial
+      maiúscula apenas na primeira palavra ou nos nomes próprios que os integrem.</span></p>
+    <p class="identada-p">Exemplo: Cafezais sombreados no estado do Espírito Santo: experiências com o
+      manejo do sistema.</p>
+    <p class="d-flex"><span class="destaque-lista">K</span> <span><strong>Nomes de séries e coleções.</strong></span></p>
+    <p class="identada-p">Exemplo: Coleção Fruticultura Capixaba.</p>
+    <p class="d-flex"><span class="destaque-lista">L</span> <span><strong>Nomes de instituições, entidades e empresas.</strong></strong></p>
+    <p class="identada-p">Exemplo: Secretaria da Agricultura, Abastecimento, Aquicultura e Pesca (Seag),
+      Ministério da Agricultura e Pecuária (Mapa), Assembleia Legislativa do Espírito
+      Santo (Ales), Defesa Civil etc.</p>
+    <p class="d-flex"><span class="destaque-lista">M</span> <span><strong>A palavra “Instituto”</strong> quando se referir especificamente ao Incaper, com base em
+      práticas observadas em outros institutos.</span></p>
+    <p class="identada-p">Exemplo: O <i>Balanço Social</i> do Incaper tem sido uma importante ferramenta de
+      diálogo, transparência e divulgação dos resultados do Instituto.</p>
+    <p class="d-flex"><span class="destaque-lista">N</span> <span>As<strong> unidades administrativas do Incaper.</strong></span></p>
+    <ul class="identada">
+      <li>Centro Regional de Desenvolvimento Rural (CRDR);</li>
+      <li>Escritório Local de Desenvolvimento Rural (ELDR);</li>
+      <li>Centro de Pesquisa de Desenvolvimento Rural (CPDI);</li>
+      <li>Escritório Distrital;</li>
+      <li>Fazenda Experimental; e</li>
+      <li>Sede.</li>
+    </ul>
+    <div class="caixa-observacao cor-ver"> Porém, quando não estiverem acompanhadas do nome próprio, deverão ser
+      grafadas com inicial minúscula.<br />
+      <br />
+      Exemplo: Lançamentos de tecnologias voltadas para o café conilon são
+      frequentemente realizados na Fazenda Experimental de Marilândia. No entanto,
+      eventos voltados para outras culturas também são realizados nessa fazenda. </div>
+    <p class="d-flex"><span class="destaque-lista">O</span> <span><strong>Pontos cardeais</strong> para designar grandes regiões do Brasil e do mundo.</span></p>
+    <p class="identada-p">Exemplo: O Sul do Brasil é um grande produtor de vinhos.</p>
+    <p class="identada-p">Exemplo: O Oriente Médio detém cerca de 60% das reservas petrolíferas do mundo.</p>
+    <div class="caixa-observacao cor-ver"> Para uso dos pontos cardeais em outras situações, consulte o item <a href="#sec-10-8">10.8</a> (H)
+      sobre minúsculas. </div>
+    <div class="caixa-observacao cor-ver"> Quando estiverem precedidas da palavra “região”, esta deverá ser grafada com
+      inicial minúscula.<br />
+      <br />
+      Exemplo: A região Sudeste responde pela maior parte do PIB brasileiro. </div>
+    <div class="caixa-observacao cor-ver"> As quatro macrorregiões e as dez microrregiões do estado do Espírito Santo
+      seguem a mesma orientação.
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="table_sem_estilo" >
+        <tr>
+          <td align="left" valign="top" style="border:none !important"><strong>Macrorregiões:</strong>
+            <ul>
+              <li>Norte</li>
+              <li>Central</li>
+              <li>Metropolitana</li>
+              <li>Sul</li>
+            </ul></td>
+          <td align="left" valign="top" style="border:none !important"><strong>Microrregiões:</strong>
+            <ul>
+              <li>Metropolitana</li>
+              <li>Central Serrana</li>
+              <li>Sudoeste Serrana</li>
+              <li>Litoral Sul</li>
+              <li>Central Sul</li>
+              <li>Caparaó</li>
+              <li>Rio Doce</li>
+              <li>Centro-Oeste</li>
+              <li>Nordeste</li>
+              <li>Noroeste</li>
+            </ul></td>
+        </tr>
+      </table>
+    </div>
+    <p class="d-flex"><span class="destaque-lista">P</span> <span>No <strong>nome dos biomas</strong> brasileiros.</span></p>
+    <p class="identada-p">Exemplo: Amazônia, Caatinga, Cerrado, Mata Atlântica, Pampa, Pantanal.</p>
+    <p class="d-flex"><span class="destaque-lista">Q</span> <span><strong>Nomes de épocas históricas, datas e fatos importantes e festas religiosas.</strong></span></p>
+    <p class="identada-p">Exemplo: Idade Média, Dia da Colonização do Solo Espírito-Santense, Páscoa,
+      Natal etc.</p>
+    <p class="d-flex"><span class="destaque-lista">R</span> <span>Nas <strong>citações diretas –</strong> quando o texto original começa com inicial maiúscula.</span></p>
+    <p class="identada-p">Exemplo: De acordo com Silva <i>et al.</i> (2018), “O Estado do Espírito Santo lidera a
+      produção nacional de conilon com mais de três de cada quatro sacas produzidas
+      no país, o que representa cerca de 2% da produção mundial do produto”.</p>
+    <div class="caixa-observacao cor-ver"> Quando o texto citado não for início de parágrafo, então ele deve ser iniciado
+      com minúscula, e a parte do texto omitida será indicada por três pontos entre
+      colchetes.<br />
+      <br />
+      Exemplo: Para Balbino <i>et al.</i> (2018), “[...] a batata-baroa é uma olerícola que se
+      destaca [...] por seu valor comercial e pela qualidade nutricional, merecendo
+      atenção por ser um empreendimento importante para o agricultor e pelo mercado
+      em potencial que tem a sua disposição”. </div>
+    <p class="d-flex"><span class="destaque-lista">S</span> <span><strong>Nomes que designam artes, ciências e ramos do conhecimento humano –</strong> quando
+      se referirem a uma área específica de estudo.</span></p>
+    <p class="identada-p">Exemplo: Ciências Agrárias, Economia Doméstica, Assistência Técnica e Extensão
+      Rural, Pesquisa etc.</p>
+    <div class="caixa-observacao cor-ver"> Caso não haja necessidade de destaque especial, as iniciais dessas palavras
+      devem ser minúsculas.<br />
+      <br />
+      Exemplo: Os resultados da pesquisa confirmaram as hipóteses levantadas pelo
+      cientista.<br />
+      <br />
+      Exemplo: O desempenho da economia brasileira foi positivo no último trimestre. </div>
+    <p class="d-flex"><span class="destaque-lista">T</span> <span><strong>Nomes de documentos</strong> de caráter jurídico e legal.</span></p>
+    <p class="identada-p">Exemplo: Lei nº 12.527 - Lei de Acesso à Informação (LAI).</p>
+    <p class="identada-p">Exemplo: Decreto-Lei.</p>
+    <p class="identada-p">Exemplo: Instrução de Serviço (IS).</p>
+    <p class="d-flex"><span class="destaque-lista">U</span> <span><strong>Nomes de logradouros e endereços.</strong></span></p>
+    <p class="identada-p">Exemplo: Rua Afonso Sarlo, 160.</p>
+    <p class="identada-p">Exemplo: Praça Sete.</p>
+    <p class="identada-p">Exemplo: Avenida Jerônimo Monteiro.</p>
+    <p class="d-flex"><span class="destaque-lista">V</span> <span><strong>Nomes de acidentes geográficos.</strong></span></p>
+    <p class="identada-p">Exemplo: Bacia do Rio Doce, Serra do Caparaó, Pico da Bandeira, Baía de Vitória,
+      Pedra Azul etc.</p>
+    <div class="caixa-observacao cor-ver"> No uso genérico, os acidentes geográficos são grafados com inicial minúscula.<br />
+      <br />
+      Exemplo: O rio que corta a cidade de São Paulo está totalmente poluído. </div>
+    <p class="d-flex"><span class="destaque-lista">W</span> <span><strong>Nome de corpos celestes.</strong></span></p>
+    <p class="identada-p">Exemplo: A Terra faz parte de um sistema composto de oito planetas que orbitam
+      o Sol.</p>
+    <div class="caixa-observacao cor-ver"> Ao serem usadas de forma genérica ou com outro sentido, essas palavras são
+      grafadas com iniciais minúsculas.<br />
+      <br />
+      Exemplo: O cultivo de café conilon caracteriza-se predominantemente pelo
+      monocultivo a pleno sol. </div>
+    <p class="d-flex"><span class="destaque-lista">X</span> <span><strong>Títulos e expressões de tratamento ou reverência.</strong></span></p>
+    <p class="identada-p">Exemplo: Vossa Excelência (V.Exa.), Vossa Senhoria (V.Sa.), Vossa Santidade
+      (V.S.) etc.</p>
+    <div class="caixa-observacao cor-ver"> Não há necessidade de inicial maiúscula para as formas de tratamento mais
+      comuns.<br />
+      <br />
+      Exemplo: senhor (sr.), senhora (sra.), doutor (dr.), doutora (dra.) etc. </div>
+    <p class="d-flex"><span class="destaque-lista">Y</span> <span><strong>A inicial da primeira palavra em enumerações formadas por frases extensas
+      ou períodos compostos.</strong></span></p>
+    <p class="identada-p">Exemplo: O cultivo em alamedas proporciona diversos benefícios, entre eles:</p>
+    <ul class="identada">
+      <li>Reciclagem e mobilização de nutrientes no perfil do solo, trazendo à superfície
+        nutrientes perdidos por lixiviação;</li>
+      <li>Aumento da biologia do solo e redução de sua umidade;</li>
+      <li>Redução de gastos com adubo orgânico no plantio.</li>
+    </ul>
+    <div class="caixa-observacao cor-ver"> Nas enumerações, além do ponto e vírgula, também há a opção de ponto final
+      em todos os itens. </div>
+    <div class="caixa-observacao cor-ver"> Nos itens desta seção, a inicial maiúscula não se aplica a artigos, preposições
+      e conjunções. </div>
+    <h2 id="sec-10-8">10.8 USO DE MINÚSCULAS</h2>
+    <p class="d-flex"><span class="destaque-lista">A</span> <span><strong>Estado -</strong> quando for utilizado no sentido de unidade federativa (estados brasileiros)
+      ou de forma genérica.</span></p>
+    <p class="identada-p">Exemplo: O estado do Espírito Santo é o segundo maior produtor de café do
+      Brasil.</p>
+    <p class="identada-p">Exemplo: Os estados e municípios do Sul do Brasil.</p>
+    <p class="d-flex"><span class="destaque-lista">B</span> <span><strong>Município -</strong> quando designar divisão administrativa de um estado ou quando for
+      utilizado de forma genérica.</span></p>
+    <p class="identada-p">Exemplo: O município de Vitória tem 93,38 km2.</p>
+    <p class="identada-p">Exemplo: Os municípios brasileiros estão endividados.</p>
+    <p class="d-flex"><span class="destaque-lista">C</span> <span>As palavras <strong>país e nação</strong> - quando usadas para designarem o Brasil, outros países
+      ou para se referir de forma genérica a um Estado soberano.</span></p>
+    <p class="identada-p">Exemplo: O nosso país é o único na América Latina cuja língua oficial é o português.</p>
+    <p class="d-flex"><span class="destaque-lista">D</span> <span>Nos conceitos políticos amplamente utilizados, como <strong>poder público, setor
+      público, administração pública, governo</strong> (federal, estadual ou municipal).</span></p>
+    <p class="identada-p">Exemplo: O governo brasileiro/federal implementou novas políticas para o setor
+      público da saúde.</p>
+    <div class="caixa-observacao cor-ver"> A inicial maiúscula só será utilizada quando esses conceitos políticos fizerem
+      parte de um nome próprio.<br />
+      <br />
+      Exemplo: Sistema Integrado de Gestão Administrativa do Governo do Estado do
+      Espírito Santo (Siga). </div>
+    <p class="d-flex"><span class="destaque-lista">E</span> <span>Quando as palavras <strong>congresso, seminário, simpósio, exposição</strong> etc. não
+      estiverem acompanhadas do nome próprio.</span></p>
+    <p class="identada-p">Exemplo: O congresso foi um marco para o início dos trabalhos.</p>
+    <p class="identada-p">Exemplo: Os servidores organizaram a exposição de bananas e flores.</p>
+    <p class="d-flex"><span class="destaque-lista">F</span> <span>Quando as palavras <strong>projeto, plano, programa</strong> etc. não estiverem acompanhadas
+      do nome próprio.</span></p>
+    <p class="identada-p">Exemplo: O plano de qualificação proposto é uma das metas a serem atingidas.</p>
+    <p class="d-flex"><span class="destaque-lista">G</span> <span>Quando as palavras <strong>tabela, quadro</strong> e <strong>figura</strong> não estiverem acompanhadas de
+      sua numeração.</span></p>
+    <p class="identada-p">Exemplo: As figuras foram cedidas ao Incaper.</p>
+    <p class="identada-p">Exemplo: A tabela apresentada não demonstra os resultados na íntegra.</p>
+    <p class="d-flex"><span class="destaque-lista">H</span> <span><strong>Pontos cardeais</strong> (norte, sul, leste, oeste, nordeste, sudeste etc.) no sentido de
+      direção ou limite geográfico.</span></p>
+    <p class="identada-p">Exemplo: Decidimos viajar de norte a sul do país.</p>
+    <p class="identada-p">Exemplo: A oeste, o Brasil faz fronteira com Peru e Bolívia.</p>
+    <p class="d-flex"><span class="destaque-lista">I</span> <span><strong>Cargos -</strong> o ocupante do cargo tem inicial minúscula.</span></p>
+    <p class="identada-p">Exemplo: O secretário de estado da Agricultura, Abastecimento, Aquicultura e
+      Pesca.</p>
+    <p class="identada-p">Exemplo: O gerente de Transferência de Tecnologia e Conhecimento.</p>
+    <div class="caixa-observacao cor-ver"> Quando, no entanto, o cargo requerer destaque especial, figurar no expediente
+      ou fizer parte de assinaturas na parte pré-textual (apresentação, prefácio,
+      agradecimentos etc.) das publicações do Incaper, terá inicial maiúscula. </div>
+    <p class="d-flex"><span class="destaque-lista">J</span> <span><strong>Elementos químicos</strong> escritos por extenso.</span></p>
+    <p class="identada-p">Exemplo: <a class="nota" title="Prezotti, Guarçoni e Balbino (2018)."><span class="material-symbols-outlined"> help</span> “Os sintomas de deficiência de cálcio (Ca) e magnésio (Mg) geralmente ocorrem em solos ácidos, com baixa capacidade de troca catiônica (CTC), [...]”.</a></p>
+    <p class="d-flex"><span class="destaque-lista">K</span> <span>Em simples <strong>desdobramentos, enumerações</strong> ou <strong>explicações</strong>.</span></p>
+    <p class="identada-p">Exemplo: É preciso incluir em nossa lista: arroz, feijão, batata e ovos.</p>
+    <p class="d-flex"><span class="destaque-lista">L</span> <span>Em <strong>enumerações</strong> com palavras soltas ou frases curtas:</span></p>
+    <p class="identada-p">Exemplo: Os principais sintomas gripais são:</p>
+    <ul class="identada">
+      <li>febre</li>
+      <li>dores musculares</li>
+      <li>tosse</li>
+      <li>coriza</li>
+      <li>dor de cabeça</li>
+      <li>fadiga.</li>
+    </ul>
+    <div class="caixa-observacao cor-ver"> É possível dispensar a pontuação em cada item e apenas pôr um ponto no último
+      para fechar o parágrafo. </div>
+    <p class="d-flex"><span class="destaque-lista">M</span> <span>Em complementos informativos, como <strong>observações, dicas, notas explicativas</strong> e <strong>informações importantes</strong>.</span></p>
+    <p class="identada-p">Exemplo: Atenção: se beber, não dirija!</p>
+  </article>
+  <div></div>
+  <div class="container nav-footer-main"> <a class="bt bt_ver" style="float: left;" href="capitulo_nove.htm">< Cap. 9</a> <a class="bt bt_ver" style="float: right;" href="capitulo_onze.htm">Cap. 11 ></a> </div>
+</main>
+<footer>
+  <section class="rodape" role="img" aria-label="Top banner">
+    <div class="container main-rodape">
+      <div class="rodape-logo hero-inner">
+        <figure class="hero-logo"> <a href="https://incaper.es.gov.br/" title="Incaper"> <img src="imagens/logo-incaper-neg.svg" alt="Logo Incaper" /> </a> </figure>
+        <h5>Manual de Produção Editorial do Incaper</h5>
+        <p>Instituto Capixaba de Pesquisa, Assistência Técnica e Extensão Rural (Incaper) <br />
+          Rua Afonso Sarlo, 160 - Bento Ferreira <br />
+          CEP: 29052-010 - Vitória / ES <br />
+          Tel.: (27) 3636-9800 / (27) 3636-9888</p>
+      </div>
+      <div class="rodape-menu">
+        <ul>
+          <li><a href="index.htm">Início</a></li>
+          <li><a href="expediente.htm">Expediente</a></li>
+          <li><a href="prefacio.htm">Prefácio</a></li>
+          <li><a href="agradecimentos.htm">Agradecimentos</a></li>
+          <li><a href="apresentacao.htm">Apresentação</a></li>
+          <li><a href="download.htm">Download</a></li>
+        </ul>
+      </div>
+      <div class="rodape-sumario">
+        <ul>
+          <li><a href="capitulo_um.htm">1. Introdução</a></li>
+          <li><a href="capitulo_dois.htm">2. Estrutura editorial do Incaper</a></li>
+          <li><a href="capitulo_tres.htm">3. Linhas editoriais</a></li>
+          <li><a href="capitulo_quatro.htm">4. Formas de disponibilização, tipos e veículos de publicação</a></li>
+          <li><a href="capitulo_cinco.htm">5. Processo editorial</a></li>
+          <li><a href="capitulo_seis.htm">6. Direitos autorais</a></li>
+          <li><a href="capitulo_sete.htm">7. Plágio e outras condutas antiéticas</a></li>
+          <li><a href="capitulo_oito.htm">8. Inteligência artificial na produção editorial do Incaper</a></li>
+          <li><a href="capitulo_nove.htm">9. Orientações de diagramação</a></li>
+          <li><a href="capitulo_dez.htm">10. Padronização e estilo</a></li>
+          <li><a href="capitulo_onze.htm">11. Linguagem, gramática e ortografia</a></li>
+        </ul>
+      </div>
+      <div class="rodape-referencias">
+        <ul>
+          <li><a href="referencias.htm">Referências</a></li>
+          <li><a href="glossario.htm">Glossário</a></li>
+          <li><a href="anexos.htm">Anexos</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</footer>
+</body>
+</html>
