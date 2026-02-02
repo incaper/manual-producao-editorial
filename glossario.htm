@@ -36,11 +36,34 @@
 </header>
 
 <!-- Banner -->
-<section class="hero" role="img" aria-label="Top banner">
-  <div class="container hero-main">
-    <div class="hero-inner">
-      <figure class="hero-logo"> <img src="imagens/logo-incaper-neg.svg" alt="Logo Incaper" /> </figure>
+<section class="cap" role="img" aria-label="Top banner">
+  <div class="container cap-main">
+    <div class="hero-inner cap-inner">
+      <figure class="hero-logo"> <a href="index.htm"> <img src="imagens/logo-incaper-neg.svg" alt="Logo Incaper" style="margin:53px 0" /> </a> </figure>
+    </div>
+    <div class="cap-tit">
       <h1>Glossário</h1>
+    </div>
+    <div class="container cap-nav">
+      <label for="capitulos">Navegar pelo conteúdo:</label>
+      <select id="capitulos" onchange="location.href = this.value;">
+        <option value="">Selecionar ...</option>
+        <option value="capitulo_um.htm">Capítulo 1</option>
+        <option value="capitulo_dois.htm">Capítulo 2</option>
+        <option value="capitulo_tres.htm">Capítulo 3</option>
+        <option value="capitulo_quatro.htm">Capítulo 4</option>
+        <option value="capitulo_cinco.htm">Capítulo 5</option>
+        <option value="capitulo_seis.htm">Capítulo 6</option>
+        <option value="capitulo_sete.htm">Capítulo 7</option>
+        <option value="capitulo_oito.htm">Capítulo 8</option>
+        <option value="capitulo_nove.htm">Capítulo 9</option>
+        <option value="capitulo_dez.htm">Capítulo 10</option>
+        <option value="capitulo_onze.htm">Capítulo 11</option>
+        <option value="referencias.htm">Referências</option>
+        <option value="glossario.htm">Glossário</option>
+        <option value="anexos.htm">Anexos</option>
+      </select>
+      <div style="margin-top: 10px"> <a class="bt bt_lar" style="float: left;" href="referencias.htm">< Referências</a> <a class="bt bt_lar" style="float: right;" href="anexos.htm">Anexos ></a></div>
     </div>
   </div>
 </section>
@@ -60,61 +83,61 @@
   
   <!-- Conteúdo principal -->
   <article class="content">
-    <ul class="none">
-      <li><span class="destaque-lista">1</span> <strong>Coleção</strong> - Considerando as características do projeto editorial pretendido, as
-        publicações podem ser individuais/independentes ou na forma de coleção. Esta
-        última é composta de produtos editoriais publicados sobre um tema específico,
-        com autores próprios, características em comum, reunidos sob o título de cada
-        item e um título em comum, podendo ser ou não numerados. Como exemplo,
-        temos a Coleção Fruticultura Capixaba, formada pelos livros Cadeia Produtiva do
-        Mamão no Espírito Santo, v. 1; Cadeia Produtiva da Banana no Espírito Santo, v. 2;
-        Cadeia Produtiva do Abacaxi no Espírito Santo, v. 3 etc.</li>
-      <li><span class="destaque-lista">2</span> <strong>Depósito legal</strong> - Procedimento obrigatório para editoras e instituições que
-        produzem publicações. Trata-se apenas da obrigação de enviar exemplares para
-        a Biblioteca Nacional, a fim de garantir a preservação da produção editorial e da
-        memória nacional. Esse procedimento não concede direitos autorais nem serve
-        como prova de autoria.</li>
-      <li><span class="destaque-lista">3</span> <strong>Formato</strong> - Refere-se ao tamanho e às dimensões padronizadas para cada veículo
-        de publicação, definidos neste manual. A escolha do formato é baseada em uma
-        análise das características técnicas do documento e objetivos editoriais de cada
-        publicação.</li>
-      <li><span class="destaque-lista">4</span> <strong>Forma de disponibilização</strong> - Refere-se à modalidade em que as publicações são
-        disponibilizadas ao público, ou seja, impressa ou digital. A decisão sobre a forma
-        de disponibilização está diretamente vinculada à viabilidade financeira e ao perfil
-        e necessidades do público-alvo, garantindo o acesso adequado à informação.</li>
-      <li><span class="destaque-lista">5</span> <strong>Figuras</strong> - São consideradas figuras os gráficos, desenhos, mapas, fotografias,
-        lâminas, organogramas, fluxogramas, retratos, entre outras, usadas para
-        enriquecer o texto. Devem ser citadas no texto, inseridas o mais próximo possível
-        do trecho a que se referem e identificadas com a palavra “Figura”. (ver item <a href="capitulo_cinco.htm#sec-5-3-3">5.3.3</a>)</li>
-      <li><span class="destaque-lista">6</span> <strong>Imagens</strong> - termo usado neste manual de forma genérica para abranger diferentes
-        tipos de elementos visuais, como figuras, tabelas e quadros.</li>
-      <li><span class="destaque-lista">7</span> <strong>Logo</strong> - Abreviação de logotipo, informalmente também chamado de logomarca, é
-        a representação gráfica formada por palavras, letras e/ou símbolos, que identifica
-        visualmente uma empresa, instituição, produto ou marca.</li>
-      <li><span class="destaque-lista">8</span> <strong>Quadros</strong> - Estruturas formadas por linhas verticais e horizontais e apresentam
-        formato fechado, com moldura em torno de suas linhas e colunas. São utilizados para apresentar dados qualitativos, ou seja, informações cujo teor é descritivo, e
-        não estatístico.</li>
-      <li><span class="destaque-lista">9</span> <strong>Recensão</strong> - análise crítica, descritiva e/ou comparativa de uma obra, geralmente
-        elaborada por especialista.</li>
-      <li><span class="destaque-lista">10</span> <strong>Registro de obra intelectual</strong> - É um procedimento opcional em que o autor
-        apresenta sua obra a um órgão oficial para comprovar sua autoria. No caso
-        de livros, textos, roteiros, entre outros, a Biblioteca Nacional é a instituição
-        credenciada. Na realidade, os direitos autorias nascem automaticamente quando
-        a obra é criada. No entanto, o registro da obra serve como uma prova formal.</li>
-      <li><span class="destaque-lista">11</span> <strong>Série</strong> - Conjunto de itens separados (livros ou outros produtos editoriais),
-        relacionados entre si por compartilharem um título coletivo e organizados em
-        sequência. Apresentam continuidade temática, metodológica ou narrativa,
-        embora cada volume possua título próprio.</li>
-      <li><span class="destaque-lista">12</span> <strong>Tabelas</strong> - Estruturas utilizadas para organizar informações em linhas e colunas.
-        São geralmente empregadas para apresentar dados quantitativos, isto é,
-        informações predominantemente estatísticas nas quais o dado numérico se
-        destaca como elemento central. As tabelas são abertas, ou seja, não devem
-        apresentar linhas verticais nem bordas laterais fechadas.</li>
-      <li><span class="destaque-lista">13</span> <strong>Tomo</strong> - divisão física de uma obra extensa, usada quando uma obra não pode
-        ser encadernada em volume único. Em outras palavras, tomos são partes de um
-        volume.</li>
-    </ul>
+    <p class="d-flex"><span class="destaque-lista">1</span> <span><strong>Coleção</strong> - Considerando as características do projeto editorial pretendido, as
+      publicações podem ser individuais/independentes ou na forma de coleção. Esta
+      última é composta de produtos editoriais publicados sobre um tema específico,
+      com autores próprios, características em comum, reunidos sob o título de cada
+      item e um título em comum, podendo ser ou não numerados. Como exemplo,
+      temos a Coleção Fruticultura Capixaba, formada pelos livros Cadeia Produtiva do
+      Mamão no Espírito Santo, v. 1; Cadeia Produtiva da Banana no Espírito Santo, v. 2;
+      Cadeia Produtiva do Abacaxi no Espírito Santo, v. 3 etc.</span></p>
+    <p class="d-flex"><span class="destaque-lista">2</span> <span><strong>Depósito legal</strong> - Procedimento obrigatório para editoras e instituições que
+      produzem publicações. Trata-se apenas da obrigação de enviar exemplares para
+      a Biblioteca Nacional, a fim de garantir a preservação da produção editorial e da
+      memória nacional. Esse procedimento não concede direitos autorais nem serve
+      como prova de autoria.</span></p>
+    <p class="d-flex"><span class="destaque-lista">3</span> <span><strong>Formato</strong> - Refere-se ao tamanho e às dimensões padronizadas para cada veículo
+      de publicação, definidos neste manual. A escolha do formato é baseada em uma
+      análise das características técnicas do documento e objetivos editoriais de cada
+      publicação.</span></p>
+    <p class="d-flex"><span class="destaque-lista">4</span> <span><strong>Forma de disponibilização</strong> - Refere-se à modalidade em que as publicações são
+      disponibilizadas ao público, ou seja, impressa ou digital. A decisão sobre a forma
+      de disponibilização está diretamente vinculada à viabilidade financeira e ao perfil
+      e necessidades do público-alvo, garantindo o acesso adequado à informação.</span></p>
+    <p class="d-flex"><span class="destaque-lista">5</span> <span><strong>Figuras</strong> - São consideradas figuras os gráficos, desenhos, mapas, fotografias,
+      lâminas, organogramas, fluxogramas, retratos, entre outras, usadas para
+      enriquecer o texto. Devem ser citadas no texto, inseridas o mais próximo possível
+      do trecho a que se referem e identificadas com a palavra “Figura”. (ver item <a href="capitulo_cinco.htm#sec-5-3-3">5.3.3</a>)</span></p>
+    <p class="d-flex"><span class="destaque-lista">6</span> <span><strong>Imagens</strong> - termo usado neste manual de forma genérica para abranger diferentes
+      tipos de elementos visuais, como figuras, tabelas e quadros.</span></p>
+    <p class="d-flex"><span class="destaque-lista">7</span> <span><strong>Logo</strong> - Abreviação de logotipo, informalmente também chamado de logomarca, é
+      a representação gráfica formada por palavras, letras e/ou símbolos, que identifica
+      visualmente uma empresa, instituição, produto ou marca.</span></p>
+    <p class="d-flex"><span class="destaque-lista">8</span> <span><strong>Quadros</strong> - Estruturas formadas por linhas verticais e horizontais e apresentam
+      formato fechado, com moldura em torno de suas linhas e colunas. São utilizados para apresentar dados qualitativos, ou seja, informações cujo teor é descritivo, e
+      não estatístico.</span></p>
+    <p class="d-flex"><span class="destaque-lista">9</span> <span><strong>Recensão</strong> - análise crítica, descritiva e/ou comparativa de uma obra, geralmente
+      elaborada por especialista.</span></p>
+    <p class="d-flex"><span class="destaque-lista">10</span> <span><strong>Registro de obra intelectual</strong> - É um procedimento opcional em que o autor
+      apresenta sua obra a um órgão oficial para comprovar sua autoria. No caso
+      de livros, textos, roteiros, entre outros, a Biblioteca Nacional é a instituição
+      credenciada. Na realidade, os direitos autorais nascem automaticamente quando
+      a obra é criada. No entanto, o registro da obra serve como uma prova formal.</span></p>
+    <p class="d-flex"><span class="destaque-lista">11</span> <span><strong>Série</strong> - Conjunto de itens separados (livros ou outros produtos editoriais),
+      relacionados entre si por compartilharem um título coletivo e organizados em
+      sequência. Apresentam continuidade temática, metodológica ou narrativa,
+      embora cada volume possua título próprio.</span></p>
+    <p class="d-flex"><span class="destaque-lista">12</span> <span><strong>Tabelas</strong> - Estruturas utilizadas para organizar informações em linhas e colunas.
+      São geralmente empregadas para apresentar dados quantitativos, isto é,
+      informações predominantemente estatísticas nas quais o dado numérico se
+      destaca como elemento central. As tabelas são abertas, ou seja, não devem
+      apresentar linhas verticais nem bordas laterais fechadas.</span></p>
+    <p class="d-flex"><span class="destaque-lista">13</span> <span><strong>Tomo</strong> - divisão física de uma obra extensa, usada quando uma obra não pode
+      ser encadernada em volume único. Em outras palavras, tomos são partes de um
+      volume.</span></p>
   </article>
+  <div></div>
+  <div class="container nav-footer-main"> <a class="bt bt_lar" style="float: left;" href="referencias.htm">< Referências</a> <a class="bt bt_lar" style="float: right;" href="anexos.htm">Anexos ></a> </div>
 </main>
 <footer>
   <section class="rodape" role="img" aria-label="Top banner">

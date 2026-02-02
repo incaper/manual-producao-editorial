@@ -30,11 +30,34 @@
 </header>
 
 <!-- Banner -->
-<section class="hero" role="img" aria-label="Top banner">
-  <div class="container hero-main">
-    <div class="hero-inner">
-      <figure class="hero-logo"> <img src="imagens/logo-incaper-neg.svg" alt="Logo Incaper" /> </figure>
+<section class="cap" role="img" aria-label="Top banner">
+  <div class="container cap-main">
+    <div class="hero-inner cap-inner">
+      <figure class="hero-logo"> <a href="index.htm"> <img src="imagens/logo-incaper-neg.svg" alt="Logo Incaper" style="margin:53px 0" /> </a> </figure>
+    </div>
+    <div class="cap-tit">
       <h1>Anexos</h1>
+    </div>
+    <div class="container cap-nav">
+      <label for="capitulos">Navegar pelo conteúdo:</label>
+      <select id="capitulos" onchange="location.href = this.value;">
+        <option value="">Selecionar ...</option>
+        <option value="capitulo_um.htm">Capítulo 1</option>
+        <option value="capitulo_dois.htm">Capítulo 2</option>
+        <option value="capitulo_tres.htm">Capítulo 3</option>
+        <option value="capitulo_quatro.htm">Capítulo 4</option>
+        <option value="capitulo_cinco.htm">Capítulo 5</option>
+        <option value="capitulo_seis.htm">Capítulo 6</option>
+        <option value="capitulo_sete.htm">Capítulo 7</option>
+        <option value="capitulo_oito.htm">Capítulo 8</option>
+        <option value="capitulo_nove.htm">Capítulo 9</option>
+        <option value="capitulo_dez.htm">Capítulo 10</option>
+        <option value="capitulo_onze.htm">Capítulo 11</option>
+        <option value="referencias.htm">Referências</option>
+        <option value="glossario.htm">Glossário</option>
+        <option value="anexos.htm">Anexos</option>
+      </select>
+      <div style="margin-top: 10px"> <a class="bt bt_lar" style="float: left;" href="glossario.htm">< Glossário</a></div>
     </div>
   </div>
 </section>
@@ -54,124 +77,115 @@
   
   <!-- Conteúdo principal -->
   <article class="content">
-  
-  
-  <h2 style="margin-top:0; color:#000">ANEXO A</h2>
-  <p>Abreviaturas utilizadas para referências, quando necessário, conforme ABNT.</p>
-  
-
-<table class="text-center">
-<thead>
-<tr>
-    <th>Abreviatura</th>
-    <th>Significado</th>
-  </tr>
-</thead>
-  <tr>
-    <td>atual.</td>
-    <td>atualizado</td>
-  </tr>
-  <tr>
-    <td>aum.</td>
-    <td>aumentada</td>
-  </tr>
-  <tr>
-    <td>cap.</td>
-    <td>capítulo</td>
-  </tr>
-  <tr>
-    <td>color.</td>
-    <td>colorido</td>
-  </tr>
-  <tr>
-    <td>comp.</td>
-    <td>compilador</td>
-  </tr>
-  <tr>
-    <td>coord.</td>
-    <td>coordenador</td>
-  </tr>
-  <tr>
-    <td>ed.</td>
-    <td>edição, editor</td>
-  </tr>
-  <tr>
-    <td>Ed.</td>
-    <td>editora</td>
-  </tr>
-  <tr>
-    <td>Ed. fac-sim.</td>
-    <td>Edição fac-similar</td>
-  </tr>
-  <tr>
-    <td><i>et al</i>.</td>
-    <td><i>et alii</i></td>
-  </tr>
-  <tr>
-    <td>f.</td>
-    <td>folha</td>
-  </tr>
-  <tr>
-    <td>il.</td>
-    <td>ilustração</td>
-  </tr>
-  <tr>
-    <td>n.</td>
-    <td>número</td>
-  </tr>
-  <tr>
-    <td>org.</td>
-    <td>organizador, organizadores</td>
-  </tr>
-  <tr>
-    <td>p.</td>
-    <td>página</td>
-  </tr>
-  <tr>
-    <td>p &amp; b</td>
-    <td>preto &amp; branco</td>
-  </tr>
-  <tr>
-    <td>pt.</td>
-    <td>parte</td>
-  </tr>
-  <tr>
-    <td>rev.</td>
-    <td>revisada</td>
-  </tr>
-  <tr>
-    <td><i>s. l.</i></td>
-    <td><i>sine loco</i></td>
-  </tr>
-  <tr>
-    <td><i>s. n.</i></td>
-    <td><i>sine nomine</i></td>
-  </tr>
-  <tr>
-    <td>son.</td>
-    <td>sonoro</td>
-  </tr>
-  <tr>
-    <td>Supl.</td>
-    <td>suplemento</td>
-  </tr>
-  <tr>
-    <td>t.</td>
-    <td>tomo</td>
-  </tr>
-  <tr>
-    <td>v.</td>
-    <td>volume</td>
-  </tr>
-</table>
-
-        
-        
-        
-        
-        
-
+    <h2 style="margin-top:0; color:#000">ANEXO A</h2>
+    <p>Abreviaturas utilizadas para referências, quando necessário, conforme ABNT.</p>
+    <table class="text-center">
+      <thead>
+        <tr>
+          <th>Abreviatura</th>
+          <th>Significado</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>atual.</td>
+        <td>atualizado</td>
+      </tr>
+      <tr>
+        <td>aum.</td>
+        <td>aumentada</td>
+      </tr>
+      <tr>
+        <td>cap.</td>
+        <td>capítulo</td>
+      </tr>
+      <tr>
+        <td>color.</td>
+        <td>colorido</td>
+      </tr>
+      <tr>
+        <td>comp.</td>
+        <td>compilador</td>
+      </tr>
+      <tr>
+        <td>coord.</td>
+        <td>coordenador</td>
+      </tr>
+      <tr>
+        <td>ed.</td>
+        <td>edição, editor</td>
+      </tr>
+      <tr>
+        <td>Ed.</td>
+        <td>editora</td>
+      </tr>
+      <tr>
+        <td>Ed. fac-sim.</td>
+        <td>Edição fac-similar</td>
+      </tr>
+      <tr>
+        <td><i>et al</i>.</td>
+        <td><i>et alii</i></td>
+      </tr>
+      <tr>
+        <td>f.</td>
+        <td>folha</td>
+      </tr>
+      <tr>
+        <td>il.</td>
+        <td>ilustração</td>
+      </tr>
+      <tr>
+        <td>n.</td>
+        <td>número</td>
+      </tr>
+      <tr>
+        <td>org.</td>
+        <td>organizador, organizadores</td>
+      </tr>
+      <tr>
+        <td>p.</td>
+        <td>página</td>
+      </tr>
+      <tr>
+        <td>p &amp; b</td>
+        <td>preto &amp; branco</td>
+      </tr>
+      <tr>
+        <td>pt.</td>
+        <td>parte</td>
+      </tr>
+      <tr>
+        <td>rev.</td>
+        <td>revisada</td>
+      </tr>
+      <tr>
+        <td><i>s. l.</i></td>
+        <td><i>sine loco</i></td>
+      </tr>
+      <tr>
+        <td><i>s. n.</i></td>
+        <td><i>sine nomine</i></td>
+      </tr>
+      <tr>
+        <td>son.</td>
+        <td>sonoro</td>
+      </tr>
+      <tr>
+        <td>Supl.</td>
+        <td>suplemento</td>
+      </tr>
+      <tr>
+        <td>t.</td>
+        <td>tomo</td>
+      </tr>
+      <tr>
+        <td>v.</td>
+        <td>volume</td>
+      </tr>
+    </table>
   </article>
+  <div></div>
+  <div class="container nav-footer-main"> <a class="bt bt_lar" style="float: left;" href="glossario.htm">< Glossário</a> </div>
 </main>
 <footer>
   <section class="rodape" role="img" aria-label="Top banner">

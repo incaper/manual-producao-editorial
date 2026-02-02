@@ -45,9 +45,9 @@
       <h1>Processo editorial</h1>
     </div>
     <div class="container cap-nav">
-      <label for="capitulos">Navegar por capítulo:</label>
+      <label for="capitulos">Navegar pelo conteúdo:</label>
       <select id="capitulos" onchange="location.href = this.value;">
-        <option value="">Selecione um capítulo...</option>
+        <option value="">Selecionar ...</option>
         <option value="capitulo_um.htm">Capítulo 1</option>
         <option value="capitulo_dois.htm">Capítulo 2</option>
         <option value="capitulo_tres.htm">Capítulo 3</option>
@@ -59,6 +59,9 @@
         <option value="capitulo_nove.htm">Capítulo 9</option>
         <option value="capitulo_dez.htm">Capítulo 10</option>
         <option value="capitulo_onze.htm">Capítulo 11</option>
+        <option value="referencias.htm">Referências</option>
+        <option value="glossario.htm">Glossário</option>
+        <option value="anexos.htm">Anexos</option>
       </select>
       <div style="margin-top: 10px"> <a class="bt bt_lar" style="float: left;" href="capitulo_quatro.htm">< Cap. 4</a> <a class="bt bt_lar" style="float: right;" href="capitulo_seis.htm">Cap. 6 ></a> </div>
     </div>
@@ -103,8 +106,7 @@
             <li><a href="#sec-5-1-7">5.1.7 Divulgação de publicações editadas pelo Incaper</a></li>
           </ul>
         </li>
-        <li class="accordion-item">
-        <a href="#sec-5-2" class="acc-link">5.2 Prazos do processo editorial</a> </li>
+        <li class="accordion-item"> <a href="#sec-5-2" class="acc-link">5.2 Prazos do processo editorial</a> </li>
         
         <!-- Outro item -->
         <li class="accordion-item">
@@ -137,7 +139,7 @@
               </ul>
             </li>
             <li class="accordion-item">
-            	<input type="checkbox" id="acc-5-3-2" class="acc-check">
+              <input type="checkbox" id="acc-5-3-2" class="acc-check">
               <label for="acc-5-3-2" class="acc-toggle"> <span class="icon"></span> </label>
               <a href="#sec-5-3-2" class="acc-link">5.3.2 Orientações para referências (ABNT)</a> 
               
@@ -146,24 +148,13 @@
                 <li><a href="#sec-5-3-2-1">5.3.2.1 Localização</a></li>
                 <li><a href="#sec-5-3-2-2">5.3.2.2 Regras gerais</a></li>
                 <li><a href="#sec-5-3-2-3">5.3.2.3 Exemplos de referências</a></li>
-                </ul>
+              </ul>
             </li>
-            
-            <li>
-            	<a href="#sec-5-3-3">5.3.3 Orientações para figuras</a>
-            </li>
-            <li>
-            	<a href="#sec-5-3-4">5.3.4 Orientações para tabelas</a>
-            </li>
-            <li>
-            	<a href="#sec-5-3-5">5.3.5 Orientações para quadros</a>
-            </li>
-            <li>
-            	<a href="#sec-5-3-6">5.3.6 Orientações para envio de figuras, tabelas e quadros</a>
-            </li>
-            <li>
-            	<a href="#sec-5-3-7">5.3.7 Créditos de autoria e de fontes de figuras, tabelas e quadros</a>
-            </li>
+            <li> <a href="#sec-5-3-3">5.3.3 Orientações para figuras</a> </li>
+            <li> <a href="#sec-5-3-4">5.3.4 Orientações para tabelas</a> </li>
+            <li> <a href="#sec-5-3-5">5.3.5 Orientações para quadros</a> </li>
+            <li> <a href="#sec-5-3-6">5.3.6 Orientações para envio de figuras, tabelas e quadros</a> </li>
+            <li> <a href="#sec-5-3-7">5.3.7 Créditos de autoria e de fontes de figuras, tabelas e quadros</a> </li>
           </ul>
         </li>
       </ul>
@@ -194,7 +185,7 @@
       as Normas de Procedimento Internas (NPIs) e com as orientações contidas neste
       manual.</p>
     <p>As etapas do Processo Editorial do Incaper são apresentadas a seguir (Figura 1).</p>
-    <figure> <img src="imagens/cap5-img-01.png" alt="Representação do Processo Editorial do Incaper." />
+    <figure> <img src="imagens/cap5-img-01.png" alt="Representação do Processo Editorial do Incaper." title="Representação do Processo Editorial do Incaper." />
       <figcaption><span>Figura 1 - </span>Representação do Processo Editorial do Incaper.</figcaption>
     </figure>
     <h2 id="sec-5-1">5.1 Procedimentos operacionais</h2>
@@ -256,7 +247,7 @@ _Avalia%C3%A7%C3%A3o_Propostas_de_Publica%C3%A7%C3%B5es_Editadas_Incaper.pdf" ta
     <p>A NPI 033 apresenta, de forma detalhada, todas as atividades do processo de
       avaliação de proposta de publicações editadas pelo Incaper. Contudo, destacamos
       alguns importantes pontos a serem observados:</p>
-    <p><span class="destaque-lista">1</span><strong>Pela Coordenação Editorial:</strong></p>
+    <p class="d-flex"><span class="destaque-lista">1</span><span><strong>Pela Coordenação Editorial:</strong></span></p>
     <ul>
       <li>Analisar se o original e os documentos complementares recebidos estão de acordo
         com a Política Editorial, as Normas de Procedimento Internas e este manual.</li>
@@ -267,7 +258,7 @@ _Avalia%C3%A7%C3%A3o_Propostas_de_Publica%C3%A7%C3%B5es_Editadas_Incaper.pdf" ta
       <li>Selecionar consultores <i>ad hoc</i> com formação e experiência compatível com o
         conteúdo do original.</li>
     </ul>
-    <p><span class="destaque-lista">2</span><strong>Pelos autores correspondentes:</strong></p>
+    <p class="d-flex"><span class="destaque-lista">2</span><span><strong>Pelos autores correspondentes:</strong></span></p>
     <ul>
       <li>Avaliar, em conjunto com os demais autores, a viabilidade técnica dos ajustes sugeridos.</li>
     </ul>
@@ -353,7 +344,7 @@ imentos_Operacionais/NPI_034_-_Editora%C3%A7%C3%A3o_Gerenciada_pela_GTTC.pdf" ta
       a serem observados pela equipe da GTTC e pelo Autor Correspondente:</p>
     <ul>
       <li>O Designer deve solicitar à empresa contratada o projeto gráfico de acordo com
-        as normas editorias do Incaper para aprovação prévia pela GTTC e pelo Autor
+        as normas editoriais do Incaper para aprovação prévia pela GTTC e pelo Autor
         Correspondente antes da diagramação completa do conteúdo.</li>
       <li>É fundamental que o Autor Correspondente avalie o material revisado ou diagramado
         com agilidade, dando retorno aos profissionais envolvidos na editoração. No caso
@@ -569,15 +560,15 @@ _Divulga%C3%A7%C3%A3o_de_Publica%C3%A7%C3%B5es_Editadas_pelo_Incaper.pdf" target
     <p>É a transcrição de um autor citado por outro, quando não se teve acesso à obra
       original. Nesse caso, deve ser mencionado primeiramente o autor, a data e a página
       (se houver) do documento original, seguido da expressão <i>apud</i> e da indicação do
-      autor, data e página (se houver) da obra consultada.<br />
+      autor, da data e da página (se houver) da obra consultada.<br />
       <br />
       Exemplo:</p>
     <div class="caixa-observacao cor-lar">O cafeeiro arábica é originário do continente africano, predominantemente
       das regiões altas da Etiópia, onde ocorre espontaneamente como planta
       de sub‑bosque. Da Etiópia, foi levado para a Arábia, no século XV, e de lá
       para a Ásia, a Europa e para quase todo o mundo (Chevalier, 1929, <i>apud</i> Carvalho, 1946). </div>
-    <h5 id="sec-5-3-1-3-4">5.3.1.3.4 <span>Orientações adicionais</span></h5>
-    <p><span class="destaque-lista">A</span><strong>Dados obtidos por informação verbal</strong></p>
+    <h5 id="sec-5-3-1-3-4">5.3.1.3.4<span>Orientações adicionais</span></h5>
+    <p class="d-flex"><span class="destaque-lista">A</span><span><strong>Dados obtidos por informação verbal</strong></span></p>
     <p>São informações obtidas por meio de canais informais, tais como palestras,
       debates, conferências, entrevistas, entre outros. Nesse caso, deve-se indicar
       a forma de obtenção da informação pela expressão “informação verbal” entre
@@ -585,22 +576,28 @@ _Divulga%C3%A7%C3%A3o_de_Publica%C3%A7%C3%B5es_Editadas_pelo_Incaper.pdf" target
     <p>Vale ressaltar que os dados de autoria das informações obtidas devem ser
       indicados exclusivamente em nota de rodapé.</p>
     <p>Exemplo:</p>
-    <p><span class="destaque-lista">B</span><strong>Omissão de palavras</strong></p>
+    <div class="caixa-observacao cor-lar"> Capinas manuais e roçadas não são muito utilizadas em lavouras adultas,
+      de forma que seu uso restringe-se a lavouras recém-transplantadas, em
+      pequenas propriedades (informação verbal)<sup>1</sup>. <br />
+      <br />
+      <hr style="width:200px; border:1px solid #000" />
+      <small><sup>1</sup>Comunicação pessoal - R. Serpa.</small> </div>
+    <p class="d-flex"><span class="destaque-lista">B</span><span><strong>Omissão de palavras</strong></span></p>
     <p>Quando houver retirada de partes do texto citado, no começo, meio ou fim,
-      deve‑se utilizar reticências entre colchetes para substituí-las.</p>
+      deve-se utilizar reticências entre colchetes para substituí-las.</p>
     <p>Exemplo:</p>
     <div class="caixa-observacao cor-lar">“O desenvolvimento requer que se removam as principais fontes de privação
       de liberdade: a pobreza e tirania, carência de oportunidades econômicas e
       destituição social sistemática, negligência dos serviços públicos [...]” (Sen,
       2000, p. 18). </div>
-    <p><span class="destaque-lista">C</span><strong>Acréscimos, explicações ou comentários</strong></p>
+    <p class="d-flex"><span class="destaque-lista">C</span><span><strong>Acréscimos, explicações ou comentários</strong></span></p>
     <p>Se houver necessidade de incluir informações no trecho original citado, os
       acréscimos devem ser apresentados entre colchetes.</p>
     <p>Exemplo:</p>
     <div class="caixa-observacao cor-lar">Depois, deve-se retirar, aproximadamente, 300 g dessa mistura, inserir em
       um saco plástico limpo, fazer a identificação [da amostra] e enviar para o
       laboratório (Prezotti; Guarçoni, 2013). </div>
-    <p><span class="destaque-lista">D</span><strong>Erros e imprecisões</strong></p>
+    <p class="d-flex"><span class="destaque-lista">D</span><span><strong>Erros e imprecisões</strong></span></p>
     <p>Caso o trecho original citado apresente palavras ou sentenças gramaticalmente
       incorretas, bem como outras incoerências, coloca-se “[<i>sic</i>]” após a falha
       identificada.</p>
@@ -616,7 +613,7 @@ _Divulga%C3%A7%C3%A3o_de_Publica%C3%A7%C3%B5es_Editadas_pelo_Incaper.pdf" target
         chão do cotidiano por meio de conversas entre vizinhos de banca,
         no burburinho e nos debates mais amplos (Sato, 2007, p. 101). </blockquote>
     </div>
-    <p><span class="destaque-lista">E</span><strong>Destaque de uma palavra ou trecho</strong></p>
+    <p class="d-flex"><span class="destaque-lista">E</span><span><strong>Destaque de uma palavra ou trecho</strong></span></p>
     <p><span class=" txt-lar"><strong>a)</strong></span> grifo do autor original da obra citada</p>
     <p>Quando o destaque já está presente no trecho original citado, indica-se o grifo
       utilizando a expressão “grifo do autor” entre parênteses no fim do trecho, após a
@@ -917,7 +914,7 @@ _Divulga%C3%A7%C3%A3o_de_Publica%C3%A7%C3%B5es_Editadas_pelo_Incaper.pdf" target
         dois pontos (<strong>Nota:</strong>). Devem ser posicionadas abaixo da figura, seguindo a ordem:
         legenda, fonte (quando houver) e, por fim, nota explicativa (Figura 2).</li>
     </ul>
-    <figure> <img src="imagens/cap5-img-02.jpg" alt="Orientações para figuras." /> </figure>
+    <figure> <img src="imagens/cap5-img-02.jpg" alt="Exemplo de figura com legenda explicativa e fonte indicando sua procedência." title="Exemplo de figura com legenda explicativa e fonte indicando sua procedência." /> </figure>
     <figcaption><span>Figura 2 –</span> Exemplo de figura com legenda explicativa e fonte indicando sua procedência.<br />
       <span>Fonte:</span> Fotos de Victor dos Santos Rossi. </figcaption>
     <h3 id="sec-5-3-4">5.3.4 Orientações para tabelas</h3>
@@ -945,10 +942,11 @@ _Divulga%C3%A7%C3%A3o_de_Publica%C3%A7%C3%B5es_Editadas_pelo_Incaper.pdf" target
         espaçamento simples entre linhas. A palavra “Nota” deve ser grafada em negrito,
         separada por dois pontos (<strong>Nota:</strong>). Devem ser posicionadas na parte inferior da
         tabela, logo abaixo da fonte (quando houver);</li>
-      <li>Incluir, no caso de tabelas extensas que ocupem mais de uma folha, o termo
-        “(continua)” na primeira folha, acima da borda superior direita. Nas folhas seguintes,
-        repetir o cabeçalho e inserir o termo “(continuação)”. Já na última folha, além do
-        cabeçalho, deve-se inserir o termo “(conclusão)”.</li>
+      <li>Incluir, no caso de tabelas extensas que ocupem mais de uma folha, os termos
+        “(continua)”, “(continuação)” e “(conclusão)” sempre acima da borda superior
+        direita, conforme a situação: na primeira folha, utiliza-se “(continua)”; nas folhas
+        subsequentes, reapresenta-se o cabeçalho acompanhado do termo “(continuação)”;
+        e, na última folha, além do cabeçalho, insere-se o termo “(conclusão)”.</li>
     </ul>
     <p>A Figura 3, a seguir, ilustra essas orientações:</p>
     
@@ -1103,9 +1101,9 @@ _Divulga%C3%A7%C3%A3o_de_Publica%C3%A7%C3%B5es_Editadas_pelo_Incaper.pdf" target
       </table>
       </div> -->
     
-    <figure> <img src="imagens/cap5-img-03.png" alt="Orientações para tabelas" /> </figure>
+    <figure> <img src="imagens/cap5-img-03.png" alt="Exemplo de tabela com título explicativo e fonte indicando sua procedência." title="Exemplo de tabela com título explicativo e fonte indicando sua procedência." /> </figure>
     <figcaption><span>Figura 3 –</span> Exemplo de tabela com título explicativo e fonte indicando sua procedência.<br />
-      <span>Fonte:</span> Araujo <i>et al</i>. (2021). </figcaption>
+      <span>Fonte:</span> Araújo <i>et al</i>. (2024). </figcaption>
     <h3 id="sec-5-3-5">5.3.5 Orientações para quadros</h3>
     <p>Os quadros são utilizados para apresentar dados qualitativos, ou seja, informações
       cujo teor é descritivo, e não estatístico. Os quadros são compostos de linhas verticais
@@ -1131,13 +1129,13 @@ _Divulga%C3%A7%C3%A3o_de_Publica%C3%A7%C3%B5es_Editadas_pelo_Incaper.pdf" target
         fonte 11 (ou um ponto abaixo do tamanho da fonte utilizada no corpo de texto), com
         espaçamento simples entre linhas. A palavra “Nota” deve ser grafada em negrito,
         separada por dois pontos (<strong>Nota:</strong>).</li>
-      <li>Incluir, no caso de quadros extensos que ocupem mais de uma folha, o termo
-        “(continua)” na primeira folha, acima da borda superior direita. Nas folhas seguintes,
-        inserir novamente o cabeçalho e o termo “(continuação)”. Já na última folha, além
-        do cabeçalho, inserir o termo “(conclusão)”.</li>
+      <li>Em quadros extensos que ocupem mais de uma folha, deve-se indicar “(continua)”
+        na primeira, repetir o cabeçalho e inserir “(continuação)” nas seguintes e, na
+        última, acrescentar “(conclusão)”. Os termos devem ser posicionados acima da
+        borda superior direita.</li>
     </ul>
     <p>A Figura 4, a seguir, ilustra essas orientações:</p>
-    <figure> <img src="imagens/cap5-img-04.png" alt="Orientações para quadros." /> </figure>
+    <figure> <img src="imagens/cap5-img-04.png" alt="Exemplo de quadro com título explicativo e fonte indicando sua procedência." title="Exemplo de quadro com título explicativo e fonte indicando sua procedência." /> </figure>
     <figcaption><span>Figura 4 –</span> Exemplo de quadro com título explicativo e fonte indicando sua procedência.<br />
       <span>Fonte:</span> Adaptado de Carvalho (2008); Matiello <i>et al</i>. (2016). </figcaption>
     <h3 id="sec-5-3-6">5.3.6 Orientações para envio de figuras, tabelas e quadros</h3>
@@ -1146,16 +1144,15 @@ _Divulga%C3%A7%C3%A3o_de_Publica%C3%A7%C3%B5es_Editadas_pelo_Incaper.pdf" target
       uma pasta separada. Não serão aceitas figuras que somente estiverem disponíveis
       no corpo do texto, uma vez que não apresentam qualidade mínima exigida para
       a diagramação.</p>
-    <p>Recomendamos que as fotos das páginas internas (miolo) tenham, no mínimo,1 MB,
+    <p>Recomendamos que as fotos das páginas internas (miolo) tenham, no mínimo, 1 MB,
       e as fotos para a capa, 5 MB. Para verificar o tamanho da foto, clique com o botão
       direito do mouse sobre ela, vá em “propriedades” e verifique a informação “tamanho”. </p>
     <p>Os gráficos criados pelo autor devem ser enviados em JPG e no software em que
       foram gerados, assim como as demais figuras.</p>
-    <p>As figuras, tabelas e quadros devem ser enviadas através do e-mail
-      coordenacaoeditorial@incaper.es.gov.br ou de sites de transferência de arquivos,
+    <p>As figuras, tabelas e quadros devem ser enviadas através do e-mail <a href="mailto:coordenacaoeditorial@incaper.es.gov.br">coordenacaoeditorial@incaper.es.gov.br</a> ou de sites de transferência de arquivos,
       tais como Wetransfer, Google Drive, OneDrive, entre outros.</p>
     <h3 id="sec-5-3-7">5.3.7 Créditos de autoria e de fontes de figuras, tabelas e quadros</h3>
-    <p>Nos termos da Lei dos Direitos Autorias (LDA), nº 9.610, de 19 de fevereiro de 1998
+    <p>Nos termos da Lei dos Direitos Autorais (LDA), nº 9.610, de 19 de fevereiro de 1998
       (Brasil, 1998), devem ser dados os créditos de autoria nos casos de uso de imagens
       produzidas por terceiros.</p>
     <p><strong>Figura extraída de outra obra</strong></p>
@@ -1172,7 +1169,9 @@ _Divulga%C3%A7%C3%A3o_de_Publica%C3%A7%C3%B5es_Editadas_pelo_Incaper.pdf" target
       para ilustrar capas e outras ocorrências na publicação. Nesse caso, a informação
       deve ser inserida de acordo com o projeto gráfico.</div>
     <p><strong>Figura produzida pelos próprios autores</strong></p>
-    <figure> <img src="imagens/cap5-img-05.png" alt="Figura produzida pelos próprios autores." /> </figure>
+    <figure> <img src="imagens/cap5-img-05.png" alt="Exemplo de indicação da fonte quando as imagens são produzidas pelos
+      próprios autores." title="Exemplo de indicação da fonte quando as imagens são produzidas pelos
+      próprios autores." /> </figure>
     <figcaption><span>Figura 5 –</span> Exemplo de indicação da fonte quando as imagens são produzidas pelos
       próprios autores.<br />
       <span>Fonte:</span> Adaptado de Carvalho (2008); Matiello <i>et al</i>. (2016). </figcaption>
@@ -1180,9 +1179,9 @@ _Divulga%C3%A7%C3%A3o_de_Publica%C3%A7%C3%B5es_Editadas_pelo_Incaper.pdf" target
     <p>Neste caso, também há outras formas de apresentar a autoria.</p>
     <p>Exemplos:</p>
     <ul class="none">
-      <li><strong>Fonte:</strong> Gráfico elaborado por [nome do autor].</li>
-      <li><strong>Fonte:</strong> Acervo pessoal/Acervo do Incaper.</li>
-      <li><strong>Fonte:</strong> Arquivo pessoal.</li>
+      <li class="identada-p"><strong>Fonte:</strong> Gráfico elaborado por [nome do autor].</li>
+      <li class="identada-p"><strong>Fonte:</strong> Acervo pessoal/Acervo do Incaper.</li>
+      <li class="identada-p"><strong>Fonte:</strong> Arquivo pessoal.</li>
     </ul>
     <div class="caixa-observacao cor-lar"> Quando todas as figuras forem produzidas pelos próprios autores, não há
       necessidade de indicação de fonte em cada ocorrência. Nesse caso, os créditos

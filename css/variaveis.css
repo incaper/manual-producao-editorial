@@ -63,11 +63,14 @@
   /* cores */
 
   /*verde*/
-  --cor-pri-ver: #73BF43;
-  --cor-sec-ver: #2F3C18;
+  --cor-pri-ver: #71AB27;
+  --cor-sec-ver: #5A8A20;
   --cor-ter-ver: #2E563B;
   --cor-qua-ver: #64946E;
-  --cor-qui-ver: #A2C279;
+  --cor-qui-ver: #92BA51;
+  --cor-sex-ver: #D4E6BE;
+  
+
 
    /*laranja*/
   --cor-pri-lar: #D46825;
@@ -83,6 +86,9 @@
   --cor-pri-pre: #121212;
   --cor-sec-pre: #2c2c2c;
   --cor-ter-pre: #444444;
+
+  /*vermelho*/
+  --cor-pri-verm: #D23627;
 
 
   /* tipografia */

@@ -1,125 +1,650 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Capítulo 9 - Orientações de diagramação | Manual de Produção Editorial do Incaper</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta content="pt-br, pt, en" http-equiv="Content-Language" />
-  <meta content="Incaper" name="author" />
-  <meta content="O Incaper é responsável pela elaboração e execução de programas e projetos que proporcionam o desenvolvimento rural sustentável no Espírito Santo." name="description" />
-  <meta content="Incaper, Seag, Agricultura, Pesquisa, Extensão Rural, Manual, Produção Editorial, Editorial" name="keywords" />
-  <link rel="stylesheet" href="css/variaveis.css">
-  <link rel="stylesheet" href="css/estilo.css">
-  <link href="imagens/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Capítulo 9 - Orientações de diagramação | Manual de Produção Editorial do Incaper</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta content="pt-br, pt, en" http-equiv="Content-Language" />
+<meta content="Incaper" name="author" />
+<meta content="O Incaper é responsável pela elaboração e execução de programas e projetos que proporcionam o desenvolvimento rural sustentável no Espírito Santo." name="description" />
+<meta content="Incaper, Seag, Agricultura, Pesquisa, Extensão Rural, Manual, Produção Editorial, Editorial" name="keywords" />
+<link rel="stylesheet" href="css/variaveis.css">
+<link rel="stylesheet" href="css/estilo.css">
+<link href="imagens/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
 <body>
 
-  <!-- Topo com título e menu -->
-  <header class="top-menu" role="banner">
-    <div class="container header-inner">
-      <div class="logo" aria-label="Título do site">
-        <a href="index.htm">Manual Incaper</a>
-      </div>
-      <nav class="top-nav" aria-label="Menu principal">
-        <!-- Botão mobile em CSS puro -->
-        <input type="checkbox" id="toggle-menu" class="toggle-menu-input">
-        <label for="toggle-menu" class="toggle-menu-btn">☰ Menu</label>
-        <ul class="menu-links">
-          <li><a href="index.htm">Início</a></li>
-          <li><a href="expediente.htm">Expediente</a></li>
-          <li><a href="prefacio.htm">Prefácio</a></li>
-          <li><a href="agradecimentos.htm">Agradecimentos</a></li>
-          <li><a href="apresentacao.htm">Apresentação</a></li>
-          <li><a href="download.htm">Download</a></li>
-        </ul>
-      </nav>
+<!-- Topo com título e menu -->
+<header class="top-menu" role="banner">
+  <div class="container header-inner">
+    <div class="logo" aria-label="Título do site"> <a href="index.htm">Manual Incaper</a> </div>
+    <nav class="top-nav" aria-label="Menu principal"> 
+      <!-- Botão mobile em CSS puro -->
+      <input type="checkbox" id="toggle-menu" class="toggle-menu-input">
+      <label for="toggle-menu" class="toggle-menu-btn">☰ Menu</label>
+      <ul class="menu-links">
+        <li><a href="index.htm">Início</a></li>
+        <li><a href="expediente.htm">Expediente</a></li>
+        <li><a href="prefacio.htm">Prefácio</a></li>
+        <li><a href="agradecimentos.htm">Agradecimentos</a></li>
+        <li><a href="apresentacao.htm">Apresentação</a></li>
+        <li><a href="download.htm">Download</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Banner -->
+<section class="cap" role="img" aria-label="banner capitulo">
+  <div class="container cap-main">
+    <div class="cap-inner">
+      <figure> <img src="imagens/cap-9.png" alt="Imagem capítulo nove" /> </figure>
     </div>
-  </header>
-
-  <!-- Banner -->
-  <section class="cap" role="img" aria-label="banner capitulo">
-    <div class="container cap-main">
-      <div class="cap-inner">
-        <figure>
-        <img src="imagens/cap-9.png" alt="Imagem capítulo nove" />
-      </figure>
-      </div>
-      <div class="cap-tit">
-        <h1>Orientações de diagramação</h1>
-      </div>
-      <div class="container cap-nav">
-        <label for="capitulos">Navegar por capítulo:</label>
-        <select id="capitulos" onchange="location.href = this.value;">
-          <option value="">Selecione um capítulo...</option>
-          <option value="capitulo_um.htm">Capítulo 1</option>
-          <option value="capitulo_dois.htm">Capítulo 2</option>
-          <option value="capitulo_tres.htm">Capítulo 3</option>
-          <option value="capitulo_quatro.htm">Capítulo 4</option>
-          <option value="capitulo_cinco.htm">Capítulo 5</option>
-          <option value="capitulo_seis.htm">Capítulo 6</option>
-          <option value="capitulo_sete.htm">Capítulo 7</option>
-          <option value="capitulo_oito.htm">Capítulo 8</option>
-          <option value="capitulo_nove.htm">Capítulo 9</option>
-          <option value="capitulo_dez.htm">Capítulo 10</option>
-          <option value="capitulo_onze.htm">Capítulo 11</option>
-        </select>
-        <div style="margin-top: 10px">
-          <a class="bt bt_lar" style="float: left;" href="capitulo_oito.htm">< Cap. 8</a>
-      <a class="bt bt_lar" style="float: right;" href="capitulo_dez.htm">Cap. 10 ></a>
-        </div>
-        </div>
+    <div class="cap-tit">
+      <h1>Orientações de diagramação</h1>
     </div>
-  </section>
-
-
-  <main class="container main-capitulo" role="main">
-
-    <!-- Sidebar -->
-<aside class="sidebar" aria-label="Navegação do conteúdo editorial">
-  <nav>
-    <ul class="accordion" role="tree">
-
-      <li class="accordion-item" role="treeitem">
-        <a href="index.htm" class="acc-link">Voltar ao início do manual</a>
-      </li>
-      <li>
-        <a href="capitulo_um.htm" class="acc-link"></a>
-      </li>
-
-    </ul>
-  </nav>
-</aside>
-
-    <!-- Conteúdo principal -->
-    <article class="content">
-     
-
-    </article>
-    <div></div>
-    <div class="container nav-footer-main">
-          <a class="bt bt_lar" style="float: left;" href="capitulo_oito.htm">< Cap. 8</a>
-      <a class="bt bt_lar" style="float: right;" href="capitulo_dez.htm">Cap. 10 ></a>
-        </div>
-  </main>
+    <div class="container cap-nav">
+      <label for="capitulos">Navegar pelo conteúdo:</label>
+      <select id="capitulos" onchange="location.href = this.value;">
+        <option value="">Selecionar ...</option>
+        <option value="capitulo_um.htm">Capítulo 1</option>
+        <option value="capitulo_dois.htm">Capítulo 2</option>
+        <option value="capitulo_tres.htm">Capítulo 3</option>
+        <option value="capitulo_quatro.htm">Capítulo 4</option>
+        <option value="capitulo_cinco.htm">Capítulo 5</option>
+        <option value="capitulo_seis.htm">Capítulo 6</option>
+        <option value="capitulo_sete.htm">Capítulo 7</option>
+        <option value="capitulo_oito.htm">Capítulo 8</option>
+        <option value="capitulo_nove.htm">Capítulo 9</option>
+        <option value="capitulo_dez.htm">Capítulo 10</option>
+        <option value="capitulo_onze.htm">Capítulo 11</option>
+        <option value="referencias.htm">Referências</option>
+        <option value="glossario.htm">Glossário</option>
+        <option value="anexos.htm">Anexos</option>
+      </select>
+      <div style="margin-top: 10px"> <a class="bt bt_lar" style="float: left;" href="capitulo_oito.htm">< Cap. 8</a> <a class="bt bt_lar" style="float: right;" href="capitulo_dez.htm">Cap. 10 ></a> </div>
+    </div>
+  </div>
+</section>
+<main class="container main-capitulo" role="main"> 
   
+  <!-- Sidebar -->
+  <aside class="sidebar" aria-label="Navegação do conteúdo editorial">
+    <nav>
+      <ul class="accordion" role="tree">
+        <li class="accordion-item" role="treeitem"> <a href="index.htm" class="acc-link">Voltar ao início do manual</a> </li>
+        <li class="accordion-item" role="treeitem">
+          <input type="checkbox" id="acc-9-1" class="acc-check">
+          <label for="acc-9-1" class="acc-toggle" aria-hidden="true"> <span class="icon"></span> </label>
+          <a href="#sec-9-1" class="acc-link">9.1 Etapas pré-diagramação</a> 
+          
+          <!-- Subnível -->
+          <ul class="sub">
+            <li><a href="#sec-9-1-1" class="acc-link">9.1.1 Avaliação das imagens</a></li>
+            <li><a href="#sec-9-1-2" class="acc-link">9.1.2 Formato do documento</a></li>
+            <li><a href="#sec-9-1-3" class="acc-link">9.1.3 Logos</a></li>
+            <li><a href="#sec-9-1-4" class="acc-link">9.1.4 Gráficos</a></li>
+            <li><a href="#sec-9-1-5" class="acc-link">9.1.5 Ilustrações</a></li>
+            <li><a href="#sec-9-1-6" class="acc-link">9.1.6 Tratamento das imagens</a></li>
+            <li><a href="#sec-9-1-7" class="acc-link">9.1.7 Software e organização dos arquivos</a></li>
+          </ul>
+        </li>
+        <li class="accordion-item" role="treeitem">
+          <input type="checkbox" id="acc-9-2" class="acc-check">
+          <label for="acc-9-2" class="acc-toggle" aria-hidden="true"> <span class="icon"></span> </label>
+          <a href="#sec-9-2" class="acc-link">9.2 Diagramação</a> 
+          
+          <!-- Subnível -->
+          <ul class="sub">
+            <li><a href="#sec-9-2-1" class="acc-link">9.2.1 Capa</a></li>
+            <li><a href="#sec-9-2-2" class="acc-link">9.2.2 Contracapa</a></li>
+            <li><a href="#sec-9-2-3" class="acc-link">9.2.3 Ficha catalográfica</a></li>
+            <li class="accordion-item" role="treeitem">
+              <input type="checkbox" id="acc-9-2-4" class="acc-check">
+              <label for="acc-9-2-4" class="acc-toggle" aria-hidden="true"> <span class="icon"></span> </label>
+              <a href="#sec-9-2-4">9.2.4 Tipografia</a>
+              <ul class="sub">
+                <li><a href="#sec-9-2-4-1" class="acc-link">9.2.4.1 Tamanho mínimo das fontes do documento</a></li>
+              </ul>
+            </li>
+            <li><a href="#sec-9-2-5" class="acc-link">9.2.5 Diretrizes para formatação e estilo editorial</a></li>
+            <li><a href="#sec-9-2-6" class="acc-link">9.2.6 Definição de margens mínimas na diagramação</a></li>
+            <li><a href="#sec-9-2-7" class="acc-link">9.2.7 Paginação</a></li>
+          </ul>
+        </li>
+        <li><a href="#sec-9-3" class="acc-link">9.3 Lista de verificação (checklist) após a diagramação</a></li>
+        <li><a href="#sec-9-4" class="acc-link">9.4 Correções da revisão textual</a></li>
+        <li class="accordion-item" role="treeitem">
+          <input type="checkbox" id="acc-9-5" class="acc-check">
+          <label for="acc-9-5" class="acc-toggle" aria-hidden="true"> <span class="icon"></span> </label>
+          <a href="#sec-9-5" class="acc-link">9.5 Finalização do documento</a> 
+          
+          <!-- Subnível -->
+          <ul class="sub">
+            <li><a href="#sec-9-5-1" class="acc-link">9.5.1 Exportação para impressão offset</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  
+  <!-- Conteúdo principal -->
+  <article class="content">
+    <p>Estas orientações são destinadas aos designers responsáveis pela diagramação das
+      publicações do Incaper, sejam eles servidores, bolsistas ou profissionais contratados.
+      A experiência adquirida nas rotinas editoriais resultou na adoção de padrões que
+      minimizam retrabalhos, evitam problemas na impressão e mantém a qualidade da
+      produção editorial do Incaper.</p>
+    <p>Todas as contratações de impressão gráfica são realizadas por meio de coleta de
+      preços. Assim, a cada publicação, pode haver uma gráfica diferente, aumentando a
+      complexidade no controle de qualidade da impressão, razão pela qual evitamos o uso
+      de técnicas que possam causar problemas.</p>
+    <h2 id="sec-9-1">9.1 ETAPAS PRÉ-DIAGRAMAÇÃO</h2>
+    <h3 id="sec-9-1-1">9.1.1 Avaliação das imagens</h3>
+    <p>Antes de iniciar a diagramação, é essencial avaliar a qualidade e a resolução de todas
+      as imagens (fotos, ilustrações, logos, mapas, gráficos, entre outras). A resolução
+      mínima recomendada para impressão é de 300 dpi. Se as imagens contiverem textos,
+      é necessário verificar se elas estão legíveis e não estão pixeladas. Caso haja imagens
+      com qualidade insuficiente, especialmente aquelas que afetem a legibilidade do texto,
+      o designer deverá solicitar novas imagens.</p>
+    <p>As imagens da capa, em especial, devem ter alta qualidade para que o material
+      impresso fique com aparência nítida e profissional.</p>
+    <h3 id="sec-9-1-2">9.1.2 Formato do documento</h3>
+    <p>O Incaper possui uma lista de formatos padronizados para cada veículo de publicação
+      (Quadro 1). No entanto, em casos excepcionais, por questões técnicas, ajustes poderão ser feitos. Geralmente, o formato da publicação já está definido no momento
+      da contratação. Portanto, é necessário avaliar se o formato proposto é adequado ao
+      conteúdo, garantindo que a largura da página acomode tabelas, gráficos e imagens
+      sem prejudicar a legibilidade do texto.</p>
+    <table style="margin-top:0">
+      <caption>
+      <strong class="txt-lar">Quadro 1 –</strong> Veículos de publicação e seus respectivos formatos
+      </caption>
+      <thead>
+        <tr>
+          <th width="40%">Veículo de publicação</th>
+          <th>Formato</th>
+        </tr>
+      </thead>
+      <tr  class="faixa-cab">
+        <td><strong>Publicações seriadas periódicas</strong></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><i>Incaper em Revista</i></td>
+        <td>21,5 cm (largura) x 26,0 cm (altura).</td>
+      </tr>
+      <tr>
+        <td><i>Boletim Agroclimático do Espírito
+          Santo</i></td>
+        <td>A4 21,0 cm (largura) x 29,7 cm (altura).</td>
+      </tr>
+      <tr>
+        <td><i>Boletim da Conjuntura Agropecuária
+          Capixaba</i></td>
+        <td>A4 21,0 cm (largura) x 29,7 cm (altura).</td>
+      </tr>
+      <tr>
+        <td><i>Relatório Anual de Gestão</i></td>
+        <td>A4 21,0 cm (largura) x 29,7 cm (altura).</td>
+      </tr>
+      <tr>
+        <td><i>Balanço Social</i></td>
+        <td>21,5 cm (largura) x 26,0 cm (altura).</td>
+      </tr>
+      <tr>
+        <td><i>Anais Simpósio Incaper Pesquisa</i></td>
+        <td>A4 21,0 cm (largura) x 29,7 cm (altura).</td>
+      </tr>
+      <tr class="faixa-cab">
+        <td><strong>Publicações seriadas não periódicas</strong></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Circular Técnico-Científica</td>
+        <td>A4 21,0 cm (largura) x 29,7 cm (altura).</td>
+      </tr>
+      <tr>
+        <td>Documentos</td>
+        <td>1) 15,0 cm (largura) x 21,0 cm (altura).<br>
+          2) 23,0 cm (largura) x 20,5 cm (altura).<br>
+          3) 21,0 cm (largura) x 29,7 cm (altura).</td>
+      </tr>
+      <tr>
+        <td>Anais de Eventos Científicos</td>
+        <td>A4 21,0 cm (largura) x 29,7 cm (altura).</td>
+      </tr>
+      <tr>
+        <td>Fôlder Técnico<br>
+          Fôlder Institucional</td>
+        <td> 1) 1 dobra:
+          <ul class="identada none" style="margin-top:5px">
+            <li>(aberto) 30,0 cm (largura) x 21,0 cm (altura).</li>
+            <li>(fechado) 15,0 cm (largura) x 21,0 cm (altura).</li>
+          </ul>
+          2) 2 dobras:
+          <ul class="identada none" style="margin-top:5px">
+            <li>(aberto) 46,5 cm (largura) x 20,5 cm (altura).</li>
+            <li>(fechado) 15,5 cm (largura) x 20,5 cm (altura).</li>
+          </ul>
+          3) 2 dobras:
+          <ul class="identada none" style="margin-top:5px">
+            <li>(A3 aberto) 42,0 cm (largura) x 29,7 cm (altura).</li>
+            <li>(A3 fechado) 14,0 cm (largura) x 29,7 cm (altura).</li>
+          </ul>
+          4) 3 dobras:
+          <ul class="identada none" style="margin-top:5px">
+            <li>(aberto) 64,0 cm (largura) x 23,0 cm (altura).</li>
+            <li>(fechado) 16,0 cm (largura) x 23,0 cm (altura).</li>
+          </ul>
+          5) 3 dobras:
+          <ul class="identada none" style="margin-top:5px; margin-bottom:0">
+            <li>(aberto) 64,0 cm (largura) x 28,0 cm (altura).</li>
+            <li>(fechado) 16,0 cm (largura) x 28,0 cm (altura).</li>
+          </ul></td>
+      </tr>
+      <tr>
+        <td>Cartilha</td>
+        <td>1) 15,0 cm (largura) x 21,0 cm (altura).<br>
+          2) 23,0 cm (largura) x 20,5 cm (altura).<br>
+          3) 21,0 cm (largura) x 29,7 cm (altura).</td>
+      </tr>
+      <tr>
+        <td>Manual</td>
+        <td>1) A4 21,0 cm (largura) x 29,7 cm (altura).<br>
+          2) 23,0 cm (largura) x 20,5 cm (altura).<br>
+          3) 15,0 cm (largura) x 21,0 cm (altura).</td>
+      </tr>
+      <tr>
+        <td>Folha Informativa</td>
+        <td>A4 21,0 cm (largura) x 29,7 cm (altura).</td>
+      </tr>
+      <tr class="faixa-cab">
+        <td><strong>Publicações não seriadas</strong></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Livro</td>
+        <td>1) 15,5 cm (largura) x 23,0 cm (altura).<br>
+          2) 15,0 cm (largura) x 21,0 cm (altura).<br>
+          3) 21,0 cm (largura) x 28,0 cm (altura).<br>
+          4) 17,5 cm (largura) x 23,0 cm (altura).</td>
+      </tr>
+      <tr>
+        <td>Cartas e Mapas</td>
+        <td>O formato de uma carta ou mapa pode variar dependendo do propósito, do tipo de informação representada e do meio em que será utilizado (físico ou digital).</td>
+      </tr>
+    </table>
+    <div class="caixa-observacao cor-lar"> Para mais informações, consulte o <a href="capitulo_quatro.htm">capítulo 4</a>, que aborda forma de
+      disponibilização, tipos e veículos de publicação. </div>
+    <div class="caixa-observacao cor-lar"> Algumas publicações podem ser adaptadas para formatos específicos para
+      celular ou para versões interativas em ambiente web, quando o conteúdo ou o
+      projeto demandarem recursos diferenciados. </div>
+    <h3 id="sec-9-1-3">9.1.3 Logos</h3>
+    <p>No que se refere ao uso de logos nas publicações do Incaper, é necessário observar
+      dois pontos fundamentais: se a logo está atualizada e se tem resolução adequada.</p>
+    <p>Sempre que uma logo for fornecida para inclusão no documento, é necessário que o
+      designer verifique se a versão recebida está atualizada. A forma adequada de fazer essa
+      verificação é acessar o site da instituição e baixar a versão atualizada, caso necessário.</p>
+    <p>Outro ponto a ser observado é a resolução das logos recebidas. Se estiverem em
+      baixa resolução e a instituição não fornecer a logo para download, o designer precisa
+      solicitá-las ao profissional de contato indicado na contratação.</p>
+    <p>O ideal é que as logos sejam aplicadas em formato vetorial (AI, EPS ou PDF) para
+      garantir a qualidade de impressão.</p>
+    <h3 id="sec-9-1-4">9.1.4 Gráficos</h3>
+    <p>Quando possível, o designer deve redesenhar os gráficos a fim de padronizar as
+      fontes (tipo e tamanho) e as cores. É fundamental verificar se a paleta de cores
+      utilizada é suficientemente contrastante para a impressão, pois se a diferença de
+      cores for muito sutil, pode resultar em gráficos difíceis de ler.</p>
+    <p>Caso não tenha recebido, o designer pode solicitar os gráficos em Excel, para que
+      seja possível editá-los no Illustrator.</p>
+    <h3 id="sec-9-1-5">9.1.5 Ilustrações</h3>
+    <p>As ilustrações utilizadas no documento devem ser avaliadas. Se estiverem com baixa
+      qualidade, pixeladas ou possuírem textos com legibilidade ruim, elas devem ser
+      redesenhadas no Illustrator e salvas em EPS na pasta vínculos.</p>
+    <h3 id="sec-9-1-6">9.1.6 Tratamento das imagens</h3>
+    <p>Todas as imagens devem ser tratadas adequadamente antes de serem aplicadas
+      na diagramação, mas sempre preservando os arquivos originais. É necessário criar
+      uma pasta separada para armazenar as versões tratadas, evitando alterações nas
+      imagens originais.</p>
+    <p>Como o Incaper produz documentos técnico-científicos, é necessário ter muito
+      cuidado no tratamento das imagens. Por exemplo, uma alteração na cor das folhas
+      ou dos frutos de plantas pode gerar a falsa impressão de doença ou de deficiência
+      de nutrientes. Isso reforça a necessidade de manter as fotos originais caso seja
+      necessário realizar novo tratamento de uma determinada imagem.</p>
+    <p>Imagens com marca d’água não devem ser usadas em nenhuma parte do documento,
+      pois sua utilização pode resultar em imagens com aparência “lavada” na impressão.</p>
+    <p>A data automática de celular e as logomarcas devem ser retiradas das imagens
+      (Figura 9). O Incaper não deve fazer propaganda de marcas, a não ser que seja o objetivo
+      (exemplo: matéria sobre produto da agroindústria, café artesanal, feiras e eventos).</p>
+    <figure> <img src="imagens/cap9-img-01.jpg" alt="Exemplo de imagem que contém propaganda de marca." title="Exemplo de imagem que contém propaganda de marca." /> </figure>
+    <figcaption><span>Figura 9 –</span> Exemplo de imagem que contém propaganda de marca.<br />
+      <span>Fonte:</span> Fotos de Abraão Carlos Verdin Filho.</figcaption>
+    <h3 id="sec-9-1-7">9.1.7 Software e organização dos arquivos</h3>
+    <p>Todas as publicações do Incaper devem ser diagramadas no InDesign, inclusive as
+      capas, pois esse software permite melhor ajuste de lombada nas capas de livros.</p>
+    <p>Já os elementos vetoriais (gráficos, infográficos, mapas, ilustrações) devem ser
+      produzidos no Illustrator.
+      Antes de iniciar o trabalho, o ideal é criar as pastas para manter todos os arquivos
+      organizados. No final da diagramação, é necessário enviar a pasta completa de
+      arquivos ao setor responsável no Incaper. Essa pasta deve conter as seguintes
+      subpastas:</p>
+    <ul>
+      <li><strong>Arquivos recebidos:</strong> todos os arquivos de texto, fotos originais, e PDFs com as
+        etapas de revisão.</li>
+      <li><strong>Fontes:</strong> todas as fontes (sempre gratuitas) utilizadas no documento.</li>
+      <li><strong>Vínculos:</strong> fotos tratadas, vetores, logos, gráficos. No caso de livros e documentos
+        com muitos vínculos, é fundamental separar cada tipo em uma pasta.</li>
+      <li><strong>Arquivos editáveis:</strong> arquivos em InDesign, miolo e capa.</li>
+      <li><strong>Arquivos finais:</strong> PDFs fechados para impressão e versão digital (PDF ou ePub).</li>
+    </ul>
+    <figure> <img src="imagens/cap9-img-02.png" alt="Exemplo de organização de arquivos." title="Exemplo de organização de arquivos." /> </figure>
+    <figcaption><span>Figura 10 –</span> Exemplo de organização de arquivos.</figcaption>
+    <h2 id="sec-9-2">9.2 DIAGRAMAÇÃO</h2>
+    <h3 id="sec-9-2-1">9.2.1 Capa</h3>
+    <ul>
+      <li>Logo do Incaper</li>
+    </ul>
+    <p>Na capa, deve ser aplicada apenas a logo do Incaper, posicionada na parte inferior,
+      de forma centralizada ou alinhada à direita. Consequentemente, a logomarca da Seag
+      e o brasão do governo do estado não devem ser usados.</p>
+    <p>A escolha entre as versões branca, preta ou verde da logo depende do fundo
+      utilizado, de forma a garantir contraste suficiente e visibilidade da marca. Todas as
+      versões da logo do Incaper estão disponíveis no seguinte link: <a href="https://incaper.es.gov.br/logotipos-2" target="_blank">https://incaper.es.gov.br/logotipos-2</a>.</p>
+    <ul>
+      <li>Títulos</li>
+    </ul>
+    <p>Títulos excessivamente longos ou sem foco no tema central podem comprometer a
+      legibilidade da capa, especialmente quando a imagem é exibida em formato reduzido,
+      como em miniaturas no site. Por isso, é fundamental que o título destaque claramente
+      o assunto principal da publicação e, quando necessário, seja reduzido e/ou dividido
+      em título e subtítulo. Se for preciso fazer adequação do título à diagramação, o autor
+      deve ser consultado para discutir os possíveis ajustes.</p>
+    <p>O título deve ocupar a maior parte da largura da página e ser aplicado em fonte bold,
+      garantindo que tenha o destaque necessário.</p>
+    <p>Na Figura 11, é possível ver a diferença de legibilidade entre títulos que destacam o
+      tema central (A e B) e um exemplo com título excessivamente longo (C).</p>
+    <figure> <img src="imagens/cap9-img-03.jpg" alt="Exemplos de capas de publicações da Editora Incaper." title="Exemplos de capas de publicações da Editora Incaper." /> </figure>
+    <figcaption><span>Figura 11 –</span> Exemplos de capas de publicações da Editora Incaper.</figcaption>
+    <h3 id="sec-9-2-2">9.2.2 Contracapa</h3>
+    <p>A contracapa deve conter:</p>
+    <p class="d-flex"><span class="destaque-lista">1</span><span>Logo do Incaper utilizada na sua versão institucional completa, acompanhada do nome da Secretaria da Agricultura (Seag) e do brasão do governo do estado.</span></p>
+    <p class="d-flex"><span class="destaque-lista">2</span> <span>Na versão impressa: QR code para acesso ao site da Editora Incaper, acompanhado
+      da frase “Acesse gratuitamente a produção editorial do Incaper”, centralizado
+      abaixo do QR code.</span></p>
+    <p>Na versão online: a frase acima deve ser disponibilizada como link clicável,
+      acompanhada do ícone de um mouse.</p>
+    <p class="d-flex"><span class="destaque-lista">3</span><span>ISBN, código de barras e DOI, conforme Figura 12.</span></p>
+    <div class="caixa-observacao cor-lar"> É importante destacar que a disposição das logos segue duas categorias:
+      “realização”, para os responsáveis diretos pela publicação, e “apoio”, para
+      situações em que haja a contribuição por meio de suporte institucional ou
+      financeiro. </div>
+    <figure> <img src="imagens/cap9-img-04.png" alt="Exemplos de contracapa impressa e digital." title="Exemplos de contracapa impressa e digital." /> </figure>
+    <figcaption><span>Figura 12 –</span> Exemplos de contracapa impressa e digital.</figcaption>
+    <h3 id="sec-9-2-3">9.2.3 Ficha catalográfica</h3>
+    <p>Na diagramação da ficha catalográfica, deve ser utilizada a mesma fonte (cor e tipo)
+      do restante da página do expediente.</p>
+    <h3 id="sec-9-2-4">9.2.4 Tipografia</h3>
+    <p>É necessário utilizar fontes e paletas de cores que garantam a legibilidade do texto.
+      Para materiais que serão impressos, deve-se evitar fundos escuros com texto branco
+      ou claro. Esse tipo de aplicação pode gerar problemas de registro na impressão se a
+      gráfica não tiver uma excelente qualidade.</p>
+    <p>As fontes utilizadas no documento devem obedecer aos seguintes critérios:</p>
+    <p class="d-flex"><span class="destaque-lista">1</span> <span>Gratuitas (livres de direitos autorais).</span></p>
+    <p class="d-flex"><span class="destaque-lista">2</span> <span>Fontes do tipo open type (extensão OTF). Essa versão inclui mais caracteres
+      especiais, que são menos suscetíveis a erros de compatibilidade.</span></p>
+    <p class="d-flex"><span class="destaque-lista">3</span> <span>Família com vários pesos (no mínimo regular, bold, italic, bolditalic).</span></p>
+    <p>O ideal é utilizar, no máximo, duas famílias, uma para o corpo do texto e outra para
+      os títulos. Não devem ser utilizadas muitas fontes distintas, pois o excesso deixa a
+      diagramação pesada.</p>
+    <p>No corpo do texto, deve-se utilizar, preferencialmente, o preto 90%. Nos títulos e
+      subtítulos, a cor pode variar de acordo com o projeto gráfico.</p>
+    <h4 id="sec-9-2-4-1">9.2.4.1 Tamanho mínimo das fontes do documento</h4>
+    <ul>
+      <li>No corpo do texto: 11 pts;</li>
+      <li>Nas legendas e fontes das figuras: 10 pts;</li>
+      <li>No expediente: 8 pts.</li>
+    </ul>
+    <p>O tamanho da fonte deve ficar um ponto menor que o utilizado no corpo do texto,
+      nos seguintes casos:</p>
+    <ul>
+      <li>títulos de tabelas e quadros;</li>
+      <li>textos das legendas;</li>
+      <li>fontes de tabelas, quadros e figuras.</li>
+    </ul>
+    <div class="caixa-observacao cor-lar"> O texto de tabelas e quadros pode ser reduzido em mais de um ponto em
+      relação ao corpo do texto, caso necessário, desde que seja respeitado o
+      tamanho mínimo de 9 pontos.</div>
+    <h3 id="sec-9-2-5">9.2.5 Diretrizes para formatação e estilo editorial</h3>
+    <p class="d-flex"><span class="destaque-lista">1</span> <span>Os seguintes elementos sempre devem iniciar em página ímpar: falsa folha de
+      rosto, folha de rosto, dedicatória, lista de organizadores e autores, agradecimentos,
+      prefácio, apresentação, primeira página do sumário, início de capítulo, referências,
+      apêndices e anexos.</span></p>
+    <p class="d-flex"><span class="destaque-lista">2</span> <span>O mesmo espaçamento entre imagens de uma figura deve ser mantido em todo o
+      documento, como na Figura 13.</span></p>
+    <figure> <img src="imagens/cap9-img-05.jpg" alt="Exemplo de espaçamento correto (imagem superior) e errado (imagem inferior)." title="Exemplo de espaçamento correto (imagem superior) e errado (imagem inferior)." /> </figure>
+    <figcaption><span>Figura 13 –</span> Exemplo de espaçamento correto (imagem superior) e errado (imagem inferior).<br />
+      <span>Fonte:</span> Adaptado de Verdin Filho <i>et al</i>., 2025.</figcaption>
+    <br />
+    <br />
+    <p class="d-flex"><span class="destaque-lista">3</span> <span>Efeitos indesejáveis de diagramação devem ser corrigidos, tais como:</span></p>
+    <ul class="identada">
+      <li>Linhas viúvas ou órfãs no documento, ou seja, uma linha isolada no início ou no
+        fim de um texto, devem ser evitadas (Figura 14).</li>
+    </ul>
+    <figure> <img src="imagens/cap9-img-06.png" alt="Exemplo de linha viúva (A); exemplo de linha orfã (B)." title="Exemplo de linha viúva (A); exemplo de linha orfã (B)." /> </figure>
+    <figcaption><span>Figura 14 –</span> Exemplo de linha viúva (A); exemplo de linha orfã (B).</figcaption>
+    <ul class="identada">
+      <li>Palavras viúvas (forcas) (Figura 15).</li>
+    </ul>
+    <figure> <img src="imagens/cap9-img-07.png" alt="Exemplo de palavra viúva (forca)." title=" Exemplo de palavra viúva (forca)." /> </figure>
+    <figcaption><span>Figura 15 –</span> Exemplo de palavra viúva (forca).</figcaption>
+    <ul class="identada">
+      <li>Espaçamento reduzido entre palavras.</li>
+      <li>Compactação de palavras.</li>
+      <li>Recuo da primeira linha de parágrafo fora de padrão do documento.</li>
+      <li>Repetição de palavras inteiras no fim de três ou mais linhas seguidas.</li>
+      <li>Repetição de hífen em três ou mais linhas seguidas.</li>
+      <li>Numeral no fim de uma linha e o símbolo da unidade de medida no início da linha
+        seguinte.</li>
+    </ul>
+    <p class="d-flex"><span class="destaque-lista">4</span> <span>Figuras compostas por várias imagens devem ser identificadas por letras (A,
+      B, C etc.). Essas letras devem ser localizadas no canto inferior direito sobre um
+      círculo de cor branca e ter fonte em preto ou outra cor escura (Figura 16). Já
+      as legendas devem ser posicionadas na parte inferior das figuras, seguidas de
+      fonte (indicação do autor ou do local de origem da imagem) e notas explicativas,
+      quando houver.</span></p>
+    <figure> <img src="imagens/cap9-img-08.jpg" alt="Exemplo de figuras compostas com as respectivas identificações por meio de
+letras." title="Exemplo de figuras compostas com as respectivas identificações por meio de
+letras." /> </figure>
+    <figcaption><span>Figura 16 –</span> Exemplo de figuras compostas com as respectivas identificações por meio de
+      letras.</figcaption>
+    <br />
+    <br />
+    <p class="d-flex"><span class="destaque-lista">5</span> <span>Em revistas, livros fotográficos e fôlderes, os créditos de autoria das fotos devem
+      ser colocados sobre a imagem, com fonte 8 ou 9, em cor branca se a imagem for
+      escura ou de 90% a 100% preto se for uma foto clara.<br />
+      <br />
+      Em documentos técnicos, o crédito de autoria das fotos já virá inserido no arquivo
+      em Word, no expediente ou imediatamente abaixo da legenda das imagens.</span></p>
+    <div class="caixa-observacao cor-lar"> O padrão adotado para os créditos de autoria e de fontes de figuras, tabelas e
+      quadros está descrito na seção <a href="capitulo_cinco.htm#sec-5-3-7">5.3.7</a> deste manual.</div>
+    <p class="d-flex"><span class="destaque-lista">6</span> <span>Em quadros e tabelas, os títulos devem ser posicionados na parte superior. Já
+      as legendas devem ser posicionadas na parte inferior, seguidas de fonte e notas
+      explicativas, quando houver.<br />
+      <br />
+      Quando o quadro ou a tabela ultrapassarem as dimensões de uma página, deverão
+      continuar nas páginas seguintes (Figura 17). Além de repetir o cabeçalho em cada
+      página, é necessário inserir, na parte superior direita do quadro ou da tabela e
+      entre parênteses, as seguintes informações:</span></p>
+    <ul class="identada">
+      <li>(continua) para a primeira página;</li>
+      <li>(continuação) para as demais páginas; e</li>
+      <li>(conclusão) para a última página.</li>
+    </ul>
+    <figure> <img src="imagens/cap9-img-09.png" alt="Exemplo de tabela que ocupa mais de uma página." title="Exemplo de tabela que ocupa mais de uma página." /> </figure>
+    <figcaption><span>Figura 17 –</span> Exemplo de tabela que ocupa mais de uma página.<br />
+      <span>Fonte:</span> Adaptado de Galeano <i>et al</i>. (2022).</figcaption>
+    <h3 id="sec-9-2-6">9.2.6 Definição de margens mínimas na diagramação</h3>
+    <ul>
+      <li><strong>Livros, revistas, cartilhas e documentos</strong></li>
+    </ul>
+    <p>Para esses veículos de publicação, as margens devem ter, no mínimo, 15 mm. Nos
+      casos em que a publicação for impressa, com acabamento colado, a margem interna
+      deve ter, no mínimo, 25 mm, para garantir o espaço necessário para a cola, no
+      processo de encadernação. Nesse espaço de margem, não deve haver nenhum tipo
+      de texto.</p>
+    <ul>
+      <li><strong>Fôlderes</strong></li>
+    </ul>
+    <p>Em publicações desse tipo, todas as margens devem ter, no mínimo, 10 mm.</p>
+    <figure> <img src="imagens/cap9-img-10.jpg" alt="Exemplo da parte interna de um fôlder do Incaper." title="Exemplo da parte interna de um fôlder do Incaper." /> </figure>
+    <figcaption><span>Figura 18 –</span> Exemplo da parte interna de um fôlder do Incaper.<br />
+      <span>Fonte:</span> Adaptado de Ruas <i>el al.</i>, 2024.</figcaption>
+    <h3 id="sec-9-2-7">9.2.7 Paginação</h3>
+    <p>A paginação vai variar de acordo com a forma em que a publicação for disponibilizada:</p>
+    <ul>
+      <li>Digital: a numeração deve ser posicionada na parte inferior direita da página.</li>
+      <li>Impressa: a numeração deve ser colocada na parte inferior esquerda para páginas
+        pares e na parte inferior direita para as páginas ímpares.</li>
+    </ul>
+    <h2 id="sec-9-3">9.3 LISTA DE VERIFICAÇÃO (CHECKLIST) APÓS A DIAGRAMAÇÃO</h2>
+    <p>Antes de enviar o arquivo diagramado para avaliação ou revisão textual, é essencial
+      verificar os itens abaixo:</p>
+    <p><strong>Tipografia</strong></p>
+    <ul>
+      <li>Fonte</li>
+    </ul>
+    <p>Cada grupo de texto (corpo, títulos, subtítulos, legendas, tabelas etc.) está com o
+      mesmo tipo, tamanho e cor de fonte?</p>
+    <ul>
+      <li>Pasta de fontes</li>
+    </ul>
+    <p>Foi criada uma pasta com as fontes utilizadas no documento? Esse procedimento
+      evitará problemas futuros se o trabalho for reeditado.</p>
+    <p><strong>Parágrafos</strong></p>
+    <p>As linhas apresentam palavras com espaçamento adequado, sem lacunas excessivas
+      ou espaços reduzidos?</p>
+    <ul>
+      <li>Espaçamento entre palavras</li>
+    </ul>
+    <p>Há linhas viúvas e órfãs?</p>
+    <div class="caixa-observacao cor-lar">
+      <p><strong>Linha viúva:</strong> última linha de um parágrafo que aparece sozinha no topo de
+        uma página ou coluna seguinte.</p>
+      <p><strong>Linha órfã:</strong> primeira linha que aparece isolada na parte inferior de uma página
+        ou coluna.</p>
+    </div>
+    <p><strong>Espaçamentos e Alinhamento</strong></p>
+    <ul>
+      <li>Imagens e textos</li>
+    </ul>
+    <p>Os espaçamentos entre textos e imagens estão padronizados em todo o documento?
+      Não deve haver espaçamentos irregulares que quebrem a harmonia visual.</p>
+    <ul>
+      <li>Alinhamento de imagens</li>
+    </ul>
+    <p>Todas as imagens estão corretamente alinhadas e com as legendas posicionadas de
+      maneira uniforme?</p>
+    <ul>
+      <li>Margens e áreas de segurança</li>
+    </ul>
+    <p>As margens estão corretas e respeitando as áreas de segurança para impressão?</p>
+    <p><strong>Referências e Estilo</strong></p>
+    <ul>
+      <li>Referências bibliográficas</li>
+    </ul>
+    <p>As referências estão com o estilo correto? Itálicos, negritos e outros estilos de
+      formatação foram mantidos corretamente durante a importação do texto?</p>
+    <div class="caixa-observacao cor-lar"> De acordo com as normas da ABNT e orientações deste manual (<a href="capitulo_cinco.htm#sec-5-3-2">Seção 5.3.2</a>),
+      as referências devem ser alinhadas à esquerda.</div>
+    <ul>
+      <li>Títulos de seções e subseções</li>
+    </ul>
+    <p>As divisões de seções e subseções estão claras e hierarquicamente bem destacadas?</p>
+    <p><strong>Imagens</strong></p>
+    <ul>
+      <li>Qualidade das imagens</li>
+    </ul>
+    <p>Todas as imagens possuem resolução adequada (mínimo de 300 dpi)? As imagens e
+      ilustrações estão todas no padrão de cores CMYK no caso de impressão gráfica? As
+      imagens não devem estar pixeladas ou com baixa qualidade.</p>
+    <ul>
+      <li>Tratamento das imagens</li>
+    </ul>
+    <p>As imagens foram tratadas corretamente? Cores, brilho, contraste e saturação
+      foram ajustados para evitar distorções e manter uma padronização das imagens no
+      documento?</p>
+    <ul>
+      <li>Créditos das imagens</li>
+    </ul>
+    <p>Os créditos das imagens (quando necessário) estão corretos, com fonte legível e
+      posicionamento adequado?</p>
+    <p><strong>Diagramação</strong></p>
+    <ul>
+      <li>Elementos gráficos</li>
+    </ul>
+    <p>Todos os gráficos, quadros, tabelas e infográficos estão de acordo com o projeto
+      gráfico, legíveis e com fontes padronizadas?</p>
+    <ul>
+      <li>Consistência no uso de cores</li>
+    </ul>
+    <p>As cores estão de acordo com o projeto gráfico, e há contraste suficiente para garantir
+      a legibilidade, especialmente em gráficos, quadros e tabelas?</p>
+    <ul>
+      <li>Legendas em figuras</li>
+    </ul>
+    <p>Todas as legendas de figuras estão posicionadas na parte inferior?</p>
+    <ul>
+      <li>Títulos de quadros e tabelas</li>
+    </ul>
+    <p>Todos os títulos de quadros e tabelas estão posicionados na parte superior?</p>
+    <ul>
+      <li>Margem de segurança</li>
+    </ul>
+    <p>Todos os elementos importantes, como logos, textos e imagens estão posicionados
+      dentro da área segura de impressão?</p>
+    <p><strong>Organização dos arquivos</strong></p>
+    <ul>
+      <li>Estrutura de pastas:</li>
+    </ul>
+    <p>Todos os arquivos relacionados ao projeto, tais como fontes, imagens, gráficos,
+      documentos auxiliares e arquivos editáveis estão organizados corretamente em
+      pastas (<a href="capitulo_nove.htm#sec-9-1-7">seção 9.1.7</a>)?</p>
+    <h2 id="sec-9-4">9.4 CORREÇÕES DA REVISÃO TEXTUAL</h2>
+    <p>O PDF diagramado passará por várias etapas de revisão, durante as quais o revisor
+      fará anotações diretamente no documento para que o designer execute as correções
+      necessárias. É essencial que o designer faça uma cópia do PDF com as notas de
+      revisão e vá apagando cada nota à medida que realiza as alterações no arquivo no
+      InDesign. Esse processo garante que todas as correções sejam feitas e evita que
+      algo seja esquecido.</p>
+    <p>O principal retrabalho nesta etapa de revisões ocorre quando o designer devolve o
+      arquivo com correções não realizadas. Portanto, é fundamental que o profissional
+      siga rigorosamente as anotações e faça uma conferência minuciosa antes de enviar
+      a versão corrigida.</p>
+    <h2 id="sec-9-5">9.5 FINALIZAÇÃO DO DOCUMENTO</h2>
+    <h3 id="sec-9-5-1">9.5.1 Exportação para impressão offset</h3>
+    <ul class="none">
+      <li>1. O arquivo deve ser exportado no formato PDF X-1a, marcando a opção “Todas as
+        marcas da impressora” (corte, registro, sangria, barra de cores e informações da
+        página). Esse formato é o padrão para impressão e garante que todos os elementos
+        do seu arquivo sejam preservados corretamente.</li>
+      <li>2. Antes de enviar o arquivo para impressão, uma revisão completa do material deve
+        ser realizada, para garantir que não ocorreram erros na exportação.</li>
+    </ul>
+  </article>
+  <div></div>
+  <div class="container nav-footer-main"> <a class="bt bt_lar" style="float: left;" href="capitulo_oito.htm">< Cap. 8</a> <a class="bt bt_lar" style="float: right;" href="capitulo_dez.htm">Cap. 10 ></a> </div>
+</main>
 <footer>
-    <section class="rodape" role="img" aria-label="Top banner">
+  <section class="rodape" role="img" aria-label="Top banner">
     <div class="container main-rodape">
       <div class="rodape-logo hero-inner">
-        <figure class="hero-logo">
-          <a href="https://incaper.es.gov.br/" title="Incaper">
-            <img src="imagens/logo-incaper-neg.svg" alt="Logo Incaper" />
-          </a>
-        </figure>
+        <figure class="hero-logo"> <a href="https://incaper.es.gov.br/" title="Incaper"> <img src="imagens/logo-incaper-neg.svg" alt="Logo Incaper" /> </a> </figure>
         <h5>Manual de Produção Editorial do Incaper</h5>
-        <p>Instituto Capixaba de Pesquisa, Assistência Técnica e Extensão Rural (Incaper)
-          <br />
-          Rua Afonso Sarlo, 160 - Bento Ferreira
-          <br />
-          CEP: 29052-010 - Vitória / ES
-          <br />
+        <p>Instituto Capixaba de Pesquisa, Assistência Técnica e Extensão Rural (Incaper) <br />
+          Rua Afonso Sarlo, 160 - Bento Ferreira <br />
+          CEP: 29052-010 - Vitória / ES <br />
           Tel.: (27) 3636-9800 / (27) 3636-9888</p>
       </div>
       <div class="rodape-menu">
@@ -156,6 +681,6 @@
       </div>
     </div>
   </section>
-  </footer>
+</footer>
 </body>
 </html>
