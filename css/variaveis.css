@@ -82,10 +82,15 @@
   /*branco*/
   --cor-pri-bra: #ffffff;
 
-  /*preto*/
+  /*cinza*/
   --cor-pri-pre: #121212;
   --cor-sec-pre: #2c2c2c;
   --cor-ter-pre: #444444;
+  --cor-ters-pre: #575756;
+  --cor-qua-pre: #EDEDED;
+
+  
+
 
   /*vermelho*/
   --cor-pri-verm: #D23627;

@@ -24,12 +24,11 @@
       <input type="checkbox" id="toggle-menu" class="toggle-menu-input">
       <label for="toggle-menu" class="toggle-menu-btn">☰ Menu</label>
       <ul class="menu-links">
-        <li><a href="index.htm">Início</a></li>
         <li><a href="expediente.htm">Expediente</a></li>
+        <li><a href="autores.htm">Autores</a></li>
         <li><a href="prefacio.htm">Prefácio</a></li>
         <li><a href="agradecimentos.htm">Agradecimentos</a></li>
         <li><a href="apresentacao.htm">Apresentação</a></li>
-        <li><a href="download.htm">Download</a></li>
       </ul>
     </nav>
   </div>
@@ -71,6 +70,10 @@
   
   <!-- Sidebar -->
   <aside class="sidebar" aria-label="Navegação do conteúdo editorial">
+    <div class="acc-controls">
+      <button type="button" onclick="expandAll()">Expandir tudo</button>
+      <button type="button" onclick="collapseAll()">Recolher tudo</button>
+    </div>
     <nav>
       <ul class="accordion" role="tree">
         <li class="accordion-item"> <a href="index.htm" class="acc-link">Voltar ao início do manual</a> </li>
@@ -254,7 +257,7 @@ _Avalia%C3%A7%C3%A3o_Propostas_de_Publica%C3%A7%C3%B5es_Editadas_Incaper.pdf" ta
       <li>Conferir se todas as figuras (gráficos, ilustrações, mapas, fotos, fluxogramas,
         infográficos, entre outros) que fazem parte do original, a ser analisado, foram
         enviadas pelo Autor Correspondente. Em seguida, deve encaminhá-las para
-        avaliação prévia da equipe de design (<a href="#sec-5-2-6">ver item 5.2.6</a>).</li>
+        avaliação prévia da equipe de design (<a href="#sec-5-3-6">ver seção 5.3.6</a>).</li>
       <li>Selecionar consultores <i>ad hoc</i> com formação e experiência compatível com o
         conteúdo do original.</li>
     </ul>
@@ -297,7 +300,7 @@ _Editora%C3%A7%C3%A3o_Gerenciada_pelo_Autor_Correspondente.pdf" target="_blank">
         mais alterações de conteúdo.</li>
       <li>As figuras (gráficos, ilustrações, mapas, fotos, fluxogramas, infográficos,
         entre outros) entregues para editoração devem estar na resolução e com as
-        demais especificidades indicadas pelo Designer (<a href="#sec-5-2-6">ver item 5.2.6</a>). Caso haja
+        demais especificidades indicadas pelo Designer (<a href="#sec-5-3-6">ver seção 5.3.6</a>). Caso haja
         necessidade de substituição de alguma figura, o Autor Correspondente deve
         fazê‑la no menor espaço de tempo possível.</li>
       <li>O Autor Correspondente deve avaliar e aprovar tanto a revisão textual quanto a
@@ -658,11 +661,11 @@ _Divulga%C3%A7%C3%A3o_de_Publica%C3%A7%C3%B5es_Editadas_pelo_Incaper.pdf" target
     <p>É importante não confundir com bibliografia, que é a lista de títulos consultados para
       a elaboração do trabalho, mas que não tenham sido citados diretamente no corpo
       do texto.</p>
-    <h3 id="sec-5-3-2-1">5.3.2.1 Localização</h3>
+    <h4 id="sec-5-3-2-1">5.3.2.1 Localização</h4>
     <p>As referências em um documento podem aparecer no rodapé, no fim dos textos
       (partes ou seções), em lista de referências ou antecedendo resumos, resenhas,
       recensões, conforme a ABNT NBR 6028:2021, e erratas.</p>
-    <h3 id="sec-5-3-2-2">5.3.2.2 Regras gerais</h3>
+    <h4 id="sec-5-3-2-2">5.3.2.2 Regras gerais</h4>
     <ul>
       <li>As referências devem estar em ordem alfabética (sistema autor-data) ou em ordem
         de citação no texto (sistema numérico);</li>
@@ -950,156 +953,6 @@ _Divulga%C3%A7%C3%A3o_de_Publica%C3%A7%C3%B5es_Editadas_pelo_Incaper.pdf" target
     </ul>
     <p>A Figura 3, a seguir, ilustra essas orientações:</p>
     
-    <!--
-
-<div style="overflow:scroll">
- <table>
-        <caption>Tabela exemplo demonstrativa</caption>
-        <thead>
-          <tr>
-            <th rowspan="2">Material</th>
-            <th>MV</th>
-            <th>MS</th>
-            <th>N</th>
-            <th>P</th>
-            <th>K</th>
-            <th>Ca</th>
-            <th>Mg</th>
-          </tr>
-          <tr>
-            <th>(t ha-<sup>1</sup>)</th>
-            <th>(t ha-<sup>1</sup>)</th>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th>
-            <th>(Kg ha-<sup>1</sup>)</th>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="faixa-cab">
-          <td>Composto</td>
-          <td>20,90</td>
-          <td>12,26</td>
-            <td>147,12</td>
-            <td>29,40</td>
-            <td>98,00</td>
-            <td>77,20</td>
-            <td>58,80</td>
-          </tr>
-          <tr>
-          <td>ING (a)</td>
-          <td>13,50</td>
-          <td>5,34</td>
-            <td>121,11</td>
-            <td>6,41</td>
-            <td>30,06</td>
-            <td>57,62</td>
-            <td>5,66</td>
-          </tr>
-          <tr>
-          <td>ING (b)</td>
-          <td>6,16</td>
-          <td>3,17</td>
-            <td>45,01</td>
-            <td>2,85</td>
-            <td>26,31</td>
-            <td>19,02</td>
-            <td>1,27</td>
-          </tr>
-          <tr>
-            <td>GLI (a)</td>
-            <td>15,70</td>
-            <td>7,34</td>
-            <td>161,70</td>
-            <td>8,22</td>
-            <td>52,04</td>
-            <td>77,58</td>
-            <td>20,04</td>
-          </tr>
-          <tr>
-            <td>GLI (b)</td>
-            <td>13,77</td>
-            <td>4,70</td>
-            <td>64,86</td>
-            <td>4,23</td>
-            <td>54,05</td>
-            <td>31,02</td>
-            <td>10,81</td>
-          </tr>
-          <tr>
-            <td>BAN</td>
-            <td>9,72</td>
-            <td>1,46</td>
-            <td>12,92</td>
-            <td>1,17</td>
-            <td>25,22</td>
-            <td>13,77</td>
-            <td>3,68</td>
-          </tr>
-          <tr>
-            <td>PUP</td>
-            <td>3,26</td>
-            <td>0,96</td>
-            <td>13,20</td>
-            <td>2,11</td>
-            <td>12,16</td>
-            <td>6,15</td>
-            <td>1,69</td>
-          </tr>
-          <tr class="faixa-cab">
-            <td>Soma</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-          </tr>
-          <tr>
-            <td>COMP + ING</td>
-            <td>40,57</td>
-            <td>20,77</td>
-            <td>313,24</td>
-            <td>38,66</td>
-            <td>154,37</td>
-            <td>153,84</td>
-            <td>65,73</td>
-          </tr>
-          <tr>
-            <td>COMP + GLI</td>
-            <td>50,38</td>
-            <td>24,30</td>
-            <td>373,68</td>
-            <td>41,85</td>
-            <td>204,09</td>
-            <td>185,8</td>
-            <td>89,65</td>
-          </tr>
-          <tr>
-            <td>COMP + BAN</td>
-            <td>30,63</td>
-            <td>13,72</td>
-            <td>160,04</td>
-            <td>30,57</td>
-            <td>123,22</td>
-            <td>90,97</td>
-            <td>62,48</td>
-          </tr>
-          <tr>
-            <td>COMP + PUP</td>
-            <td>24,17</td>
-            <td>13,22</td>
-            <td>160,32</td>
-            <td>31,51</td>
-            <td>110,16</td>
-            <td>83,35</td>
-            <td>60,49</td>
-          </tr>
-        </tbody>
-      </table>
-      </div> -->
     
     <figure> <img src="imagens/cap5-img-03.png" alt="Exemplo de tabela com título explicativo e fonte indicando sua procedência." title="Exemplo de tabela com título explicativo e fonte indicando sua procedência." /> </figure>
     <figcaption><span>Figura 3 –</span> Exemplo de tabela com título explicativo e fonte indicando sua procedência.<br />
@@ -1159,7 +1012,7 @@ _Divulga%C3%A7%C3%A3o_de_Publica%C3%A7%C3%B5es_Editadas_pelo_Incaper.pdf" target
     <p>Exemplos:</p>
     <ul>
       <li> Na íntegra<br />
-        <strong>Fonte:</strong> Siqueira et al. (2020). </li>
+        <strong>Fonte:</strong> Siqueira <i>et al</i>. (2020). </li>
       <br />
       <li> Adaptada de outra obra<br />
         <strong>Fonte:</strong> Adaptado de Correia <i>et al</i>. (2020).<br />
@@ -1193,11 +1046,11 @@ _Divulga%C3%A7%C3%A3o_de_Publica%C3%A7%C3%B5es_Editadas_pelo_Incaper.pdf" target
   <div class="container nav-footer-main"> <a class="bt bt_lar" style="float: left;" href="capitulo_quatro.htm">< Cap. 4</a> <a class="bt bt_lar" style="float: right;" href="capitulo_seis.htm">Cap. 6 ></a> </div>
 </main>
 <footer>
-  <section class="rodape" role="img" aria-label="Top banner">
+  <section class="rodape cap" role="img" aria-label="Top banner">
     <div class="container main-rodape">
       <div class="rodape-logo hero-inner">
         <figure class="hero-logo"> <a href="https://incaper.es.gov.br/" title="Incaper"> <img src="imagens/logo-incaper-neg.svg" alt="Logo Incaper" /> </a> </figure>
-        <h5>Manual de Produção Editorial do Incaper</h5>
+        <h5><a href="index.htm">Manual de Produção Editorial do Incaper</a></h5>
         <p>Instituto Capixaba de Pesquisa, Assistência Técnica e Extensão Rural (Incaper) <br />
           Rua Afonso Sarlo, 160 - Bento Ferreira <br />
           CEP: 29052-010 - Vitória / ES <br />
@@ -1205,12 +1058,11 @@ _Divulga%C3%A7%C3%A3o_de_Publica%C3%A7%C3%B5es_Editadas_pelo_Incaper.pdf" target
       </div>
       <div class="rodape-menu">
         <ul>
-          <li><a href="index.htm">Início</a></li>
           <li><a href="expediente.htm">Expediente</a></li>
+          <li><a href="autores.htm">Autores</a></li>
           <li><a href="prefacio.htm">Prefácio</a></li>
           <li><a href="agradecimentos.htm">Agradecimentos</a></li>
           <li><a href="apresentacao.htm">Apresentação</a></li>
-          <li><a href="download.htm">Download</a></li>
         </ul>
       </div>
       <div class="rodape-sumario">
@@ -1238,5 +1090,14 @@ _Divulga%C3%A7%C3%A3o_de_Publica%C3%A7%C3%B5es_Editadas_pelo_Incaper.pdf" target
     </div>
   </section>
 </footer>
+<script>
+function expandAll(){
+  document.querySelectorAll('.acc-check').forEach(c => c.checked = true);
+}
+
+function collapseAll(){
+  document.querySelectorAll('.acc-check').forEach(c => c.checked = false);
+}
+</script>
 </body>
 </html>

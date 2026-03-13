@@ -76,10 +76,14 @@ body {
 /* ============================================================
    BANNER HERO
    ============================================================ */
-.hero {
+.hero-index {
  
   background-image: url('../imagens/pattern.png'), 
                     linear-gradient(90deg, var( --cor-ter-ver), var(--cor-qui-ver));
+}
+.hero {
+ 
+  background: linear-gradient(90deg, var( --cor-ter-ver), var(--cor-qui-ver));
 }
 
 .hero-main {
@@ -128,6 +132,10 @@ body {
 .cap-ver {
   background: var(--cor-pri-ver);
 }
+.cap-cin {
+  background: linear-gradient(90deg,var(--cor-ter-pre),var(--cor-ters-pre))
+}
+
 
 .cap-main {
   display: grid;
@@ -213,11 +221,10 @@ body {
 /* ============================================================
  RODAPE
    ============================================================ */
-  .rodape {padding: 50px 0; background-color: var(--cor-pri-lar); margin-top: 40px;}
-  footer h5 {color: var(--cor-pri-bra)}
+  .rodape {padding: 50px 0; margin-top: 40px;}
   footer ul li{list-style: none}
-  footer ul li a {color: var(--cor-pri-bra); text-decoration: none;}
-  footer ul li a:hover {text-decoration:underline;}
+  footer ul li a,  footer h5 a {color: var(--cor-pri-bra); text-decoration: none;}
+  footer ul li a:hover,  footer h5 a:hover {text-decoration:underline;}
   footer p {color: #fff; font-size: 14px;}
   .rodape-logo {grid-area: logo;}
   .rodape-menu {grid-area: menu;}
@@ -249,6 +256,9 @@ h1, h2, h3, h4, h5, h6 {
 .mod-ver h1, .mod-ver h2, .mod-ver h3, .mod-ver h4, .mod-ver h5 {
   color: var(--cor-pri-ver);
 }
+.mod-cin h1, .mod-cin h2, .mod-cin h3, .mod-cin h4, .mod-cin h5 {
+  color: var(--cor-sec-pre);
+}
 
 h1 { font-size: 2.25rem; text-transform: uppercase; font-weight: var(--fonte-black);}  /* 36px */
 h2 { font-size: 1.875rem; text-transform: uppercase; font-weight: var(--fonte-regular); margin-top: 100px;} /* 30px */
@@ -258,6 +268,7 @@ h5 { font-size: 1.4rem; font-weight: var(--fonte-regular);} /* 18px */
 h5 span{ font-style:var(--fonte-italic);}
 h6 { font-size: 1rem; color: var(--cor-sec-pre); border-bottom:2px solid var(--cor-pri-lar); margin-bottom:30px}     /* 16px */
 .mod-ver h6 {border-bottom:2px solid var(--cor-pri-ver)}
+.mod-cin h6 {border-bottom:2px solid var(--cor-sec-pre)}
 
 
 /* ------------------------------------------------------------
@@ -302,6 +313,9 @@ h6 { font-size: 1rem; color: var(--cor-sec-pre); border-bottom:2px solid var(--c
 .content.mod-ver ul li::marker {
   color: var(--cor-pri-ver);
 }
+.content.mod-cin ul li::marker {
+  color: var(--cor-sec-pre);
+}
 
 .content ul.identada {
 	margin: 2rem 0 2rem 2rem;
@@ -327,12 +341,18 @@ h6 { font-size: 1rem; color: var(--cor-sec-pre); border-bottom:2px solid var(--c
 .content.mod-ver .destaque-lista {
 	background-color:var(--cor-pri-ver);
 }
-
+.content.mod-cin .destaque-lista {
+	background-color:var(--cor-sec-pre);
+}
 .content .identada-p {
 	margin-left:35px
 }
 .content .identada-g {
 	margin-left:14px
+}
+.content .no-list {
+  list-style: none;
+  margin-left: 0;
 }
 
 /* Estilo das listas ordenadas */
@@ -353,6 +373,9 @@ h6 { font-size: 1rem; color: var(--cor-sec-pre); border-bottom:2px solid var(--c
 
 .content.mod-ver a {color: var(--cor-ter-ver);}
 .content.mod-ver a:hover {color: var(--cor-sec-ver)}
+.content.mod-cin a {color: var(--cor-sec-pre);}
+.content.mod-cin a:hover {color: #000}
+
 
 /* Caixa de observação */
 .caixa-observacao {
@@ -367,6 +390,7 @@ h6 { font-size: 1rem; color: var(--cor-sec-pre); border-bottom:2px solid var(--c
 /* cor de fundo e estilo de fundo */
 .cor-lar {background: var(--cor-qua-lar)}
 .cor-ver {background: var(--cor-sex-ver)}
+.cor-cin {background: var(--cor-ter-pre)}
 .out-ver {border: 3px solid var(--cor-sex-ver)}
 
 /* cor texto */
@@ -375,9 +399,38 @@ h6 { font-size: 1rem; color: var(--cor-sec-pre); border-bottom:2px solid var(--c
 .txt-verm {color: var(--cor-pri-verm)}
 
 /* Tooltip - nota de rodapé */
-.nota { display:inline-block; text-decoration:underline; cursor: help}
-.nota .material-symbols-outlined {float:left}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: underline;
+}
 
+.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: #000;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 4px;
+
+  width: max-content;   /* largura baseada no conteúdo */
+  max-width: 280px;     /* limite para telas pequenas */
+
+  white-space: normal;
+  line-height: 1.4;
+
+  font-size: 14px;
+  z-index: 999;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
 
 .content .material-symbols-outlined { margin-right:7px}
 
@@ -409,6 +462,9 @@ h6 { font-size: 1rem; color: var(--cor-sec-pre); border-bottom:2px solid var(--c
 .content.mod-ver figcaption span{
   color: var(--cor-pri-var);
 }
+.content.mod-cin figcaption span{
+  color: var(--cor-sec-pre);
+}
 
 .small span{
   font-weight: bold;
@@ -439,29 +495,33 @@ table caption {
   text-align: left;
   margin-bottom: 12px;
 }
-
-table th,
-table td {
-  border: 1px solid var(--cor-pri-bra);
-  padding: 12px;
-  background-color: var(--cor-qui-lar);
-}
-
-.mod-ver table th,
-.mod-ver table td {
-  background-color: var(--cor-sex-ver);
-}
-
 table thead th {
   background: var(--cor-pri-lar);
   font-weight: var(--fonte-regular);
   color: var(--cor-pri-bra);
   font-weight:600
 }
-
+table th,
+table td {
+  border: 1px solid var(--cor-pri-bra);
+  padding: 12px;
+  background-color: var(--cor-qui-lar);
+}
 .mod-ver table thead th {
   background-color: var(--cor-qui-ver);
 }
+.mod-ver table th,
+.mod-ver table td {
+  background-color: var(--cor-sex-ver);
+}
+.mod-cin table thead th {
+  background-color: var(--cor-ters-pre);
+}
+.mod-cin table th,
+.mod-cin table td {
+  background-color: var(--cor-qua-pre);
+}
+
 
 table tr.faixa-cab td{
 background: #FDCC7A !important;
@@ -495,6 +555,10 @@ table.table_sem_estilo th, table.table_sem_estilo td{
 .bt_ver{
   color: var(--cor-pri-bra);
   background-color: var(--cor-sec-ver);
+}
+.bt_cin{
+  color: var(--cor-pri-bra);
+  background-color: var(--cor-sec-pre);
 }
 
 blockquote {
@@ -614,6 +678,17 @@ aside {
 /* Mostrar submenu quando checkbox está ativo */
 .acc-check:checked ~ .sub {
   display: block;
+}
+
+.acc-controls{
+  margin-bottom:20px;
+}
+
+.acc-controls button{
+  font-size:0.8rem;
+  padding:4px 8px;
+  margin-right:4px;
+  cursor:pointer;
 }
 
 /* ============================================================

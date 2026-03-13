@@ -24,12 +24,11 @@
       <input type="checkbox" id="toggle-menu" class="toggle-menu-input">
       <label for="toggle-menu" class="toggle-menu-btn">☰ Menu</label>
       <ul class="menu-links">
-        <li><a href="index.htm">Início</a></li>
         <li><a href="expediente.htm">Expediente</a></li>
+        <li><a href="autores.htm">Autores</a></li>
         <li><a href="prefacio.htm">Prefácio</a></li>
         <li><a href="agradecimentos.htm">Agradecimentos</a></li>
         <li><a href="apresentacao.htm">Apresentação</a></li>
-        <li><a href="download.htm">Download</a></li>
       </ul>
     </nav>
   </div>
@@ -71,6 +70,10 @@
   
   <!-- Sidebar -->
   <aside class="sidebar" aria-label="Navegação do conteúdo editorial">
+    <div class="acc-controls">
+      <button type="button" onclick="expandAll()">Expandir tudo</button>
+      <button type="button" onclick="collapseAll()">Recolher tudo</button>
+    </div>
     <nav>
       <ul class="accordion" role="tree">
         <li class="accordion-item" role="treeitem"> <a href="index.htm" class="acc-link">Voltar ao início do manual</a> </li>
@@ -253,8 +256,13 @@
       <li> De um a dez, os números devem ser escritos por extenso. A partir de 11, eles devem
         ser grafados em algarismos: </li>
     </ul>
-    <p>Exemplo: <a class="nota" title="Verdin Filho et al. (2022)."><span class="material-symbols-outlined"> help</span> “Geralmente, realiza-se a coleta das brotações quando elas apresentam
-      crescimento suficiente para extração de três a seis estacas aptas/brotos”.</a></p>
+    <p>Exemplo: 
+    <a><span class="tooltip">
+  “Geralmente, realiza-se a coleta das brotações quando elas apresentam
+      crescimento suficiente para extração de três a seis estacas aptas/brotos”.
+  <span class="tooltip-text">Verdin Filho <i>et al.</i> (2022).</span>
+</span></a>
+    </p>
     <p>Exemplo: Durante o projeto, foram implantadas 15 unidades com a tecnologia de
       produção de cafés especiais de baixo custo adaptados à agricultura familiar.</p>
     <div class="caixa-observacao cor-ver"> Proceda da mesma forma com números ordinais. </div>
@@ -747,11 +755,11 @@ das palavras." /> </figure>
     <ul>
       <li> Quando a frase inteira é uma citação, o ponto final deve ficar dentro das aspas. </li>
     </ul>
-    <p>Exemplo: “Tudo vale a pena quando a alma não é pequena.” (<a class="nota" title="Pessoa (1934)."><span class="material-symbols-outlined"> help</span> Fernando Pessoa</a>)</p>
+    <p>Exemplo: “Tudo vale a pena quando a alma não é pequena.” (<a><span class="tooltip">Fernando Pessoa<span class="tooltip-text">Pessoa (1934).</span></span></a>)</p>
     <ul>
       <li> Se a citação não inicia, mas encerra a frase, as aspas fecham antes do ponto final. </li>
     </ul>
-    <p>Exemplo: Segundo <a class="nota" title="Freire (1989)."><span class="material-symbols-outlined"> help</span> Paulo Freire</a>, “Ninguém ignora tudo. Ninguém sabe tudo. Todos nós
+    <p>Exemplo: Segundo <a><span class="tooltip">Paulo Freire<span class="tooltip-text">Freire (1989).</span></span></a>, “Ninguém ignora tudo. Ninguém sabe tudo. Todos nós
       sabemos alguma coisa. Todos nós ignoramos alguma coisa. Por isso aprendemos sempre”.</p>
     <ul>
       <li> Quando houver referência bibliográfica, o ponto vem depois dela, em quaisquer dos
@@ -1086,7 +1094,7 @@ das palavras." /> </figure>
       ou fizer parte de assinaturas na parte pré-textual (apresentação, prefácio,
       agradecimentos etc.) das publicações do Incaper, terá inicial maiúscula. </div>
     <p class="d-flex"><span class="destaque-lista">J</span> <span><strong>Elementos químicos</strong> escritos por extenso.</span></p>
-    <p class="identada-p">Exemplo: <a class="nota" title="Prezotti, Guarçoni e Balbino (2018)."><span class="material-symbols-outlined"> help</span> “Os sintomas de deficiência de cálcio (Ca) e magnésio (Mg) geralmente ocorrem em solos ácidos, com baixa capacidade de troca catiônica (CTC), [...]”.</a></p>
+    <p class="identada-p">Exemplo: <a><span class="tooltip">“Os sintomas de deficiência de cálcio (Ca) e magnésio (Mg) geralmente ocorrem em solos ácidos, com baixa capacidade de troca catiônica (CTC), [...]”.<span class="tooltip-text">Prezotti, Guarçoni e Balbino (2018).</span></span></a></p>
     <p class="d-flex"><span class="destaque-lista">K</span> <span>Em simples <strong>desdobramentos, enumerações</strong> ou <strong>explicações</strong>.</span></p>
     <p class="identada-p">Exemplo: É preciso incluir em nossa lista: arroz, feijão, batata e ovos.</p>
     <p class="d-flex"><span class="destaque-lista">L</span> <span>Em <strong>enumerações</strong> com palavras soltas ou frases curtas:</span></p>
@@ -1108,11 +1116,11 @@ das palavras." /> </figure>
   <div class="container nav-footer-main"> <a class="bt bt_ver" style="float: left;" href="capitulo_nove.htm">< Cap. 9</a> <a class="bt bt_ver" style="float: right;" href="capitulo_onze.htm">Cap. 11 ></a> </div>
 </main>
 <footer>
-  <section class="rodape" role="img" aria-label="Top banner">
+  <section class="rodape cap-ver" role="img" aria-label="Top banner">
     <div class="container main-rodape">
       <div class="rodape-logo hero-inner">
         <figure class="hero-logo"> <a href="https://incaper.es.gov.br/" title="Incaper"> <img src="imagens/logo-incaper-neg.svg" alt="Logo Incaper" /> </a> </figure>
-        <h5>Manual de Produção Editorial do Incaper</h5>
+        <h5><a href="index.htm">Manual de Produção Editorial do Incaper</a></h5>
         <p>Instituto Capixaba de Pesquisa, Assistência Técnica e Extensão Rural (Incaper) <br />
           Rua Afonso Sarlo, 160 - Bento Ferreira <br />
           CEP: 29052-010 - Vitória / ES <br />
@@ -1120,12 +1128,11 @@ das palavras." /> </figure>
       </div>
       <div class="rodape-menu">
         <ul>
-          <li><a href="index.htm">Início</a></li>
           <li><a href="expediente.htm">Expediente</a></li>
+          <li><a href="autores.htm">Autores</a></li>
           <li><a href="prefacio.htm">Prefácio</a></li>
           <li><a href="agradecimentos.htm">Agradecimentos</a></li>
           <li><a href="apresentacao.htm">Apresentação</a></li>
-          <li><a href="download.htm">Download</a></li>
         </ul>
       </div>
       <div class="rodape-sumario">
@@ -1153,5 +1160,14 @@ das palavras." /> </figure>
     </div>
   </section>
 </footer>
+<script>
+function expandAll(){
+  document.querySelectorAll('.acc-check').forEach(c => c.checked = true);
+}
+
+function collapseAll(){
+  document.querySelectorAll('.acc-check').forEach(c => c.checked = false);
+}
+</script>
 </body>
 </html>

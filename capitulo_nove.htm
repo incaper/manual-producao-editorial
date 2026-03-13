@@ -24,12 +24,11 @@
       <input type="checkbox" id="toggle-menu" class="toggle-menu-input">
       <label for="toggle-menu" class="toggle-menu-btn">☰ Menu</label>
       <ul class="menu-links">
-        <li><a href="index.htm">Início</a></li>
         <li><a href="expediente.htm">Expediente</a></li>
+        <li><a href="autores.htm">Autores</a></li>
         <li><a href="prefacio.htm">Prefácio</a></li>
         <li><a href="agradecimentos.htm">Agradecimentos</a></li>
         <li><a href="apresentacao.htm">Apresentação</a></li>
-        <li><a href="download.htm">Download</a></li>
       </ul>
     </nav>
   </div>
@@ -71,6 +70,10 @@
   
   <!-- Sidebar -->
   <aside class="sidebar" aria-label="Navegação do conteúdo editorial">
+    <div class="acc-controls">
+      <button type="button" onclick="expandAll()">Expandir tudo</button>
+      <button type="button" onclick="collapseAll()">Recolher tudo</button>
+    </div>
     <nav>
       <ul class="accordion" role="tree">
         <li class="accordion-item" role="treeitem"> <a href="index.htm" class="acc-link">Voltar ao início do manual</a> </li>
@@ -319,7 +322,7 @@
       (exemplo: matéria sobre produto da agroindústria, café artesanal, feiras e eventos).</p>
     <figure> <img src="imagens/cap9-img-01.jpg" alt="Exemplo de imagem que contém propaganda de marca." title="Exemplo de imagem que contém propaganda de marca." /> </figure>
     <figcaption><span>Figura 9 –</span> Exemplo de imagem que contém propaganda de marca.<br />
-      <span>Fonte:</span> Fotos de Abraão Carlos Verdin Filho.</figcaption>
+      <span>Fonte:</span> Foto de Abraão Carlos Verdin Filho.</figcaption>
     <h3 id="sec-9-1-7">9.1.7 Software e organização dos arquivos</h3>
     <p>Todas as publicações do Incaper devem ser diagramadas no InDesign, inclusive as
       capas, pois esse software permite melhor ajuste de lombada nas capas de livros.</p>
@@ -500,7 +503,7 @@ letras." /> </figure>
     <p>Em publicações desse tipo, todas as margens devem ter, no mínimo, 10 mm.</p>
     <figure> <img src="imagens/cap9-img-10.jpg" alt="Exemplo da parte interna de um fôlder do Incaper." title="Exemplo da parte interna de um fôlder do Incaper." /> </figure>
     <figcaption><span>Figura 18 –</span> Exemplo da parte interna de um fôlder do Incaper.<br />
-      <span>Fonte:</span> Adaptado de Ruas <i>el al.</i>, 2024.</figcaption>
+      <span>Fonte:</span> Adaptado de Ruas <i>et al.</i>, 2024.</figcaption>
     <h3 id="sec-9-2-7">9.2.7 Paginação</h3>
     <p>A paginação vai variar de acordo com a forma em que a publicação for disponibilizada:</p>
     <ul>
@@ -530,10 +533,8 @@ letras." /> </figure>
     </ul>
     <p>Há linhas viúvas e órfãs?</p>
     <div class="caixa-observacao cor-lar">
-      <p><strong>Linha viúva:</strong> última linha de um parágrafo que aparece sozinha no topo de
-        uma página ou coluna seguinte.</p>
-      <p><strong>Linha órfã:</strong> primeira linha que aparece isolada na parte inferior de uma página
-        ou coluna.</p>
+      <strong>Linha viúva:</strong> última linha de um parágrafo que aparece sozinha no topo de uma página ou coluna seguinte.<br /><br />
+      <strong>Linha órfã:</strong> primeira linha que aparece isolada na parte inferior de uma página ou coluna.
     </div>
     <p><strong>Espaçamentos e Alinhamento</strong></p>
     <ul>
@@ -637,11 +638,11 @@ letras." /> </figure>
   <div class="container nav-footer-main"> <a class="bt bt_lar" style="float: left;" href="capitulo_oito.htm">< Cap. 8</a> <a class="bt bt_lar" style="float: right;" href="capitulo_dez.htm">Cap. 10 ></a> </div>
 </main>
 <footer>
-  <section class="rodape" role="img" aria-label="Top banner">
+  <section class="rodape cap" role="img" aria-label="Top banner">
     <div class="container main-rodape">
       <div class="rodape-logo hero-inner">
         <figure class="hero-logo"> <a href="https://incaper.es.gov.br/" title="Incaper"> <img src="imagens/logo-incaper-neg.svg" alt="Logo Incaper" /> </a> </figure>
-        <h5>Manual de Produção Editorial do Incaper</h5>
+        <h5><a href="index.htm">Manual de Produção Editorial do Incaper</a></h5>
         <p>Instituto Capixaba de Pesquisa, Assistência Técnica e Extensão Rural (Incaper) <br />
           Rua Afonso Sarlo, 160 - Bento Ferreira <br />
           CEP: 29052-010 - Vitória / ES <br />
@@ -649,12 +650,11 @@ letras." /> </figure>
       </div>
       <div class="rodape-menu">
         <ul>
-          <li><a href="index.htm">Início</a></li>
           <li><a href="expediente.htm">Expediente</a></li>
+          <li><a href="autores.htm">Autores</a></li>
           <li><a href="prefacio.htm">Prefácio</a></li>
           <li><a href="agradecimentos.htm">Agradecimentos</a></li>
           <li><a href="apresentacao.htm">Apresentação</a></li>
-          <li><a href="download.htm">Download</a></li>
         </ul>
       </div>
       <div class="rodape-sumario">
@@ -682,5 +682,14 @@ letras." /> </figure>
     </div>
   </section>
 </footer>
+<script>
+function expandAll(){
+  document.querySelectorAll('.acc-check').forEach(c => c.checked = true);
+}
+
+function collapseAll(){
+  document.querySelectorAll('.acc-check').forEach(c => c.checked = false);
+}
+</script>
 </body>
 </html>

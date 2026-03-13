@@ -24,12 +24,11 @@
       <input type="checkbox" id="toggle-menu" class="toggle-menu-input">
       <label for="toggle-menu" class="toggle-menu-btn">☰ Menu</label>
       <ul class="menu-links">
-        <li><a href="index.htm">Início</a></li>
         <li><a href="expediente.htm">Expediente</a></li>
+        <li><a href="autores.htm">Autores</a></li>
         <li><a href="prefacio.htm">Prefácio</a></li>
         <li><a href="agradecimentos.htm">Agradecimentos</a></li>
         <li><a href="apresentacao.htm">Apresentação</a></li>
-        <li><a href="download.htm">Download</a></li>
       </ul>
     </nav>
   </div>
@@ -71,6 +70,10 @@
   
   <!-- Sidebar -->
   <aside class="sidebar" aria-label="Navegação do conteúdo editorial">
+    <div class="acc-controls">
+      <button type="button" onclick="expandAll()">Expandir tudo</button>
+      <button type="button" onclick="collapseAll()">Recolher tudo</button>
+    </div>
     <nav>
       <ul class="accordion" role="tree">
         <li class="accordion-item" role="treeitem"> <a href="index.htm" class="acc-link">Voltar ao início do manual</a> </li>
@@ -113,7 +116,7 @@
               
               <!-- NÍVEL 3 -->
               <ul class="sub">
-                <li><a href="#sec-4-3-1-1" class="acc-link">4.3.1.1 Incaper em revista</a> </li>
+                <li><a href="#sec-4-3-1-1" class="acc-link">4.3.1.1 Incaper em Revista</a> </li>
                 <li class="accordion-item">
                   <input type="checkbox" id="acc-4-3-1-1" class="acc-check">
                   <label for="acc-4-3-1-1" class="acc-toggle"> <span class="icon"></span> </label>
@@ -121,13 +124,13 @@
                   
                   <!-- NÍVEL 4 -->
                   <ul class="sub">
-                    <li><a href="#sec-4-3-1-2-1" class="acc-link">4.3.1.2.1 Boletim agroclimático do Espírito Santo</a> </li>
-                    <li><a href="#sec-4-3-1-2-2" class="acc-link">4.3.1.2.2 Boletim da conjuntura agropecuária capixaba</a> </li>
+                    <li><a href="#sec-4-3-1-2-1" class="acc-link">4.3.1.2.1 Boletim Agroclimático do Espírito Santo</a> </li>
+                    <li><a href="#sec-4-3-1-2-2" class="acc-link">4.3.1.2.2 Boletim da Conjuntura Agropecuária Capixaba</a> </li>
                   </ul>
                 </li>
-                <li><a href="#sec-4-3-1-3" class="acc-link">4.3.1.3 Relatório anual de gestão</a> </li>
-                <li><a href="#sec-4-3-1-4" class="acc-link">4.3.1.4 Balanço social</a> </li>
-                <li><a href="#sec-4-3-1-5" class="acc-link">4.3.1.5 Anais simpósio Incaper pesquisa e seminário de iniciação científica</a> </li>
+                <li><a href="#sec-4-3-1-3" class="acc-link">4.3.1.3 Relatório Anual de Gestão</a> </li>
+                <li><a href="#sec-4-3-1-4" class="acc-link">4.3.1.4 Balanço Social</a> </li>
+                <li><a href="#sec-4-3-1-5" class="acc-link">4.3.1.5 Anais Simpósio Incaper em Revista e Seminário de Iniciação Científica</a> </li>
               </ul>
             </li>
             <li class="accordion-item">
@@ -135,14 +138,14 @@
               <label for="acc-4-3-2" class="acc-toggle"> <span class="icon"></span> </label>
               <a href="#sec-4-3-2" class="acc-link">4.3.2 Seriadas não periódicas</a>
               <ul class="sub">
-                <li><a href="#sec-4-3-2-1">4.3.2.1 Circular técnico-científica</a></li>
+                <li><a href="#sec-4-3-2-1">4.3.2.1 Circular Técnico-Científica</a></li>
                 <li><a href="#sec-4-3-2-2">4.3.2.2 Documentos</a></li>
-                <li><a href="#sec-4-3-2-3">4.3.2.3 Anais de eventos científicos</a></li>
-                <li><a href="#sec-4-3-2-4">4.3.2.4 Fôlder técnico</a></li>
-                <li><a href="#sec-4-3-2-5">4.3.2.5 Fôlder institucional</a></li>
+                <li><a href="#sec-4-3-2-3">4.3.2.3 Anais de Eventos Científicos</a></li>
+                <li><a href="#sec-4-3-2-4">4.3.2.4 Fôlder Técnico</a></li>
+                <li><a href="#sec-4-3-2-5">4.3.2.5 Fôlder Institucional</a></li>
                 <li><a href="#sec-4-3-2-6">4.3.2.6 Cartilha</a></li>
                 <li><a href="#sec-4-3-2-7">4.3.2.7 Manual</a></li>
-                <li><a href="#sec-4-3-2-8">4.3.2.8 Folha informativa</a></li>
+                <li><a href="#sec-4-3-2-8">4.3.2.8 Folha Informativa</a></li>
               </ul>
             </li>
             <li class="accordion-item">
@@ -151,7 +154,7 @@
               <a href="#sec-4-3-3" class="acc-link">4.3.3 Não seriadas</a>
               <ul class="sub">
                 <li><a href="#sec-4-3-3-1">4.3.3.1 Livro</a></li>
-                <li><a href="#sec-4-3-3-2">4.3.3.2 Cartas e mapas</a></li>
+                <li><a href="#sec-4-3-3-2">4.3.3.2 Cartas e Mapas</a></li>
               </ul>
             </li>
           </ul>
@@ -447,8 +450,7 @@ editora.incaper.es.gov.br/submissao-boletim-conjuntura" target="_blank">https://
     <p><strong>LINHA EDITORIAL:</strong> Promoção Institucional.</p>
     <p><strong>ELABORAÇÃO:</strong> Comitê próprio.</p>
     <p><strong>GESTÃO:</strong> Comitê próprio.</p>
-    <h4 id="sec-4-3-1-5">4.3.1.5 Anais Simpósio Incaper Pesquisa e Seminário de Iniciação
-      Científica</h4>
+    <h4 id="sec-4-3-1-5">4.3.1.5 Anais Simpósio Incaper em Revista e Seminário de Iniciação Científica</h4>
     <p><strong>DESCRIÇÃO:</strong> Publicação que compila, por tema, todos os resumos de trabalhos
       apresentados no evento Simpósio Incaper Pesquisa.</p>
     <p><strong>OBJETIVO:</strong> Organizar e divulgar os conteúdos apresentados e discutidos no evento,
@@ -570,7 +572,7 @@ editora.incaper.es.gov.br/submissao-boletim-conjuntura" target="_blank">https://
       pôsteres etc.), exposições (palestras, conferências, mesas-redondas etc.) ou qualquer
       outro tipo de apresentação, organizados por seções temáticas.</p>
     <div class="caixa-observacao cor-lar"> No caso de publicação de anais contendo trabalhos completos, o conteúdo
-      poderá ser publicado como livro (ver item <a href="#sec-4-3-2-8">4.3.2.8</a>).</div>
+      poderá ser publicado como livro (ver item <a href="#sec-4-3-3-1">4.3.3.1</a>).</div>
     <div class="caixa-observacao cor-lar"> Anais de eventos que passarem a fazer parte do calendário fixo institucional
       receberão, a partir da segunda edição, identificadores próprios, nos termos
       estabelecidos pelo Instituto Brasileiro de Informação em Ciência e Tecnologia
@@ -840,8 +842,7 @@ editora.incaper.es.gov.br/submissao-boletim-conjuntura" target="_blank">https://
       organizadores e autores), lista de colaboradores, prefácio e agradecimentos.<br />
     </p>
     <p>Elementos textuais: introdução, página capitular, títulos correntes, também chamados
-      de cabeçalhos, no topo ou na <a class="nota" title="Página par: nome do autor; página ímpar: título do capítulo ou página par: título da obra; página ímpar: título
-do capítulo."><span class="material-symbols-outlined"> help</span>base das páginas</a>, notas, elementos de apoio (quadros
+      de cabeçalhos, no topo ou na <a><span class="tooltip">base das páginas<span class="tooltip-text">Página par: nome do autor; página ímpar: título do capítulo ou página par: título da obra; página ímpar: título do capítulo.</span></span></a>, notas, elementos de apoio (quadros
       e tabelas) e iconografia (gráficos, diagramas, fotos, ilustrações, mapas etc.).</p>
     <p>Elementos pós-textuais:<br />
       <br />
@@ -912,11 +913,11 @@ es.gov.br/politica-editorial" target="_blank">https://editora.incaper.
   <div class="container nav-footer-main"> <a class="bt bt_lar" style="float: left;" href="capitulo_tres.htm">< Cap. 3</a> <a class="bt bt_lar" style="float: right;" href="capitulo_cinco.htm">Cap. 5 ></a> </div>
 </main>
 <footer>
-  <section class="rodape" role="img" aria-label="Top banner">
+  <section class="rodape cap" role="img" aria-label="Top banner">
     <div class="container main-rodape">
       <div class="rodape-logo hero-inner">
         <figure class="hero-logo"> <a href="https://incaper.es.gov.br/" title="Incaper"> <img src="imagens/logo-incaper-neg.svg" alt="Logo Incaper" /> </a> </figure>
-        <h5>Manual de Produção Editorial do Incaper</h5>
+        <h5><a href="index.htm">Manual de Produção Editorial do Incaper</a></h5>
         <p>Instituto Capixaba de Pesquisa, Assistência Técnica e Extensão Rural (Incaper) <br />
           Rua Afonso Sarlo, 160 - Bento Ferreira <br />
           CEP: 29052-010 - Vitória / ES <br />
@@ -924,12 +925,11 @@ es.gov.br/politica-editorial" target="_blank">https://editora.incaper.
       </div>
       <div class="rodape-menu">
         <ul>
-          <li><a href="index.htm">Início</a></li>
           <li><a href="expediente.htm">Expediente</a></li>
+          <li><a href="autores.htm">Autores</a></li>
           <li><a href="prefacio.htm">Prefácio</a></li>
           <li><a href="agradecimentos.htm">Agradecimentos</a></li>
           <li><a href="apresentacao.htm">Apresentação</a></li>
-          <li><a href="download.htm">Download</a></li>
         </ul>
       </div>
       <div class="rodape-sumario">
@@ -957,5 +957,14 @@ es.gov.br/politica-editorial" target="_blank">https://editora.incaper.
     </div>
   </section>
 </footer>
+<script>
+function expandAll(){
+  document.querySelectorAll('.acc-check').forEach(c => c.checked = true);
+}
+
+function collapseAll(){
+  document.querySelectorAll('.acc-check').forEach(c => c.checked = false);
+}
+</script>
 </body>
 </html>

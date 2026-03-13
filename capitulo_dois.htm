@@ -24,12 +24,11 @@
       <input type="checkbox" id="toggle-menu" class="toggle-menu-input">
       <label for="toggle-menu" class="toggle-menu-btn">☰ Menu</label>
       <ul class="menu-links">
-        <li><a href="index.htm">Início</a></li>
         <li><a href="expediente.htm">Expediente</a></li>
+        <li><a href="autores.htm">Autores</a></li>
         <li><a href="prefacio.htm">Prefácio</a></li>
         <li><a href="agradecimentos.htm">Agradecimentos</a></li>
         <li><a href="apresentacao.htm">Apresentação</a></li>
-        <li><a href="download.htm">Download</a></li>
       </ul>
     </nav>
   </div>
@@ -71,6 +70,10 @@
   
   <!-- Sidebar -->
   <aside class="sidebar" aria-label="Navegação do conteúdo editorial">
+    <div class="acc-controls">
+      <button type="button" onclick="expandAll()">Expandir tudo</button>
+      <button type="button" onclick="collapseAll()">Recolher tudo</button>
+    </div>
     <nav>
       <ul class="accordion" role="tree">
         <li class="accordion-item" role="treeitem"> <a href="index.htm" class="acc-link">Voltar ao início do manual</a> </li>
@@ -81,7 +84,7 @@
           <label for="acc-2-1" class="acc-toggle"> <span class="icon"></span> </label>
           <a href="#sec-2-1" class="acc-link">2.1 Nível estratégico</a>
           <ul class="sub">
-            <li><a href="#sec-2-1-1">2.1.1 Conselho editorial</a></li>
+            <li><a href="#sec-2-1-1">2.1.1 Conselho Editorial</a></li>
           </ul>
         </li>
         
@@ -99,13 +102,13 @@
           
           <!-- Subnível -->
           <ul class="sub">
-            <li><a href="#sec-2-1-1">2.2.1 Coordenação editorial</a></li>
+            <li><a href="#sec-2-1-1">2.2.1 Coordenação Editorial</a></li>
             
             <!-- NÍVEL 2 -->
             <li class="accordion-item">
               <input type="checkbox" id="acc-5-1-4" class="acc-check">
               <label for="acc-5-1-4" class="acc-toggle"> <span class="icon"></span> </label>
-              <a href="#sec-2-2-2" class="acc-link">2.2.2 Gerência de transferência de tecnologia e conhecimento (GTTC)</a> 
+              <a href="#sec-2-2-2" class="acc-link">2.2.2 Gerência de Transferência de Tecnologia e Conhecimento (GTTC)</a> 
               
               <!-- NÍVEL 3 -->
               <ul class="sub">
@@ -205,11 +208,11 @@
   <div class="container nav-footer-main"> <a class="bt bt_lar" style="float: left;" href="capitulo_um.htm">< Cap. 1</a> <a class="bt bt_lar" style="float: right;" href="capitulo_tres.htm">Cap. 3 ></a> </div>
 </main>
 <footer>
-  <section class="rodape" role="img" aria-label="Top banner">
+  <section class="rodape cap" role="img" aria-label="Top banner">
     <div class="container main-rodape">
       <div class="rodape-logo hero-inner">
         <figure class="hero-logo"> <a href="https://incaper.es.gov.br/" title="Incaper"> <img src="imagens/logo-incaper-neg.svg" alt="Logo Incaper" /> </a> </figure>
-        <h5>Manual de Produção Editorial do Incaper</h5>
+        <h5><a href="index.htm">Manual de Produção Editorial do Incaper</a></h5>
         <p>Instituto Capixaba de Pesquisa, Assistência Técnica e Extensão Rural (Incaper) <br />
           Rua Afonso Sarlo, 160 - Bento Ferreira <br />
           CEP: 29052-010 - Vitória / ES <br />
@@ -217,12 +220,11 @@
       </div>
       <div class="rodape-menu">
         <ul>
-          <li><a href="index.htm">Início</a></li>
           <li><a href="expediente.htm">Expediente</a></li>
+          <li><a href="autores.htm">Autores</a></li>
           <li><a href="prefacio.htm">Prefácio</a></li>
           <li><a href="agradecimentos.htm">Agradecimentos</a></li>
           <li><a href="apresentacao.htm">Apresentação</a></li>
-          <li><a href="download.htm">Download</a></li>
         </ul>
       </div>
       <div class="rodape-sumario">
@@ -250,5 +252,14 @@
     </div>
   </section>
 </footer>
+<script>
+function expandAll(){
+  document.querySelectorAll('.acc-check').forEach(c => c.checked = true);
+}
+
+function collapseAll(){
+  document.querySelectorAll('.acc-check').forEach(c => c.checked = false);
+}
+</script>
 </body>
 </html>
