@@ -78,8 +78,7 @@ body {
    ============================================================ */
 .hero-index {
  
-  background-image: url('../imagens/pattern.png'), 
-                    linear-gradient(90deg, var( --cor-ter-ver), var(--cor-qui-ver));
+  background-image: linear-gradient(90deg, var( --cor-ter-ver), var(--cor-qui-ver));
 }
 .hero {
  
@@ -397,6 +396,7 @@ h6 { font-size: 1rem; color: var(--cor-sec-pre); border-bottom:2px solid var(--c
 .txt-lar {color: var(--cor-pri-lar)}
 .txt-ver {color: var(--cor-pri-ver)}
 .txt-verm {color: var(--cor-pri-verm)}
+.txt-cin {color: var(--cor-sec-pre) !important} 
 
 /* Tooltip - nota de rodapé */
 .tooltip {
