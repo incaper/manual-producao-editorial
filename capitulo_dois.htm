@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Capítulo 2 - Estrutura editorial do Incaper | Manual de Produção Editorial do Incaper</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta content="pt-br, pt, en" http-equiv="Content-Language" />
+<meta content="Incaper" name="author" />
+<meta content="O Incaper é responsável pela elaboração e execução de programas e projetos que proporcionam o desenvolvimento rural sustentável no Espírito Santo." name="description" />
+<meta content="Incaper, Seag, Agricultura, Pesquisa, Extensão Rural, Manual, Produção Editorial, Editorial" name="keywords" />
+<link rel="stylesheet" href="css/variaveis.css">
+<link rel="stylesheet" href="css/estilo.css">
+<link href="imagens/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+
+<!-- Topo com título e menu -->
+<header class="top-menu" role="banner">
+  <div class="container header-inner">
+    <div class="logo" aria-label="Título do site"> <a href="index.htm">Manual Incaper</a> </div>
+    <nav class="top-nav" aria-label="Menu principal"> 
+      <!-- Botão mobile em CSS puro -->
+      <input type="checkbox" id="toggle-menu" class="toggle-menu-input">
+      <label for="toggle-menu" class="toggle-menu-btn">☰ Menu</label>
+      <ul class="menu-links">
+        <li><a href="expediente.htm">Expediente</a></li>
+        <li><a href="autores.htm">Autores</a></li>
+        <li><a href="prefacio.htm">Prefácio</a></li>
+        <li><a href="agradecimentos.htm">Agradecimentos</a></li>
+        <li><a href="apresentacao.htm">Apresentação</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Banner -->
+<section class="cap" role="img" aria-label="banner capitulo">
+  <div class="container cap-main">
+    <div class="cap-inner">
+      <figure> <img src="imagens/cap-2.png" alt="Imagem capítulo dois" /> </figure>
+    </div>
+    <div class="cap-tit">
+      <h1>Estrutura editorial do Incaper</h1>
+    </div>
+    <div class="container cap-nav">
+      <label for="capitulos">Navegar pelo conteúdo:</label>
+      <select id="capitulos" onchange="location.href = this.value;">
+        <option value="">Selecionar ...</option>
+        <option value="capitulo_um.htm">Capítulo 1</option>
+        <option value="capitulo_dois.htm">Capítulo 2</option>
+        <option value="capitulo_tres.htm">Capítulo 3</option>
+        <option value="capitulo_quatro.htm">Capítulo 4</option>
+        <option value="capitulo_cinco.htm">Capítulo 5</option>
+        <option value="capitulo_seis.htm">Capítulo 6</option>
+        <option value="capitulo_sete.htm">Capítulo 7</option>
+        <option value="capitulo_oito.htm">Capítulo 8</option>
+        <option value="capitulo_nove.htm">Capítulo 9</option>
+        <option value="capitulo_dez.htm">Capítulo 10</option>
+        <option value="capitulo_onze.htm">Capítulo 11</option>
+        <option value="referencias.htm">Referências</option>
+        <option value="glossario.htm">Glossário</option>
+        <option value="anexos.htm">Anexos</option>
+      </select>
+      <div style="margin-top: 10px"> <a class="bt bt_lar" style="float: left;" href="capitulo_um.htm">< Cap. 1</a> <a class="bt bt_lar" style="float: right;" href="capitulo_tres.htm">Cap. 3 ></a> </div>
+    </div>
+  </div>
+</section>
+<main class="container main-capitulo" role="main"> 
+  
+  <!-- Sidebar -->
+  <aside class="sidebar" aria-label="Navegação do conteúdo editorial">
+    <div class="acc-controls">
+      <button type="button" onclick="expandAll()">Expandir tudo</button>
+      <button type="button" onclick="collapseAll()">Recolher tudo</button>
+    </div>
+    <nav>
+      <ul class="accordion" role="tree">
+        <li class="accordion-item" role="treeitem"> <a href="index.htm" class="acc-link">Voltar ao início do manual</a> </li>
+        
+        <!-- NÍVEL 1 -->
+        <li class="accordion-item">
+          <input type="checkbox" id="acc-2-1" class="acc-check">
+          <label for="acc-2-1" class="acc-toggle"> <span class="icon"></span> </label>
+          <a href="#sec-2-1" class="acc-link">2.1 Nível estratégico</a>
+          <ul class="sub">
+            <li><a href="#sec-2-1-1">2.1.1 Conselho Editorial</a></li>
+          </ul>
+        </li>
+        
+        <!-- Outro item -->
+        <li class="accordion-item" role="treeitem"> 
+          
+          <!-- Checkbox controlador -->
+          <input type="checkbox" id="acc-2-2" class="acc-check">
+          
+          <!-- Botão (+ / -) que expande -->
+          <label for="acc-2-2" class="acc-toggle" aria-hidden="true"> <span class="icon"></span> </label>
+          
+          <!-- Link real --> 
+          <a href="#sec-2-2" class="acc-link">2.2 Níveis operacionais</a> 
+          
+          <!-- Subnível -->
+          <ul class="sub">
+            <li><a href="#sec-2-1-1">2.2.1 Coordenação Editorial</a></li>
+            
+            <!-- NÍVEL 2 -->
+            <li class="accordion-item">
+              <input type="checkbox" id="acc-5-1-4" class="acc-check">
+              <label for="acc-5-1-4" class="acc-toggle"> <span class="icon"></span> </label>
+              <a href="#sec-2-2-2" class="acc-link">2.2.2 Gerência de Transferência de Tecnologia e Conhecimento (GTTC)</a> 
+              
+              <!-- NÍVEL 3 -->
+              <ul class="sub">
+                <li><a href="#sec-2-2-2-1">2.2.2.1 Editoração das publicações</a></li>
+                <li><a href="#sec-2-2-2-2">2.2.2.2 Catalogação, disseminação e distribuição da produção editorial</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    </nav>
+  </aside>
+  
+  <!-- Conteúdo principal -->
+  <article class="content">
+    <p>A <a href="https://editora.incaper.es.gov.br/politica-editorial" target="_blank">Política Editorial do Incaper</a> constitui instrumento fundamental na orientação
+      aos autores quanto à linguagem, à padronização, ao estilo e às normas editoriais
+      adotadas pelo Instituto. Esses parâmetros são exigidos para documentos tanto de
+      caráter técnico-científico quanto para os demais produtos editoriais.</p>
+    <p>A <a href="https://editora.incaper.es.gov.br/politica-editorial" target="_blank">Política Editorial</a> define a estrutura editorial do Incaper, que é composta por um nível
+      estratégico e dois operacionais, que realizam desde o planejamento e a execução
+      das atividades de editoração das publicações até a sua disponibilização para o leitor.</p>
+    <p>Como nível estratégico, temos o Conselho Editorial do Incaper (CEI) e como níveis
+      operacionais, temos a Coordenação Editorial e a Gerência de Transferência de
+      Tecnologia e Conhecimento (GTTC).</p>
+    <h2 id="sec-2-1">2.1 Nível estratégico</h2>
+    <h3 id="sec-2-1-1">2.1.1 Conselho Editorial</h3>
+    <p>O Conselho Editorial do Incaper (CEI) é um órgão deliberativo, que define a <a href="https://editora.incaper.es.gov.br/politica-editorial" target="_blank">Política
+      Editorial</a> da instituição e é vinculado à Diretoria Setorial Técnica do Instituto, que
+      também exerce a sua presidência. A atuação desse colegiado é regulamentada por
+      um <a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Regimento_Interno/Regimento%20Interno%20do%20CEI_WEB.pdf" target="_blank">regimento próprio</a>, que orienta suas atividades e decisões.</p>
+    <p>O CEI também tem como objetivo contribuir para o desenvolvimento e a garantia
+      da qualidade das publicações do Incaper. Para alcançar esses objetivos, o CEI tem
+      como atribuições planejar, regulamentar, referendar, qualificar e acompanhar as
+      publicações de acordo com as linhas editoriais definidas na <a href="https://editora.incaper.es.gov.br/politica-editorial" target="_blank">Política Editorial</a>.</p>
+    <p>É constituído por nove membros efetivos, dos quais cinco são natos, dois são titulares
+      indicados como representantes da Assistência Técnica e Extensão Rural (Ater) e dois
+      da Pesquisa, Desenvolvimento e Inovação (PDI).</p>
+    <p>Os membros natos são o Diretor Setorial Técnico, que preside o CEI, o Coordenador
+      Editorial, o Gerente de Assistência Técnica e Extensão Rural (Gater), o Gerente de
+      Pesquisa, Desenvolvimento e Inovação (GPDI) e o Gerente de Transferência de
+      Tecnologia e Conhecimento (GTTC).</p>
+    <h2 id="sec-2-2">2.2 NÍVEIS OPERACIONAIS</h2>
+    <h3 id="sec-2-2-1">2.2.1 Coordenação Editorial</h3>
+    <p>É composta por um Coordenador Editorial (Editor) e um Coordenador Editorial Adjunto
+      (Editor Adjunto), com a finalidade de orientar os autores, receber as propostas de
+      publicação e conduzir o processo de avaliação técnica dos originais.</p>
+    <h3 id="sec-2-2-2">2.2.2 Gerência de Transferência de Tecnologia e Conhecimento
+      (GTTC)</h3>
+    <p>É a unidade da estrutura organizacional do Incaper que tem como atribuições executar
+      ou gerenciar o processo de editoração e impressão das publicações do Incaper,
+      além de realizar sua catalogação, disseminação e distribuição. Essas atividades
+      visam socializar o conhecimento e as tecnologias produzidas e recomendadas pelo
+      Instituto, por meio de seus produtos editoriais.</p>
+    <h4 id="sec-2-2-2-1">2.2.2.1 Editoração das publicações</h4>
+    <p>O processo de editoração das publicações do Incaper compreende revisão textual e
+      design editorial.</p>
+    <p>A atividade de revisão textual consiste na adequação do texto aos aspectos
+      linguísticos, textuais, às normas editoriais do Incaper e da ABNT (seção <a href="capitulo_cinco.htm#sec-5-3">5.3</a> e capítulos <a href="capitulo_dez.htm">10</a> e <a href="capitulo_onze.htm">11</a>)</p>
+    <p>Já o design editorial é o processo de planejar e criar o aspecto visual de uma
+      publicação. Ele visa organizar e apresentar os conteúdos de forma clara, atraente
+      e funcional. As atividades envolvidas incluem o tratamento de imagens, o projeto
+      gráfico e a diagramação.</p>
+    <ul>
+      <li>O tratamento de imagens refere-se à edição e aprimoramento de gráficos, fotos,
+        quadros, tabelas e ilustrações entregues pelo autor, para garantir que estejam
+        adequados à publicação em termos de qualidade e estilo visual.</li>
+      <li>O projeto gráfico é o planejamento do layout da publicação, que inclui a escolha
+        de cores, fontes, ícones, estilo das imagens e o design da capa. Ele visa criar uma
+        identidade visual que esteja alinhada com o conteúdo e o público-alvo.</li>
+      <li>A diagramação é a organização e disposição dos elementos (textos e imagens) nas
+        páginas, de acordo com o projeto gráfico. O objetivo é garantir que o conteúdo seja
+        fácil de ler e visualmente agradável, respeitando as normas editoriais.</li>
+    </ul>
+    <p>Essas atividades são realizadas de forma conjunta para garantir uma publicação
+      coesa e bem-estruturada, que proporcione uma leitura clara e agradável.</p>
+    <p>No Incaper, as atividades de revisão textual e design editorial podem ser realizadas
+      tanto pela equipe interna do Instituto quanto diretamente pelos autores ou por
+      prestadores de serviço terceirizados contratados pelo Incaper (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Procedimentos_Operacionais/NPI_034_-_Editoração_Gerenciada_pela_GTTC.pdf" target="_blank">NPI 034</a>), (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Procedimentos_Operacionais/NPI_035_-_Editoração_Gerenciada_pelo_Autor_Correspondente.pdf" target="_blank">NPI 035</a>)
+      e (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Procedimentos_Operacionais/NPI_036_-_Editoração_Realizada_pela_GTTC-1.pdf" target="_blank">NPI 036</a>). Nos casos de editoração realizada por prestadores terceirizados, a
+      equipe de Coordenação de Revisão Textual e Design Editorial da GTTC realiza o
+      acompanhamento do serviço realizado.</p>
+    <h4 id="sec-2-2-2-2">2.2.2.2 Catalogação, disseminação e distribuição da produção editorial</h4>
+    <p>A catalogação refere-se ao registro e armazenamento da produção editorial do Incaper
+      no <a href="https://bibliotecaruitendinha.incaper.es.gov.br/" target="_blank">repositório da Biblioteca Rui Tendinha (BRT)</a>, para propiciar acesso, preservação
+      e divulgação das publicações.</p>
+    <p>A disseminação corresponde à propagação das informações por vários meios e
+      canais institucionais, ou seja, sites, redes sociais, listas e sumários correntes.</p>
+    <p>A distribuição corresponde à separação e direcionamento da produção editorial do
+      Incaper tanto para o público interno — formado por extensionistas, pesquisadores
+      e unidades administrativas do Instituto — quanto para o público externo, que inclui
+      produtores rurais, instituições congêneres, organizações rurais, instituições de
+      ensino, bibliotecas, entre outros.</p>
+  </article>
+  <div></div>
+  <div class="container nav-footer-main"> <a class="bt bt_lar" style="float: left;" href="capitulo_um.htm">< Cap. 1</a> <a class="bt bt_lar" style="float: right;" href="capitulo_tres.htm">Cap. 3 ></a> </div>
+</main>
+<footer>
+  <section class="rodape cap" role="img" aria-label="Top banner">
+    <div class="container main-rodape">
+      <div class="rodape-logo hero-inner">
+        <figure class="hero-logo"> <a href="https://incaper.es.gov.br/" title="Incaper"> <img src="imagens/logo-incaper-neg.svg" alt="Logo Incaper" /> </a> </figure>
+        <h5><a href="index.htm">Manual de Produção Editorial do Incaper</a></h5>
+        <p>Instituto Capixaba de Pesquisa, Assistência Técnica e Extensão Rural (Incaper) <br />
+          Rua Afonso Sarlo, 160 - Bento Ferreira <br />
+          CEP: 29052-010 - Vitória / ES <br />
+          Tel.: (27) 3636-9800 / (27) 3636-9888</p>
+      </div>
+      <div class="rodape-menu">
+        <ul>
+          <li><a href="expediente.htm">Expediente</a></li>
+          <li><a href="autores.htm">Autores</a></li>
+          <li><a href="prefacio.htm">Prefácio</a></li>
+          <li><a href="agradecimentos.htm">Agradecimentos</a></li>
+          <li><a href="apresentacao.htm">Apresentação</a></li>
+        </ul>
+      </div>
+      <div class="rodape-sumario">
+        <ul>
+          <li><a href="capitulo_um.htm">1. Introdução</a></li>
+          <li><a href="capitulo_dois.htm">2. Estrutura editorial do Incaper</a></li>
+          <li><a href="capitulo_tres.htm">3. Linhas editoriais</a></li>
+          <li><a href="capitulo_quatro.htm">4. Formas de disponibilização, tipos e veículos de publicação</a></li>
+          <li><a href="capitulo_cinco.htm">5. Processo editorial</a></li>
+          <li><a href="capitulo_seis.htm">6. Direitos autorais</a></li>
+          <li><a href="capitulo_sete.htm">7. Plágio e outras condutas antiéticas</a></li>
+          <li><a href="capitulo_oito.htm">8. Inteligência artificial na produção editorial do Incaper</a></li>
+          <li><a href="capitulo_nove.htm">9. Orientações de diagramação</a></li>
+          <li><a href="capitulo_dez.htm">10. Padronização e estilo</a></li>
+          <li><a href="capitulo_onze.htm">11. Linguagem, gramática e ortografia</a></li>
+        </ul>
+      </div>
+      <div class="rodape-referencias">
+        <ul>
+          <li><a href="referencias.htm">Referências</a></li>
+          <li><a href="glossario.htm">Glossário</a></li>
+          <li><a href="anexos.htm">Anexos</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</footer>
+<script>
+function expandAll(){
+  document.querySelectorAll('.acc-check').forEach(c => c.checked = true);
+}
+
+function collapseAll(){
+  document.querySelectorAll('.acc-check').forEach(c => c.checked = false);
+}
+</script>
+</body>
+</html>

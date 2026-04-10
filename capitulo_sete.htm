@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Capítulo 7 - Plágio e outras condutas antiéticas | Manual de Produção Editorial do Incaper</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta content="pt-br, pt, en" http-equiv="Content-Language" />
+<meta content="Incaper" name="author" />
+<meta content="O Incaper é responsável pela elaboração e execução de programas e projetos que proporcionam o desenvolvimento rural sustentável no Espírito Santo." name="description" />
+<meta content="Incaper, Seag, Agricultura, Pesquisa, Extensão Rural, Manual, Produção Editorial, Editorial" name="keywords" />
+<link rel="stylesheet" href="css/variaveis.css">
+<link rel="stylesheet" href="css/estilo.css">
+<link href="imagens/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+
+<!-- Topo com título e menu -->
+<header class="top-menu" role="banner">
+  <div class="container header-inner">
+    <div class="logo" aria-label="Título do site"> <a href="index.htm">Manual Incaper</a> </div>
+    <nav class="top-nav" aria-label="Menu principal"> 
+      <!-- Botão mobile em CSS puro -->
+      <input type="checkbox" id="toggle-menu" class="toggle-menu-input">
+      <label for="toggle-menu" class="toggle-menu-btn">☰ Menu</label>
+      <ul class="menu-links">
+        <li><a href="expediente.htm">Expediente</a></li>
+        <li><a href="autores.htm">Autores</a></li>
+        <li><a href="prefacio.htm">Prefácio</a></li>
+        <li><a href="agradecimentos.htm">Agradecimentos</a></li>
+        <li><a href="apresentacao.htm">Apresentação</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Banner -->
+<section class="cap" role="img" aria-label="banner capitulo">
+  <div class="container cap-main">
+    <div class="cap-inner">
+      <figure> <img src="imagens/cap-7.png" alt="Imagem capítulo sete" /> </figure>
+    </div>
+    <div class="cap-tit">
+      <h1>Plágio e outras condutas antiéticas</h1>
+    </div>
+    <div class="container cap-nav">
+      <label for="capitulos">Navegar pelo conteúdo:</label>
+      <select id="capitulos" onchange="location.href = this.value;">
+        <option value="">Selecionar ...</option>
+        <option value="capitulo_um.htm">Capítulo 1</option>
+        <option value="capitulo_dois.htm">Capítulo 2</option>
+        <option value="capitulo_tres.htm">Capítulo 3</option>
+        <option value="capitulo_quatro.htm">Capítulo 4</option>
+        <option value="capitulo_cinco.htm">Capítulo 5</option>
+        <option value="capitulo_seis.htm">Capítulo 6</option>
+        <option value="capitulo_sete.htm">Capítulo 7</option>
+        <option value="capitulo_oito.htm">Capítulo 8</option>
+        <option value="capitulo_nove.htm">Capítulo 9</option>
+        <option value="capitulo_dez.htm">Capítulo 10</option>
+        <option value="capitulo_onze.htm">Capítulo 11</option>
+        <option value="referencias.htm">Referências</option>
+        <option value="glossario.htm">Glossário</option>
+        <option value="anexos.htm">Anexos</option>
+      </select>
+      <div style="margin-top: 10px"> <a class="bt bt_lar" style="float: left;" href="capitulo_seis.htm">< Cap. 6</a> <a class="bt bt_lar" style="float: right;" href="capitulo_oito.htm">Cap. 8 ></a> </div>
+    </div>
+  </div>
+</section>
+<main class="container main-capitulo" role="main"> 
+  
+  <!-- Sidebar -->
+  <aside class="sidebar" aria-label="Navegação do conteúdo editorial">
+    <div class="acc-controls">
+      <button type="button" onclick="expandAll()">Expandir tudo</button>
+      <button type="button" onclick="collapseAll()">Recolher tudo</button>
+    </div>
+    <nav>
+      <ul class="accordion" role="tree">
+        <li class="accordion-item" role="treeitem"> <a href="index.htm" class="acc-link">Voltar ao início do manual</a> </li>
+        <li><a href="#sec-7-1" class="acc-link">7.1 Plágio</a> </li>
+        <li><a href="#sec-7-2" class="acc-link">7.2 Falsificação de dados e informações, procedimentos e resultados</a> </li>
+        <li><a href="#sec-7-3" class="acc-link">7.3 Autoplágio</a> </li>
+        <li><a href="#sec-7-4" class="acc-link">7.4 Atribuição incorreta de autoria</a> </li>
+        <li><a href="#sec-7-5" class="acc-link">7.5 Conflito de interesses não declarado</a> </li>
+        <li><a href="#sec-7-6" class="acc-link">7.6 Conservação inadequada de registros de dados e informações</a> </li>
+        <li><a href="#sec-7-7" class="acc-link">7.7 Omissão de dados e informações</a> </li>
+        <li><a href="#sec-7-8" class="acc-link">7.8 Retenção de dados e informações</a> </li>
+        
+        <!-- NÍVEL 1 -->
+        <li class="accordion-item" role="treeitem"> 
+          <!-- Checkbox controlador -->
+          <input type="checkbox" id="acc-7-9" class="acc-check">
+          
+          <!-- Botão (+ / -) que expande -->
+          <label for="acc-7-9" class="acc-toggle" aria-hidden="true"> <span class="icon"></span> </label>
+          <!-- Link real --> 
+          <a href="#sec-7-9" class="acc-link">7.9 Publicação duplicada</a> 
+          
+          <!-- Subnível -->
+          <ul class="sub">
+            <li><a href="#sec-7-9-1">7.9.1 Publicação segmentada</a></li>
+          </ul>
+        </li>
+        <li><a href="#sec-7-10" class="acc-link">7.10 Verificação de plágio e outras condutas antiéticas</a> </li>
+        <li class="accordion-item" role="treeitem">
+          <input type="checkbox" id="acc-7-11" class="acc-check">
+          <label for="acc-7-11" class="acc-toggle" aria-hidden="true"> <span class="icon"></span> </label>
+          <a href="#sec-7-11" class="acc-link">7.11 Consequências de condutas antiéticas</a> 
+          
+          <!-- Subnível -->
+          <ul class="sub">
+            <li class="accordion-item" role="treeitem">
+              <input type="checkbox" id="acc-7-11-1" class="acc-check">
+              <label for="acc-7-11-1" class="acc-toggle" aria-hidden="true"> <span class="icon"></span> </label>
+              <a href="#sec-7-11-1">7.11.1 Retratação de publicação</a>
+              <ul class="sub">
+                <li><a href="#sec-7-11-1-1" class="acc-link">7.11.1.1 Principais razões de retratação de publicações</a></li>
+                <li><a href="#sec-7-11-1-2" class="acc-link">7.11.1.2 Possibilidades de retratação</a></li>
+                <li><a href="#sec-7-11-1-3" class="acc-link">7.11.1.3 Como evitar a retratação de uma publicação</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="sub">
+            <li class="accordion-item" role="treeitem">
+              <input type="checkbox" id="acc-7-11-2" class="acc-check">
+              <label for="acc-7-11-2" class="acc-toggle" aria-hidden="true"> <span class="icon"></span> </label>
+              <a href="#sec-7-11-2">7.11.2 Expressão de preocupação e solicitação de correção</a>
+              <ul class="sub">
+                <li><a href="#sec-7-11-2-1" class="acc-link">7.11.2.1 Expressão de preocupação</a></li>
+                <li><a href="#sec-7-11-2-2" class="acc-link">7.11.2.2 Solicitação de correção (ou retificação)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  
+  <!-- Conteúdo principal -->
+  <article class="content">
+    <p>No âmbito técnico-científico e da produção do conhecimento, a ética exerce um papel
+      fundamental para garantir a confiabilidade e a integridade da informação prestada,
+      além de preservar a produção intelectual.</p>
+    <p>No sentido contrário das práticas éticas, há condutas que violam determinados
+      princípios e que podem comprometer a credibilidade da informação no âmbito
+      técnico-científico.</p>
+    <p>Entre as condutas consideradas antiéticas e que devem ser evitadas nas publicações
+      editadas pelo Incaper, destacam-se:</p>
+    <p><strong>Desvios de condutas muito graves:</strong></p>
+    <ul>
+      <li>Plágio;</li>
+      <li>Fabricação de dados;</li>
+      <li>Falsificação de dados e informações, de procedimentos e de resultados.</li>
+    </ul>
+    <p><strong>Desvios de condutas menos graves:</strong></p>
+    <ul>
+      <li>Autoplágio;</li>
+      <li>Atribuição incorreta de autoria;</li>
+      <li>Conflito de interesses não declarado;</li>
+      <li>Conservação inadequada de registros de dados e informações;</li>
+      <li>Omissão de dados;</li>
+      <li>Retenção de dados e informações;</li>
+      <li>Publicação duplicada;</li>
+      <li>Publicação segmentada.</li>
+    </ul>
+    <h2 id="sec-7-1">7.1 PLÁGIO</h2>
+    <p>O plágio técnico-científico é uma prática antiética, de forma intencional ou não, que
+      ocorre quando o autor se apropria de ideias, textos, figuras ou qualquer forma de
+      expressão de outra pessoa ou instituição, sem atribuir autoria, como se fosse de sua
+      própria criação.</p>
+    <p>Em alguns casos, o plágio pode ser considerado crime de acordo com o Código Penal
+      Brasileiro (Brasil, 1940). Por isso, a Coordenação Editorial orienta e conscientiza os
+      autores sobre a importância de citar adequadamente as fontes consultadas nos originais
+      submetidos para publicação no Incaper. Portanto, em caso de identificação de plágio,
+      a Coordenação Editorial aplicará sanções, ou seja, poderá impor punições, incluindo
+      desde uma advertência até o impedimento completo de publicação da proposta.</p>
+    <p>As propostas submetidas à Coordenação Editorial devem ser inéditas e não podem
+      ter sido publicadas ou submetidas para publicação em outros veículos ou editoras.
+      A exceção refere-se às publicações não periódicas destinadas à socialização do
+      conhecimento e tecnologias. Nesse caso, se já tiverem sido previamente publicadas
+      ou divulgadas, a citação dessas publicações ou os créditos autorais deverão
+      ser respeitados.</p>
+    <h2 id="sec-7-2">7.2 FALSIFICAÇÃO DE DADOS E INFORMAÇÕES, PROCEDIMENTOS E RESULTADOS</h2>
+    <p>Consiste em adulterar informações em uma publicação ou base de dados, com o
+      objetivo de obter vantagem indevida, prejudicar terceiros ou causar danos a alguém.
+      A inserção de dados falsos em uma publicação é conduta irregular e está prevista no
+      art. 313-A do Código Penal Brasileiro, de acordo com a Lei 13.964, de 2019 (Brasil,
+      2019), podendo resultar em graves consequências para os envolvidos.</p>
+    <h2 id="sec-7-3">7.3 AUTOPLÁGIO</h2>
+    <p>Refere-se à prática de reutilizar e reproduzir, mesmo que parcialmente, trabalho
+      já publicado pelo próprio autor, sem citar a fonte original. Essa prática antiética
+      pode levar o leitor à percepção de que se trata de um trabalho inédito e original.</p>
+    <p>Por questões éticas, se o autor fizer reutilização parcial ou integral de quaisquer
+      informações já publicadas, deverá fazer o devido registro no novo trabalho. Além
+      disso, deverá especificar os possíveis desdobramentos e inovações que o novo
+      trabalho apresenta em relação ao anteriormente publicado.</p>
+    <p>Para não caracterizar autoplágio, o autor deverá, além de fazer a devida citação
+      bibliográfica da fonte original no novo texto, também mencioná-la em nota
+      de rodapé na página de abertura do respectivo capítulo. No caso de fôlder, a
+      observação deverá ser localizada após a “Equipe Técnica”.</p>
+    <h2 id="sec-7-4">7.4 ATRIBUIÇÃO INCORRETA DE AUTORIA</h2>
+    <p>Somente devem ser indicados como autores aqueles que tenham realmente
+      contribuído nas fases de concepção e redação do texto. Contribuições pontuais
+      ao documento ou disponibilização de algum tipo de suporte material ou financeiro
+      não são condições suficientes para indicação de autoria (Brasil, 1998).</p>
+    <div class="caixa-observacao cor-lar">A autoria fantasma é caracterizada quando alguém contribui substancialmente
+      para a elaboração de uma publicação, mas não é listado como autor ou não
+      recebe o devido crédito na publicação. Vale ressaltar que a Editora Incaper não
+      aceita essa prática.</div>
+    <h2 id="sec-7-5">7.5 CONFLITO DE INTERESSES NÃO DECLARADO</h2>
+    <p>É uma prática que ocorre quando o autor elabora ou participa de uma publicação, em
+      que há conflito entre os interesses individuais dos autores e os resultados associados
+      à publicação, podendo influenciar suas decisões e ações, sem que essa condição
+      tenha sido explicitada publicamente. Essa conduta pode comprometer a objetividade
+      e a credibilidade do trabalho.</p>
+    <h2 id="sec-7-6">7.6 CONSERVAÇÃO INADEQUADA DE REGISTROS DE DADOS E INFORMAÇÕES</h2>
+    <p>A conservação inadequada ou não conservação caracteriza-se como conduta
+      antiética. Para evitar esse tipo de conduta, é necessário que os dados e informações
+      coletadas, procedimentos realizados e resultados sejam mantidos por, pelo menos,
+      cinco anos após a publicação.</p>
+    <p>Vale ressaltar que os autores e suas instituições são corresponsáveis pela guarda e
+      conservação adequada dos dados e informações.</p>
+    <p>Se terceiros levantarem questionamentos e houver contestação judicial, os registros
+      devem ser conservados até que as questões sejam resolvidas.</p>
+    <h2 id="sec-7-7">7.7 OMISSÃO DE DADOS E INFORMAÇÕES</h2>
+    <p>Refere-se ao ato deliberado de não incluir dados e informações que possam dificultar
+      a reprodução e a validação dos resultados.</p>
+    <p>No entanto, o acesso aos dados e informações pode ser limitado por razões éticas,
+      legais ou de confidencialidade no caso de proteção ou registro de patentes.</p>
+    <p>É recomendável que pesquisadores, revisores e agências financiadoras, entre outros
+      interessados, tenham acesso aos registros e resultados do estudo para que possam
+      avaliar a sua confiabilidade, reproduzi-lo ou dar-lhe continuidade.</p>
+    <h2 id="sec-7-8">7.8 RETENÇÃO DE DADOS E INFORMAÇÕES</h2>
+    <p>Trata-se da prática de não publicar ou impedir o acesso aos dados e informações para
+      um estudo ou pesquisa. A retenção injustificada de informações é considerada uma
+      má conduta que visa dificultar a replicação de experimentos ou o desenvolvimento
+      da mesma linha de pesquisa por outros técnicos ou pesquisadores.</p>
+    <p>Os registros de dados e informações devem ser mantidos de acordo com os prazos
+      estabelecidos pela Lei Geral de Proteção de Dados - LGPD (Lei nº 13.709, de 14 de
+      agosto de 2018), que estabelece diretrizes e assegura o direito à privacidade e à
+      proteção de dados pessoais dos usuários e das suas relações com as instituições.</p>
+    <h2 id="sec-7-9">7.9 PUBLICAÇÃO DUPLICADA</h2>
+    <p>Refere-se à prática antiética de submeter ou publicar o mesmo trabalho ou parte
+      substancial dele mais de uma vez, sem o devido consentimento de todos os envolvidos
+      (autores, editora, instituições etc.)</p>
+    <p>A duplicação de publicações, em uma mesma língua ou em outro idioma, especialmente
+      quando realizada em outros países, pode ser justificável, desde que todas as condições
+      a seguir sejam atendidas (International Committee of Medical Journal Editors, 2022):</p>
+    <ul>
+      <li>O autor deve receber aprovação dos editores de ambas as editoras ou revistas,
+        e o editor responsável pela publicação secundária deve ter uma cópia da
+        publicação primária.</li>
+      <li>Na ficha catalográfica, no anverso da folha de rosto, no rodapé da primeira
+        página da publicação ou na ficha técnica no verso da publicação secundária,
+        deve existir uma nota para informar aos leitores e serviços de informação que
+        a obra já foi publicada no todo ou em parte como também incluir a referência à
+        publicação primária.</li>
+      <li>A publicação secundária deve ser editada para um grupo diferente de leitores,
+        refletindo fielmente os dados, as informações e as interpretações da versão
+        primária.</li>
+    </ul>
+    <p>Ao submeter um original idêntico ou substancialmente semelhante a outro já
+      publicado ou submetido a outro veículo, o Autor Correspondente deve, no momento
+      da submissão, declarar expressamente e justificar o fato à Coordenação Editorial.</p>
+    <h3 id="sec-7-9-1">7.9.1 Publicação segmentada</h3>
+    <p>É conhecida também como fatiamento de publicação ou publicação-salame (<i>slicing
+      publication</i>, <i>salami slicing</i> ou <i>salami science</i>). Refere-se à prática de fragmentar,
+      sem justificativa, os resultados de um determinado estudo para apresentá-los em
+      partes menores, em diferentes publicações, como se fossem resultados diferentes.</p>
+    <p>Além do fator antiético, essa conduta pode comprometer o impacto dos resultados
+      alcançados. Isso pode ocorrer porque, ao pulverizar os resultados em diferentes
+      publicações, corre-se o risco de não retratar o contexto geral em que o estudo foi
+      realizado. Além disso, as informações e dados fornecidos de forma parcial podem levar
+      outros autores a cometer equívocos ao usarem esses resultados como referência.</p>
+    <h2 id="sec-7-10">7.10 VERIFICAÇÃO DE PLÁGIO E OUTRAS CONDUTAS ANTIÉTICAS</h2>
+    <p>No âmbito da comunicação científica, o plágio é considerado uma das mais graves
+      condutas antiéticas e está categorizado no mesmo patamar da fabricação e
+      falsificação de dados e informações, de procedimentos e de resultados.</p>
+    <p>O procedimento de triagem de plágio consiste na busca de trechos dos originais com
+      o uso de softwares específicos para garantir a originalidade dos textos. Se os originais
+      apresentarem mais de 15% de sobreposição textual no relatório de similaridade com
+      alguma publicação já existente, em princípio, não serão aceitos para publicação
+      no Incaper. No entanto, deverão ser submetidos a um processo de verificação de
+      ocorrência ou não de plágio com base nos critérios do Comittee on Publication Ethics
+      (Cope Council, 2019).</p>
+    <p>É importante avaliar se o quantitativo detectado está diretamente relacionado à
+      comparação de conteúdo, texto, citações, referências e parágrafos dos arquivos. Por
+      exemplo, ao encontrar um resultado de 10% de similaridade entre um documento de
+      entrada A e outro B disponível na internet, isso não significa necessariamente que
+      10% do documento A foi encontrado no conteúdo do documento B.</p>
+    <h2 id="sec-7-11">7.11 CONSEQUÊNCIAS DE CONDUTAS ANTIÉTICAS</h2>
+    <p>Quando é identificada má conduta de pesquisa, de acordo com o parecer dos editores
+      e/ou consultores <i>ad hoc</i>, o Autor Correspondente fica responsável pela correção do
+      original ou pela retratação no caso de já ter sido publicado. A identificação do uso
+      da má conduta técnico-científica deve ser comunicada por e-mail pela Coordenação
+      Editorial ao Conselho Editorial do Incaper, para providências e avaliação dos
+      encaminhamentos.</p>
+    <p>Em caso de impasse, a Coordenação Editorial solicita ao Conselho Editorial (CEI) que
+      indique um de seus membros para atuar como relator para mediar o conflito.</p>
+    <h3 id="sec-7-11-1">7.11.1 Retratação de publicação</h3>
+    <p>Retratar uma publicação significa removê-la do local em que foi publicada ou ter
+      o carimbo de retratação e ter sua validade questionada. Vale ressaltar que se uma
+      submissão é cancelada ou os originais são retirados de tramitação pelos autores, ou
+      pela Coordenação Editorial, durante o processo editorial, tais ações não configuram
+      necessidade de retratação (Charlesworth Author Services, 2020).</p>
+    <p>A retratação de uma publicação é um mecanismo de alerta, indicando que a pesquisa
+      apresentou alguma falha, intencional ou não. É a última estratégia disponível para
+      corrigir erros de conteúdo e para alertar o leitor sobre a falta de confiabilidade do
+      texto. Seu principal objetivo é garantir a integridade da publicação técnico-científica
+      (Wagner <i>et al.</i>, 2009).</p>
+    <p>A versão original da publicação retratada e a justificativa da retratação devem estar
+      acessíveis ao seu público-alvo e à comunidade científica. Além disso, a Coordenação
+      Editorial deve mantê-los preservados em seus registros. Caso a publicação tenha
+      recebido um DOI, continuará sendo identificada por esse número e receberá uma
+      identificação de sua condição de publicação retratada.</p>
+    <h4 id="sec-7-11-1-1">7.11.1.1 Principais razões de retratação de publicações</h4>
+    <p>A base de artigos retratados, <i>Retraction Watch</i>, apresenta uma lista de razões para
+      retratação, incluindo:</p>
+    <ul>
+      <li><strong>Problemas de autoria:</strong> qualquer questão, controvérsia ou disputa sobre uma
+        legítima reivindicação de autoria;</li>
+      <li><strong>Conflito de interesses:</strong> conflitos entre autores e organizações/instituições com
+        as quais eles se relacionem;</li>
+      <li><strong>Duplicidade de publicação e resultados falsos:</strong> quando uma publicação ou parte dela, escrita por
+        um ou mais autores, for repetida sem a devida citação em uma nova publicação
+        (plágio ou autoplágio);</li>
+      <li><strong>Revisão por pares inadequada:</strong> revisão <i>ad hoc</i> não realizada de acordo com
+        as diretrizes ou padrões éticos definidos na Política Editorial, intencionalmente
+        ou não.</li>
+    </ul>
+    <h4 id="sec-7-11-1-2">7.11.1.2 Possibilidades de retratação</h4>
+    <p>De acordo com as recomendações do Committee on Publication Ethics (Cope), os
+      editores das revistas devem considerar a possibilidade de retratação nas seguintes
+      situações:</p>
+    <ul>
+      <li>Quando houver provas claras de que os resultados não são confiáveis, seja
+        devido à má conduta (fabricação de dados) ou erro não intencional (erro em
+        análises ou erro em experimento);</li>
+      <li>Quando os resultados forem publicados em uma nova publicação sem a devida
+        referência, permissão ou justificativa;</li>
+      <li>Quando houver confirmação de plágio;</li>
+      <li>Quando houver relato de pesquisa antiética.</li>
+    </ul>
+    <h4 id="sec-7-11-1-3">7.11.1.3 Como evitar a retratação de uma publicação</h4>
+    <p>Com o intuito de minimizar o risco de retratação, é necessário adotar práticas
+      adequadas e éticas durante todas as etapas de uma publicação, garantindo a
+      credibilidade e integralidade do trabalho dos autores.</p>
+    <p>Algumas medidas que podem prevenir a retratação são:</p>
+    <ul>
+      <li>Conhecer e seguir as diretrizes de ética em pesquisa e publicação;</li>
+      <li>Indicar todos os potenciais conflitos de interesse financeiro e não financeiro de
+        cada autor;</li>
+      <li>Adotar medidas para evitar plágio, como estar atento para fazer referências de
+        forma clara e correta, inclusive para materiais publicados pelo próprio autor
+        (Castilho Junior; Riera, 2022);</li>
+      <li>Buscar revisão por pares (especialistas na área específica abordada na publicação)
+        para identificação de erros antes da submissão da proposta;</li>
+      <li>Conhecer e cumprir as regras editoriais do veículo ao qual a proposta de publicação
+        está sendo submetida;</li>
+      <li>Fazer revisão cuidadosa, verificando possíveis equívocos e inconsistências
+        metodológicas, problemas referentes a citações, dados, imprecisões de caráter
+        linguístico ou de formatação.</li>
+    </ul>
+    <h3 id="sec-7-11-2">7.11.2 Expressão de preocupação e solicitação de correção</h3>
+    <h4 id="sec-7-11-2-1">7.11.2.1 Expressão de preocupação</h4>
+    <p>Refere-se a uma prática utilizada por veículos de publicação quando há suspeitas
+      de má conduta ética em um trabalho, mas sem nenhuma evidência conclusiva que
+      justifique uma retratação.</p>
+    <p>A expressão de preocupação (<i>expression of concern</i>) visa alertar autores e leitores
+      sobre o uso indevido de resultados, cujo planejamento e execução foram realizados
+      por outros autores e/ou instituições não mencionados na publicação. Isso pode incluir:</p>
+    <ul>
+      <li>Evidências não conclusivas de má conduta na elaboração da publicação por parte
+        dos autores;</li>
+      <li>Evidências que sugerem resultados não confiáveis, e a instituição dos autores
+        decide não investigar o caso;</li>
+      <li>Indícios de má conduta relacionada com a publicação, cuja investigação não foi
+        conclusiva;</li>
+      <li>Investigação em andamento e ainda sem decisão definitiva.</li>
+    </ul>
+    <p>Nesse caso, a Coordenação Editorial solicita ao Autor Correspondente que se
+      manifeste em relação ao questionamento. A investigação das evidências e indícios de
+      conduta antiética poderá ser conduzida pela instituição dos autores. Se o resultado
+      dessa investigação não produzir conclusões satisfatórias, a Coordenação Editorial
+      poderá realizar investigação própria.</p>
+    <h4 id="sec-7-11-2-2">7.11.2.2 Solicitação de correção (ou retificação)</h4>
+    <p>É um procedimento formal para corrigir erros, imprecisões ou inconsistências em um
+      trabalho que já tenha sido publicado. Esses erros podem envolver efeitos tipográficos
+      indesejáveis, desvios gramaticais e ortográficos, falhas nas citações, nas referências,
+      na metodologia, em figuras, quadros e tabelas e manipulação intencional ou não de
+      dados, informações e resultados.</p>
+    <p>O objetivo principal da solicitação de correção é garantir a precisão dos dados
+      e informações e, consequentemente, a credibilidade, integridade e qualidade
+      da publicação.</p>
+    <p>A forma como a Coordenação Editorial responde à solicitação de correção depende
+      da natureza do erro, o qual pode ser classificado como intencional ou não intencional.</p>
+    <p>Erros intencionais constituem má conduta ética e são considerados graves (itens
+      7.1 a 7.9 deste manual), pois afetam o registro, a integridade técnico-científica da
+      publicação e comprometem a reputação dos autores envolvidos ou da instituição.</p>
+    <p>Quando houver má conduta intencional, deve haver a retratação da publicação, ou
+      seja, ela deve ser retirada de circulação no caso de publicações que tenham sido
+      retratadas em sua totalidade. No caso de retratação parcial da publicação (artigo ou
+      capítulo), a parte retratada deve receber a tarja de retratação (Wagner <i>et al.</i>, 2009).</p>
+    <p>Quando houver alegação de má conduta, deve-se iniciar uma investigação, como
+      previsto no art. 313-A, do Código Penal Brasileiro (Lei 13.964, de 2019). Se houver
+      confirmação das alegações de má conduta, a versão do original retratado e a
+      justificativa da retratação devem estar acessíveis ao público-alvo da publicação e da
+      comunidade científica. Além disso, o original deve ser preservado como documento
+      probatório da publicação na Coordenação Editorial.</p>
+    <p>Tanto na retratação total quanto na parcial, os leitores devem ser alertados sobre a
+      constatação de que a publicação apresentou alguma falha grave, comprometendo a
+      confiabilidade do conteúdo. Dessa forma, a retratação é uma medida extrema cujo
+      objetivo é preservar a integridade e confiabilidade das publicações e assegurar ao
+      público conteúdos válidos e éticos.</p>
+    <p>Erros não intencionais são equívocos cometidos de forma involuntária. Não são
+      considerados má conduta ética, mas precisam ser reconhecidos e devidamente
+      corrigidos.</p>
+    <p>A solicitação de correção para erros não intencionais em uma publicação pode ser
+      feita de duas formas basicamente:</p>
+    <p><Strong>Errata:</Strong> é necessária quando o Autor Correspondente ou a Coordenação Editorial
+      percebe erros menores e detalhes específicos depois que a publicação já foi divulgada,
+      seja por meio impresso ou digital. Nesse caso, o erro é corrigido oficialmente por
+      meio da inserção de uma errata.</p>
+    <p>No caso de publicação impressa, a errata deve ser inserida logo após a folha de
+      rosto, em papel avulso ou encartado, acrescida depois de impresso (ABNT, 2011). Exceto no caso de fôlder, em que a nota será inserida no verso, após a nota técnica.</p>
+    <p>Quando se tratar de uma publicação exclusivamente digital, a errata deve ser inserida
+      por meio de uma nota informativa na ficha de registro da publicação no site da
+      Biblioteca Rui Tendinha.</p>
+    <p><strong>Correção ou retificação:</strong> é um processo mais abrangente de correção de erros do
+      documento original, realizado antes mesmo da publicação.</p>
+  </article>
+  <div></div>
+  <div class="container nav-footer-main"> <a class="bt bt_lar" style="float: left;" href="capitulo_seis.htm">< Cap. 6</a> <a class="bt bt_lar" style="float: right;" href="capitulo_oito.htm">Cap. 8 ></a> </div>
+</main>
+<footer>
+  <section class="rodape cap" role="img" aria-label="Top banner">
+    <div class="container main-rodape">
+      <div class="rodape-logo hero-inner">
+        <figure class="hero-logo"> <a href="https://incaper.es.gov.br/" title="Incaper"> <img src="imagens/logo-incaper-neg.svg" alt="Logo Incaper" /> </a> </figure>
+        <h5><a href="index.htm">Manual de Produção Editorial do Incaper</a></h5>
+        <p>Instituto Capixaba de Pesquisa, Assistência Técnica e Extensão Rural (Incaper) <br />
+          Rua Afonso Sarlo, 160 - Bento Ferreira <br />
+          CEP: 29052-010 - Vitória / ES <br />
+          Tel.: (27) 3636-9800 / (27) 3636-9888</p>
+      </div>
+      <div class="rodape-menu">
+        <ul>
+          <li><a href="expediente.htm">Expediente</a></li>
+          <li><a href="autores.htm">Autores</a></li>
+          <li><a href="prefacio.htm">Prefácio</a></li>
+          <li><a href="agradecimentos.htm">Agradecimentos</a></li>
+          <li><a href="apresentacao.htm">Apresentação</a></li>
+        </ul>
+      </div>
+      <div class="rodape-sumario">
+        <ul>
+          <li><a href="capitulo_um.htm">1. Introdução</a></li>
+          <li><a href="capitulo_dois.htm">2. Estrutura editorial do Incaper</a></li>
+          <li><a href="capitulo_tres.htm">3. Linhas editoriais</a></li>
+          <li><a href="capitulo_quatro.htm">4. Formas de disponibilização, tipos e veículos de publicação</a></li>
+          <li><a href="capitulo_cinco.htm">5. Processo editorial</a></li>
+          <li><a href="capitulo_seis.htm">6. Direitos autorais</a></li>
+          <li><a href="capitulo_sete.htm">7. Plágio e outras condutas antiéticas</a></li>
+          <li><a href="capitulo_oito.htm">8. Inteligência artificial na produção editorial do Incaper</a></li>
+          <li><a href="capitulo_nove.htm">9. Orientações de diagramação</a></li>
+          <li><a href="capitulo_dez.htm">10. Padronização e estilo</a></li>
+          <li><a href="capitulo_onze.htm">11. Linguagem, gramática e ortografia</a></li>
+        </ul>
+      </div>
+      <div class="rodape-referencias">
+        <ul>
+          <li><a href="referencias.htm">Referências</a></li>
+          <li><a href="glossario.htm">Glossário</a></li>
+          <li><a href="anexos.htm">Anexos</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</footer>
+<script>
+function expandAll(){
+  document.querySelectorAll('.acc-check').forEach(c => c.checked = true);
+}
+
+function collapseAll(){
+  document.querySelectorAll('.acc-check').forEach(c => c.checked = false);
+}
+</script>
+</body>
+</html>

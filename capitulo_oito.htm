@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Capítulo 8 - Inteligência artificial na produção editorial do Incaper | Manual de Produção Editorial do Incaper</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta content="pt-br, pt, en" http-equiv="Content-Language" />
+<meta content="Incaper" name="author" />
+<meta content="O Incaper é responsável pela elaboração e execução de programas e projetos que proporcionam o desenvolvimento rural sustentável no Espírito Santo." name="description" />
+<meta content="Incaper, Seag, Agricultura, Pesquisa, Extensão Rural, Manual, Produção Editorial, Editorial" name="keywords" />
+<link rel="stylesheet" href="css/variaveis.css">
+<link rel="stylesheet" href="css/estilo.css">
+<link href="imagens/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+
+<!-- Topo com título e menu -->
+<header class="top-menu" role="banner">
+  <div class="container header-inner">
+    <div class="logo" aria-label="Título do site"> <a href="index.htm">Manual Incaper</a> </div>
+    <nav class="top-nav" aria-label="Menu principal"> 
+      <!-- Botão mobile em CSS puro -->
+      <input type="checkbox" id="toggle-menu" class="toggle-menu-input">
+      <label for="toggle-menu" class="toggle-menu-btn">☰ Menu</label>
+      <ul class="menu-links">
+        <li><a href="expediente.htm">Expediente</a></li>
+        <li><a href="autores.htm">Autores</a></li>
+        <li><a href="prefacio.htm">Prefácio</a></li>
+        <li><a href="agradecimentos.htm">Agradecimentos</a></li>
+        <li><a href="apresentacao.htm">Apresentação</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Banner -->
+<section class="cap" role="img" aria-label="banner capitulo">
+  <div class="container cap-main">
+    <div class="cap-inner">
+      <figure> <img src="imagens/cap-8.png" alt="Imagem capítulo oito" /> </figure>
+    </div>
+    <div class="cap-tit">
+      <h1>Inteligência artificial na produção editorial do Incaper</h1>
+    </div>
+    <div class="container cap-nav">
+      <label for="capitulos">Navegar pelo conteúdo:</label>
+      <select id="capitulos" onchange="location.href = this.value;">
+        <option value="">Selecionar ...</option>
+        <option value="capitulo_um.htm">Capítulo 1</option>
+        <option value="capitulo_dois.htm">Capítulo 2</option>
+        <option value="capitulo_tres.htm">Capítulo 3</option>
+        <option value="capitulo_quatro.htm">Capítulo 4</option>
+        <option value="capitulo_cinco.htm">Capítulo 5</option>
+        <option value="capitulo_seis.htm">Capítulo 6</option>
+        <option value="capitulo_sete.htm">Capítulo 7</option>
+        <option value="capitulo_oito.htm">Capítulo 8</option>
+        <option value="capitulo_nove.htm">Capítulo 9</option>
+        <option value="capitulo_dez.htm">Capítulo 10</option>
+        <option value="capitulo_onze.htm">Capítulo 11</option>
+        <option value="referencias.htm">Referências</option>
+        <option value="glossario.htm">Glossário</option>
+        <option value="anexos.htm">Anexos</option>
+      </select>
+      <div style="margin-top: 10px"> <a class="bt bt_lar" style="float: left;" href="capitulo_sete.htm">< Cap. 7</a> <a class="bt bt_lar" style="float: right;" href="capitulo_nove.htm">Cap. 9 ></a> </div>
+    </div>
+  </div>
+</section>
+<main class="container main-capitulo" role="main"> 
+  
+  <!-- Sidebar -->
+  <aside class="sidebar" aria-label="Navegação do conteúdo editorial">
+    <div class="acc-controls">
+      <button type="button" onclick="expandAll()">Expandir tudo</button>
+      <button type="button" onclick="collapseAll()">Recolher tudo</button>
+    </div>
+    <nav>
+      <ul class="accordion" role="tree">
+        <li> <a href="index.htm" class="acc-link">Voltar ao início do manual</a> </li>
+        <li><a href="#sec-8-1" class="acc-link">8.1 O que é a Inteligência Artificial (IA)</a></li>
+        <li><a href="#sec-8-2" class="acc-link">8.2 Autoria de publicações com IA</a></li>
+        <li class="accordion-item" role="treeitem">
+          <input type="checkbox" id="acc-8-3" class="acc-check">
+          <label for="acc-8-3" class="acc-toggle" aria-hidden="true"> <span class="icon"></span> </label>
+          <a href="#sec-8-3" class="acc-link">8.3 Uso de IA em atividades editoriais</a> 
+          
+          <!-- Subnível -->
+          <ul class="sub">
+            <li><a href="#sec-8-3-1" class="acc-link">8.3.1 Possibilidades de uso de IA pela Coordenação Editorial</a></li>
+            <li class="accordion-item" role="treeitem">
+              <input type="checkbox" id="acc-8-3-2" class="acc-check">
+              <label for="acc-8-3-2" class="acc-toggle" aria-hidden="true"> <span class="icon"></span> </label>
+              <a href="#sec-8-3-2">8.3.2 Utilização de IA na produção de originais</a>
+              <ul class="sub">
+                <li><a href="#sec-8-3-2-1" class="acc-link">8.3.2.1 Orientações para o uso de IA em publicações a serem submetidas à Coordenação Editorial</a></li>
+                <li><a href="#sec-8-3-2-2" class="acc-link">8.3.2.2 Como referenciar imagens geradas por IA</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+          <!-- Subnível -->
+          <ul class="sub">
+            <li class="accordion-item" role="treeitem">
+              <input type="checkbox" id="acc-8-3-3" class="acc-check">
+              <label for="acc-8-3-3" class="acc-toggle" aria-hidden="true"> <span class="icon"></span> </label>
+              <a href="#sec-8-3-3">8.3.3 Avaliação dos originais pelos consultores <i>ad hoc</i></a>
+              <ul class="sub">
+                <li><a href="#sec-8-3-3-1" class="acc-link">8.3.3.1 Verificação de texto por IA</a></li>
+                <li><a href="#sec-8-3-3-2" class="acc-link">8.3.3.2 Detecção por IA</a></li>
+              </ul>
+            </li>
+            <li class="accordion-item" role="treeitem">
+              <input type="checkbox" id="acc-8-3-4" class="acc-check">
+              <label for="acc-8-3-4" class="acc-toggle" aria-hidden="true"> <span class="icon"></span> </label>
+              <a href="#sec-8-3-4">8.3.4 Uso de IA na editoração das publicações</a>
+              <ul class="sub">
+                <li><a href="#sec-8-3-4-1" class="acc-link">8.3.4.1 Revisão textual</a></li>
+                <li><a href="#sec-8-3-4-2" class="acc-link">8.3.4.2 Design editorial</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  
+  <!-- Conteúdo principal -->
+  <article class="content">
+    <h2 id="sec-8-1" style="margin-top:0">8.1 O QUE É A INTELIGÊNCIA ARTIFICIAL (IA)</h2>
+    <p>Os estudos sobre Inteligência Artificial (IA) são bem antigos. Eles começaram antes
+      da década de 1960, com o uso do aprendizado de máquina (<i>machine learning</i>) e do
+      processamento de linguagem para analisar padrões em grandes volumes de dados.
+      Atualmente, a IA está presente em celulares, nas redes sociais, em aplicativos e nos
+      algoritmos que usamos constantemente. Trata-se de um conjunto de tecnologias
+      da ciência da computação que se concentra no desenvolvimento de sistemas e
+      algoritmos capazes de realizar tarefas que normalmente exigem a inteligência
+      humana. Elas permitem executar funções avançadas, como compreender e traduzir
+      idiomas falados e escritos, analisar dados, fazer recomendações e dar informações,
+      entre outras. Uma das abordagens mais inovadoras da IA é o aprendizado profundo
+      (<i>deep learning</i>). Essa técnica utiliza redes neurais artificiais complexas, projetadas de
+      maneira semelhante ao cérebro humano.</p>
+    <p>Quando falamos sobre IA, frequentemente nos referimos a “dados de treinamento”, ou
+      seja, o conjunto de informações utilizadas para “ensinar” um algoritmo a reconhecer
+      padrões, fazer previsões e tomar decisões. É importante lembrar que a memória dos
+      sistemas de IA é limitada, mas melhora com o tempo à medida que é alimentada com
+      novos dados. O aprendizado de máquina (<i>machine learning</i>) usa algoritmos para
+      treinar esses sistemas, permitindo que eles gerem resultados e executem tarefas
+      complexas de forma eficiente e autônoma ao longo do tempo.</p>
+    <p>O termo “Inteligência Artificial” nunca foi tão debatido quanto nos últimos anos.
+      Desde o fim de 2022, o uso do ChatGPT se popularizou e vem crescendo em ritmo
+      bastante acelerado. Esse crescimento tem causado preocupação em diversos
+      setores, especialmente no meio científico sobre o uso indevido dessa tecnologia
+      nas publicações técnico-científicas, por exemplo. É fundamental analisar todas as
+      questões envolvidas com cuidado para que se possa aproveitar os benefícios dessa ferramenta, que não só gera, mas também cria textos, imagens, vídeos, sons e muito mais. Nesse contexto, a grande preocupação, no momento, é com o uso da Inteligência
+      Artificial Generativa (GenAI), demandando reflexões sobre direitos autorais e sobre
+      os limites éticos, principalmente na produção de publicações de caráter científico.</p>
+    <p>Para isso, precisamos considerar alguns princípios. Um deles é preservar o controle
+      humano sobre as informações geradas, garantindo a centralidade dos indivíduos.
+      Isso significa que a IA deve ser usada de forma benéfica à sociedade, respeitando a
+      privacidade de dados, sobretudo em atividades que envolvam contratos, por meio de
+      parcerias para o desenvolvimento e a transferência de tecnologias. </p>
+    <p>Para certas associações científicas e editoras, as ferramentas de IA devem ser
+      empregadas apenas para o aperfeiçoamento de texto, tanto na produção original
+      como em língua estrangeira. No entanto, na edição de produtos editoriais, vale
+      ressaltar que é fundamental haver supervisão, revisão e edição humanas. Isso
+      significa que o uso da IA deve ser limitado a aperfeiçoar o conteúdo original, sem
+      gerar novas ideias. A IA não deve, em nenhuma circunstância, substituir tarefas
+      essenciais de autoria, como produção de reflexões ou condução de pesquisas
+      (Elsevier, 2023b). É muito importante que sempre haja humanos no processo (<i>humans
+      in the loop</i>). Os autores devem estar cientes de que assumem a responsabilidade
+      integral pelo conteúdo final e pelo texto enviado para publicação. Isso implica a
+      necessidade de informar se utilizaram GenAIs para esse fim.</p>
+    <p>Entre os benefícios do uso da IA nas publicações técnico-científicas, destacam-se:</p>
+    <ul>
+      <li><strong>Automação</strong>: a IA pode automatizar processos de trabalho ou trabalhar de forma
+        independente e autônoma de uma equipe humana, quando houver padrões
+        pré-estabelecidos;</li>
+      <li><strong>Redução de erros humanos</strong>: a IA pode eliminar erros humanos no processamento
+        de dados, na análise e na execução de atividades que usam a automação e os
+        algoritmos que sempre seguem os mesmos processos;</li>
+      <li><strong>Execução de tarefas repetitivas</strong>: a IA pode ser usada para executar tarefas
+        repetitivas, liberando as pessoas para trabalhar em problemas que exijam maior
+        capacidade cognitiva;</li>
+      <li><strong>Rapidez e precisão</strong>: a IA pode processar um grande volume de informações com
+        mais rapidez e precisão do que um humano, encontrando padrões e descobrindo
+        relações entre dados que os humanos demorariam mais para identificar;</li>
+      <li><strong>Disponibilidade “ilimitada”</strong>: a IA não está sujeita a horários, a paralisações ou
+        outras limitações humanas;</li>
+      <li><strong>Aceleração da pesquisa e do desenvolvimento</strong>: a IA tem capacidade de
+        sistematizar e analisar grandes quantidades de dados rapidamente, impulsionando o
+        desenvolvimento em pesquisa e inovação.</li>
+    </ul>
+    <p>No entanto, apesar dos potenciais benefícios da IA, a geração de textos por essas
+      ferramentas é baseada na probabilidade de uso de palavras por humanos. Isso pode
+      resultar em variações e imprecisões nas respostas, conhecidas como “alucinações”,
+      que geram modelos ao selecionar combinações sintaticamente viáveis, mas
+      incorretas em relação aos fatos. Além disso, questões referentes a plágio e uso de
+      conteúdos gerados por esses modelos levantam preocupações éticas, sobre autoria
+      e fontes, abalando os pilares fundamentais das normas científicas.</p>
+    <p>Quanto à divulgação dos resultados das pesquisas, desenvolvimento dos trabalhos
+      ou inovações, apenas os originais não gerados por GenAIs devem ser utilizados,
+      conforme orientações da Editora Incaper. No entanto, materiais em que a IA é parte
+      integrante da pesquisa e esteja no seu delineamento, seja nos métodos utilizados ou
+      no seu planejamento, o uso de imagens ou vídeos gerados por GenAIs é permitido,
+      desde que seja devidamente citada.</p>
+    <h2 id="sec-8-2">8.2 AUTORIA DE PUBLICAÇÕES COM IA</h2>
+    <p>Conforme já exposto no capítulo 6 sobre direitos autorais, o ordenamento jurídico
+      brasileiro define o autor como o detentor de direitos morais, na qualidade de
+      pessoa física, e prevê algumas exceções que atribuem autoria a pessoas jurídicas.
+      Consequentemente, os autores, representados pelo Autor Correspondente, são
+      responsáveis por todo o conteúdo submetido e aprovado para a publicação no
+      Incaper. Também devem ser transparentes sobre o uso de ferramentas de IA na
+      preparação do original. (Cambridge, 2023; COPE, 2023; Elsevier, 2023b; ICMJE,
+      2023; Oxford, 2023; Wiley, 2023; Zielinski <i>et al.</i>, 2024).</p>
+    <p>O autor de uma publicação técnico-científica assume a responsabilidade pelo
+      conteúdo, o que inclui a precisão dos dados, a originalidade do trabalho e o
+      cumprimento das diretrizes éticas, assumindo, assim, responsabilidades legais
+      e éticas. A IA, por ser uma ferramenta, executa tarefas com base em algoritmos
+      programados e treinados com dados, mas não tem a capacidade de gerar ideias
+      originais, realizar reflexões críticas, promover a inovação ou fazer julgamentos
+      criativos de forma autônoma. Além disso, as IAs não podem assumir a responsabilidade
+      moral ou legal pela originalidade, precisão e integridade dos resultados publicados.</p>
+    <p>Portanto, é essencial que a utilização de IA, quando houver, seja claramente divulgada
+      na seção “Material e Métodos” ou “Agradecimentos”, bem como a informação da fonte no caso de ilustrações ou imagens dos originais a serem submetidos. É necessário também
+      especificar quando e como essas ferramentas foram utilizadas.</p>
+    <h2 id="sec-8-3">8.3 USO DE IA EM ATIVIDADES EDITORIAIS</h2>
+    <p>A IA não substitui a redação e a revisão humana, especialmente na interpretação
+      crítica do conteúdo científico. No entanto, ela acelera processos, melhora a qualidade
+      técnica dos textos e ajuda a reduzir erros comuns. Essa tecnologia pode contribuir
+      significativamente para a precisão, eficiência e consistência dos textos no processo
+      de editoração.</p>
+    <h3 id="sec-8-3-1">8.3.1 Possibilidades de uso de IA pela Coordenação Editorial</h3>
+    <p>Nas práticas editoriais, a IA pode ser usada nas seguintes situações:</p>
+    <div class="caixa-observacao cor-lar">
+      <p><span class="destaque-lista">1</span><span>Automatizar tarefas administrativas, como o recebimento de propostas de
+        publicações submetidas e elaboração de mensagens.</span></p>
+      <p><span class="destaque-lista">2</span><span>Verificar se os originais recebidos estão de acordo com os principais temas
+        do veículo de publicação.</span></p>
+      <p><span class="destaque-lista">3</span><span>Assegurar que os originais submetidos estejam de acordo com os padrões
+        da publicação.</span></p>
+      <p><span class="destaque-lista">4</span><span>Verificar se há plágio e identificar possíveis conteúdos gerados por IA.</span></p>
+      <p style="margin-bottom:0"><span class="destaque-lista">5</span><span>Identificar candidatos qualificados para atuarem na avaliação de propostas
+        de publicação.</span></p>
+    </div>
+    <p>Em todas essas situações, no entanto, é importante ressaltar que a supervisão
+      humana é sempre necessária.</p>
+    <h3 id="sec-8-3-2">8.3.2 Utilização de IA na produção de originais</h3>
+    <p>As ferramentas de IA, tais como o ChatGPT, não substituem a criação humana,
+      atuando apenas como recursos auxiliares na produção de originais, mas devem ser
+      utilizadas de forma ética, transparente e com discernimento.</p>
+    <p>Para citar informações obtidas por IA em uma publicação, recomenda-se seguir as
+      seguintes orientações:</p>
+    <ul>
+      <li>informar o nome da organização detentora da ferramenta de IA;</li>
+      <li>incluir, no texto ou em nota de rodapé, o comando que foi dado à ferramenta de IA;</li>
+      <li>informar o nome da ferramenta de IA utilizada e a sua versão;</li>
+      <li>informar a data em que a ferramenta de IA foi utilizada;</li>
+      <li>fornecer uma descrição clara do uso da ferramenta de IA como fonte;</li>
+      <li>incluir, se disponível, o link da ferramenta de IA utilizada.</li>
+    </ul>
+    <p>Exemplo:</p>
+    <figure> <img src="imagens/cap8-img-01.png" alt="Exemplo divulgado pela USP, orientando a citação de textos gerados por IA." title="Exemplo divulgado pela USP, orientando a citação de textos gerados por IA." /> </figure>
+    <figcaption><span>Figura 6 –</span> Exemplo divulgado pela USP, orientando a citação de textos gerados por IA.<br />
+      <span>Fonte:</span> Sa (2024).</figcaption>
+    <br />
+    <p>Ao usar IA como ferramenta auxiliar para elaboração de textos, há o risco de um
+      mesmo conteúdo ser apresentado para diferentes consultas. Com isso, os autores
+      também podem ser acusados de plágio ao utilizarem esse texto. Recomenda-se que
+      os autores façam uma revisão cuidadosa do conteúdo ao optarem pela utilização de
+      uma ferramenta de IA para a produção do texto.</p>
+    <p>A Editora Incaper e a Coordenação Editorial reconhecem o crescente uso da IA e
+      mantêm uma abordagem cuidadosa e proativa em sua aplicação nas publicações.
+      Como ferramenta, a IA pode trazer benefícios significativos nas diferentes etapas de
+      automação de processos editoriais. No entanto, deve sempre garantir a originalidade,
+      a responsabilidade ética e a integridade técnico-científica, com a supervisão
+      humana, fundamental para preservar a qualidade e a credibilidade das publicações
+      do Incaper.</p>
+    <h4 id="sec-8-3-2-1">8.3.2.1 Orientações para o uso de IA em publicações a serem submetidas à Coordenação Editorial</h4>
+    <p>A IA pode ser uma importante aliada na avaliação de originais submetidos para
+      publicações e nas demais atividades da Coordenação Editorial. No entanto, é
+      essencial compreender e adotar algumas orientações, como:</p>
+    <ul>
+      <li><strong>Transparência</strong>: quando essas ferramentas automatizadas forem utilizadas, os
+        autores devem declarar o seu uso e indicá-lo claramente na seção de metodologia e
+        nas fontes de figuras, tabelas e quadros das publicações. A não declaração constitui
+        infração ética, levando à recusa do original para publicação.</li>
+      <li><strong>Proteção de Dados</strong>: é preciso avaliar quais informações podem ser manipuladas
+        por ferramentas de IA. Dados sensíveis, como informações pessoais e confidenciais
+        (Lei nº 13.709/2018), ou inéditos não devem ser compartilhados.</li>
+      <li><strong>Autoria</strong>: a IA generativa não pode ser considerada autora de publicações no Incaper.
+        O autor humano é o único responsável pela integridade das informações produzidas
+        com o auxílio dessa ferramenta.</li>
+      <li><strong>Vieses</strong>: as plataformas de IA podem reproduzir desinformação, preconceitos e
+        discriminação. É preciso avaliar com cuidado se os dados são corretos, precisos e
+        representativos.</li>
+    </ul>
+    <h4 id="sec-8-3-2-2">8.3.2.2 Como referenciar imagens geradas por IA</h4>
+    <p>Quando utilizamos figuras, ilustrações ou qualquer tipo de imagem em publicações,
+      é indispensável numerar e descrever cada imagem, explicando o seu significado
+      na publicação e citando a fonte, conforme recomendado pela NBR 14724/2011 ou
+      edições posteriores.</p>
+    <p>No caso de uso de imagens geradas por IA em publicações, a indicação da fonte
+      segue as mesmas diretrizes básicas utilizadas para qualquer outra imagem (<a href="capitulo_cinco.htm#sec-5-3-7">seção 5.3.7</a> deste manual). Além disso, ainda que o comando (<i>prompt</i>) de criação da imagem
+      tenha sido dado pelo autor da publicação, é necessário citar a fonte e a ferramenta
+      usada para dar os créditos devidos e também porque os resultados gerados por IA
+      podem ser diferentes.</p>
+    <p>Ao utilizar essas imagens criadas por IA, há algumas perguntas que devem ser
+      feitas, destacando as considerações éticas associadas ao uso dessas ferramentas.
+      Mesmo que o conteúdo dessa publicação seja apresentado por diferentes mídias e,
+      posteriormente disponibilizado, o rigor deve ser o mesmo. O autor deve perguntar:</p>
+    <ul>
+      <li>Há alguma imagem real que possa substituí-la?</li>
+      <li>O quanto essa imagem é importante para o trabalho?</li>
+      <li>A imagem se aplica ao contexto do trabalho?</li>
+      <li>Estou sendo transparente quanto às informações da imagem?</li>
+    </ul>
+    <p><strong>Orientações gerais para referenciar imagens geradas por IA</strong></p>
+    <ul>
+      <li>Na legenda e na fonte de figuras:</li>
+    </ul>
+    <p>Incluir informações sobre a descrição da imagem e da ferramenta de IA ou o algoritmo
+      utilizado.</p>
+    <figure> <img src="imagens/cap8-img-02.png" alt="Exemplo de imagem gerada por IA." title="Exemplo de imagem gerada por IA." /> </figure>
+    <figcaption><span>Figura 7 –</span> Exemplo de imagem gerada por IA.<br />
+      <span>Fonte:</span> OpenAI. <strong>Imagem gerada por ChatGPT</strong> (GPT-5) versão de 7 ago. 2025. Inteligência
+      Artificial. Disponível em: https://chat.openai.com/. Acesso em: 14 out. 2025.</figcaption>
+    <br />
+    <ul>
+      <li>No texto:</li>
+    </ul>
+    <p>Ao usar IA como ferramenta auxiliar na elaboração de texto ou imagens em uma
+      publicação, é necessário mencionar entre parênteses como esse conteúdo foi
+      gerado. Essa informação deve ser dada seguindo a mesma orientação para citações
+      convencionais no texto.</p>
+    <p>Exemplo: (conteúdo gerado por [nome da ferramenta de IA ou do algoritmo utilizado]).</p>
+    <ul>
+      <li>No título e na fonte de tabelas e quadros</li>
+    </ul>
+    <p>Incluir título com a descrição da tabela ou do quadro na parte superior. Na parte inferior,
+      incluir a fonte com os detalhes sobre a ferramenta de IA ou o algoritmo utilizado.</p>
+    <figure> <img src="imagens/cap8-img-03.png" alt="Exemplo de tabela gerada por IA." title="Exemplo de tabela gerada por IA." /> </figure>
+    <figcaption><span>Figura 8 –</span> Exemplo de tabela gerada por IA.<br />
+      <span>Fonte:</span> OpenAI. <strong>Tabela gerada por ChatGPT</strong> (GPT-5) versão de 7 ago. 2025. Inteligência
+      Artificial. Disponível em: https://chat.openai.com/. Acesso em: 4 nov. 2025.</figcaption>
+    <br />
+    <p>Se a ferramenta de IA ou o algoritmo usado no original já tiverem sido publicados,
+      recomenda-se incluir a citação e a fonte bibliográfica na lista de referências. Isso
+      permite informar com mais precisão o contexto em que a IA foi utilizada.</p>
+    <h3 id="sec-8-3-3">8.3.3 Avaliação dos originais pelos consultores <i>ad hoc</i></h3>
+    <p>O procedimento padrão para revisão de um trabalho científico submetido para
+      publicação é conhecido como revisão por pares (<i>peer review</i>). Nessa abordagem,
+      o editor designa geralmente três especialistas para avaliar o conteúdo apresentado
+      pelos autores em um original. No entanto, a avaliação por pares não é perfeita, já que
+      o tempo e a experiência são os melhores mecanismos de controle de qualidade das
+      publicações, separando naturalmente o que é válido e o que não é.</p>
+    <p>A literatura técnico-científica e os debates públicos nas diversas mídias são muitas
+      vezes comprometidos por um grande número de pesquisas de baixa qualidade,
+      algumas até fraudulentas. Essas fontes apresentam evidências e conclusões que, na
+      realidade, são pouco confiáveis, o que abre brechas para a desinformação científica e a propagação de <i>fake news</i>. Só porque um estudo foi publicado, não significa,
+      automaticamente, que ele esteja correto, que ele tenha sido produzido de maneira
+      ética ou que ele tenha passado por uma consultoria <i>ad hoc</i> criteriosa antes de ser
+      publicado.</p>
+    <p>Cabe, assim, aos consultores <i>ad hoc</i> avaliar se a metodologia do trabalho é adequada,
+      se os experimentos necessários foram conduzidos de forma satisfatória e se os
+      resultados obtidos sustentam as conclusões apresentadas. Esses consultores podem
+      então requisitar dados adicionais aos autores, sugerir novos experimentos, solicitar
+      esclarecimentos e recomendar que o Coordenador Editorial aceite ou não o original
+      apresentado.</p>
+    <h4 id="sec-8-3-3-1">8.3.3.1 Verificação de texto por IA</h4>
+    <p>É possível utilizar ferramentas automatizadas para analisar e avaliar textos. Esses
+      recursos tecnológicos podem ser utilizados para detectar plágio, analisar textos do
+      ponto de vista da gramática, ortografia, estilo e até mesmo em relação à coesão e
+      coerência do conteúdo. Esses sistemas utilizam IA e processamento de linguagem,
+      contribuindo para a produção e aumento da qualidade da escrita.</p>
+    <h4 id="sec-8-3-3-2">8.3.3.2 Detecção por IA</h4>
+    <p>É cada vez mais difícil saber se um conteúdo foi produzido por um humano ou por um
+      robô. No entanto, já existem ferramentas de detecção de IA, que analisam o texto em
+      busca de padrões que são típicos de escritos gerados por soluções automatizadas.
+      Outros softwares podem ser utilizados como ferramentas mais específicas,
+      detectando inclusive características próprias de acordo com o texto proposto e a
+      linha editorial da publicação.</p>
+    <p>Pesquisas indicam que detectores de IA tendem a considerar incorretamente textos
+      feitos por autores não nativos em inglês como se fossem gerados por alguma
+      ferramenta automatizada (Liang <i>et al.</i>, 2023). E, ao contrário do que afirmam
+      a divulgação comercial desses produtos, atualmente, nenhum detector de IA
+      é suficientemente confiável para ser usado de forma irrestrita. Apesar de vários
+      detectores indicarem a probabilidade de um conteúdo ter sido gerado por IA, esses
+      valores são apenas estimativas, exibindo frequentemente uma margem de erro
+      significativa.</p>
+    <h3 id="sec-8-3-4">8.3.4 Uso de IA na editoração das publicações</h3>
+    <p>Assim como nas demais etapas editoriais, o uso de tecnologias de IA nas atividades
+      desenvolvidas na editoração de publicações tem sido crescente. Por isso, é crucial
+      normatizar o seu uso no contexto da prática editorial, uma vez que a Editora Incaper
+      entende que essas ferramentas podem ser utilizadas de forma auxiliar, mas não na
+      substituição do processo criativo humano.</p>
+    <h4 id="sec-8-3-4-1">8.3.4.1 Revisão textual</h4>
+    <p>A IA pode ser uma ferramenta importante para apoiar o trabalho de revisão textual,
+      como identificar inconsistências gramaticais, sugerir melhorias na estruturação das
+      frases, parágrafos e na coesão do texto, por exemplo. No entanto, é importante garantir
+      que a revisão humana seja realizada, com a IA presente apenas como assistente no
+      processo.</p>
+    <h4 id="sec-8-3-4-2">8.3.4.2 Design editorial</h4>
+    <p>As atividades de design editorial podem se beneficiar do uso da IA, especialmente
+      como ferramenta auxiliar na criação de layouts, na adaptação a diferentes formatos,
+      automação de tarefas repetitivas, como o processo de organização de textos e
+      imagens. Assim, a IA pode facilitar a produção, mas sem substituir a criatividade e a
+      sensibilidade humanas, que são fundamentais para o resultado final.</p>
+  </article>
+  <div></div>
+  <div class="container nav-footer-main"> <a class="bt bt_lar" style="float: left;" href="capitulo_sete.htm">< Cap. 7</a> <a class="bt bt_lar" style="float: right;" href="capitulo_nove.htm">Cap. 9 ></a> </div>
+</main>
+<footer>
+  <section class="rodape cap" role="img" aria-label="Top banner">
+    <div class="container main-rodape">
+      <div class="rodape-logo hero-inner">
+        <figure class="hero-logo"> <a href="https://incaper.es.gov.br/" title="Incaper"> <img src="imagens/logo-incaper-neg.svg" alt="Logo Incaper" /> </a> </figure>
+        <h5><a href="index.htm">Manual de Produção Editorial do Incaper</a></h5>
+        <p>Instituto Capixaba de Pesquisa, Assistência Técnica e Extensão Rural (Incaper) <br />
+          Rua Afonso Sarlo, 160 - Bento Ferreira <br />
+          CEP: 29052-010 - Vitória / ES <br />
+          Tel.: (27) 3636-9800 / (27) 3636-9888</p>
+      </div>
+      <div class="rodape-menu">
+        <ul>
+          <li><a href="expediente.htm">Expediente</a></li>
+          <li><a href="autores.htm">Autores</a></li>
+          <li><a href="prefacio.htm">Prefácio</a></li>
+          <li><a href="agradecimentos.htm">Agradecimentos</a></li>
+          <li><a href="apresentacao.htm">Apresentação</a></li>
+        </ul>
+      </div>
+      <div class="rodape-sumario">
+        <ul>
+          <li><a href="capitulo_um.htm">1. Introdução</a></li>
+          <li><a href="capitulo_dois.htm">2. Estrutura editorial do Incaper</a></li>
+          <li><a href="capitulo_tres.htm">3. Linhas editoriais</a></li>
+          <li><a href="capitulo_quatro.htm">4. Formas de disponibilização, tipos e veículos de publicação</a></li>
+          <li><a href="capitulo_cinco.htm">5. Processo editorial</a></li>
+          <li><a href="capitulo_seis.htm">6. Direitos autorais</a></li>
+          <li><a href="capitulo_sete.htm">7. Plágio e outras condutas antiéticas</a></li>
+          <li><a href="capitulo_oito.htm">8. Inteligência artificial na produção editorial do Incaper</a></li>
+          <li><a href="capitulo_nove.htm">9. Orientações de diagramação</a></li>
+          <li><a href="capitulo_dez.htm">10. Padronização e estilo</a></li>
+          <li><a href="capitulo_onze.htm">11. Linguagem, gramática e ortografia</a></li>
+        </ul>
+      </div>
+      <div class="rodape-referencias">
+        <ul>
+          <li><a href="referencias.htm">Referências</a></li>
+          <li><a href="glossario.htm">Glossário</a></li>
+          <li><a href="anexos.htm">Anexos</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</footer>
+<script>
+function expandAll(){
+  document.querySelectorAll('.acc-check').forEach(c => c.checked = true);
+}
+
+function collapseAll(){
+  document.querySelectorAll('.acc-check').forEach(c => c.checked = false);
+}
+</script>
+</body>
+</html>

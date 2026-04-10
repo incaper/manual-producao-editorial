@@ -1,453 +1,1103 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Capítulo 5 - Processo Editorial | Manual de Produção Editorial do Incaper</title>
-  <link rel="stylesheet" href="css/variaveis.css">
-  <link rel="stylesheet" href="css/estilo.css">
-
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Capítulo 5 - Processo editorial | Manual de Produção Editorial do Incaper</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta content="pt-br, pt, en" http-equiv="Content-Language" />
+<meta content="Incaper" name="author" />
+<meta content="O Incaper é responsável pela elaboração e execução de programas e projetos que proporcionam o desenvolvimento rural sustentável no Espírito Santo." name="description" />
+<meta content="Incaper, Seag, Agricultura, Pesquisa, Extensão Rural, Manual, Produção Editorial, Editorial" name="keywords" />
+<link rel="stylesheet" href="css/variaveis.css">
+<link rel="stylesheet" href="css/estilo.css">
+<link href="imagens/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
 <body>
 
-  <!-- Topo com título e menu -->
-  <header class="top-menu" role="banner">
-    <div class="container header-inner">
-      <div class="logo" aria-label="Título do site">
-        <a href="index.htm">Manual Incaper</a>
-      </div>
-      <nav class="top-nav" aria-label="Menu principal">
-        <!-- Botão mobile em CSS puro -->
-        <input type="checkbox" id="toggle-menu" class="toggle-menu-input">
-        <label for="toggle-menu" class="toggle-menu-btn">☰ Menu</label>
-        <ul class="menu-links">
-          <li><a href="index.htm">Início</a></li>
-          <li><a href="expediente.htm">Expediente</a></li>
-          <li><a href="expediente.htm">Prefácio</a></li>
-          <li><a href="expediente.htm">Agradecimentos</a></li>
-          <li><a href="expediente.htm">Apresentação</a></li>
-          <li><a href="expediente.htm">Download</a></li>
-        </ul>
-      </nav>
+<!-- Topo com título e menu -->
+<header class="top-menu" role="banner">
+  <div class="container header-inner">
+    <div class="logo" aria-label="Título do site"> <a href="index.htm">Manual Incaper</a> </div>
+    <nav class="top-nav" aria-label="Menu principal"> 
+      <!-- Botão mobile em CSS puro -->
+      <input type="checkbox" id="toggle-menu" class="toggle-menu-input">
+      <label for="toggle-menu" class="toggle-menu-btn">☰ Menu</label>
+      <ul class="menu-links">
+        <li><a href="expediente.htm">Expediente</a></li>
+        <li><a href="autores.htm">Autores</a></li>
+        <li><a href="prefacio.htm">Prefácio</a></li>
+        <li><a href="agradecimentos.htm">Agradecimentos</a></li>
+        <li><a href="apresentacao.htm">Apresentação</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Banner -->
+<section class="cap" role="img" aria-label="banner capitulo">
+  <div class="container cap-main">
+    <div class="cap-inner">
+      <figure> <img src="imagens/cap-5.png" alt="Imagem capítulo cinco" /> </figure>
     </div>
-  </header>
-
-  <!-- Banner -->
-  <section class="cap" role="img" aria-label="banner capitulo">
-    <div class="container cap-main">
-      <div class="cap-inner">
-        <figure>
-        <img src="imagens/cap.png" alt="Imagem capítulo cinco" />
-      </figure>
-      </div>
-      <div class="cap-tit">
-        <h1>Processo editorial</h1>
-      </div>
-      <div class="container cap-nav">
-        <label for="capitulos">Navegar por capítulo:</label>
-        <select id="capitulos" onchange="location.href = this.value;">
-          <option value="">Selecione um capítulo...</option>
-          <option value="capitulo1.htm">Capítulo 1</option>
-          <option value="capitulo2.htm">Capítulo 2</option>
-          <option value="capitulo3.htm">Capítulo 3</option>
-          <option value="capitulo4.htm">Capítulo 4</option>
-          <option value="capitulo_cinco.htm">Capítulo 5</option>
-          <option value="capitulo6.htm">Capítulo 6</option>
-          <option value="capitulo7.htm">Capítulo 7</option>
-          <option value="capitulo8.htm">Capítulo 8</option>
-          <option value="capitulo9.htm">Capítulo 9</option>
-          <option value="capitulo10.htm">Capítulo 10</option>
-          <option value="capitulo11.htm">Capítulo 11</option>
-        </select>
-        <div style="margin-top: 10px">
-          <a class="bt bt_lar" style="float: left;" href="index.htm">< Cap. 4</a>
-          <a class="bt bt_lar" style="float: right;" href="index.htm">Cap. 6 ></a>
-        </div>
-        </div>
+    <div class="cap-tit">
+      <h1>Processo editorial</h1>
     </div>
-  </section>
-
-
-  <main class="container main-capitulo" role="main">
-
-    <!-- Sidebar -->
-<aside class="sidebar" aria-label="Navegação do conteúdo editorial">
-  <nav>
-    <ul class="accordion" role="tree">
-
-      <!-- NÍVEL 1 -->
-      <li class="accordion-item" role="treeitem">
-
-        <!-- Checkbox controlador -->
-        <input type="checkbox" id="acc-5-1" class="acc-check">
-
-        <!-- Botão (+ / -) que expande -->
-        <label for="acc-5-1" class="acc-toggle" aria-hidden="true">
-          <span class="icon"></span>
-        </label>
-
-        <!-- Link real -->
-        <a href="#sec-5-1" class="acc-link">5.1 Procedimentos operacionais</a>
-
-        <!-- Subnível -->
-        <ul class="sub">
-          <li><a href="#sec-5-1-1">5.1.1 Elaboração de originais (npi 029)</a></li>
-          <li><a href="#sec-5-1-2">5.1.2 Submissão de projeto de livro a ser publicado pelo incaper (npi 010)</a></li>
-          <li><a href="#sec-5-1-3">5.1.3 Avaliação de proposta de publicações editadas pelo incaper (npi 033)</a></li>
-
-          <!-- NÍVEL 2 -->
-          <li class="accordion-item">
-
-            <input type="checkbox" id="acc-5-1-4" class="acc-check">
-            <label for="acc-5-1-4" class="acc-toggle">
-              <span class="icon"></span>
-            </label>
-            <a href="#sec-5-1-4" class="acc-link">5.1.4 Editoração</a>
-
-            <!-- NÍVEL 3 -->
-            <ul class="sub">
-              <li><a href="#sec-5-1-4-1">5.1.4.1 Editoração realizada pela gttc (npi 036)</a></li>
-              <li><a href="#sec-5-1-4-2">5.1.4.2 Editoração gerenciada pela gttc (npi 034)</a></li>
-              <li><a href="#sec-5-1-4-3">5.1.4.3 Editoração gerenciada pelo autor correspondente (npi 035)</a></li>
-            </ul>
-
-          </li>
-
-          <li><a href="#sec-5-1-5">5.1.5 Impressão, confecção e recebimento de material gráfico (npi 025)</a></li>
-          <li><a href="#sec-5-1-6">5.1.6 Catalogação e distribuição de publicações (npi 030)</a></li>
-          <li><a href="#sec-5-1-7">5.1.7 Divulgação de publicações editas pelo incaper (npi 037)</a></li>
-        </ul>
-      </li>
-
-
-      <!-- Outro item -->
-      <li class="accordion-item">
-        <input type="checkbox" id="acc-5-2" class="acc-check">
-        <label for="acc-5-2" class="acc-toggle">
-          <span class="icon"></span>
-        </label>
-        <a href="#sec-5-2" class="acc-link">5.2 Orientações para preparação de originais</a>
-
-        <ul class="sub">
-          <li><a href="#sec-5-2-1">5.2.1 Orientações para citações (abnt)</a></li>
-          <li><a href="#sec-5-2-2">5.2.2 Orientações para referências (abnt)</a></li>
-          <li><a href="#sec-5-2-3">5.2.3 Orientações para figuras</a></li>
-          <li><a href="#sec-5-2-4">5.2.4 Orientações para tabelas</a></li>
-          <li><a href="#sec-5-2-5">5.2.5 Orientações para quadros</a></li>
-          <li><a href="#sec-5-2-6">5.2.6 Orientações para envio de figuras, tabelas e quadros</a></li>
-          <li><a href="#sec-5-2-7">5.2.7 Créditos de autoria e de fontes de figuras, tabelas e quadros</a></li>
-        </ul>
-      </li>
-
-    </ul>
-  </nav>
-</aside>
-
-    <!-- Conteúdo principal -->
-    <article class="content">
-      <p>
-        O Incaper, por meio da sua editora, publica produtos editoriais elaborados com base nas ações desenvolvidas e nos resultados alcançados por meio do seu programa de pesquisa, de assistência técnica e de extensão rural, atendendo exclusivamente às suas demandas internas. Esses produtos editoriais devem ser propostos por autores que sejam servidores do Instituto, admitindo-se a participação de profissionais externos ou instituições, como autores e coautores, em temas pertinentes à área de atuação do Incaper.
-      </p>
-      <p>Para alcançar os fins desejados, uma das ações desenvolvidas foi mapear e desenhar o Processo Editorial do Incaper, reunindo as atividades envolvidas e os respectivos responsáveis por sua execução, com o apoio de ferramentas tecnológicas. Esse processo é composto pelas seguintes etapas:</p>
-
-      <ul>
-       <li>Elaboração e submissão dos originais ou projeto de livro pelos autores;</li>
-       <li>Avaliação da proposta de publicação;</li> 
-       <li>Editoração;</li>
-       <li>Impressão (quando for o caso); </li>
-       <li>Catalogação, divulgação e distribuição.</li>
-      </ul>
-
-      <p>Essas etapas são desenvolvidas de acordo com a Política Editorial do Incaper, com as Normas de Procedimento Internas (NPIs) e com as orientações contidas neste manual.</p>
-      <p>As etapas do Processo Editorial do Incaper são apresentadas a seguir (Figura 1).</p>
-
-      <figure>
-        <img src="imagens/cap5-img-01.png" alt="Representação do Processo Editorial do Incaper." />
-        <figcaption><span>Figura 1 - </span>Representação do Processo Editorial do Incaper.</figcaption>
-      </figure>
-
-      <h2 id="sec-5-1">5.1 Procedimentos operacionais</h2>
-      <p>Para orientar as equipes envolvidas nas atividades que compõem o processo editorial, foram mapeados, desenhados e descritos os procedimentos operacionais referentes a cada etapa acima identificada, incluindo seus subprocessos, contidos nas NPIs apresentadas a seguir. </p>
-
-      <h3 id="sec-5-1-1">5.1.1 Elaboração de originais (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
-imentos_Operacionais/NPI_029_-_Elabora%C3%A7%C3%A3o_de_originais.pdf" target="_blank">NPI 029</a>)</h3>
-      <p>Esta norma compreende orientações relacionadas às atividades de produção do original pelos autores e sua submissão à Coordenação Editorial.</p>
-      <p>Estas orientações têm como público-alvo os servidores interessados em publicar originais pelo Incaper, bem como os demais servidores envolvidos com as atividades editoriais.</p>
-      <p>A <a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
-imentos_Operacionais/NPI_029_-_Elabora%C3%A7%C3%A3o_de_originais.pdf" target="_blank">NPI 029</a> apresenta, de forma detalhada, todas as atividades referentes ao processo de elaboração de originais. Identificada a oportunidade de produção de conteúdo para publicação, os autores devem observar principalmente as seguintes orientações:</p>
-      <ul>
-        <li>Definir os objetivos, o público-alvo, a linha editorial e o veículo mais adequado para a publicação a ser produzida;</li>
-        <li>Certificar-se de que o conteúdo a ser abordado está compatível com a temática pretendida, no caso de publicações de temas multidisciplinares;</li>
-        <li>Definir potenciais autores e coautores do quadro do Incaper ou de instituições parceiras, com formação e experiência para cada área de conhecimento envolvida;</li>
-        <li>Manter em arquivo todas as figuras originais (gráficos, ilustrações, mapas, fotos, fluxogramas, infográficos, entre outros) utilizadas no texto;</li>
-        <li>Avaliar a necessidade de impressão da publicação e elaborar, quando necessário, um plano de distribuição dos exemplares.</li>
-      </ul>
-
-      <h3 id="sec-5-1-2">5.1.2 Submissão de projeto de livro a ser publicado pelo Incaper (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
-imentos_Operacionais/NPI_010_-
-_Submiss%C3%A3o_de_Projeto_de_Livro_a_Ser_Publicado_pelo_Incaper.pdf" target="_blank">NPI 010</a>)</h3>
-      <p>Esta norma tem como objetivo orientar os servidores do Instituto sobre os procedimentos padronizados para submissão de projeto de livro à Coordenação Editorial do Incaper.</p>
-      <p>Estas orientações têm como público-alvo os servidores interessados em submeter projeto para publicação de livros pelo Instituto, seja como organizador, autor, coautor ou participantes de quaisquer das etapas de aprovação do projeto.</p>
-      <p>É importante destacar que antes da elaboração do original, o Autor Correspondente ou organizador deve submeter à Coordenação Editorial um projeto de livro para avaliação prévia pelo Conselho Editorial do Incaper.</p>
-      <p>A <a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
-imentos_Operacionais/NPI_010_-
-_Submiss%C3%A3o_de_Projeto_de_Livro_a_Ser_Publicado_pelo_Incaper.pdf" target="_blank">NPI 010</a> apresenta, de forma detalhada, todas as atividades do processo de submissão de projeto de livro. Contudo, destacamos dois importantes pontos a serem observados pelos autores ou organizadores quanto à elaboração do projeto:</p>
-
-      <ul>
-        <li>Selecionar subtemas relacionados à temática principal, nos casos de livro com autoria coletiva;</li>
-        <li>Organizar os capítulos dentro de uma linha editorial única, mesmo que a publicação aborde subtemas diversos.</li>
-
-      </ul>
-
-      <h3 id="sec-5-1-3">5.1.3 Avaliação de proposta de publicações editadas pelo Incaper (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
-imentos_Operacionais/NPI_033_-
-_Avalia%C3%A7%C3%A3o_Propostas_de_Publica%C3%A7%C3%B5es_Editadas_Incaper.pdf" target="_blank">NPI 033</a>)</h3>
-      <p>Esta norma tem como objetivo orientar os servidores do Instituto sobre os procedimentos padronizados a serem utilizados ao avaliar originais submetidos à Coordenação Editorial.</p>
-      <p>Estas orientações têm como público-alvo os servidores envolvidos na análise dos originais quanto às normas editoriais, no seu encaminhamento aos consultores ad hoc, bem como os autores na análise da viabilidade técnica para realização dos ajustes sugeridos.</p>
-      <p>A <a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
-imentos_Operacionais/NPI_033_-
-_Avalia%C3%A7%C3%A3o_Propostas_de_Publica%C3%A7%C3%B5es_Editadas_Incaper.pdf" target="_blank">NPI 033</a> apresenta, de forma detalhada, todas as atividades do processo de avaliação de proposta de publicações editadas pelo Incaper. Contudo, destacamos alguns importantes pontos a serem observados:</p>
-      <p>Pela Coordenação Editorial:</p>
-
-      <ul>
-        <li>Analisar se o original e os documentos complementares recebidos estão de acordo com a Política Editorial, as Normas de Procedimento Internas e este manual.</li>
-        <li>Conferir se todas as figuras (gráficos, ilustrações, mapas, fotos, fluxogramas, infográficos, entre outros) que fazem parte do original, a ser analisado, foram enviadas pelo Autor Correspondente. Em seguida, deve encaminhá-las para avaliação prévia da equipe de design (<a href="#sec-5-2-6">ver item 5.2.6</a>).</li>
-        <li>Selecionar consultores ad hoc com formação e experiência compatível com o conteúdo do original.</li>
-      </ul>
-
-      <p>Pelos autores correspondentes:</p>
-      <ul>
-        <li>Avaliar, em conjunto com os demais autores, a viabilidade técnica dos ajustes sugeridos.</li>
-      </ul>
-
-      <h3 id="sec-5-1-4">5.1.4 Editoração</h3>
-      <p>A fase de editoração é parte do Processo Editorial do Incaper e consiste em etapas que vão da revisão de texto e do design editorial (tratamento de imagens, projeto gráfico e diagramação), até o fechamento do arquivo para impressão e/ou publicação no formato digital. Pode ser realizada de três formas distintas:</p>
-      <ol class="alfabetico">
-        <li>Editoração realizada pela GTTC (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
-imentos_Operacionais/NPI_036_-_Editora%C3%A7%C3%A3o_Realizada_pela_GTTC-1.pdf" target="_blank">NPI 036</a>): quando o serviço de editoração é realizado pela Equipe de Revisão Textual e Design Editorial da GTTC ou bolsistas sob sua coordenação.</li>
-        <li>Editoração gerenciada pela GTTC (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
-imentos_Operacionais/NPI_034_-_Editora%C3%A7%C3%A3o_Gerenciada_pela_GTTC.pdf" target="_blank">NPI 034</a>): quando o serviço de editoração é prestado por empresa contratada pelo Incaper. O serviço pode ser prestado de forma parcial ou integral por profissionais fora do Instituto. Neste caso, a Equipe de Revisão Textual e Design Editorial da GTTC atua na coordenação das atividades, responsabilizando-se pela orientação dos profissionais e pela avaliação e aprovação da publicação entregue.</li>
-        <li>Editoração gerenciada pelo Autor Correspondente (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
-imentos_Operacionais/NPI_035_-
-_Editora%C3%A7%C3%A3o_Gerenciada_pelo_Autor_Correspondente.pdf" target="_blank">NPI 035</a>): quando o serviço de editoração é contratado e pago diretamente por coordenadores de projetos de base individual (Seag, Fapes e outros). Nesse caso, a Equipe de Revisão Textual e Design Editorial da GTTC atua na coordenação das atividades, fornecendo orientações técnicas para contratação, orientando os prestadores do serviço, avaliando e aprovando a publicação entregue.</li>
-      </ol>
-
-      <p>As NPIs 034, 035 e 036 apresentam, detalhadamente, todas as atividades do processo de editoração de publicações editadas pelo Incaper. Contudo, destacamos alguns importantes pontos a serem observados pelos autores e pela Coordenação Editorial:</p>
-
-      <ul>
-        <li>A partir do momento em que se inicia a editoração, as alterações textuais devem ser restritas apenas àquelas indicadas pela revisão textual, não podendo haver mais alterações de conteúdo.</li>
-        <li>As figuras (gráficos, ilustrações, mapas, fotos, fluxogramas, infográficos, entre outros) entregues para editoração devem estar na resolução e com as demais especificidades indicadas pelo Designer (<a href="#sec-5-2-6">ver item 5.2.6</a>). Caso haja necessidade de substituição de alguma figura, o Autor Correspondente deve fazê-la no menor espaço de tempo possível.</li>
-        <li>O Autor Correspondente deve avaliar e aprovar tanto a revisão textual quanto a publicação diagramada com agilidade. No caso de obra coletiva ou em coautoria, deverá avaliar e aprovar com os demais autores.</li>
-        <li>É importante que todos os autores assumam o compromisso de não disponibilizar para terceiros as versões preliminares da publicação. Isso significa que os autores não podem compartilhar a versão final antes de estar disponibilizada no site da biblioteca do Incaper (Biblioteca Rui Tendinha - BRT), divulgada nas redes sociais institucionais e/ou em eventos de seu lançamento.</li>
-      </ul>
-
-      <h4 id="sec-5-1-4-1">5.1.4.1 Editoração realizada pela GTTC (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
-imentos_Operacionais/NPI_036_-_Editora%C3%A7%C3%A3o_Realizada_pela_GTTC-1.pdf" target="_blank">NPI 036</a>)</h4>
-      <p>Esta norma apresenta orientações relacionadas às atividades de editoração, particularmente no que diz respeito às fases de revisão textual e design editorial realizadas internamente pela equipe da GTTC.</p>
-      <p>Essas orientações têm como principal público-alvo os servidores envolvidos com as atividades de editoração e o Autor Correspondente.</p>
-      <p>A <a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
-imentos_Operacionais/NPI_036_-_Editora%C3%A7%C3%A3o_Realizada_pela_GTTC-1.pdf" target="_blank">NPI 036</a> apresenta, de forma detalhada, todas as atividades referentes ao processo de editoração realizada pela GTTC. Contudo, é importante destacar um importante ponto a ser observado pela Coordenação Editorial:</p>
-
-      <ul>
-        <li>É fundamental que a Coordenação Editorial encaminhe à GTTC todos os documentos e informações contidos no Formulário de Envio de Texto Final,  a fim de dar início ao processo de editoração.</li>
-      </ul>
-
-      <h4 id="sec-5-1-4-2">5.1.4.2 Editoração gerenciada pela GTTC (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
-imentos_Operacionais/NPI_034_-_Editora%C3%A7%C3%A3o_Gerenciada_pela_GTTC.pdf" target="_blank">NPI 034</a>)</h4>
-      <p>Esta norma apresenta orientações relacionadas às atividades de editoração (revisão textual e design editorial) realizadas por empresa contratada pelo Incaper, coordenadas pela GTTC, com apoio técnico da Equipe de Revisão Textual e Design Editorial. A prestação de serviço pode ser realizada total ou parcialmente por meio de três alternativas:</p>
-      <ol class="alfabetico">
-        <li>A revisão textual é realizada internamente pelo Revisor Textual da GTTC, e o design editorial por uma empresa contratada;</li>
-        <li>Pode ocorrer a situação inversa, ou seja, a revisão textual é realizada por empresa contratada, e o design editorial pelo Designer da GTTC;</li>
-        <li>Tanto a revisão textual quanto o design editorial são realizados por empresa contratada.</li>
-      </ol>
-
-      <p>Essas orientações destinam-se principalmente aos servidores envolvidos nas atividades de editoração e ao Autor Correspondente.</p>
-      <p>A <a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
-imentos_Operacionais/NPI_034_-_Editora%C3%A7%C3%A3o_Gerenciada_pela_GTTC.pdf" target="_blank">NPI 034</a> apresenta, de forma detalhada, todas as atividades referentes ao processo de editoração gerenciada pela GTTC. Contudo, é importante destacar alguns pontos a serem observados pela equipe da GTTC e Autor Correspondente: </p>
-      
-      <ul>
-        <li>O Designer deve solicitar à empresa contratada o projeto gráfico de acordo com as normas editorias do Incaper para aprovação prévia pela GTTC e pelo Autor Correspondente antes da diagramação completa do conteúdo.</li>
-        <li>É fundamental que o Autor Correspondente avalie o material revisado ou diagramado com agilidade, dando retorno aos profissionais envolvidos na editoração. No caso de obra em coautoria ou obra coletiva, o Autor Correspondente deve validar as decisões com os autores envolvidos para evitar problemas na aprovação final da publicação.</li>
-      </ul>
-
-      <h4 id="sec-5-1-4-3">5.1.4.3 Editoração gerenciada pelo Autor Correspondente (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
-imentos_Operacionais/NPI_035_-
-_Editora%C3%A7%C3%A3o_Gerenciada_pelo_Autor_Correspondente.pdf" target="_blank">NPI 035</a>)</h4>
-      <p>Esta norma apresenta orientações relacionadas às atividades de editoração (revisão textual e design editorial) realizadas por empresa contratada diretamente pelo Autor Correspondente ou coordenador de projeto, com recursos financeiros de projeto de base individual (Seag/Fapes e similares). Nesse caso, a Equipe de Revisão Textual e Design Editorial da GTTC auxilia o Autor Correspondente, na avaliação técnica e aprovação do serviço prestado.</p>
-      <p>Essas orientações têm como público-alvo o Autor Correspondente, coordenador de projeto e servidores da GTTC envolvidos com as atividades de editoração.</p>
-      <p>A <a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
-imentos_Operacionais/NPI_035_-
-_Editora%C3%A7%C3%A3o_Gerenciada_pelo_Autor_Correspondente.pdf" target="_blank">NPI 035</a> apresenta, de forma detalhada, todas as atividades do processo de editoração gerenciada pelo Autor Correspondente. Contudo, é importante destacar que o Autor Correspondente ou o coordenador do projeto responsável pela contratação deve observar principalmente as seguintes orientações:</p>
-      
-      <ul>
-        <li>Solicitar à Coordenação Editorial/GTTC orientações quanto à correta descrição dos serviços a serem contratados externamente, minimizando problemas decorrentes de dimensionamento inadequado da proposta comercial, ou que estejam incompatíveis com a Política Editorial do Incaper.</li>
-        <li>Solicitar ao prestador do serviço a proposta de projeto gráfico, para avaliação prévia pela equipe da GTTC e autores, antes da diagramação do conteúdo.</li>
-        <li>Avaliar o mais rápido possível o material revisado ou diagramado, dando retorno aos profissionais envolvidos na etapa. No caso de obra coletiva ou em coautoria, validar sua decisão com os autores envolvidos para não ter problema na aprovação final da publicação.</li>
-        <li>Enviar o documento completo diagramado à gerência da GTTC, após avaliação e validação dos autores, para aprovação do serviço prestado.</li>
-        <li>Entregar os arquivos finais à equipe da GTTC, após a aprovação e conclusão da editoração, antes do pagamento do serviço, para que sejam posteriormente catalogados pela BRT.</li>
-        <li>Aguardar a disponibilização da publicação no site da biblioteca do Incaper, bem como sua divulgação nas redes sociais institucionais e/ou em eventos de lançamento, antes de disponibilizá-la para terceiros. Isso significa que versões preliminares devem ter circulação restrita aos autores e à GTTC.</li>
-      </ul>
-      
-
-      <h3 id="sec-5-1-5">5.1.5 Impressão, confecção e recebimento de material gráfico (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
-imentos_Operacionais/NPI_025_-
-_Impress%C3%A3oConfec%C3%A7%C3%A3o_e_Recebimento_de_Material_Gr%C3%A1fico.pd
-f" target="_blank">NPI 025</a>)</h3>
-      <p>Esta norma apresenta orientações relacionadas às atividades de solicitação de impressão e recebimento de material gráfico impresso.</p>
-      <p>Essas orientações têm como público-alvo os servidores do Incaper, envolvidos com as atividades de solicitação e encaminhamento de arquivos de publicações editadas pelo Incaper para impressão, bem como o recebimento do referido material. Pode ser realizada de três formas distintas:</p>
-
-      <ol class="alfabetico">
-        <li>Impressão contratada pelo Incaper, com recursos gerenciados pela instituição;</li>
-        <li>Impressão contratada por coordenador de projeto de base individual;</li>
-        <li>Impressão contratada por instituições parceiras.</li>
-      </ol>
-
-      <p>A <a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
-imentos_Operacionais/NPI_025_-
-_Impress%C3%A3oConfec%C3%A7%C3%A3o_e_Recebimento_de_Material_Gr%C3%A1fico.pd
-f" target="_blank">NPI 025</a> apresenta, de forma detalhada, todas as atividades do processo. Contudo, é importante observar o seguinte:</p>
-
-      <ul>
-        <li>Nas situações previstas nos itens “b” e “c”, é fundamental que o responsável pela contratação obtenha da GTTC as orientações quanto à correta descrição do serviço de impressão, pois envolve informações técnicas (tipo de impressão, especificação de papel, padrões de cores, tipo de encadernamento, acabamento etc.).</li>
-      </ul>
-
-      <h3 id="sec-5-1-6">5.1.6 Catalogação e distribuição de publicações (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
-imentos_Operacionais/NPI_030_-
-_Cataloga%C3%A7%C3%A3o_e_distribui%C3%A7%C3%A3o_de_publica%C3%A7%C3%B5es.pd
-f" target="_blank">NPI 030</a>)</h3>
-      
-      <p>Esta norma apresenta orientações relacionadas às atividades de recebimento, avaliação, catalogação e distribuição de publicações encaminhadas à Biblioteca Rui Tendinha (BRT).</p>
-      <p>Essas orientações têm como público-alvo os servidores do Incaper envolvidos com as atividades realizadas no âmbito da BRT.</p>
-      <p>A <a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
-imentos_Operacionais/NPI_030_-
-_Cataloga%C3%A7%C3%A3o_e_distribui%C3%A7%C3%A3o_de_publica%C3%A7%C3%B5es.pd
-f" target="_blank">NPI 030</a> apresenta, de forma detalhada, todas as atividades do processo. Contudo, é importante destacar dois pontos:</p>
-
-      <ul>
-        <li>O arquivo digital da publicação a ser enviado para a biblioteca deve estar no formato e tamanho adequados ao sistema de informação. O sistema atual (Ainfo) comporta arquivos de até 72 megabytes.</li>
-        <li>A BRT distribui as publicações impressas tomando como base o plano de distribuição entregue pelos autores. Havendo necessidade de mais exemplares, a solicitação deve ser enviada por e-mail (<a href="mailto:biblioteca@incaper.es.gov.br">biblioteca@incaper.es.gov.br</a>) com o título da publicação e a quantidade desejada. Havendo disponibilidade no estoque, o material será separado e ficará disponível por 20 dias para retirada.</li>
-      </ul>
-
-      <h3 id="sec-5-1-7">5.1.7 Divulgação de publicações editas pelo Incaper (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
-imentos_Operacionais/NPI_037_-
-_Divulga%C3%A7%C3%A3o_de_Publica%C3%A7%C3%B5es_Editadas_pelo_Incaper.pdf" target="_blank">NPI 037</a>)</h3>
-      <p>Esta norma apresenta orientações relacionadas às atividades de lançamento das publicações editadas pelo Incaper.</p>
-      <p>Essas orientações têm como público-alvo os servidores envolvidos nas atividades voltadas para a divulgação inicial das publicações editadas pelo Incaper.</p>
-      <p>O lançamento pode ser realizado das seguintes formas: </p>
-      <ol class="alfabetico">
-        <li>Divulgação padrão - realizada pela GTTC para todas as publicações, contemplando a veiculação de matérias jornalísticas, de vídeos e postagens em redes sociais;</li>
-        <li>Divulgação especial - definida pelos autores, com apoio da GTTC, contemplando o lançamento da publicação por meio de evento, além da divulgação padrão.</li>
-      </ol>
-
-      <p>A <a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
-imentos_Operacionais/NPI_037_-
-_Divulga%C3%A7%C3%A3o_de_Publica%C3%A7%C3%B5es_Editadas_pelo_Incaper.pdf" target="_blank">NPI 037</a> apresenta, de forma detalhada, todas as atividades referentes ao lançamento das publicações. Contudo, é importante que os autores e a GTTC observem principalmente as seguintes orientações: </p>
-
-      <ul>
-        <li>A discussão, a avaliação da necessidade e viabilidade de lançamento da publicação em evento e o seu planejamento deverão ocorrer durante o processo de editoração. Caso contrário, pode haver atraso na disponibilização da publicação para a sociedade.</li>
-        <li>A produção de vídeos e de outras peças de divulgação também deve ser realizada durante o processo de editoração.</li>
-      </ul>
-
-      <h6>Exemplo de citação</h6>
-      <blockquote>
-        A segurança protetora é realizada quando as pessoas estão inseridas em uma rede social e institucional consolidada. Considera-se que quanto mais desamparadas estiverem as pessoas frente a um fenômeno natural, maiores as possibilidades desse fenômeno se transformar em desastres sociais e econômicos (Costa, 2006, p. 86).
-      </blockquote>
-
-
-      <h6>Exemplo de marcadores</h6>
-      <figure>
-        <img src="imagens/marcacao.png" alt="Exemplo marcação." />
-      </figure>
-
-
-      <h6>Artigo de revista científica em meio eletrônico:</h6>
-      <div class="caixa-observacao cor-lar">
-        <p>Elementos essenciais: autor, título do artigo e subtítulo (se houver), seguidos do <strong>título da revista</strong>, local (cidade, se houver), volume e/ou ano, número ou fascículo, paginação inicial e final do artigo, informações de período, ano de publicação, informações pertinentes ao suporte eletrônico (DOI, se houver) seguidos das expressões “Disponível em:” (endereço eletrônico do documento) e “Acesso em:” (data de acesso ao documento).</p>
-      </div>
-
-      <table>
-        <caption>Tabela exemplo demonstrativa</caption>
-        <thead>
-          <tr>
-            <th>Tipo</th>
-            <th>Ano 2022</th>
-            <th>Ano 2023</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Exemplo 1</td><td>15%</td><td>22%</td></tr>
-          <tr><td>Exemplo 2</td><td>10%</td><td>18%</td></tr>
-          <tr><td>Exemplo 2</td><td>10%</td><td>18%</td></tr>
-        </tbody>
-      </table>
-      <p><span>Tabela 12 - Produção a partir de outras frutas nas agroindústrias entrevistadas</span></p>
-
-      <figure>
-        <img src="imagens/cap5-img-02.jpg" alt="Exemplo de figura com legenda explicativa e fonte indicando sua procedência." />
-        <figcaption><span>Figura 2 - </span>Exemplo de figura com legenda explicativa e fonte indicando sua procedência.</figcaption>
-        <span class="small"><span>Fonte:</span> Galeano <i>et al.</i> (2025).</span>
-      </figure>
-
-
-    </article>
-    <div></div>
-    <div class="container" style="width: 100%; float: right;">
-          <a class="bt bt_lar" style="float: left;" href="index.htm">< Cap. 4</a>
-          <a class="bt bt_lar" style="float: right;" href="index.htm">Cap. 6 ></a>
-        </div>
-  </main>
+    <div class="container cap-nav">
+      <label for="capitulos">Navegar pelo conteúdo:</label>
+      <select id="capitulos" onchange="location.href = this.value;">
+        <option value="">Selecionar ...</option>
+        <option value="capitulo_um.htm">Capítulo 1</option>
+        <option value="capitulo_dois.htm">Capítulo 2</option>
+        <option value="capitulo_tres.htm">Capítulo 3</option>
+        <option value="capitulo_quatro.htm">Capítulo 4</option>
+        <option value="capitulo_cinco.htm">Capítulo 5</option>
+        <option value="capitulo_seis.htm">Capítulo 6</option>
+        <option value="capitulo_sete.htm">Capítulo 7</option>
+        <option value="capitulo_oito.htm">Capítulo 8</option>
+        <option value="capitulo_nove.htm">Capítulo 9</option>
+        <option value="capitulo_dez.htm">Capítulo 10</option>
+        <option value="capitulo_onze.htm">Capítulo 11</option>
+        <option value="referencias.htm">Referências</option>
+        <option value="glossario.htm">Glossário</option>
+        <option value="anexos.htm">Anexos</option>
+      </select>
+      <div style="margin-top: 10px"> <a class="bt bt_lar" style="float: left;" href="capitulo_quatro.htm">< Cap. 4</a> <a class="bt bt_lar" style="float: right;" href="capitulo_seis.htm">Cap. 6 ></a> </div>
+    </div>
+  </div>
+</section>
+<main class="container main-capitulo" role="main"> 
   
+  <!-- Sidebar -->
+  <aside class="sidebar" aria-label="Navegação do conteúdo editorial">
+    <div class="acc-controls">
+      <button type="button" onclick="expandAll()">Expandir tudo</button>
+      <button type="button" onclick="collapseAll()">Recolher tudo</button>
+    </div>
+    <nav>
+      <ul class="accordion" role="tree">
+        <li class="accordion-item"> <a href="index.htm" class="acc-link">Voltar ao início do manual</a> </li>
+        <!-- NÍVEL 1 -->
+        <li class="accordion-item" role="treeitem"> 
+          
+          <!-- Checkbox controlador -->
+          <input type="checkbox" id="acc-5-1" class="acc-check">
+          <label for="acc-5-1" class="acc-toggle" aria-hidden="true"> <span class="icon"></span> </label>
+          <a href="#sec-5-1" class="acc-link">5.1 Procedimentos operacionais</a> 
+          
+          <!-- Subnível -->
+          <ul class="sub">
+            <li><a href="#sec-5-1-1">5.1.1 Elaboração de originais</a></li>
+            <li><a href="#sec-5-1-2">5.1.2 Submissão de projeto de livro a ser publicado pelo Incaper</a></li>
+            <li><a href="#sec-5-1-3">5.1.3 Avaliação de proposta de publicações editadas pelo Incaper</a></li>
+            
+            <!-- NÍVEL 2 -->
+            <li class="accordion-item">
+              <input type="checkbox" id="acc-5-1-4" class="acc-check">
+              <label for="acc-5-1-4" class="acc-toggle"> <span class="icon"></span> </label>
+              <a href="#sec-5-1-4" class="acc-link">5.1.4 Editoração</a> 
+              
+              <!-- NÍVEL 3 -->
+              <ul class="sub">
+                <li><a href="#sec-5-1-4-1">5.1.4.1 Editoração realizada pela GTTC</a></li>
+                <li><a href="#sec-5-1-4-2">5.1.4.2 Editoração gerenciada pela GTTC</a></li>
+                <li><a href="#sec-5-1-4-3">5.1.4.3 Editoração gerenciada pelo Autor Correspondente</a></li>
+              </ul>
+            </li>
+            <li><a href="#sec-5-1-5">5.1.5 Impressão, confecção e recebimento de material gráfico</a></li>
+            <li><a href="#sec-5-1-6">5.1.6 Catalogação e distribuição de publicações</a></li>
+            <li><a href="#sec-5-1-7">5.1.7 Divulgação de publicações editadas pelo Incaper</a></li>
+          </ul>
+        </li>
+        <li class="accordion-item"> <a href="#sec-5-2" class="acc-link">5.2 Prazos do processo editorial</a> </li>
+        
+        <!-- Outro item -->
+        <li class="accordion-item">
+          <input type="checkbox" id="acc-5-3" class="acc-check">
+          <label for="acc-5-3" class="acc-toggle"> <span class="icon"></span> </label>
+          <a href="#sec-5-3" class="acc-link">5.3 Orientações para preparação de originais</a>
+          <ul class="sub">
+            <li class="accordion-item">
+              <input type="checkbox" id="acc-5-3-1" class="acc-check">
+              <label for="acc-5-3-1" class="acc-toggle"> <span class="icon"></span> </label>
+              <a href="#sec-5-3-1" class="acc-link">5.3.1 Orientações para citações (ABNT)</a> 
+              
+              <!-- NÍVEL 3 -->
+              <ul class="sub">
+                <li><a href="#sec-5-3-1-1">5.3.1.1 Localização</a></li>
+                <li><a href="#sec-5-3-1-2">5.3.1.2 Regras gerais</a></li>
+                <li class="accordion-item">
+                  <input type="checkbox" id="acc-5-3-1-3" class="acc-check">
+                  <label for="acc-5-3-1-3" class="acc-toggle"> <span class="icon"></span> </label>
+                  <a href="#sec-5-3-1-3" class="acc-link">5.3.1.3 Formas de citação</a> 
+                  
+                  <!-- NÍVEL 4 -->
+                  <ul class="sub">
+                    <li><a href="#sec-5-3-1-3-1">5.3.1.3.1 Citação direta</a></li>
+                    <li><a href="#sec-5-3-1-3-2">5.3.1.3.2 Citação indireta</a></li>
+                    <li><a href="#sec-5-3-1-3-3">5.3.1.3.3 Citação de citação</a></li>
+                    <li><a href="#sec-5-3-1-3-4">5.3.1.3.4 Orientações adicionais</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="accordion-item">
+              <input type="checkbox" id="acc-5-3-2" class="acc-check">
+              <label for="acc-5-3-2" class="acc-toggle"> <span class="icon"></span> </label>
+              <a href="#sec-5-3-2" class="acc-link">5.3.2 Orientações para referências (ABNT)</a> 
+              
+              <!-- NÍVEL 3 -->
+              <ul class="sub">
+                <li><a href="#sec-5-3-2-1">5.3.2.1 Localização</a></li>
+                <li><a href="#sec-5-3-2-2">5.3.2.2 Regras gerais</a></li>
+                <li><a href="#sec-5-3-2-3">5.3.2.3 Exemplos de referências</a></li>
+              </ul>
+            </li>
+            <li> <a href="#sec-5-3-3">5.3.3 Orientações para figuras</a> </li>
+            <li> <a href="#sec-5-3-4">5.3.4 Orientações para tabelas</a> </li>
+            <li> <a href="#sec-5-3-5">5.3.5 Orientações para quadros</a> </li>
+            <li> <a href="#sec-5-3-6">5.3.6 Orientações para envio de figuras, tabelas e quadros</a> </li>
+            <li> <a href="#sec-5-3-7">5.3.7 Créditos de autoria e de fontes de figuras, tabelas e quadros</a> </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  
+  <!-- Conteúdo principal -->
+  <article class="content">
+    <p> O Incaper, por meio da sua editora, publica produtos editoriais elaborados com base
+      nas ações desenvolvidas e nos resultados alcançados por meio do seu programa de
+      pesquisa, de assistência técnica e de extensão rural, atendendo exclusivamente às
+      suas demandas internas. Esses produtos editoriais devem ser propostos por autores
+      que sejam servidores do Instituto, admitindo-se a participação de profissionais
+      externos ou instituições, como autores e coautores, em temas pertinentes à área de
+      atuação do Incaper. </p>
+    <p>Para alcançar os fins desejados, uma das ações desenvolvidas foi mapear e desenhar
+      o Processo Editorial do Incaper, reunindo as atividades envolvidas e os respectivos
+      responsáveis por sua execução, com o apoio de ferramentas tecnológicas. Esse
+      processo é composto pelas seguintes etapas:</p>
+    <ul>
+      <li>Elaboração e submissão dos originais ou projeto de livro pelos autores;</li>
+      <li>Avaliação da proposta de publicação;</li>
+      <li>Editoração;</li>
+      <li>Impressão (quando for o caso); </li>
+      <li>Catalogação, divulgação e distribuição.</li>
+    </ul>
+    <p>Essas etapas são desenvolvidas de acordo com a Política Editorial do Incaper, com
+      as Normas de Procedimento Internas (NPIs) e com as orientações contidas neste
+      manual.</p>
+    <p>As etapas do Processo Editorial do Incaper são apresentadas a seguir (Figura 1).</p>
+    <figure> <img src="imagens/cap5-img-01.png" alt="Representação do Processo Editorial do Incaper." title="Representação do Processo Editorial do Incaper." />
+      <figcaption><span>Figura 1 - </span>Representação do Processo Editorial do Incaper.</figcaption>
+    </figure>
+    <h2 id="sec-5-1">5.1 Procedimentos operacionais</h2>
+    <p>Para orientar as equipes envolvidas nas atividades que compõem o processo editorial,
+      foram mapeados, desenhados e descritos os procedimentos operacionais referentes
+      a cada etapa acima identificada, incluindo seus subprocessos, contidos nas NPIs
+      apresentadas a seguir.</p>
+    <h3 id="sec-5-1-1">5.1.1 Elaboração de originais</h3>
+    <p>Esta norma <a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
+imentos_Operacionais/NPI_029_-_Elabora%C3%A7%C3%A3o_de_originais.pdf" target="_blank">(NPI 029)</a> compreende orientações relacionadas às atividades de produção do original pelos autores e sua submissão à Coordenação Editorial.</p>
+    <p>Estas orientações têm como público-alvo os servidores interessados em publicar
+      originais pelo Incaper, bem como os demais servidores envolvidos com as
+      atividades editoriais.</p>
+    <p>A NPI 029 apresenta, de forma detalhada, todas as atividades referentes ao processo
+      de elaboração de originais. Identificada a oportunidade de produção de conteúdo
+      para publicação, os autores devem observar principalmente as seguintes orientações:</p>
+    <ul>
+      <li>Definir os objetivos, o público-alvo, a linha editorial e o veículo mais adequado
+        para a publicação a ser produzida;</li>
+      <li>Certificar-se de que o conteúdo a ser abordado está compatível com a temática
+        pretendida, no caso de publicações de temas multidisciplinares;</li>
+      <li>Definir potenciais autores e coautores do quadro do Incaper ou de instituições
+        parceiras, com formação e experiência para cada área de conhecimento envolvida;</li>
+      <li>Manter em arquivo todas as figuras originais (gráficos, ilustrações, mapas, fotos,
+        fluxogramas, infográficos, entre outros) utilizadas no texto;</li>
+      <li>Avaliar a necessidade de impressão da publicação e elaborar, quando necessário,
+        um plano de distribuição dos exemplares.</li>
+    </ul>
+    <h3 id="sec-5-1-2">5.1.2 Submissão de projeto de livro a ser publicado pelo Incaper </h3>
+    <p>Esta norma (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
+imentos_Operacionais/NPI_010_-
+_Submiss%C3%A3o_de_Projeto_de_Livro_a_Ser_Publicado_pelo_Incaper.pdf" target="_blank">NPI 010</a>) tem como objetivo orientar os servidores do Instituto sobre
+      os procedimentos padronizados para submissão de projeto de livro à Coordenação
+      Editorial do Incaper.</p>
+    <p>Estas orientações têm como público-alvo os servidores interessados em submeter
+      projeto para publicação de livros pelo Instituto, sejam como organizadores, autores,
+      coautores ou participantes de quaisquer das etapas de aprovação do projeto.</p>
+    <p>É importante destacar que antes da elaboração do original, o Autor Correspondente
+      ou organizador deve submeter à Coordenação Editorial um projeto de livro para
+      avaliação prévia pelo Conselho Editorial do Incaper.</p>
+    <p>A NPI 010 apresenta, de forma detalhada, todas as atividades do processo de
+      submissão de projeto de livro. Contudo, destacamos dois importantes pontos a serem
+      observados pelos autores ou organizadores quanto à elaboração do projeto:</p>
+    <ul>
+      <li>Selecionar subtemas relacionados à temática principal, nos casos de livro com
+        autoria coletiva;</li>
+      <li>Organizar os capítulos dentro de uma linha editorial única, mesmo que a publicação
+        aborde subtemas diversos.</li>
+    </ul>
+    <h3 id="sec-5-1-3">5.1.3 Avaliação de proposta de publicações editadas pelo Incaper</h3>
+    <p>Esta norma (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
+imentos_Operacionais/NPI_033_-
+_Avalia%C3%A7%C3%A3o_Propostas_de_Publica%C3%A7%C3%B5es_Editadas_Incaper.pdf" target="_blank">NPI 033</a>) tem como objetivo orientar os servidores do Instituto sobre
+      os procedimentos padronizados a serem utilizados ao avaliar originais submetidos
+      à Coordenação Editorial.</p>
+    <p>Estas orientações têm como público-alvo os servidores envolvidos na análise dos
+      originais quanto às normas editoriais, no seu encaminhamento aos consultores <i>ad hoc</i>, bem como os autores na análise da viabilidade técnica para realização dos
+      ajustes sugeridos.</p>
+    <p>A NPI 033 apresenta, de forma detalhada, todas as atividades do processo de
+      avaliação de proposta de publicações editadas pelo Incaper. Contudo, destacamos
+      alguns importantes pontos a serem observados:</p>
+    <p class="d-flex"><span class="destaque-lista">1</span><span><strong>Pela Coordenação Editorial:</strong></span></p>
+    <ul>
+      <li>Analisar se o original e os documentos complementares recebidos estão de acordo
+        com a Política Editorial, as Normas de Procedimento Internas e este manual.</li>
+      <li>Conferir se todas as figuras (gráficos, ilustrações, mapas, fotos, fluxogramas,
+        infográficos, entre outros) que fazem parte do original, a ser analisado, foram
+        enviadas pelo Autor Correspondente. Em seguida, deve encaminhá-las para
+        avaliação prévia da equipe de design (<a href="#sec-5-3-6">ver seção 5.3.6</a>).</li>
+      <li>Selecionar consultores <i>ad hoc</i> com formação e experiência compatível com o
+        conteúdo do original.</li>
+    </ul>
+    <p class="d-flex"><span class="destaque-lista">2</span><span><strong>Pelos autores correspondentes:</strong></span></p>
+    <ul>
+      <li>Avaliar, em conjunto com os demais autores, a viabilidade técnica dos ajustes sugeridos.</li>
+    </ul>
+    <h3 id="sec-5-1-4">5.1.4 Editoração</h3>
+    <p>A fase de editoração é parte do Processo Editorial do Incaper e consiste em etapas
+      que vão da revisão de texto e do design editorial (tratamento de imagens, projeto
+      gráfico e diagramação), até o fechamento do arquivo para impressão e/ou publicação
+      no formato digital. Pode ser realizada de três formas distintas:</p>
+    <ol class="none">
+      <li><span class="txt-lar"><strong>a)</strong></span> <strong>Editoração realizada pela GTTC (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
+imentos_Operacionais/NPI_036_-_Editora%C3%A7%C3%A3o_Realizada_pela_GTTC-1.pdf" target="_blank">NPI 036</a>):</strong> quando o serviço de editoração é
+        realizado pela Equipe de Revisão Textual e Design Editorial da GTTC ou bolsistas
+        sob sua coordenação.</li>
+      <li><span class="txt-lar"><strong>b)</strong></span> <strong>Editoração gerenciada pela GTTC (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
+imentos_Operacionais/NPI_034_-_Editora%C3%A7%C3%A3o_Gerenciada_pela_GTTC.pdf" target="_blank">NPI 034</a>):</strong> quando o serviço de editoração
+        é prestado por empresa contratada pelo Incaper. O serviço pode ser prestado
+        de forma parcial ou integral por profissionais fora do Instituto. Neste caso,
+        a Equipe de Revisão Textual e Design Editorial da GTTC atua na coordenação
+        das atividades, responsabilizando-se pela orientação dos profissionais e pela
+        avaliação e aprovação da publicação entregue.</li>
+      <li><span class="txt-lar"><strong>c)</strong></span> <strong>Editoração gerenciada pelo Autor Correspondente (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
+imentos_Operacionais/NPI_035_-
+_Editora%C3%A7%C3%A3o_Gerenciada_pelo_Autor_Correspondente.pdf" target="_blank">NPI 035</a>):</strong> quando o serviço
+        de editoração é contratado e pago diretamente por coordenadores de projetos de
+        base individual (Seag, Fapes e outros). Nesse caso, a Equipe de Revisão Textual
+        e Design Editorial da GTTC atua na coordenação das atividades, fornecendo
+        orientações técnicas para contratação, orientando os prestadores do serviço,
+        avaliando e aprovando a publicação entregue.</li>
+    </ol>
+    <p>As NPIs 034, 035 e 036 apresentam, detalhadamente, todas as atividades do processo
+      de editoração de publicações editadas pelo Incaper. Contudo, destacamos alguns
+      importantes pontos a serem observados pelos autores e pela GTTC:</p>
+    <ul>
+      <li>A partir do momento em que se inicia a editoração, as alterações textuais devem
+        ser restritas apenas àquelas indicadas pela revisão textual, não podendo haver
+        mais alterações de conteúdo.</li>
+      <li>As figuras (gráficos, ilustrações, mapas, fotos, fluxogramas, infográficos,
+        entre outros) entregues para editoração devem estar na resolução e com as
+        demais especificidades indicadas pelo Designer (<a href="#sec-5-3-6">ver seção 5.3.6</a>). Caso haja
+        necessidade de substituição de alguma figura, o Autor Correspondente deve
+        fazê‑la no menor espaço de tempo possível.</li>
+      <li>O Autor Correspondente deve avaliar e aprovar tanto a revisão textual quanto a
+        publicação diagramada com agilidade. No caso de obra coletiva ou em coautoria,
+        deverá avaliar e aprovar com os demais autores.</li>
+      <li>É importante que todos os autores assumam o compromisso de não disponibilizar
+        para terceiros as versões preliminares da publicação. Isso significa que os autores
+        não podem compartilhar a versão final antes de estar disponibilizada no site da
+        biblioteca do Incaper (Biblioteca Rui Tendinha - BRT), divulgada nas redes sociais
+        institucionais e/ou em eventos de seu lançamento.</li>
+    </ul>
+    <h4 id="sec-5-1-4-1">5.1.4.1 Editoração realizada pela GTTC</h4>
+    <p>Esta norma (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
+imentos_Operacionais/NPI_036_-_Editora%C3%A7%C3%A3o_Realizada_pela_GTTC-1.pdf" target="_blank">NPI 036</a>) apresenta orientações relacionadas às atividades de
+      editoração, particularmente no que diz respeito às fases de revisão textual e design
+      editorial realizadas internamente pela equipe da GTTC.</p>
+    <p>Essas orientações têm como principal público-alvo os servidores envolvidos com as
+      atividades de editoração e o Autor Correspondente.</p>
+    <p>A NPI 036 apresenta, de forma detalhada, todas as atividades referentes ao processo
+      de editoração realizada pela GTTC. Contudo, é importante destacar um importante
+      ponto a ser observado pela Coordenação Editorial:</p>
+    <div class="caixa-observacao cor-lar"> É fundamental que a Coordenação Editorial encaminhe à GTTC todos os
+      documentos e informações contidos no Formulário de Envio de Texto Final, a
+      fim de dar início ao processo de editoração. </div>
+    <h4 id="sec-5-1-4-2">5.1.4.2 Editoração gerenciada pela GTTC</h4>
+    <p>Esta norma (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
+imentos_Operacionais/NPI_034_-_Editora%C3%A7%C3%A3o_Gerenciada_pela_GTTC.pdf" target="_blank">NPI 034</a>) apresenta orientações relacionadas às atividades de
+      editoração (revisão textual e design editorial) realizadas por empresa contratada
+      pelo Incaper, coordenadas pela GTTC, com apoio técnico da Equipe de Revisão
+      Textual e Design Editorial. A prestação de serviço pode ser realizada total ou
+      parcialmente por meio de três alternativas:</p>
+    <ul class="none">
+      <li><span class="txt-lar"><strong>a)</strong></span> A revisão textual é realizada internamente pelo Revisor Textual da GTTC, e o
+        design editorial por uma empresa contratada;</li>
+      <li><span class="txt-lar"><strong>b)</strong></span> Pode ocorrer a situação inversa, ou seja, a revisão textual é realizada por empresa
+        contratada, e o design editorial pelo Designer da GTTC;</li>
+      <li><span class="txt-lar"><strong>c)</strong></span> Tanto a revisão textual quanto o design editorial são realizados por empresa
+        contratada.</li>
+    </ul>
+    <p>Essas orientações destinam-se principalmente aos servidores envolvidos nas
+      atividades de editoração e ao Autor Correspondente.</p>
+    <p>A NPI 034 apresenta, de forma detalhada, todas as atividades referentes ao processo
+      de editoração gerenciada pela GTTC. Contudo, é importante destacar alguns pontos
+      a serem observados pela equipe da GTTC e pelo Autor Correspondente:</p>
+    <ul>
+      <li>O Designer deve solicitar à empresa contratada o projeto gráfico de acordo com
+        as normas editoriais do Incaper para aprovação prévia pela GTTC e pelo Autor
+        Correspondente antes da diagramação completa do conteúdo.</li>
+      <li>É fundamental que o Autor Correspondente avalie o material revisado ou diagramado
+        com agilidade, dando retorno aos profissionais envolvidos na editoração. No caso
+        de obra em coautoria ou obra coletiva, o Autor Correspondente deve validar as
+        decisões com os autores envolvidos para evitar problemas na aprovação final
+        da publicação.</li>
+    </ul>
+    <h4 id="sec-5-1-4-3">5.1.4.3 Editoração gerenciada pelo Autor Correspondente</h4>
+    <p>Esta norma (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
+imentos_Operacionais/NPI_035_-
+_Editora%C3%A7%C3%A3o_Gerenciada_pelo_Autor_Correspondente.pdf" target="_blank">NPI 035</a>) apresenta orientações relacionadas às atividades de editoração
+      (revisão textual e design editorial) realizadas por empresa contratada diretamente
+      pelo Autor Correspondente ou coordenador de projeto, com recursos financeiros de
+      projeto de base individual (Seag/Fapes e similares). Nesse caso, a Equipe de Revisão
+      Textual e Design Editorial da GTTC auxilia o Autor Correspondente, na avaliação
+      técnica e aprovação do serviço prestado.</p>
+    <p>Essas orientações têm como público-alvo o Autor Correspondente, o coordenador
+      de projeto e servidores da GTTC envolvidos com as atividades de editoração.</p>
+    <p>A NPI 035 apresenta, de forma detalhada, todas as atividades do processo de
+      editoração gerenciada pelo Autor Correspondente. Contudo, é importante destacar
+      que o Autor Correspondente ou o coordenador do projeto responsável pela
+      contratação deve observar principalmente as seguintes orientações:</p>
+    <ul>
+      <li>Solicitar à Coordenação Editorial/GTTC orientações quanto à correta descrição
+        dos serviços a serem contratados externamente, minimizando problemas
+        decorrentes de dimensionamento inadequado da proposta comercial, ou que
+        estejam incompatíveis com a Política Editorial do Incaper.</li>
+      <li>Solicitar ao prestador do serviço a proposta de projeto gráfico, para avaliação
+        prévia pela equipe da GTTC e autores, antes da diagramação do conteúdo.</li>
+      <li>Avaliar o mais rápido possível o material revisado ou diagramado, dando retorno
+        aos profissionais envolvidos na etapa. No caso de obra coletiva ou em coautoria,
+        validar sua decisão com os autores envolvidos para não ter problema na aprovação
+        final da publicação.</li>
+      <li>Enviar o documento completo diagramado à gerência da GTTC, após avaliação e
+        validação dos autores, para aprovação do serviço prestado.</li>
+      <li>Entregar os arquivos finais à equipe da GTTC, após a aprovação e conclusão
+        da editoração, antes do pagamento do serviço, para que sejam posteriormente
+        catalogados pela BRT.</li>
+      <li>Aguardar a disponibilização da publicação no site da biblioteca do Incaper,
+        bem como sua divulgação nas redes sociais institucionais e/ou em eventos de
+        lançamento, antes de disponibilizá-la para terceiros. Isso significa que versões
+        preliminares devem ter circulação restrita aos autores e à GTTC.</li>
+    </ul>
+    <h3 id="sec-5-1-5">5.1.5 Impressão, confecção e recebimento de material gráfico</h3>
+    <p>Esta norma (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
+imentos_Operacionais/NPI_025_-
+_Impress%C3%A3oConfec%C3%A7%C3%A3o_e_Recebimento_de_Material_Gr%C3%A1fico.pd
+f" target="_blank">NPI 025</a>) apresenta orientações relacionadas às atividades de solicitação
+      de impressão e recebimento de material gráfico impresso.</p>
+    <p>Essas orientações têm como público-alvo os servidores do Incaper, envolvidos com
+      as atividades de solicitação e encaminhamento de arquivos de publicações editadas
+      pelo Incaper para impressão, bem como o recebimento do referido material. Pode ser
+      realizada de três formas distintas:</p>
+    <ol class="none">
+      <li><span class="txt-lar"><strong>a)</strong></span> Impressão contratada pelo Incaper, com recursos gerenciados pela instituição;</li>
+      <li><span class="txt-lar"><strong>b)</strong></span> Impressão contratada por coordenador de projeto de base individual;</li>
+      <li><span class="txt-lar"><strong>c)</strong></span> Impressão contratada por instituições parceiras.</li>
+    </ol>
+    <p>A NPI 025 apresenta, de forma detalhada, todas as atividades do processo. Contudo,
+      é importante observar o seguinte:</p>
+    <p>Nas situações previstas nos itens “b” e “c”, é fundamental que o responsável pela
+      contratação obtenha da GTTC as orientações quanto à correta descrição do serviço
+      de impressão, pois envolve informações técnicas (tipo de impressão, especificação
+      de papel, padrões de cores, tipo de encadernação, acabamento etc.).</p>
+    <h3 id="sec-5-1-6">5.1.6 Catalogação e distribuição de publicações</h3>
+    <p>Esta norma (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
+imentos_Operacionais/NPI_030_-
+_Cataloga%C3%A7%C3%A3o_e_distribui%C3%A7%C3%A3o_de_publica%C3%A7%C3%B5es.pd
+f" target="_blank">NPI 030</a>) apresenta orientações relacionadas às atividades de
+      recebimento, avaliação, catalogação e distribuição de publicações encaminhadas à
+      Biblioteca Rui Tendinha (BRT).</p>
+    <p>Essas orientações têm como público-alvo os servidores do Incaper envolvidos com
+      as atividades realizadas no âmbito da BRT.</p>
+    <p>A NPI 030 apresenta, de forma detalhada, todas as atividades do processo. Contudo,
+      é importante destacar dois pontos:</p>
+    <ul>
+      <li>O arquivo digital da publicação a ser enviado para a biblioteca deve estar no
+        formato e tamanho adequados ao sistema de informação. O sistema atual (Ainfo)
+        comporta arquivos de até 72 megabytes.</li>
+      <li>A BRT distribui as publicações impressas tomando como base o plano de
+        distribuição entregue pelos autores. Havendo necessidade de mais exemplares, a
+        solicitação deve ser enviada por e-mail (<a href="mailto:biblioteca@incaper.es.gov.br">biblioteca@incaper.es.gov.br</a>) com o título
+        da publicação e a quantidade desejada. Havendo disponibilidade no estoque, o
+        material será separado e ficará disponível por 20 dias para retirada.</li>
+    </ul>
+    <h3 id="sec-5-1-7">5.1.7 Divulgação de publicações editas pelo Incaper</h3>
+    <p>Esta norma (<a href="https://editora.incaper.es.gov.br/Media/EditoraIncaper/Institucional/Politica_Editorial/Proced
+imentos_Operacionais/NPI_037_-
+_Divulga%C3%A7%C3%A3o_de_Publica%C3%A7%C3%B5es_Editadas_pelo_Incaper.pdf" target="_blank">NPI 037</a>) apresenta orientações relacionadas às atividades de
+      lançamento das publicações editadas pelo Incaper.</p>
+    <p>Essas orientações têm como público-alvo os servidores envolvidos nas atividades
+      voltadas para a divulgação inicial das publicações editadas pelo Incaper.</p>
+    <p>O lançamento pode ser realizado das seguintes formas:</p>
+    <ol class="none">
+      <li><span class="txt-lar"><strong>a)</strong></span> <strong>Divulgação padrão</strong> - realizada pela GTTC para todas as publicações, contemplando
+        a veiculação de matérias jornalísticas, de vídeos e postagens em redes sociais;</li>
+      <li><span class="txt-lar"><strong>b)</strong></span> <strong>Divulgação especial</strong> - definida pelos autores, com apoio da GTTC, contemplando
+        o lançamento da publicação por meio de evento, além da divulgação padrão.</li>
+    </ol>
+    <p>A NPI 037 apresenta, de forma detalhada, todas as atividades referentes ao
+      lançamento das publicações. Contudo, é importante que os autores e a GTTC
+      observem principalmente as seguintes orientações:</p>
+    <ul>
+      <li>A discussão, a avaliação da necessidade e viabilidade de lançamento da
+        publicação em evento e o seu planejamento deverão ocorrer durante o processo
+        de editoração. Caso contrário, pode haver atraso na disponibilização da publicação
+        para a sociedade.</li>
+      <li>A produção de vídeos e de outras peças de divulgação também deve ser realizada
+        durante o processo de editoração.</li>
+    </ul>
+    <h2 id="sec-5-2">5.2 PRAZOS DO PROCESSO EDITORIAL</h2>
+    <p>Os prazos durante a tramitação das propostas de publicação são definidos da
+      seguinte forma:</p>
+    <ul>
+      <li><strong>Coordenação Editorial</strong> – máximo de 20 dias úteis para avaliar o projeto, a contar
+        do recebimento adequado dos documentos preliminares.</li>
+      <li><strong>Relator técnico</strong> – máximo de 10 dias úteis, a contar do recebimento do formulário
+        específico, para emitir parecer sobre projeto de livro ou outro veículo de
+        publicação, quando necessário.</li>
+      <li><strong>Consultores <i>ad hoc</i></strong> – máximo de 20 dias úteis a partir do recebimento do convite
+        para realizar a 1ª revisão dos originais. A 2ª revisão e parecer final devem ser
+        concluídos em até 10 dias úteis, contados do recebimento dos originais.</li>
+      <li><strong>Autores</strong> – máximo de 10 dias úteis a partir do recebimento dos originais para realizar
+        os ajustes sugeridos pelos consultores ad hoc e 5 dias úteis para aprovar o texto
+        final para início da editoração.</li>
+    </ul>
+    <p>Embora os prazos estabelecidos orientem o andamento das etapas editoriais, é
+      possível solicitar prorrogação quando houver necessidade. Para isso, é necessário
+      informar previamente à Coordenação Editorial, que analisará a viabilidade do ajuste
+      conforme o cronograma de publicação.</p>
+    <h2 id="sec-5-3">5.3 ORIENTAÇÕES PARA PREPARAÇÃO DE ORIGINAIS</h2>
+    <h3 id="sec-5-3-1">5.3.1 Orientações para citações (ABNT)</h3>
+    <p>A citação é essencial para a produção de obras intelectuais, permitindo que uma
+      informação seja extraída e faça referência a ideias de outros autores. De acordo
+      com França e Vasconcellos (2019, p. 127), “as citações são trechos transcritos ou
+      informações retiradas das publicações consultadas para a realização do trabalho”.</p>
+    <p>A correta utilização das citações é fundamental para garantir a integridade e a
+      legitimidade do trabalho acadêmico. Ao fazer uma citação, é importante fornecer os
+      créditos ao autor original e indicar a fonte de onde a ideia foi retirada.</p>
+    <p>A norma NBR 10520 estabelece a necessidade de que as citações estejam
+      devidamente formatadas, com indicação do sobrenome do autor, ano de publicação
+      e página. Dessa forma, seguindo as diretrizes da norma ABNT 10520, é possível garantir a qualidade e a integridade das obras intelectuais, bem como evitar problemas
+      relacionados a plágio ou má atribuição de créditos.</p>
+    <p>As citações podem ser classificadas em:</p>
+    <ul>
+      <li>citação direta;</li>
+      <li>citação indireta;</li>
+      <li>citação de citação.</li>
+    </ul>
+    <h4 id="sec-5-3-1-1">5.3.1.1 Localização</h4>
+    <p>As citações devem estar, preferencialmente, no corpo do texto. No entanto, a NBR
+      10520 também permite que as citações possam ser apresentadas em outras partes
+      do documento.</p>
+    <h4 id="sec-5-3-1-2">5.3.1.2 Regras gerais</h4>
+    <ul>
+      <li>A fonte da informação extraída deve ser citada obrigatoriamente;</li>
+      <li>A identificação da fonte da informação pode aparecer incluída no texto ou em nota
+        de rodapé;</li>
+      <li>As citações podem ser feitas das seguintes maneiras:
+        <ul class="none">
+          <li>pelo sobrenome do autor;</li>
+          <li>pela pessoa jurídica (nome completo ou sigla da instituição);</li>
+          <li>por instituição governamental da administração direta;</li>
+          <li>pelo título (no caso de fontes sem autoria ou responsabilidade).</li>
+        </ul>
+      </li>
+      <li>Em todos os casos, devem-se usar letras maiúsculas e minúsculas, conforme
+        define a ABNT;</li>
+      <li>As citações devem conter as seguintes informações: autoria, seguido do
+        ano e, sempre que possível, da página em que o trecho citado se encontra na
+        obra original;</li>
+      <li>As expressões em latim ou estrangeiras devem estar em itálico, como: <i>apud, et al.,
+        ibid.</i>, entre outras.</li>
+    </ul>
+    <h4 id="sec-5-3-1-3">5.3.1.3 Formas de citação</h4>
+    <h5 id="sec-5-3-1-3-1">5.3.1.3.1 <span>Citação direta</span></h5>
+    <p>É a transcrição literal do texto do autor, reproduzindo exatamente como consta da
+      fonte consultada.</p>
+    <p>A citações diretas podem ser apresentadas de duas formas:</p>
+    <ul>
+      <li>As citações diretas de até três linhas devem estar entre aspas duplas. Caso haja
+        citação dentro do texto citado, colocam-se aspas simples. Se o trecho transcrito já tiver
+        expressões ou palavras entre aspas, elas deverão ser transformadas em aspas simples. <br />
+        <br />
+        Exemplo:</li>
+    </ul>
+    <div class="caixa-observacao cor-lar">Segundo Ribeiro (2008, p. 62), “quando a quantidade de água disponível de
+      um país não é suficiente para prover as necessidades da população, existe
+      escassez física da água”.</div>
+    <ul>
+      <li>As citações diretas com mais de três linhas devem estar em um parágrafo
+        independente, com recuo de 4 cm da margem à esquerda, ter espaçamento
+        simples e tamanho de fonte menor que a do texto e sem aspas.<br />
+        <br />
+        Exemplo:</li>
+    </ul>
+    <div class="caixa-observacao cor-lar">Nesse sentido:<br />
+      <blockquote> A segurança protetora é realizada quando as pessoas estão inseridas
+        em uma rede social e institucional consolidada. Considera-se que
+        quanto mais desamparadas estiverem as pessoas frente a um
+        fenômeno natural, maiores as possibilidades desse fenômeno se
+        transformar em desastres sociais e econômicos (Costa, 2006, p. 86). </blockquote>
+    </div>
+    <h5 id="sec-5-3-1-3-2">5.3.1.3.2 <span>Citação indireta</span></h5>
+    <p>É a reprodução do conteúdo com as próprias palavras (paráfrase), sem reproduzir
+      literalmente o texto original, mas mantendo-se fiel às ideias do autor consultado.<br />
+      <br />
+      Exemplo:</p>
+    <div class="caixa-observacao cor-lar">Segundo Pham, Chuah e Feeny (2022), apesar dos benefícios comprovados de
+      práticas agrícolas sustentáveis, as taxas de adoção entre agricultores ainda são
+      baixas, especialmente nos países em desenvolvimento. </div>
+    <h5 id="sec-5-3-1-3-3">5.3.1.3.3 <span>Citação de citação</span></h5>
+    <p>É a transcrição de um autor citado por outro, quando não se teve acesso à obra
+      original. Nesse caso, deve ser mencionado primeiramente o autor, a data e a página
+      (se houver) do documento original, seguido da expressão <i>apud</i> e da indicação do
+      autor, da data e da página (se houver) da obra consultada.<br />
+      <br />
+      Exemplo:</p>
+    <div class="caixa-observacao cor-lar">O cafeeiro arábica é originário do continente africano, predominantemente
+      das regiões altas da Etiópia, onde ocorre espontaneamente como planta
+      de sub‑bosque. Da Etiópia, foi levado para a Arábia, no século XV, e de lá
+      para a Ásia, a Europa e para quase todo o mundo (Chevalier, 1929, <i>apud</i> Carvalho, 1946). </div>
+    <h5 id="sec-5-3-1-3-4">5.3.1.3.4<span>Orientações adicionais</span></h5>
+    <p class="d-flex"><span class="destaque-lista">A</span><span><strong>Dados obtidos por informação verbal</strong></span></p>
+    <p>São informações obtidas por meio de canais informais, tais como palestras,
+      debates, conferências, entrevistas, entre outros. Nesse caso, deve-se indicar
+      a forma de obtenção da informação pela expressão “informação verbal” entre
+      parênteses.</p>
+    <p>Vale ressaltar que os dados de autoria das informações obtidas devem ser
+      indicados exclusivamente em nota de rodapé.</p>
+    <p>Exemplo:</p>
+    <div class="caixa-observacao cor-lar"> Capinas manuais e roçadas não são muito utilizadas em lavouras adultas,
+      de forma que seu uso restringe-se a lavouras recém-transplantadas, em
+      pequenas propriedades (informação verbal)<sup>1</sup>. <br />
+      <br />
+      <hr style="width:200px; border:1px solid #000" />
+      <small><sup>1</sup>Comunicação pessoal - R. Serpa.</small> </div>
+    <p class="d-flex"><span class="destaque-lista">B</span><span><strong>Omissão de palavras</strong></span></p>
+    <p>Quando houver retirada de partes do texto citado, no começo, meio ou fim,
+      deve-se utilizar reticências entre colchetes para substituí-las.</p>
+    <p>Exemplo:</p>
+    <div class="caixa-observacao cor-lar">“O desenvolvimento requer que se removam as principais fontes de privação
+      de liberdade: a pobreza e tirania, carência de oportunidades econômicas e
+      destituição social sistemática, negligência dos serviços públicos [...]” (Sen,
+      2000, p. 18). </div>
+    <p class="d-flex"><span class="destaque-lista">C</span><span><strong>Acréscimos, explicações ou comentários</strong></span></p>
+    <p>Se houver necessidade de incluir informações no trecho original citado, os
+      acréscimos devem ser apresentados entre colchetes.</p>
+    <p>Exemplo:</p>
+    <div class="caixa-observacao cor-lar">Depois, deve-se retirar, aproximadamente, 300 g dessa mistura, inserir em
+      um saco plástico limpo, fazer a identificação [da amostra] e enviar para o
+      laboratório (Prezotti; Guarçoni, 2013). </div>
+    <p class="d-flex"><span class="destaque-lista">D</span><span><strong>Erros e imprecisões</strong></span></p>
+    <p>Caso o trecho original citado apresente palavras ou sentenças gramaticalmente
+      incorretas, bem como outras incoerências, coloca-se “[<i>sic</i>]” após a falha
+      identificada.</p>
+    <p>Exemplo:</p>
+    <div class="caixa-observacao cor-lar">
+      <blockquote> Valendo-se da prerrogativa de ser uma atividade itinerante e
+        de acontecer no espaço público, a feira livre caracteriza-se por
+        estruturar-se numa ampla rede de relações sociais que mescla
+        diversas gramáticas sociais e vale-se de regras tácitas. A dinâmica
+        dá-se por meio de relações de cooperação e de competição. A
+        amplitude dessa rede alarga-se para diversos lugares além daqueles
+        nas quais [sic] as feiras livres se instalam e se corporifica [<i>sic</i>] no
+        chão do cotidiano por meio de conversas entre vizinhos de banca,
+        no burburinho e nos debates mais amplos (Sato, 2007, p. 101). </blockquote>
+    </div>
+    <p class="d-flex"><span class="destaque-lista">E</span><span><strong>Destaque de uma palavra ou trecho</strong></span></p>
+    <p><span class=" txt-lar"><strong>a)</strong></span> grifo do autor original da obra citada</p>
+    <p>Quando o destaque já está presente no trecho original citado, indica-se o grifo
+      utilizando a expressão “grifo do autor” entre parênteses no fim do trecho, após a
+      indicação de autoria.</p>
+    <p>Exemplo:</p>
+    <div class="caixa-observacao cor-lar">
+      <blockquote> “[...] Adquiri, por várias vezes, grande porção de sementes de
+        vários productos [sic] de cultura fácil e vantajosa e as fiz distribuir
+        gratuitamente. Ainda há pouco, quando estive no Rio de Janeiro, fiz
+        aquisição de duas mil mudas e cinqüenta [<i>sic</i>] litros de sementes de
+        uma excelente qualidade de café, o “Conillon”, estando todas elas já
+        distribuídas [...]” (Monteiro, 1913, p. 172, grifo do autor). </blockquote>
+    </div>
+    <p><span class="txt-lar"><strong>b)</strong></span> grifo inserido por quem faz a citação</p>
+    <p>Quando o destaque não está presente no original, mas é feito por quem está citando o
+      trecho, deve-se indicar o destaque com negrito, itálico ou aspas, seguido da expressão
+      “grifo nosso” entre parênteses no fim do trecho, após a indicação de autoria.</p>
+    <p>Exemplo:</p>
+    <div class="caixa-observacao cor-lar">
+      <blockquote> Mais de 90% da produção [de café] ocorre em países em
+        desenvolvimento nas regiões subtropicais, onde as condições
+        climáticas são favoráveis e a mão de obra é relativamente barata.
+        Hoje, a grande maioria dos produtores de café do mundo - cerca de
+        20 a 25 milhões - são agricultores de pequena escala, em grande
+        parte dependentes da mão de obra familiar não remunerada e do
+        trabalho contratado durante a época de colheita. A produção de
+        café representa uma parcela relativamente grande da renda anual
+        dessas famílias, bem como uma fonte significativa de divisas para
+        os países nos quais elas cultivam. Por essa razão, o mercado
+        global de café e a política internacional e doméstica do café estão
+        intrinsecamente ligados a questões de segurança de subsistência
+        e pobreza (Eakin; Winkels; Sendzimir, 2008, p. 3, tradução e grifos
+        nossos)<sup>4</sup>. </blockquote>
+    </div>
+    <h3 id="sec-5-3-2">5.3.2 Orientações para referências (ABNT)</h3>
+    <p>As referências constituem o conjunto de títulos, incluindo sites e documentos
+      eletrônicos, que são efetivamente citados no corpo do texto e que contribuíram na
+      elaboração do trabalho. As fontes das figuras (gráficos, ilustrações, mapas, fotos,
+      fluxogramas, infográficos, entre outros) também devem fazer parte das referências
+      As referências devem seguir a norma definida pela Associação Brasileira de Normas
+      Técnica (ABNT), conforme NBR 6023:2025.</p>
+    <p>É importante não confundir com bibliografia, que é a lista de títulos consultados para
+      a elaboração do trabalho, mas que não tenham sido citados diretamente no corpo
+      do texto.</p>
+    <h4 id="sec-5-3-2-1">5.3.2.1 Localização</h4>
+    <p>As referências em um documento podem aparecer no rodapé, no fim dos textos
+      (partes ou seções), em lista de referências ou antecedendo resumos, resenhas,
+      recensões, conforme a ABNT NBR 6028:2021, e erratas.</p>
+    <h4 id="sec-5-3-2-2">5.3.2.2 Regras gerais</h4>
+    <ul>
+      <li>As referências devem estar em ordem alfabética (sistema autor-data) ou em ordem
+        de citação no texto (sistema numérico);</li>
+      <li>As referências, ordenadas em listas, devem ser padronizadas, o recurso tipográfico
+        (negrito, itálico ou sublinhado) utilizado para destacar o título deve ser idêntico em
+        todas as referências;</li>
+      <li>O autor é toda pessoa física responsável pelo conteúdo intelectual ou
+        autor‑entidade, como pessoa jurídica, evento, instituições, organizações,
+        empresas, comitês, comissão, evento, entre outros;</li>
+      <li>Os nomes dos autores (pessoa física) devem ser separados por ponto e vírgula,
+        seguidos de espaço;</li>
+      <li>O autor deve ser indicado pelo sobrenome com letras maiúsculas e minúsculas,
+        seguido pelo prenome e sobrenome conforme o documento apresenta. Até três
+        autores, é obrigatória a indicação de todos os nomes. A partir de quatro autores, é
+        permitido indicar somente o primeiro autor, seguido da expressão <i>et al.</i>;</li>
+      <li>Quando não houver autor, a entrada deve ser feita pelo título do material que está
+        sendo usado. Nesse caso, a primeira palavra do título deve ser escrita em letras
+        maiúsculas.</li>
+      <li>Quando os autores forem corporativos (órgãos governamentais, empresas,
+        associações, entre outros), a entrada deve ser feita pela forma conhecida como
+        se apresenta no documento, seja por extenso ou abreviada (ex.: EMBRAPA,
+        UNIVERSIDADE FEDERAL DO ESPÍRITO SANTO, IBGE etc.);</li>
+      <li>Quando os autores forem corporativos (órgãos governamentais, empresas,
+        associações, entre outros), a entrada deve ser feita pela forma como se apresenta
+        no documento, seja por extenso ou abreviada, desde que seja a forma mais
+        conhecida.</li>
+      <li>Todos os documentos citados no texto devem fazer parte da lista de referências;</li>
+      <li>As referências devem ser elaboradas em espaço simples, alinhadas à margem
+        esquerda do texto e separadas entre si por uma linha em branco de espaço simples;</li>
+      <li>O título da seção das referências não deve ser enumerado, diferentemente das
+        demais seções;</li>
+      <li>Para referência de documentos disponíveis na internet, deve-se registrar, além dos
+        elementos essenciais, o endereço eletrônico, precedido da expressão <strong>Disponível
+        em:</strong> e a data de acesso, precedida da expressão <strong>Acesso em:</strong>;</li>
+      <li>As abreviaturas utilizadas nas referências devem estar de acordo com as normas
+        da ABNT, conforme apresentado no Anexo A deste manual;</li>
+      <li>As expressões em latim ou estrangeiras devem estar em itálico, como: <i>In, et al.</i>,
+        [<i>s.l.</i>], [<i>s.n.</i>], entre outras.</li>
+      <li>Quanto ao destaque do título da publicação, este manual recomenda o uso
+        do negrito, embora também seja aceitável empregar o itálico e o sublinhado.
+        Independentemente do recurso tipográfico adotado, é fundamental que haja
+        uniformidade em todas as referências ao longo da publicação.</li>
+    </ul>
+    <div class="caixa-observacao cor-lar">Situações não contempladas por este manual deverão ser consultadas na
+      NBR 6023:2025 da ABNT. </div>
+    <h4 id="sec-5-3-2-3">5.3.2.3 Exemplos de referências</h4>
+    <p><strong>Livro</strong></p>
+    <div class="caixa-observacao cor-lar">Elementos essenciais: autor, <strong>título</strong>, subtítulo (se houver), edição (se houver),
+      local, editora e data de publicação. </div>
+    <ul>
+      <li><strong>Com até três autores:</strong><br />
+        <br />
+        TRAVAGLIA, L. C. <strong>Gramática e interação:</strong> uma proposta para o ensino de
+        gramática. 12. ed. São Paulo: Cortez, 2008.<br />
+        <br />
+        DADALTO, G. G.; BARBOSA, C. A. <strong>Zoneamento agroecológico para a cultura do
+        café no estado do Espírito Santo.</strong> Vitória, ES: Seag – ES, 1997. 28 p. </li>
+      <br />
+      <li><strong>Com quatro autores ou mais:</strong><br />
+        <br />
+        COSTA, M. R. da; FONSECA, J.; NUNES, L. P. M.; MATUCHEWSKI, P. <strong>Guia de
+        Linguagem Simples</strong>. Vitória: Incaper, 2025.<br />
+        <br />
+        KAHN, T. <i>et al</i>. <strong>O dia a dia nas escolas</strong>. São Paulo: Instituto Latino-americano das
+        Nações Unidas para a Prevenção do Delito e Tratamento do Delinquente; Instituto
+        Sou da Paz, 1999. </li>
+    </ul>
+    <div class="caixa-observacao cor-lar">Quando houver quatro ou mais autores, recomenda-se indicar todos. No
+      entanto, também é permitido indicar apenas o nome do primeiro autor seguido
+      da expressão <i>et al</i>. </div>
+    <p><strong>Parte de livro</strong></p>
+    <div class="caixa-observacao cor-lar">Elementos essenciais: autor e título da parte, subtítulo (se houver), seguidos
+      da expressão “<i>In</i>:” e da referência completa do livro como um todo, finalizando
+      com a descrição física da parte (páginas, volume, número do capítulo). </div>
+    <p>LIBERATO, Y.; FULGÊNCIO, L. Um modelo de descrição da leitura. <i>In</i>: <strong>É possível
+      facilitar a leitura</strong>: um guia para escrever claro. São Paulo: Contexto, 2007.</p>
+    <p><strong>E-Book</strong></p>
+    <div class="caixa-observacao cor-lar">Elementos essenciais: autor, <strong>título</strong>, subtítulo (se houver), edição (se houver),
+      local (cidade, se houver), editora e data de publicação, seguidos da palavra
+      “<i>E-book</i>” e das expressões “Disponível em:” e “Acesso em:”. </div>
+    <p>VERDIN FILHO, A. C. <i>et al</i>. <strong>Manejo de podas para o café conilon:</strong> técnicas de
+      formação e condução de lavouras. Vitória: Incaper, 2021. <i>E-book</i>. Disponível em:
+      https://biblioteca.incaper.es.gov.br/digital/bitstream/123456789/4262/1/Doc282-
+      manejodepodasdoconilon-Incaper.pdf. Acesso em: 26 jun. 2025.</p>
+    <p><strong>Livro disponível na Internet</strong></p>
+    <div class="caixa-observacao cor-lar">Elementos essenciais: autor, <strong>título</strong>, subtítulo (se houver), edição (se houver),
+      local (cidade, se houver), editora e data de publicação, seguidos das expressões
+      “Disponível em: (endereço eletrônico do documento)” e “Acesso em: (data de
+      acesso ao documento)”. </div>
+    <p>VERDIN FILHO, A. C. <i>et al</i>. <strong>Manejo de podas para o café conilon:</strong> técnicas de
+      formação e condução de lavouras. Vitória: Incaper, 2021. Disponível em: https://
+      biblioteca.incaper.es.gov.br/digital/bitstream/123456789/4262/1/Doc282-
+      manejodepodasdoconilon-Incaper.pdf. Acesso em: 26 jun. 2025.</p>
+    <p><strong>Artigo de revista científica</strong></p>
+    <div class="caixa-observacao cor-lar">Elementos essenciais: autor, título do artigo, subtítulo (se houver), <strong>título da
+      revista</strong>, subtítulo (se houver), local de publicação, ano e/ou volume, número e/ou
+      edição, tomo (se houver), páginas inicial e final, e data ou período de publicação. </div>
+    <p>BRAGANÇA, S. M.; CARVALHO, C. H. S. FONSECA, A. F. A. da; FERRÃO, R. G.
+      “Emcapa 8111”, “Emcapa 8121”, “Emcapa 8131”: variedades clonais de café conilon
+      lançadas para o Estado do Espírito Santo. <strong>Pesquisa Agropecuária Brasileira</strong>, v. 36,
+      n. 5, p. 765-770, 2001.</p>
+    <p>MÉNDEZE, G. Origem, sentido e futuro dos direitos humanos: reflexões para uma
+      nova agenda. <strong>Revista SUR</strong>: Revista Internacional de Direitos Humanos, São Paulo, v. 1,
+      n. 1, p. 12, 2004. https://doi.org/10.1590/S1806-64452004000100002</p>
+    <p><strong>Artigo de revista científica em meio eletrônico</strong></p>
+    <div class="caixa-observacao cor-lar">Elementos essenciais: autor, título do artigo e subtítulo (se houver), seguidos
+      do <strong>título da revista</strong>, local (cidade, se houver), volume e/ou ano, número ou
+      fascículo, paginação inicial e final do artigo, informações de período, ano de
+      publicação, informações pertinentes ao suporte eletrônico (DOI, se houver)
+      seguidos das expressões “Disponível em:” (endereço eletrônico do documento)
+      e “Acesso em:” (data de acesso ao documento). </div>
+    <p>RIBEIRO, P. S. G. Adoção à brasileira: uma análise sociojurídica. <strong>Dataveni@</strong>, São
+      Paulo, ano 3, n. 18, ago. 1998. Disponível em: http://www.datavenia.inf.br/frame.
+      artig.html. Acesso em: 10 set. 1998.</p>
+    <p><strong>Trabalhos acadêmicos no todo</strong></p>
+    <div class="caixa-observacao cor-lar">Elementos essenciais: autor, <strong>título</strong> e subtítulo (se houver), seguidos do ano de
+      depósito, tipo do trabalho (trabalho de conclusão de curso, dissertação, tese e
+      outros), grau (especialização, mestrado doutorado, entre outros) e curso entre
+      parênteses, vinculação acadêmica, local e data de apresentação ou defesa. </div>
+    <p>FERRÃO, R. G. <strong>Biometria aplicada ao melhoramento genético do café Conilon</strong>.
+      2004. 256 fls. Tese (Doutorado em Genética e Melhoramento) – Universidade
+      Federal de Viçosa, Viçosa, MG, 2004.</p>
+    <p><strong>Trabalhos acadêmicos em meio eletrônico</strong></p>
+    <div class="caixa-observacao cor-lar">Elementos essenciais: autor, <strong>título</strong> e subtítulo (se houver), seguidos do ano de
+      depósito, tipo do trabalho (trabalho de conclusão de curso, dissertação, tese
+      e outros), grau (especialização, mestrado, doutorado, entre outros) e curso
+      entre parênteses, vinculação acadêmica, local (cidade, se houver) e data de
+      apresentação ou defesa, seguidos das expressões “Disponível em:” (endereço
+      eletrônico do documento) e “Acesso em:” (data de acesso ao documento). </div>
+    <p>RODRIGUES, Ana Lúcia Aquilas. <strong>Impacto de um programa de exercícios no local de
+      trabalho sobre o nível de atividade física e o estágio de prontidão para a mudança
+      de comportamento</strong>. 2009. Dissertação (Mestrado em Fisiopatologia Experimental) –
+      Faculdade de Medicina, Universidade de São Paulo, São Paulo, 2009.</p>
+    <p><strong>Evento científico</strong></p>
+    <div class="caixa-observacao cor-lar">Elementos essenciais: nome do evento (em letras maiúsculas), número do
+      evento (se houver), seguido de ponto, ano e local (cidade, se houver), <strong>título do
+      documento</strong>, seguidos dos dados de local, editora e data da publicação. Quando
+      necessário, acrescentam-se elementos complementares, como página e tema,
+      à referência para melhor identificar o documento. </div>
+    <p>CONGRESSO BRASILEIRO DE MEDICINA VETERINÁRIA, 32., 2005, Uberlândia. <strong>Anais</strong> [...]. Uberlandia, MG: Sociedade Brasileira de Medicina Veterinária, 2005.</p>
+    <p>INTERNATIONAL SYMPOSIUM ON CHEMICAL CHANGES DURING FOOD
+      PROCESSING, 2., 1984, Valencia. <strong>Proceedings</strong> [...]. Valencia: Instituto de
+      Agroquímica y Tecnología de Alimentos, 1984.</p>
+    <p><strong>Evento científico em meio eletrônico</strong></p>
+    <div class="caixa-observacao cor-lar">Elementos essenciais: nome do evento (em letras maiúsculas), número do
+      evento (se houver), seguido de ponto, ano e local (cidade, se houver), <strong>título
+      do documento</strong>, seguidos dos dados de local, editora e data da publicação.
+      Quando necessário, acrescentam-se elementos complementares, como
+      página e tema, à referência para melhor identificar o documento, seguidos do
+      DOI (se houver) e das expressões “Disponível em:” (endereço eletrônico do
+      documento) e “Acesso em:” (data de acesso ao documento). </div>
+    <p>CONGRESSO ONLINE INTERNACIONAL FLORESTAL, 1., 2021, Vitória. <strong>Anais</strong> [...].
+      Vitória, ES : CONGRESSE.ME, 2021. Disponível em: https://biblioteca.incaper.es.gov.
+      br/digital/bitstream/123456789/4252/1/coniflor.pdf. Acesso em: 3 abr. 2023.</p>
+    <p><strong>Evento científico (em parte)</strong></p>
+    <div class="caixa-observacao cor-lar">Elementos essenciais: autor, título do trabalho e subtítulo (se houver), seguidos
+      da expressão “<i>In</i>:” nome do evento, em letras maiúsculas, número do evento (se
+      houver), seguido de ponto, ano e local (cidade, se houver), <Strong>título do documento</Strong>,
+      subtítulo (se houver), local, editora e data de publicação, página inicial e final da
+      parte referenciada. </div>
+    <p>ALVES, F. de L. <i>et al</i>. Novas cultivares de laranjas para o município de Guaçuí, ES. <i>In</i>: XX CONGRESSO BRASILEIRO DE FRUTICULTURA, 20., 2008, Vitória. <strong>Anais</strong> [...].
+      Vitória, ES: Centro de Convenções, 2008.</p>
+    <p><strong>Evento científico em meio eletrônico (em parte)</strong></p>
+    <div class="caixa-observacao cor-lar">Elementos essenciais: autor, título do trabalho e subtítulo (se houver), seguidos
+      da expressão “<i>In:</i>” nome do evento, em letras maiúsculas, número do evento (se
+      houver), seguido de ponto, ano e local (cidade, se houver), <strong>título do documento</strong>,
+      subtítulo (se houver), local, editora e data de publicação, página inicial e final da
+      parte referenciada e das expressões “Disponível em:” (endereço eletrônico do
+      documento) e “Acesso em:” (data de acesso ao documento). </div>
+    <p>MATOS, E. da S.; Antonio, D. B. A.; RODRIGUES, R. Estoques de carbono e
+      nitrogênio do solo em área de SAF e floresta nativa. <i>In</i>: CONGRESSO BRASILEIRO
+      DE SISTEMAS AGROFLORESTAIS, 10., 2016, Cuiabá. <strong>Anais</strong> [...] SAF: aprendizados,
+      desafios e perspectivas. Cuiabá: SBSAF, 2016. Disponivel em: https://www.
+      embrapa.br/busca-de-publicacoes/-/publicacao/1066260/estoques-de-carbono-enitrogenio-
+      do-soloem-area-de-saf-e-floresta-nativa. Acesso em: 22 set. 2022.</p>
+    <p><strong>Legislação</strong></p>
+    <div class="caixa-observacao cor-lar">Elementos essenciais: jurisdição, ou cabeçalho da entidade, em letras maiúsculas,
+      epígrafe e ementa transcrita conforme publicada, dados da publicação. </div>
+    <p>BRASIL. Lei nº 9.610, de 19 de fevereiro de 1998. Altera, atualiza e consolida a
+      legislação sobre direitos autorais e dá outras providências. <strong>Diário Oficial da União</strong>:
+      seção 1, Brasília, DF, 20 fev. 1998.</p>
+    <p><strong>Legislação em meio eletrônico</strong></p>
+    <div class="caixa-observacao cor-lar">Elementos essenciais: jurisdição, ou cabeçalho da entidade, em letras
+      maiúsculas, epígrafe e ementa transcrita conforme publicada, dados da
+      publicação, seguidos das expressões “Disponível em:” (endereço eletrônico do
+      documento) e “Acesso em:” (data de acesso ao documento). </div>
+    <p>BRASIL. Lei nº 12.527, de 18 de novembro de 2011. Regula o acesso a informações
+      previsto na Constituição Federal; e dá outras providências. <strong>Diário Oficial da União</strong>:
+      seção 1, Brasília, DF, 18 nov. 2011. Disponível em: https://www.planalto.gov.br/
+      ccivil_03/_ato2011-2014/2011/lei/l12527.htm. Acesso em: 5 jul. 2024.</p>
+    <p><strong>Normas</strong></p>
+    <div class="caixa-observacao cor-lar">Elementos essenciais: nome da entidade, em letras maiúsculas, número e <strong>título
+      da norma</strong>, edição, local e data de publicação. </div>
+    <p>ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. <strong>ABNT NBR 10520</strong> –
+      informação e documentação - citação em documentos - apresentação. Rio de
+      Janeiro, 2023.</p>
+    <p><strong>Publicação periódica no todo</strong></p>
+    <div class="caixa-observacao cor-lar">Elementos essenciais: título, subtítulo (se houver), em letras maiúsculas, local
+      de publicação, editora, datas de início e de encerramento da publicação
+      (se houver). </div>
+    <p>BOLETIM DA CONJUNTURA AGROPECUÁRIA CAPIXABA. Vitória: Incaper, jul./dez.
+      2023. ISSN: 2764-6238.</p>
+    <p><strong>Publicação periódica no todo em meio eletrônico</strong></p>
+    <div class="caixa-observacao cor-lar">Elementos essenciais: título, subtítulo (se houver), em letras maiúsculas, local
+      de publicação, editora, datas de início e de encerramento da publicação (se
+      houver) e DOI (se houver), seguidos das expressões “Disponível em:” (endereço
+      eletrônico do documento) e “Acesso em:” (data de acesso ao documento). </div>
+    <p>INCAPER EM REVISTA. Vitória: Incaper, janeiro a dezembro de 2024. ISSN
+      21795304 versão online. DOI: 10.54682/ier.V15. Disponível em: https://revista.
+      incaper.es.gov.br/index.php/ojs/issue/view/10. Acesso em: 13 jun. 2025.</p>
+    <p><strong>Artigo de publicação periódica</strong></p>
+    <div class="caixa-observacao cor-lar">Elementos essenciais: autor, título do artigo ou da matéria, subtítulo (se houver), <strong>título do periódico</strong>, subtítulo (se houver), local de publicação, numeração do
+      ano e/ou volume, número e/ou edição, tomo (se houver), páginas inicial e final e
+      data ou período de publicação. </div>
+    <p>GUIMARÃES, L. A. de O. P; MENDONÇA, G. C. de. Agricultura sintrópica
+      (agrofloresta sucessional): fundamentos e técnicas para uma agricultura
+      efetivamente sustentável. <strong>Incaper em Revista</strong>, v. 10, p. 6-21, 2019.</p>
+    <p><strong>Artigo de publicação periódica em meio eletrônico</strong></p>
+    <div class="caixa-observacao cor-lar">Elementos essenciais: autor, título do artigo ou da matéria, subtítulo (se houver), <strong>título do periódico</strong>, subtítulo (se houver), local de publicação, numeração do
+      ano e/ou volume, número e/ou edição, tomo (se houver), páginas inicial e final
+      ou e-location (se houver), data ou período de publicação e DOI (se houver),
+      seguidos das expressões “Disponível em:” (endereço eletrônico do documento)
+      e “Acesso em:” (data de acesso ao documento). </div>
+    <p>GUIMARÃES, L. A. de O. P; MENDONÇA, G. C. de. Agricultura sintrópica
+      (agrofloresta sucessional): fundamentos e técnicas para uma agricultura
+      efetivamente sustentável. <strong>Incaper em Revista</strong>, v. 10, p. 6-21, 2019. Disponível em:
+      https://biblioteca.incaper.es.gov.br/digital/bitstream/123456789/3957/1/Incaper-em-
+      Revista-2019.pdf. Acesso em: 27 jun. 2025.</p>
+    <h3 id="sec-5-3-3">5.3.3 Orientações para figuras</h3>
+    <p>Figuras são elementos usados para enriquecer o texto, tais como gráficos, ilustrações,
+      mapas, fotos, fluxogramas, infográficos, entre outros. Devem ser citadas no texto,
+      inseridas o mais próximo possível do trecho a que se referem e identificadas com a
+      palavra “Figura”.</p>
+    <p>As figuras devem seguir as seguintes especificações:</p>
+    <ul>
+      <li>Conter uma legenda clara, breve e objetiva, com ponto final e tamanho de fonte 11
+        (ou um ponto abaixo do tamanho da fonte utilizada no corpo de texto). A legenda
+        deve ser precedida da palavra designativa “Figura”, numerada consecutivamente
+        com algarismos arábicos, em negrito e na ordem de sua ocorrência no texto,
+        separada por traço meia-risca (<strong>Figura 1 –</strong>);</li>
+      <li>Conter, obrigatoriamente, a fonte de onde foram extraídas. Essas informações
+        devem estar localizadas abaixo da legenda e grafadas em tamanho de fonte 11
+        (ou um ponto abaixo do tamanho da fonte utilizada no corpo de texto) e com
+        espaçamento simples entre linhas e alinhamento justificado. A palavra “Fonte”
+        deve ser grafada em negrito, separada por dois pontos (<strong>Fonte:</strong>);</li>
+      <li>Apresentar, quando necessárias, notas explicativas em tamanho de fonte 11 (ou um
+        ponto abaixo do tamanho da fonte utilizada no corpo de texto), com espaçamento
+        simples entre linhas. A palavra “Nota” deve ser grafada em negrito, separada por
+        dois pontos (<strong>Nota:</strong>). Devem ser posicionadas abaixo da figura, seguindo a ordem:
+        legenda, fonte (quando houver) e, por fim, nota explicativa (Figura 2).</li>
+    </ul>
+    <figure> <img src="imagens/cap5-img-02.jpg" alt="Exemplo de figura com legenda explicativa e fonte indicando sua procedência." title="Exemplo de figura com legenda explicativa e fonte indicando sua procedência." /> </figure>
+    <figcaption><span>Figura 2 –</span> Exemplo de figura com legenda explicativa e fonte indicando sua procedência.<br />
+      <span>Fonte:</span> Fotos de Victor dos Santos Rossi. </figcaption>
+    <h3 id="sec-5-3-4">5.3.4 Orientações para tabelas</h3>
+    <p>As tabelas são geralmente utilizadas para dados quantitativos, ou seja, informações
+      predominantemente estatísticas nas quais o dado numérico se destaca como
+      elemento central. As tabelas são abertas, ou seja, não devem ter linhas verticais nem
+      bordas laterais fechadas. A localização da tabela deve ser o mais próximo possível
+      do trecho do texto a que se refere ou conforme a apresentação gráfica do trabalho e
+      identificada pela palavra “Tabela”.</p>
+    <p>As tabelas devem seguir as seguintes especificações:</p>
+    <ul>
+      <li>Ser citadas no texto em ordem numérica sequencial, podendo estar entre
+        parênteses ou integradas ao texto;</li>
+      <li>A palavra “Tabela” deve ser posicionada na parte superior, seguida do seu número
+        de ordem (em algarismos arábicos) e traço meia-risca, em negrito (<strong>Tabela 1 –</strong>).
+        Em seguida, apresentar o título explicativo, sem ponto final. Toda essa identificação
+        deve ser apresentada em fonte tamanho 11 (ou um ponto abaixo do tamanho
+        utilizado no corpo do texto).</li>
+      <li>Indicar, na parte inferior, logo após a tabela, quando for o caso, a fonte consultada.
+        Essa informação deve ser grafada em tamanho 11 (ou um ponto abaixo do tamanho
+        da fonte utilizada no corpo de texto) e o espaçamento entre linhas deve ser simples.
+        A palavra “Fonte” deve ser grafada em negrito, separada por dois pontos (<strong>Fonte:</strong>);</li>
+      <li>Apresentar, quando necessárias, notas explicativas grafadas em tamanho de fonte
+        11 (ou um ponto abaixo do tamanho da fonte utilizada no corpo de texto), com
+        espaçamento simples entre linhas. A palavra “Nota” deve ser grafada em negrito,
+        separada por dois pontos (<strong>Nota:</strong>). Devem ser posicionadas na parte inferior da
+        tabela, logo abaixo da fonte (quando houver);</li>
+      <li>Incluir, no caso de tabelas extensas que ocupem mais de uma folha, os termos
+        “(continua)”, “(continuação)” e “(conclusão)” sempre acima da borda superior
+        direita, conforme a situação: na primeira folha, utiliza-se “(continua)”; nas folhas
+        subsequentes, reapresenta-se o cabeçalho acompanhado do termo “(continuação)”;
+        e, na última folha, além do cabeçalho, insere-se o termo “(conclusão)”.</li>
+    </ul>
+    <p>A Figura 3, a seguir, ilustra essas orientações:</p>
+    
+    
+    <figure> <img src="imagens/cap5-img-03.png" alt="Exemplo de tabela com título explicativo e fonte indicando sua procedência." title="Exemplo de tabela com título explicativo e fonte indicando sua procedência." /> </figure>
+    <figcaption><span>Figura 3 –</span> Exemplo de tabela com título explicativo e fonte indicando sua procedência.<br />
+      <span>Fonte:</span> Araújo <i>et al</i>. (2024). </figcaption>
+    <h3 id="sec-5-3-5">5.3.5 Orientações para quadros</h3>
+    <p>Os quadros são utilizados para apresentar dados qualitativos, ou seja, informações
+      cujo teor é descritivo, e não estatístico. Os quadros são compostos de linhas verticais
+      e horizontais e apresentam formato fechado, com moldura em torno de suas linhas
+      e colunas. A localização do quadro deve ser o mais próximo possível do trecho do
+      texto a que se refere ou conforme a apresentação gráfica do trabalho e deve ser
+      identificado com a palavra “Quadro”.</p>
+    <p>Os quadros devem seguir as seguintes especificações:</p>
+    <ul>
+      <li>Ser citados no texto em ordem numérica sequencial, podendo estar entre
+        parênteses ou integrados ao texto.</li>
+      <li>Apresentar, na parte superior, a palavra “Quadro”, seguida do seu número de ordem
+        (em algarismos arábicos) e traço meia-risca, em negrito (<strong>Quadro 1 –</strong>). Em seguida,
+        apresentar o título explicativo, sem ponto final. Toda essa identificação deve ser
+        apresentada em fonte tamanho 11 (ou um ponto abaixo do tamanho utilizado no
+        corpo do texto).</li>
+      <li>Indicar, na parte inferior e logo após o quadro, quando for o caso, a fonte
+        consultada. A informação deve ser grafada em tamanho 11 (ou um ponto abaixo
+        do tamanho da fonte utilizada no corpo de texto), com espaçamento simples
+        entre linhas. A palavra “Fonte” deve ser grafada em negrito, separada por dois
+        pontos (<strong>Fonte:</strong>).</li>
+      <li>Apresentar, quando necessárias, notas explicativas grafadas em tamanho de
+        fonte 11 (ou um ponto abaixo do tamanho da fonte utilizada no corpo de texto), com
+        espaçamento simples entre linhas. A palavra “Nota” deve ser grafada em negrito,
+        separada por dois pontos (<strong>Nota:</strong>).</li>
+      <li>Em quadros extensos que ocupem mais de uma folha, deve-se indicar “(continua)”
+        na primeira, repetir o cabeçalho e inserir “(continuação)” nas seguintes e, na
+        última, acrescentar “(conclusão)”. Os termos devem ser posicionados acima da
+        borda superior direita.</li>
+    </ul>
+    <p>A Figura 4, a seguir, ilustra essas orientações:</p>
+    <figure> <img src="imagens/cap5-img-04.png" alt="Exemplo de quadro com título explicativo e fonte indicando sua procedência." title="Exemplo de quadro com título explicativo e fonte indicando sua procedência." /> </figure>
+    <figcaption><span>Figura 4 –</span> Exemplo de quadro com título explicativo e fonte indicando sua procedência.<br />
+      <span>Fonte:</span> Adaptado de Carvalho (2008); Matiello <i>et al</i>. (2016). </figcaption>
+    <h3 id="sec-5-3-6">5.3.6 Orientações para envio de figuras, tabelas e quadros</h3>
+    <p>As figuras, além de posicionadas no corpo do texto, devem ser numeradas de acordo
+      com a ordem de apresentação no texto e enviadas em JPG, com alta resolução e em
+      uma pasta separada. Não serão aceitas figuras que somente estiverem disponíveis
+      no corpo do texto, uma vez que não apresentam qualidade mínima exigida para
+      a diagramação.</p>
+    <p>Recomendamos que as fotos das páginas internas (miolo) tenham, no mínimo, 1 MB,
+      e as fotos para a capa, 5 MB. Para verificar o tamanho da foto, clique com o botão
+      direito do mouse sobre ela, vá em “propriedades” e verifique a informação “tamanho”. </p>
+    <p>Os gráficos criados pelo autor devem ser enviados em JPG e no software em que
+      foram gerados, assim como as demais figuras.</p>
+    <p>As figuras, tabelas e quadros devem ser enviadas através do e-mail <a href="mailto:coordenacaoeditorial@incaper.es.gov.br">coordenacaoeditorial@incaper.es.gov.br</a> ou de sites de transferência de arquivos,
+      tais como Wetransfer, Google Drive, OneDrive, entre outros.</p>
+    <h3 id="sec-5-3-7">5.3.7 Créditos de autoria e de fontes de figuras, tabelas e quadros</h3>
+    <p>Nos termos da Lei dos Direitos Autorais (LDA), nº 9.610, de 19 de fevereiro de 1998
+      (Brasil, 1998), devem ser dados os créditos de autoria nos casos de uso de imagens
+      produzidas por terceiros.</p>
+    <p><strong>Figura extraída de outra obra</strong></p>
+    <p>Exemplos:</p>
+    <ul>
+      <li> Na íntegra<br />
+        <strong>Fonte:</strong> Siqueira <i>et al</i>. (2020). </li>
+      <br />
+      <li> Adaptada de outra obra<br />
+        <strong>Fonte:</strong> Adaptado de Correia <i>et al</i>. (2020).<br />
+        <strong>Fonte:</strong> Criada pelo autor com dados extraídos de Santana (2006, p. 72). </li>
+    </ul>
+    <div class="caixa-observacao cor-lar">A autoria da figura deve ser informada mesmo nos casos em que ela for usada
+      para ilustrar capas e outras ocorrências na publicação. Nesse caso, a informação
+      deve ser inserida de acordo com o projeto gráfico.</div>
+    <p><strong>Figura produzida pelos próprios autores</strong></p>
+    <figure> <img src="imagens/cap5-img-05.png" alt="Exemplo de indicação da fonte quando as imagens são produzidas pelos
+      próprios autores." title="Exemplo de indicação da fonte quando as imagens são produzidas pelos
+      próprios autores." /> </figure>
+    <figcaption><span>Figura 5 –</span> Exemplo de indicação da fonte quando as imagens são produzidas pelos
+      próprios autores.<br />
+      <span>Fonte:</span> Adaptado de Carvalho (2008); Matiello <i>et al</i>. (2016). </figcaption>
+    <br />
+    <p>Neste caso, também há outras formas de apresentar a autoria.</p>
+    <p>Exemplos:</p>
+    <ul class="none">
+      <li class="identada-p"><strong>Fonte:</strong> Gráfico elaborado por [nome do autor].</li>
+      <li class="identada-p"><strong>Fonte:</strong> Acervo pessoal/Acervo do Incaper.</li>
+      <li class="identada-p"><strong>Fonte:</strong> Arquivo pessoal.</li>
+    </ul>
+    <div class="caixa-observacao cor-lar"> Quando todas as figuras forem produzidas pelos próprios autores, não há
+      necessidade de indicação de fonte em cada ocorrência. Nesse caso, os créditos
+      podem ser apresentados no expediente da publicação. No entanto, se a obra for
+      em coautoria, os autores podem optar em atribuir os créditos de autoria de cada
+      foto individualmente.</div>
+  </article>
+  <div></div>
+  <div class="container nav-footer-main"> <a class="bt bt_lar" style="float: left;" href="capitulo_quatro.htm">< Cap. 4</a> <a class="bt bt_lar" style="float: right;" href="capitulo_seis.htm">Cap. 6 ></a> </div>
+</main>
 <footer>
-    <section class="rodape" role="img" aria-label="Top banner">
-    <div class="container hero-rodape">
-      <div class="hero-inner">
-        <figure class="hero-logo">
-        <img src="imagens/logo-incaper-neg.svg" alt="Logo Incaper" />
-      </figure>
-        <h5>Manual de Produção Editorial do Incaper</h5>
-        <p>Instituto Capixaba de Pesquisa, Assistência Técnica e Extensão Rural (Incaper)
-          <br />
-          Rua Afonso Sarlo, 160 - Bento Ferreira
-          <br />
-          CEP: 29052-010 - Vitória / ES
-          <br />
+  <section class="rodape cap" role="img" aria-label="Top banner">
+    <div class="container main-rodape">
+      <div class="rodape-logo hero-inner">
+        <figure class="hero-logo"> <a href="https://incaper.es.gov.br/" title="Incaper"> <img src="imagens/logo-incaper-neg.svg" alt="Logo Incaper" /> </a> </figure>
+        <h5><a href="index.htm">Manual de Produção Editorial do Incaper</a></h5>
+        <p>Instituto Capixaba de Pesquisa, Assistência Técnica e Extensão Rural (Incaper) <br />
+          Rua Afonso Sarlo, 160 - Bento Ferreira <br />
+          CEP: 29052-010 - Vitória / ES <br />
           Tel.: (27) 3636-9800 / (27) 3636-9888</p>
       </div>
-      <div>
+      <div class="rodape-menu">
         <ul>
-          <li><a href="">Início</a></li>
-          <li><a href="">Expediente</a></li>
-          <li><a href="">Prefácio</a></li>
-          <li><a href="">Agradecimentos</a></li>
-          <li><a href="">Apresentação</a></li>
-          <li><a href="">Download</a></li>
+          <li><a href="expediente.htm">Expediente</a></li>
+          <li><a href="autores.htm">Autores</a></li>
+          <li><a href="prefacio.htm">Prefácio</a></li>
+          <li><a href="agradecimentos.htm">Agradecimentos</a></li>
+          <li><a href="apresentacao.htm">Apresentação</a></li>
         </ul>
       </div>
-      <div>
+      <div class="rodape-sumario">
         <ul>
-          <li><a href="">1. Introdução</a></li>
-          <li><a href="">2. Estrutura editorial do Incaper</a></li>
-          <li><a href="">3. Linhas editoriais</a></li>
-          <li><a href="">4. Formas, tipos e veículos de publicação</a></li>
-          <li><a href="">5. Processo editorial</a></li>
-          <li><a href="">6. Direitos autorais</a></li>
-          <li><a href="">7. Plágio e condutas antiéticas</a></li>
-          <li><a href="">8. Inteligência artificial na produção editorial</a></li>
-          <li><a href="">9. Orientações de diagramação</a></li>
-          <li><a href="">10. Padronização e estilo</a></li>
-          <li><a href="">11. Linguagem, gramática e ortografia</a></li>
+          <li><a href="capitulo_um.htm">1. Introdução</a></li>
+          <li><a href="capitulo_dois.htm">2. Estrutura editorial do Incaper</a></li>
+          <li><a href="capitulo_tres.htm">3. Linhas editoriais</a></li>
+          <li><a href="capitulo_quatro.htm">4. Formas de disponibilização, tipos e veículos de publicação</a></li>
+          <li><a href="capitulo_cinco.htm">5. Processo editorial</a></li>
+          <li><a href="capitulo_seis.htm">6. Direitos autorais</a></li>
+          <li><a href="capitulo_sete.htm">7. Plágio e outras condutas antiéticas</a></li>
+          <li><a href="capitulo_oito.htm">8. Inteligência artificial na produção editorial do Incaper</a></li>
+          <li><a href="capitulo_nove.htm">9. Orientações de diagramação</a></li>
+          <li><a href="capitulo_dez.htm">10. Padronização e estilo</a></li>
+          <li><a href="capitulo_onze.htm">11. Linguagem, gramática e ortografia</a></li>
         </ul>
       </div>
-      <div>
+      <div class="rodape-referencias">
         <ul>
-          <li><a href="">Referências</a></li>
-          <li><a href="">Glossário</a></li>
-          <li><a href="">Apêndices</a></li>
-          <li><a href="">Anexos</a></li>
+          <li><a href="referencias.htm">Referências</a></li>
+          <li><a href="glossario.htm">Glossário</a></li>
+          <li><a href="anexos.htm">Anexos</a></li>
         </ul>
       </div>
     </div>
   </section>
-  </footer>
+</footer>
+<script>
+function expandAll(){
+  document.querySelectorAll('.acc-check').forEach(c => c.checked = true);
+}
+
+function collapseAll(){
+  document.querySelectorAll('.acc-check').forEach(c => c.checked = false);
+}
+</script>
 </body>
 </html>
